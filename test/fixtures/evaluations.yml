@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  kind: MyString
+  portion: MyString
+  criteria: MyString
+
+two:
+  kind: MyString
+  portion: MyString
+  criteria: MyString
