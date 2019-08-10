@@ -10,6 +10,33 @@
   </head>
 
   <body>
+    <header>
+      <div class="header_inner">
+        <div class="header_title">
+          <h1><%=link_to"Emora","/"%></h1>
+        </div>
+        <div class="global_nav">
+          <nav>
+            <ul>
+              <% if user_signed_in? %>
+                <li><%=link_to"ログアウト",destroy_user_session_path,method: :delete,class:"login_var"%></li>
+                <li>お問い合わせ</li>
+                <li><%=link_to'時間割',"/users/#{current_user.id}/timetable"%></li>
+                <li><%=link_to"シラバス検索","/subjects/search"%></li>
+                <li><%=current_user.email%></li>
+
+              <% else %>
+                <li><%=link_to"ログイン",new_user_session_path,class:"login_var"%></li>
+                <li><%=link_to"新規登録",new_user_registration_path,class:"login_var"%></li>
+                <li>お問い合わせ</li>
+              <% end %>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
     <%= yield %>
   </body>
 </html>
