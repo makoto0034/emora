@@ -21,7 +21,7 @@
               <% if user_signed_in? %>
                 <li><%=link_to"ログアウト",destroy_user_session_path,method: :delete,class:"login_var"%></li>
                 <li>お問い合わせ</li>
-                <li><%=link_to'時間割',"/users/#{current_user.id}/timetable"%></li>
+                <li><%=link_to'時間割',timetables_path(current_user)%></li>
                 <li><%=link_to"シラバス検索","/subjects/search"%></li>
                 <li><%=current_user.email%></li>
 

@@ -11,6 +11,7 @@ table{
   text-align: center;
   width: 800px;
   margin:0 auto;
+  table-layout: fixed;
 }
 table th,td{
   border-collapse:collapse;

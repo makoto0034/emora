@@ -1,0 +1,545 @@
+<h1>時間割内容作成</h1>
+<div class="timetable">
+  <table>
+    <tr>
+      <th>✖</th>
+      <th>月</th>
+      <th>火</th>
+      <th>水</th>
+      <th>木</th>
+      <th>金</th>
+      <th>土</th>
+      <th>日</th>
+    </tr>
+    <tr>
+      <th>1</th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 1, period_id: 1, timetable_id:params_int(params[:id])).present?%>
+          <%@subject1=subject_finder(1,1,params_int(params[:id]))%>
+          <%=@subject1%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 1, period_id: 1) %>
+        <%end%>
+      </th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 2, period_id: 1, timetable_id:params_int(params[:id])).present?%>
+          <%@subject2=subject_finder(2,1,params_int(params[:id]))%>
+          <%=@subject2%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 2, period_id: 1) %>
+        <%end%>
+      </th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 3, period_id: 1, timetable_id:params_int(params[:id])).present?%>
+          <%@subject3=subject_finder(3,1,params_int(params[:id]))%>
+          <%=@subject3%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 3, period_id: 1) %>
+        <%end%>
+      </th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 4, period_id: 1, timetable_id:params_int(params[:id])).present?%>
+          <%@subject4=subject_finder(4,1,params_int(params[:id]))%>
+          <%=@subject4%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 4, period_id: 1) %>
+        <%end%>
+      </th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 5, period_id: 1, timetable_id:params_int(params[:id])).present?%>
+          <%@subject5=subject_finder(5,1,params_int(params[:id]))%>
+          <%=@subject5%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 5, period_id: 1) %>
+        <%end%>
+      </th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 6, period_id: 1, timetable_id:params_int(params[:id])).present?%>
+          <%@subject6=subject_finder(6,1,params_int(params[:id]))%>
+          <%=@subject6%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 6, period_id: 1) %>
+        <%end%>
+      </th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 7, period_id: 1, timetable_id:params_int(params[:id])).present?%>
+          <%@subject7=subject_finder(7,1,params_int(params[:id]))%>
+          <%=@subject7%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 7, period_id: 1) %>
+        <%end%>
+      </th>
+    </tr>
+    <tr>
+      <th>2</th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 1, period_id: 2, timetable_id:params_int(params[:id])).present?%>
+          <%@subject8=subject_finder(1,2,params_int(params[:id]))%>
+          <%=@subject8%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 1, period_id: 2) %>
+        <%end%>
+      </th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 2, period_id: 2, timetable_id:params_int(params[:id])).present?%>
+          <%@subject9=subject_finder(2,2,params_int(params[:id]))%>
+          <%=@subject9%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 2, period_id: 2) %>
+        <%end%>
+      </th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 3, period_id: 2, timetable_id:params_int(params[:id])).present?%>
+          <%@subject10=subject_finder(3,2,params_int(params[:id]))%>
+          <%=@subject10%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 3, period_id: 2) %>
+        <%end%>
+      </th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 4, period_id: 2, timetable_id:params_int(params[:id])).present?%>
+          <%@subject11=subject_finder(4,2,params_int(params[:id]))%>
+          <%=@subject11%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 4, period_id: 2) %>
+        <%end%>
+      </th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 5, period_id: 2, timetable_id:params_int(params[:id])).present?%>
+          <%@subject12=subject_finder(5,2,params_int(params[:id]))%>
+          <%=@subject12%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 5, period_id: 2) %>
+        <%end%>
+      </th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 6, period_id: 2, timetable_id:params_int(params[:id])).present?%>
+          <%@subject13=subject_finder(6,2,params_int(params[:id]))%>
+          <%=@subject13%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 6, period_id: 2) %>
+        <%end%>
+      </th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 7, period_id: 2, timetable_id:params_int(params[:id])).present?%>
+          <%@subject14=subject_finder(7,2,params_int(params[:id]))%>
+          <%=@subject14%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 7, period_id: 2) %>
+        <%end%>
+      </th>
+    </tr>
+    <tr>
+      <th>3</th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 1, period_id: 3, timetable_id:params_int(params[:id])).present?%>
+          <%@subject15=subject_finder(1,3,params_int(params[:id]))%>
+          <%=@subject15%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 1, period_id: 3) %>
+        <%end%>
+      </th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 2, period_id: 3, timetable_id:params_int(params[:id])).present?%>
+          <%@subject16=subject_finder(2,3,params_int(params[:id]))%>
+          <%=@subject16%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 2, period_id: 3) %>
+        <%end%>
+      </th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 3, period_id: 3, timetable_id:params_int(params[:id])).present?%>
+          <%@subject17=subject_finder(3,3,params_int(params[:id]))%>
+          <%=@subject17%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 3, period_id: 3) %>
+        <%end%>
+      </th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 4, period_id: 3, timetable_id:params_int(params[:id])).present?%>
+          <%@subject18=subject_finder(4,3,params_int(params[:id]))%>
+          <%=@subject18%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 4, period_id: 3) %>
+        <%end%>
+      </th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 5, period_id: 3, timetable_id:params_int(params[:id])).present?%>
+          <%@subject19=subject_finder(5,3,params_int(params[:id]))%>
+          <%=@subject19%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 5, period_id: 3) %>
+        <%end%>
+      </th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 6, period_id: 3, timetable_id:params_int(params[:id])).present?%>
+          <%@subject20=subject_finder(6,3,params_int(params[:id]))%>
+          <%=@subject21%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 6, period_id: 3) %>
+        <%end%>
+      </th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 7, period_id: 3, timetable_id:params_int(params[:id])).present?%>
+          <%@subject22=subject_finder(7,3,params_int(params[:id]))%>
+          <%=@subject22%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 7, period_id: 3) %>
+        <%end%>
+      </th>
+    </tr>
+    <tr>
+      <th>4</th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 1, period_id: 4, timetable_id:params_int(params[:id])).present?%>
+          <%@subject23=subject_finder(1,4,params_int(params[:id]))%>
+          <%=@subject23%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 1, period_id: 4) %>
+        <%end%>
+      </th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 2, period_id: 4, timetable_id:params_int(params[:id])).present?%>
+          <%@subject24=subject_finder(2,4,params_int(params[:id]))%>
+          <%=@subject24%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 2, period_id: 4) %>
+        <%end%>
+      </th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 3, period_id: 4, timetable_id:params_int(params[:id])).present?%>
+          <%@subject24=subject_finder(3,4,params_int(params[:id]))%>
+          <%=@subject24%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 3, period_id: 4) %>
+        <%end%>
+      </th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 4, period_id: 4, timetable_id:params_int(params[:id])).present?%>
+          <%@subject24=subject_finder(4,4,params_int(params[:id]))%>
+          <%=@subject24%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 4, period_id: 4) %>
+        <%end%>
+      </th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 5, period_id: 4, timetable_id:params_int(params[:id])).present?%>
+          <%@subject25=subject_finder(5,4,params_int(params[:id]))%>
+          <%=@subject25%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 5, period_id: 4) %>
+        <%end%>      </th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 6, period_id: 4, timetable_id:params_int(params[:id])).present?%>
+          <%@subject26=subject_finder(6,4,params_int(params[:id]))%>
+          <%=@subject26%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 6, period_id: 4) %>
+        <%end%>
+      </th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 7, period_id: 4, timetable_id:params_int(params[:id])).present?%>
+          <%@subject27=subject_finder(7,4,params_int(params[:id]))%>
+          <%=@subject27%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 7, period_id: 4) %>
+        <%end%>
+      </th>
+    </tr>
+    <tr>
+      <th>5</th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 1, period_id: 5, timetable_id:params_int(params[:id])).present?%>
+          <%@subject28=subject_finder(1,5,params_int(params[:id]))%>
+          <%=@subject28%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 1, period_id: 5) %>
+        <%end%>
+      </th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 2, period_id: 5, timetable_id:params_int(params[:id])).present?%>
+          <%@subject29=subject_finder(2,5,params_int(params[:id]))%>
+          <%=@subject29%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 2, period_id: 5) %>
+        <%end%>
+      </th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 3, period_id: 5, timetable_id:params_int(params[:id])).present?%>
+          <%@subject30=subject_finder(3,5,params_int(params[:id]))%>
+          <%=@subject30%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 3, period_id: 5) %>
+        <%end%>
+      </th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 4, period_id: 5, timetable_id:params_int(params[:id])).present?%>
+          <%@subject31=subject_finder(4,5,params_int(params[:id]))%>
+          <%=@subject31%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 4, period_id: 5) %>
+        <%end%>
+      </th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 5, period_id: 5, timetable_id:params_int(params[:id])).present?%>
+          <%@subject32=subject_finder(5,5,params_int(params[:id]))%>
+          <%=@subject32%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 5, period_id: 5) %>
+        <%end%>
+      </th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 6, period_id: 5, timetable_id:params_int(params[:id])).present?%>
+          <%@subject33=subject_finder(6,5,params_int(params[:id]))%>
+          <%=@subject33%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 6, period_id: 5) %>
+        <%end%>
+      </th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 7, period_id: 5, timetable_id:params_int(params[:id])).present?%>
+          <%@subject34=subject_finder(7,5,params_int(params[:id]))%>
+          <%=@subject34%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 7, period_id: 5) %>
+        <%end%>
+      </th>
+    </tr>
+    <tr>
+      <th>G5</th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 1, period_id: 6, timetable_id:params_int(params[:id])).present?%>
+          <%@subject35=subject_finder(1,6,params_int(params[:id]))%>
+          <%=@subject35%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 1, period_id: 6) %>
+        <%end%>
+      </th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 2, period_id: 6, timetable_id:params_int(params[:id])).present?%>
+          <%@subject36=subject_finder(2,6,params_int(params[:id]))%>
+          <%=@subject36%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 2, period_id: 6) %>
+        <%end%>
+      </th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 3, period_id: 6, timetable_id:params_int(params[:id])).present?%>
+          <%@subject37=subject_finder(3,6,params_int(params[:id]))%>
+          <%=@subject37%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 3, period_id: 6) %>
+        <%end%>
+      </th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 4, period_id: 6, timetable_id:params_int(params[:id])).present?%>
+          <%@subject38=subject_finder(4,6,params_int(params[:id]))%>
+          <%=@subject38%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 4, period_id: 6) %>
+        <%end%>
+      </th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 5, period_id: 6, timetable_id:params_int(params[:id])).present?%>
+          <%@subject39=subject_finder(5,6,params_int(params[:id]))%>
+          <%=@subject39%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 5, period_id: 6) %>
+        <%end%>
+      </th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 6, period_id: 6, timetable_id:params_int(params[:id])).present?%>
+          <%@subject40=subject_finder(6,6,params_int(params[:id]))%>
+          <%=@subject40%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 6, period_id: 6) %>
+        <%end%>
+      </th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 7, period_id: 6, timetable_id:params_int(params[:id])).present?%>
+          <%@subject41=subject_finder(7,6,params_int(params[:id]))%>
+          <%=@subject41%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 7, period_id: 6) %>
+        <%end%>
+      </th>
+    </tr>
+    <tr>
+      <th>6</th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 1, period_id: 7, timetable_id:params_int(params[:id])).present?%>
+          <%@subject42=subject_finder(1,7,params_int(params[:id]))%>
+          <%=@subject42%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 1, period_id: 7) %>
+        <%end%>
+      </th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 2, period_id: 7, timetable_id:params_int(params[:id])).present?%>
+          <%@subject43=subject_finder(2,7,params_int(params[:id]))%>
+          <%=@subject43%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 2, period_id: 7) %>
+        <%end%>
+      </th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 3, period_id: 7, timetable_id:params_int(params[:id])).present?%>
+          <%@subject44=subject_finder(3,7,params_int(params[:id]))%>
+          <%=@subject44%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 3, period_id: 7) %>
+        <%end%>
+      </th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 4, period_id: 7, timetable_id:params_int(params[:id])).present?%>
+          <%@subject45=subject_finder(4,7,params_int(params[:id]))%>
+          <%=@subject45%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 4, period_id: 7) %>
+        <%end%>
+      </th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 5, period_id: 7, timetable_id:params_int(params[:id])).present?%>
+          <%@subject46=subject_finder(5,7,params_int(params[:id]))%>
+          <%=@subject46%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 5, period_id: 7) %>
+        <%end%>
+      </th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 6, period_id: 7, timetable_id:params_int(params[:id])).present?%>
+          <%@subject47=subject_finder(6,7,params_int(params[:id]))%>
+          <%=@subject47%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 6, period_id: 7) %>
+        <%end%>
+      </th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 7, period_id: 7, timetable_id:params_int(params[:id])).present?%>
+          <%@subject48=subject_finder(7,7,params_int(params[:id]))%>
+          <%=@subject48%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 7, period_id: 7) %>
+        <%end%>
+      </th>
+    </tr>
+    <tr>
+      <th>G6</th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 1, period_id: 8, timetable_id:params_int(params[:id])).present?%>
+          <%@subject49=subject_finder(1,8,params_int(params[:id]))%>
+          <%=@subject49%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 1, period_id: 8) %>
+        <%end%>
+      </th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 2, period_id: 8, timetable_id:params_int(params[:id])).present?%>
+          <%@subject50=subject_finder(2,8,params_int(params[:id]))%>
+          <%=@subject50%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 2, period_id: 8) %>
+        <%end%>
+      </th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 3, period_id: 8, timetable_id:params_int(params[:id])).present?%>
+          <%@subject51=subject_finder(3,8,params_int(params[:id]))%>
+          <%=@subject51%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 3, period_id: 8) %>
+        <%end%>
+      </th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 4, period_id: 8, timetable_id:params_int(params[:id])).present?%>
+          <%@subject52=subject_finder(4,8,params_int(params[:id]))%>
+          <%=@subject52%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 4, period_id: 8) %>
+        <%end%>
+      </th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 5, period_id: 8, timetable_id:params_int(params[:id])).present?%>
+          <%@subject53=subject_finder(5,8,params_int(params[:id]))%>
+          <%=@subject53%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 5, period_id: 8) %>
+        <%end%>
+      </th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 6, period_id: 8, timetable_id:params_int(params[:id])).present?%>
+          <%@subject54=subject_finder(6,8,params_int(params[:id]))%>
+          <%=@subject54%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 6, period_id: 8) %>
+        <%end%>
+      </th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 7, period_id: 8, timetable_id:params_int(params[:id])).present?%>
+          <%@subject55=subject_finder(7,8,params_int(params[:id]))%>
+          <%=@subject55%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 7, period_id: 8) %>
+        <%end%>
+      </th>
+    </tr>
+    <tr>
+      <th>7</th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 1, period_id: 9, timetable_id:params_int(params[:id])).present?%>
+          <%@subject56=subject_finder(1,9,params_int(params[:id]))%>
+          <%=@subject56%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 1, period_id: 9) %>
+        <%end%>
+      </th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 2, period_id: 9, timetable_id:params_int(params[:id])).present?%>
+          <%@subject57=subject_finder(2,9,params_int(params[:id]))%>
+          <%=@subject57%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 2, period_id: 9) %>
+        <%end%>
+      </th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 3, period_id: 9, timetable_id:params_int(params[:id])).present?%>
+          <%@subject58=subject_finder(3,9,params_int(params[:id]))%>
+          <%=@subject58%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 3, period_id: 9) %>
+        <%end%>
+      </th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 4, period_id: 9, timetable_id:params_int(params[:id])).present?%>
+          <%@subject57=subject_finder(4,9,params_int(params[:id]))%>
+          <%=@subject57%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 4, period_id: 9) %>
+        <%end%>
+      </th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 5, period_id: 9, timetable_id:params_int(params[:id])).present?%>
+          <%@subject58=subject_finder(5,9,params_int(params[:id]))%>
+          <%=@subject58%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 5, period_id: 9) %>
+        <%end%>
+      </th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 6, period_id: 9, timetable_id:params_int(params[:id])).present?%>
+          <%@subject59=subject_finder(6,9,params_int(params[:id]))%>
+          <%=@subject59%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 6, period_id: 9) %>
+        <%end%>
+      </th>
+      <th>
+        <%if TimetableCell.where(day_of_the_week_id: 7, period_id: 9, timetable_id:params_int(params[:id])).present?%>
+          <%@subject60=subject_finder(7,9,params_int(params[:id]))%>
+          <%=@subject60%>
+        <%else%>
+          <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: 7, period_id: 9) %>
+        <%end%>
+      </th>
+    </tr>
+  </table>
+</div>

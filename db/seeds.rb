@@ -123,7 +123,7 @@ data.each do |yaml|
       period: period
     )
   end
-
+  
   yaml.plan.each do |plan_key,plan_value|
       p plan_key
       p plan_value

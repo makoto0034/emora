@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_10_071905) do
+ActiveRecord::Schema.define(version: 2019_08_17_074457) do
 
   create_table "day_of_the_weeks", force: :cascade do |t|
     t.string "name"
@@ -106,9 +106,11 @@ ActiveRecord::Schema.define(version: 2019_08_10_071905) do
     t.integer "subject_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "timetable_id"
     t.index ["day_of_the_week_id"], name: "index_timetable_cells_on_day_of_the_week_id"
     t.index ["period_id"], name: "index_timetable_cells_on_period_id"
     t.index ["subject_id"], name: "index_timetable_cells_on_subject_id"
+    t.index ["timetable_id"], name: "index_timetable_cells_on_timetable_id"
   end
 
   create_table "timetables", force: :cascade do |t|
