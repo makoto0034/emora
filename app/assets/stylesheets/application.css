@@ -40,3 +40,13 @@ body{
 .header_inner a:visited{
   color:#000;
 }
+
+table{
+  text-align: center;
+  width:800px;
+}
+
+table th,td{
+  border-collapse:collapse;
+  border:solid 1px #000;
+}

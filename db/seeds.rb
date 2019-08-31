@@ -13,7 +13,7 @@ data = open(Rails.root.join('db/seeds/yaml','sample.yml'),'r:utf-8') { |f| YAML.
 require Rails.root.join('vendor', 'schedule_converter')
 
 
-DayOfTheWeek.create(name:"月" ,code:1)
+DayOfTheWeek.create!(name:"月" ,code:1)
 DayOfTheWeek.create(name:"火" ,code:2)
 DayOfTheWeek.create(name:"水" ,code:3)
 DayOfTheWeek.create(name:"木" ,code:4)
@@ -51,17 +51,47 @@ Period.create(name:"7",code:9)
 
 
 data.each do |yaml|
+  if yaml.title.nil?
+    subject = Subject.create(
+      name:'',
+      subject_code:yaml.code,
+      theme:yaml.theme,
+      instructor:yaml.instructor,
+      credit:yaml.credit,
+      num:yaml.num,
+      lang:yaml.lang,
+      notes:yaml.notes,
+      objective:yaml.objective,
+      contents:yaml.contents,
+      outside:yaml.outside,
+      others:yaml.others,
+      notice:yaml.notice
+    )
+  else
+    subject = Subject.create(
+      name:yaml.title.gsub(/[A-Z]+[0-9]+／/, ''),
+      subject_code:yaml.code,
+      theme:yaml.theme,
+      instructor:yaml.instructor,
+      credit:yaml.credit,
+      num:yaml.num,
+      lang:yaml.lang,
+      notes:yaml.notes,
+      objective:yaml.objective,
+      contents:yaml.contents,
+      outside:yaml.outside,
+      others:yaml.others,
+      notice:yaml.notice
+    )
+  end
+
+
   Evaluation.create(
     kind:yaml.evaluation["種類(Kind)"],
     portion:yaml.evaluation["割合(%)"],
-    criteria:yaml.evaluation["基準(Criteria)"])
-
-  subject = Subject.create(
-    name:yaml.title.gsub(/[A-Z]+[0-9]+／/, ''),
-    subject_code:yaml.code
+    criteria:yaml.evaluation["基準(Criteria)"],
+    subject:subject
   )
-
-
 
   author_reading = ""
   yaml.readings.each do |reading|
@@ -72,7 +102,8 @@ data.each do |yaml|
           title:reading[:book_title],
           publisher:reading[:publisher],
           year:reading[:date],
-          isbn:reading[:isbn_issn]
+          isbn:reading[:isbn_issn],
+          subject:subject
         )
           author_reading = reading[:author]
       elsif reading[:others] != nil
@@ -82,7 +113,10 @@ data.each do |yaml|
       end
     rescue => ex
       p ex
-      Reading.create(content:reading)
+      Reading.create(
+        content:reading,
+        subject:subject
+      )
     end
   end
 
@@ -95,7 +129,9 @@ data.each do |yaml|
           title:textbooks[:book_title],
           publisher:textbooks[:publisher],
           year:textbooks[:date],
-          isbn:textbooks[:isbn_issn])
+          isbn:textbooks[:isbn_issn],
+          subject:subject
+        )
           author_textbooks = textbooks[:author]
       elsif textbooks[:others] != nil
           textbook = Textbook.find_by(author:author_textbooks)
@@ -104,7 +140,10 @@ data.each do |yaml|
       end
     rescue => ex
       p ex
-      Textbook.create(content:textbooks)
+      Textbook.create(
+        content:textbooks,
+        subject:subject
+      )
     end
   end
 
@@ -123,7 +162,7 @@ data.each do |yaml|
       period: period
     )
   end
-  
+
   yaml.plan.each do |plan_key,plan_value|
       p plan_key
       p plan_value
@@ -133,4 +172,5 @@ data.each do |yaml|
         subject:subject
       )
   end
+
 end

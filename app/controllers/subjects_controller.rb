@@ -3,8 +3,13 @@ class SubjectsController < ApplicationController
   end
 
   def show
-    @subject = Subject.find(params[:id])
-  end  
+    @subject=Subject.find(params[:id])
+    @plans=Plan.where(subject_id:params[:id])
+    @evaluations=Evaluation.where(subject_id:params[:id])
+    @textbooks=Textbook.where(subject_id:params[:id])
+    @readings=Reading.where(subject_id:params[:id])
+
+  end
 
   def search
     @subjects = Subject.search(params[:search])

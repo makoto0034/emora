@@ -11,4 +11,9 @@ class TimetablesController < ApplicationController
 
   def new
   end
+
+  def destroy
+    Timetable.find(params[:id]).destroy
+    redirect_to(timetables_path(current_user))
+  end
 end

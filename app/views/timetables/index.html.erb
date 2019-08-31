@@ -1,9 +1,25 @@
 <h1>時間割</h1>
 <h2>時間割一覧</h2>
-<ul>
-  <%@timetables.each do |timetable|%>
-    <li><%=link_to timetable.name,new_timetable_cell_path(timetable.id)%></li>
-  <%end%>
-</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>名前</th>
+      <th>削除</th>
+    </tr>
+  </thead>
+  <tbody>
+    <%@timetables.each do |timetable|%>
+      <tr>
+        <td><%=link_to timetable.name,new_timetable_cell_path(timetable.id)%></td>
+        <td>
+          <%= link_to timetable_path(timetable.id), :method => :delete do %>
+            <i class="fas fa-trash-alt"></i>
+          <%end%>
+        </td>
+      </tr>
+    <%end%>
+  </tbody>
+</table>
 
 <%=link_to'時間割新規作成',new_timetable_path(current_user)%>

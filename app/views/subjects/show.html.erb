@@ -1,2 +1,52 @@
-<h2><%=@subject.name%></h2>
-<h3>科目コード:<%=@subject.subject_code%></h3>
+<div class="subject_show">
+  <h2><%=@subject.name%></h2>
+  <h3>科目コード:<%=@subject.subject_code%></h3>
+  <h3>テーマ：<%=@subject.theme%></h3>
+  <h3>担当者：<%=@subject.instructor%></h3>
+  <h3>時間割:</h3>
+  <h3>単位：<%=@subject.credit%></h3>
+  <h3>科目ナンバリング：<%=@subject.num%></h3>
+  <h3>使用言語：<%=@subject.lang%></h3>
+  <h3>備考：<%=@subject.notes%></h3>
+  <h3>授業の目標：<%=@subject.objective%></h3>
+  <h3>授業の内容：<%=@subject.contents%></h3>
+  <h3>授業の計画</h3>
+
+  <table>
+    <%@plans.each do |plan|%>
+      <tr>
+        <th id="table_th"><%=plan.number%></th>
+        <td><%=plan.content%></td>
+      </tr>
+    <%end%>
+  </table>
+  <h3>授業時間外の学習：<%=@subject.outside%></h3>
+  <h3>成績評価</h3>
+  <%@evaluations.each do |evaluation|%>
+    <%=evaluation.criteria%>
+    <%=evaluation.kind%>
+    <%=evaluation.portion%>
+  <%end%>
+  <h3>参考文献</h3>
+  <%@readings.each do |reading|%>
+  <%=reading.author%>
+  <%=reading.content%>
+  <%=reading.isbn%>
+  <%=reading.others%>
+  <%=reading.publisher%>
+  <%=reading.title%>
+  <%=reading.year%>
+  <%end%>
+  <h3>テキスト</h3>
+  <%@textbooks.each do |textbook|%>
+  <%=textbook.author%>
+  <%=textbook.content%>
+  <%=textbook.isbn%>
+  <%=textbook.others%>
+  <%=textbook.publisher%>
+  <%=textbook.title%>
+  <%=textbook.year%>
+  <%end%>
+  <h3>その他：<%=@subject.others%></h3>
+  <h3>注意事項：<%=@subject.notice%></h3>
+</div>

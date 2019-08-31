@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   root to:'home#index'
   resources :users, only: %i()do
     member do
-      resources :timetables, only: %i(index create new)
+      resources :timetables, only: %i(index create new destroy)
     end
   end
   resources :timetable, only: %i()do

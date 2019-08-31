@@ -12,6 +12,11 @@
 #  year       :string
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
+#  subject_id :integer
+#
+# Indexes
+#
+#  index_readings_on_subject_id  (subject_id)
 #
 
 require 'test_helper'

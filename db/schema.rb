@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_17_074457) do
+ActiveRecord::Schema.define(version: 2019_08_31_094028) do
 
   create_table "day_of_the_weeks", force: :cascade do |t|
     t.string "name"
@@ -25,6 +25,8 @@ ActiveRecord::Schema.define(version: 2019_08_17_074457) do
     t.string "criteria"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "subject_id"
+    t.index ["subject_id"], name: "index_evaluations_on_subject_id"
   end
 
   create_table "periods", force: :cascade do |t|
@@ -52,6 +54,8 @@ ActiveRecord::Schema.define(version: 2019_08_17_074457) do
     t.datetime "updated_at", null: false
     t.text "others"
     t.text "content"
+    t.integer "subject_id"
+    t.index ["subject_id"], name: "index_readings_on_subject_id"
   end
 
   create_table "schedules", force: :cascade do |t|
@@ -79,6 +83,17 @@ ActiveRecord::Schema.define(version: 2019_08_17_074457) do
     t.string "subject_code"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.text "theme"
+    t.string "instructor"
+    t.string "credit"
+    t.string "num"
+    t.string "lang"
+    t.text "notes"
+    t.text "objective"
+    t.text "contents"
+    t.text "outside"
+    t.string "others"
+    t.string "notice"
   end
 
   create_table "subjects_timetable_cells", force: :cascade do |t|
@@ -98,6 +113,8 @@ ActiveRecord::Schema.define(version: 2019_08_17_074457) do
     t.datetime "updated_at", null: false
     t.text "others"
     t.text "content"
+    t.integer "subject_id"
+    t.index ["subject_id"], name: "index_textbooks_on_subject_id"
   end
 
   create_table "timetable_cells", force: :cascade do |t|

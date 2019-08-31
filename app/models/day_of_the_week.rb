@@ -11,5 +11,5 @@
 
 class DayOfTheWeek < ApplicationRecord
   has_many :schedules
-  belongs_to :timetable_cell
+  belongs_to :timetable_cell,optional: true
 end
