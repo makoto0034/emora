@@ -49,6 +49,18 @@ Period.create(name:"6",code:7)
 Period.create(name:"G6",code:8)
 Period.create(name:"7",code:9)
 
+Category.create(name:"語学")
+Category.create(name:"旅行")
+Category.create(name:"最近の話題")
+Category.create(name:"趣味")
+Category.create(name:"ゲーム")
+Category.create(name:"サークル")
+Category.create(name:"授業")
+Category.create(name:"音楽")
+Category.create(name:"悩み")
+Category.create(name:"アニメ")
+Category.create(name:"スポーツ")
+
 
 data.each do |yaml|
   if yaml.title.nil?

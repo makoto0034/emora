@@ -1,0 +1,14 @@
+<div class="message_board_index">
+  <ul>
+    <%@categories.each do |category|%>
+      <li><%=link_to category.name,message_boards_path(category_id: category.id)%></li>
+    <%end%>
+  </ul>
+  
+  <ul>
+    <%@message_boards.each do |message_board|%>
+      <li><%=link_to message_board.name,message_boards_talks_path(message_board.id)%></li>
+    <%end%>
+  </ul>
+  <%=link_to'掲示板新規作成',new_message_board_path%>
+</div>

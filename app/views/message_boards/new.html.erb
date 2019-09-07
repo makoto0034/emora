@@ -1,0 +1,10 @@
+
+<%=form_tag(message_boards_path) do %>
+  <input type="text" name="name" placeholder="掲示板の名前を入力してください">
+  <select name="category_id">
+    <%@categories.each do |category|%>
+      <option value=<%=category.id%>><%=category.name%></option>
+    <%end%>
+  </select>
+  <input type="submit" value="作成">
+<%end%>

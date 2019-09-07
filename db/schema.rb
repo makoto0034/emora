@@ -10,7 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_31_094028) do
+ActiveRecord::Schema.define(version: 2019_09_07_070021) do
+
+  create_table "categories", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "day_of_the_weeks", force: :cascade do |t|
     t.string "name"
@@ -29,6 +35,14 @@ ActiveRecord::Schema.define(version: 2019_08_31_094028) do
     t.index ["subject_id"], name: "index_evaluations_on_subject_id"
   end
 
+  create_table "message_boards", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "category_id"
+    t.index ["category_id"], name: "index_message_boards_on_category_id"
+  end
+
   create_table "periods", force: :cascade do |t|
     t.string "name"
     t.integer "code"
@@ -42,6 +56,16 @@ ActiveRecord::Schema.define(version: 2019_08_31_094028) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "subject_id"
+  end
+
+  create_table "posts", force: :cascade do |t|
+    t.string "content"
+    t.integer "user_id"
+    t.integer "message_board_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["message_board_id"], name: "index_posts_on_message_board_id"
+    t.index ["user_id"], name: "index_posts_on_user_id"
   end
 
   create_table "readings", force: :cascade do |t|

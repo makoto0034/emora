@@ -22,9 +22,10 @@
               <% if user_signed_in? %>
                 <li><%=link_to"ログアウト",destroy_user_session_path,method: :delete,class:"login_var"%></li>
                 <li>お問い合わせ</li>
+                <li><%=link_to'掲示板',message_boards_path%></li>
                 <li><%=link_to'時間割',timetables_path(current_user)%></li>
                 <li><%=link_to"シラバス検索","/subjects/search"%></li>
-                <li><%=current_user.email%></li>
+                <li><%=link_to current_user.email,user_path(current_user)%></li>
 
               <% else %>
                 <li><%=link_to"ログイン",new_user_session_path,class:"login_var"%></li>

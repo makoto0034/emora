@@ -1,0 +1,11 @@
+<%@posts.each do |post|%>
+  <%=post.user.email%>/
+  <%=post.content%><br>
+<%end%>
+
+
+
+<%=form_tag(posts_path(params[:id]))do%>
+  <input type="text" name="content">
+  <input type="submit" value="投稿">
+<%end%>
