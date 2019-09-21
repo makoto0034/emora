@@ -1,7 +1,7 @@
 class CreatePlans < ActiveRecord::Migration[5.2]
   def change
     create_table :plans do |t|
-      t.string :number
+      t.integer :number
       t.text :content
 
       t.timestamps
