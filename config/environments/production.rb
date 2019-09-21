@@ -78,7 +78,7 @@ Rails.application.configure do
 
   config.action_mailer.perform_caching = false
 
-  config.action_mailer.default_url_options = { host: 'emora.herokuapp.com', port: 443 }
+  config.action_mailer.default_url_options = { host: 'emora.herokuapp.com', port: 80 }
 
   config.action_mailer.delivery_method = :smtp
 
