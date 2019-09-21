@@ -11,15 +11,16 @@
   <h3>授業の目標：<%=@subject.objective%></h3>
   <h3>授業の内容：<%=@subject.contents%></h3>
   <h3>授業の計画</h3>
-
-  <table>
-    <%@plans.each do |plan|%>
-      <tr>
-        <th id="table_th"><%=plan.number%></th>
-        <td><%=plan.content%></td>
-      </tr>
-    <%end%>
-  </table>
+  <div class="table-responsive">
+    <table class="table table-bordered">
+      <%@plans.each do |plan|%>
+        <tr>
+          <th id="table_th"><%=plan.number%></th>
+          <td><%=plan.content%></td>
+        </tr>
+      <%end%>
+    </table>
+  </div>
   <h3>授業時間外の学習：<%=@subject.outside%></h3>
   <h3>成績評価</h3>
   <%@evaluations.each do |evaluation|%>

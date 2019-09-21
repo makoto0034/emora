@@ -16,6 +16,6 @@ class MessageBoardsController < ApplicationController
   def create
     @message_board=MessageBoard.new(name:params[:name],category_id:params[:category_id])
     @message_board.save
-    redirect_to(message_boards_path)
+    redirect_to(message_boards_talks_path(@message_board.id))
   end
 end

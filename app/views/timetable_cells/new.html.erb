@@ -1,8 +1,8 @@
 <h1>時間割内容作成</h1>
-<div class="timetable">
-  <table>
+<div class="timetable table-responsive">
+  <table class="table table-bordered table-hover">
     <tr>
-      <th>✖</th>
+      <th> </th>
       <th>月</th>
       <th>火</th>
       <th>水</th>
@@ -15,14 +15,14 @@
       <tr>
         <th><%=period.name%></th>
         <%DayOfTheWeek.all.each do |day_of_the_week|%>
-          <th>
+          <td class="info">
             <%if TimetableCell.where(day_of_the_week_id: day_of_the_week.id, period_id: period.id, timetable_id:params_int(params[:id])).present?%>
               <%@subject1=subject_finder(day_of_the_week.id,period.id,params_int(params[:id]))%>
               <%=@subject1%>
             <%else%>
               <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: day_of_the_week.id, period_id: period.id) %>
             <%end%>
-          </th>
+          </td>
         <%end%>
       </tr>
     <%end%>

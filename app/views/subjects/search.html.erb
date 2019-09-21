@@ -1,7 +1,7 @@
-<div class="search_box">
+<div class="search_box mx-auto" style="width: 200px;">
   <h2>検索</h2>
   <%= form_tag('/subjects/search_result',:method => 'get') do%>
-    <%=text_field_tag :search,'',class:"text_field",placeholder:"検索したい科目を入力してください" %>
+    <%=text_field_tag :search,'',class:"text_field",placeholder:"検索したい科目を入力してください",:size=>"30"%>
     <%=submit_tag 'Search', :name => nil, class:"submit_btn"%>
   <%end%>
 </div>

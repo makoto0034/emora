@@ -1,7 +1,8 @@
 <% if @subjects == nil%>
   選択できる科目がありません
 <%else%>
-  <table>
+<div class="table-responsive">
+  <table class="table table-bordered table-hover">
     <thead>
       <tr>
         <th>名前</th>
@@ -19,4 +20,6 @@
       <%end%>
     </tbody>
   </table>
+</div>
+
 <%end%>
