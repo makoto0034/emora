@@ -1,6 +1,40 @@
-<h2><%=current_user.email%></h2>
-
-<h2>投稿一覧</h2>
-<%@posts.each do |post|%>
-  <li><%=post.content%></li>
-<%end%>
+<div class="user_show">
+  <div class="user_detail" id="user_content">
+    <div class="user_avatar">
+      <% if current_user.avatar.attached?%>
+          <%=image_tag url_for(current_user.avatar),:size =>"150x150" ,class: "avatar"%>
+      <%else%>
+        <%=image_tag "face1.jpg" ,:size =>"150x150" ,class: "avatar" %>
+      <%end%>
+    </div>
+    <h2><%=current_user.name%>
+      <%=link_to(edit_user_path) do%>
+        <i class="fas fa-user-cog"></i>
+      <%end%>
+    </h2>
+    <div class="user_profile">
+      <%=current_user.profile%>
+    </div>
+  </div>
+  <div class="user_detail">
+    　　　　　　　　　　
+  </div>
+  <div class="user_detail" id="post_list">
+    <h2>投稿一覧</h2>
+    <% if @posts.empty? %>
+      <h5>まだ一度も投稿したことがありません<br>掲示板で投稿してみませんか？</h5>
+    <%else%>
+      <%@posts.each do |post|%>
+        <div class="post_content">
+          <div class="post_content_header">
+            <%=post.created_at.strftime("%m月%d日 %H:%M")%>　
+            掲示板名：<%=link_to post.message_board.name,message_boards_talks_path(post.message_board.id)%>
+          </div>
+          <div class="post_content_body">
+            <%=post.content%>
+          </div>
+        </div>
+      <%end%>
+    <%end%>
+  </div>
+</div>

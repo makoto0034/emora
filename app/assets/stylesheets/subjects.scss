@@ -11,17 +11,20 @@
   margin-top:50px;
 }
 
-.search_box{
+.search .search_box{
   text-align:center;
-  margin-bottom: 20px;
 }
 
-.text_field{
+.search .search_box .search_box_inner{
+  margin-top: 20px;
+}
+
+.search .search_field{
   width:300px;
   height:30px;
 }
 
-.submit_btn{
+.search .submit_btn{
   height:40px;
 }
 

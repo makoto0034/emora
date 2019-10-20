@@ -8,6 +8,9 @@
 #  confirmed_at           :datetime
 #  email                  :string           default(""), not null
 #  encrypted_password     :string           default(""), not null
+#  image                  :string
+#  name                   :string
+#  profile                :string
 #  remember_created_at    :datetime
 #  reset_password_sent_at :datetime
 #  reset_password_token   :string
@@ -26,6 +29,14 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable, :confirmable
+
+ validates :name,{
+   presence:true,
+   uniqueness:true,
+   length:{maximum:10}
+ }
+
+  has_one_attached :avatar
 
   has_many :timetables
   has_many :posts

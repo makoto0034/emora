@@ -1,3 +1,54 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+.user_avatar,.user_profile{
+  text-align: center;
+}
+
+.avatar{
+  border-radius: 75px;
+}
+
+.user_show{
+  width:80%;
+  margin:0 auto;
+}
+
+
+.user_show #post_list{
+  width:40%;
+}
+
+.user_show .post_content{
+  background: #FFFFFF;
+  box-shadow: 0 0 5px gray;
+  border-radius: 5px;
+  min-height:10vh;
+  width:80%;
+  margin:0 auto;
+  margin-top: 20px;
+
+}
+
+.user_show .user_detail{
+  display: inline-block;
+  vertical-align: top;
+}
+
+.user_show .user_detail h2{
+  text-align: center;
+}
+
+.user_show .user_detail .user_profile{
+  width: 100%;
+  height: 20vh;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+.user_show .post_content_body{
+  margin-top: 10px;
+}

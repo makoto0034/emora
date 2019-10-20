@@ -8,6 +8,9 @@
 #  confirmed_at           :datetime
 #  email                  :string           default(""), not null
 #  encrypted_password     :string           default(""), not null
+#  image                  :string
+#  name                   :string
+#  profile                :string
 #  remember_created_at    :datetime
 #  reset_password_sent_at :datetime
 #  reset_password_token   :string

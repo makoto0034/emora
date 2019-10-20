@@ -8,7 +8,7 @@ body{
   margin:0;
 }
 
-.syllabus-img{
+.main-img{
     width:170px;
     height:200px;
     float:left;
@@ -18,4 +18,14 @@ body{
   content: "";
   display: block;
   clear:both;
+}
+
+.mainInner{
+  width:80%;
+  margin: 0 auto;
+  margin-top:30px;
+}
+
+.main_content{
+  margin-top:50px;
 }

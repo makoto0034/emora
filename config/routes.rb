@@ -3,9 +3,11 @@ Rails.application.routes.draw do
   get 'subjects/search'
   get 'subjects/search_result'
   get 'home/index'
+  post 'users/update'
   resources :subjects
   root to:'home#index'
-  resources :users, only: %i(show)do
+
+  resources :users, only: %i(show edit)do
     member do
       resources :timetables, only: %i(index create new destroy)
     end

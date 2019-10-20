@@ -15,6 +15,6 @@
 
 class Timetable < ApplicationRecord
   belongs_to :user
-  has_many :timetable_cells
+  has_many :timetable_cells, dependent: :destroy
   validates :name,{presence:true}
 end

@@ -15,18 +15,18 @@
  */
 @import "bootstrap";
 
+body{
+  margin:0;
+  padding:0;
+  background: #FAFAFA;
+}
 header{
-  background: linear-gradient(45deg,#E41837 30%,#006991 70%);
+  background: #9E76B4;
   height:12vh;
   font-size:20px;
   font-weight:bold;
 }
 
-
-body{
-  margin:0;
-  padding:0;
-}
 .header_inner{
   display:flex;
   justify-content: space-around;
