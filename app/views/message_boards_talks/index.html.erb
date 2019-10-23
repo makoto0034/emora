@@ -1,11 +1,27 @@
-<%@posts.each do |post|%>
-  <%=post.user.email%>/
-  <%=post.content%><br>
-<%end%>
-
-
-
-<%=form_tag(posts_path(params[:id]))do%>
-  <input type="text" name="content">
-  <input type="submit" value="投稿">
-<%end%>
+<div class="message_board_talk_index">
+  <h1><%=@message_board.name%></h1>
+  <div class="message_board_talk_line">
+    <%@posts.each do |post|%>
+      <div class="message_board_content">
+        <div class="message_board_content_header">
+          <% if post.user.avatar.attached?%>
+              <%=image_tag url_for(post.user.avatar),:size =>"50x50" ,class: "avatar"%>
+          <%else%>
+            <%=image_tag "face1.jpg" ,:size =>"50x50" ,class: "avatar" %>
+          <%end%>
+          <%=post.user.name%>
+          <%=post.created_at.strftime("%m月%d日 %H:%M")%>
+        </div>
+        <div class="message_board_content_body">
+          <%=post.content%>
+        </div>
+      </div>
+    <%end%>
+  </div>
+  <div class="message_board_talk_input">
+    <%=form_tag(posts_path(params[:id]))do%>
+      <textarea name="content" rows="5" cols="55"></textarea>
+      <input type="submit" value="投稿">
+    <%end%>
+  </div>
+</div>

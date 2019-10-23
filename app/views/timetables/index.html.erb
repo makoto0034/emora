@@ -1,26 +1,26 @@
-<h1>時間割</h1>
-<h2>時間割一覧</h2>
-<div class="table-responsive">
-  <table class="table table-bordered table-hover">
-    <thead>
-      <tr>
-        <th>名前</th>
-        <th>削除</th>
-      </tr>
-    </thead>
-    <tbody>
-      <%@timetables.each do |timetable|%>
+<div class="timetalbe_index">
+  <h1>時間割一覧</h1>
+  <div class="table_entire table-responsive">
+    <table class="table table-bordered table-hover">
+      <thead>
         <tr>
-          <td><%=link_to timetable.name,new_timetable_cell_path(timetable.id)%></td>
-          <td>
-            <%= link_to timetable_path(timetable.id), :method => :delete do %>
-              <i class="fas fa-trash-alt"></i>
-            <%end%>
-          </td>
+          <th>名前</th>
+          <th>削除</th>
         </tr>
-      <%end%>
-    </tbody>
-  </table>
-</div>  
-
-<%=link_to'時間割新規作成',new_timetable_path(current_user)%>
+      </thead>
+      <tbody>
+        <%@timetables.each do |timetable|%>
+          <tr>
+            <td><%=link_to timetable.name,new_timetable_cell_path(timetable.id)%></td>
+            <td>
+              <%= link_to timetable_path(timetable.id), :method => :delete do %>
+                <i class="fas fa-trash-alt"></i>
+              <%end%>
+            </td>
+          </tr>
+        <%end%>
+      </tbody>
+    </table>
+  </div>
+  <%=link_to'時間割新規作成',new_timetable_path(current_user)%>
+</div>

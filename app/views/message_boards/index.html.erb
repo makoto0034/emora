@@ -1,8 +1,8 @@
 <div class="message_board_index">
   <ul class="category_list list-inline">
     <%@categories.each do |category|%>
-      <li class="category_tab list-inline-item">
-        <%=link_to category.name,message_boards_path(category_id: category.id)%>
+      <li class="category_tab_list list-inline-item">
+        <%=link_to category.name,message_boards_path(category_id: category.id),class:"category_tab"%>
       </li>
     <%end%>
   </ul>

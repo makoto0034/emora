@@ -23,7 +23,7 @@
 }
 
 .user_show .post_content{
-  background: #FFFFFF;
+  background: #E6ECF0;
   box-shadow: 0 0 5px gray;
   border-radius: 5px;
   min-height:10vh;
@@ -43,12 +43,22 @@
 }
 
 .user_show .user_detail .user_profile{
+  background:#E6ECF0;
   width: 100%;
   height: 20vh;
-  border: 1px solid #000;
+  border: 1px solid #E6ECF0;
   border-radius: 5px;
 }
 
 .user_show .post_content_body{
   margin-top: 10px;
+}
+
+.user_edit{
+  width:80%;
+  margin:0 auto;
+}
+
+.user_edit .profile_edit{
+  text-align: center;
 }

@@ -18,20 +18,33 @@
         </div>
         <div class="global_nav">
           <nav>
-            <ul>
               <% if user_signed_in? %>
-                <li><%=link_to"ログアウト",destroy_user_session_path,method: :delete,class:"login_var"%></li>
-                <li>お問い合わせ</li>
-                <li><%=link_to'掲示板',message_boards_path%></li>
-                <li><%=link_to'時間割',timetables_path(current_user)%></li>
-                <li><%=link_to"シラバス検索","/subjects/search"%></li>
-                <li><i class="fas fa-user"></i> <%=link_to current_user.name,user_path(current_user)%></li>
+                <div id="nav-drawer">
+                    <input id="nav-input" type="checkbox" class="nav-unshown">
+                    <label id="nav-open" for="nav-input"><span></span></label>
+                    <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+                    <div id="nav-content">
+                      <ul>
+                        <li>
+                          <i class="fas fa-user"></i> <%=link_to current_user.name,user_path(current_user)%>
+                          <%=link_to destroy_user_session_path, method: :delete, class:"login_var" do %>
+                            <i class="fas fa-sign-out-alt"></i>
+                          <%end%>
+                        </li>
+                        <li><%=link_to'時間割',timetables_path(current_user)%></li>
+                        <li><%=link_to'掲示板',message_boards_path%></li>
+                        <li><%=link_to"シラバス検索","/subjects/search"%></li>
+                        <li>お問い合わせ</li>
+                      </ul>
+                    </div>
+                 </div>
               <% else %>
-                <li><%=link_to"ログイン",new_user_session_path,class:"login_var"%></li>
-                <li><%=link_to"新規登録",new_user_registration_path,class:"login_var"%></li>
-                <li>お問い合わせ</li>
+                <ul class="logout_list">
+                  <li><%=link_to"ログイン",new_user_session_path,class:"login_var"%></li>
+                  <li><%=link_to"新規登録",new_user_registration_path,class:"login_var"%></li>
+                  <li>お問い合わせ</li>
+                </ul>
               <% end %>
-            </ul>
           </nav>
         </div>
       </div>

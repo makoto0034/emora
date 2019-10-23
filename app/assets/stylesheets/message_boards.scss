@@ -1,6 +1,28 @@
 // Place all the styles related to the message_boards controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.message_board_index .category_list .category_tab{
+.message_board_index{
+  width:80%;
+  margin:0 auto;
+}
+
+.message_board_index .category_list .category_tab_list{
   display: inline;
+  margin:0;
+}
+
+.message_board_index .category_list .category_tab_list .category_tab{
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #668ad8;/*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+}
+
+.message_board_index .category_list .category_tab_list .category_tab:active {
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
 }
