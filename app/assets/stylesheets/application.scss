@@ -33,20 +33,23 @@ header{
   align-items: center;
 }
 
-.header_title,.global_nav{
-  margin:20px;
-}
-
 .global_nav ul li{
   list-style: none;
 }
-.logout_list li{
-  display:inline;
+
+.header_title{
+  padding:10px;
+  margin-top: 10px;
 }
 
 .logout_list{
-  margin-top:100px;
+  margin-top:30px;
 }
+.logout_list li{
+  display:inline;
+  padding:10px;
+}
+
 
 .header_inner a{
   text-decoration: none;
