@@ -2,26 +2,56 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.search{
+  width:80%;
+  margin:0 auto;
+}
+
+.search h1{
+  text-align: center;
+}
+
+.search_container{
+  box-sizing: border-box;
+  position: relative;
+  border: 1px solid #999;
+  padding: 3px 10px;
+  border-radius: 20px;
+  height: 2.3em;
+  width: 350px;
+  margin:0 auto;
+  overflow: hidden;
+}
+.search_container input[type="text"]{
+  border: none;
+  height: 2.1em;
+}
+.search_container input[type="text"]:focus {
+  outline: 0;
+}
+.search_container button[type="submit"]{
+  cursor: pointer;
+  font-family: FontAwesome;
+  border: none;
+  background: #3879D9;
+  color: #fff;
+  position: absolute;
+  width: 3.5em;
+  height: 3.0em;
+  right:0px;
+  top: -3px;
+  outline : none;
+}
+
+.search_field{
+  width:300px;
+}
+
+
 .subject_show table{
   margin-top:50px;
 }
 
-.search .search_box{
-  text-align:center;
-}
-
-.search .search_box .search_box_inner{
-  margin-top: 20px;
-}
-
-.search .search_field{
-  width:300px;
-  height:30px;
-}
-
-.search .submit_btn{
-  height:40px;
-}
 .search_result{
   width:80%;
   margin:0 auto;

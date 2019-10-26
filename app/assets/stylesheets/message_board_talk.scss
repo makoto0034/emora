@@ -6,22 +6,104 @@
   margin:0 auto;
 }
 
-.message_board_talk_input, .message_board_talk_line{
-  text-align: center;
+.message_board_list ul{
+  margin:0px;
+  padding:0px;
 }
 
-.message_board_content{
-  background: #E6ECF0;
-  box-shadow: 0 0 5px gray;
+.message_board_list{
+  float:left;
   width:50%;
-  min-height:20vh;
-  margin:0 auto;
-  border-radius:5px;
-  margin-top:20px;
 }
-.message_board_talk_input{
-  margin-top:10px;
+
+.line-bc h4{
+  text-decoration: underline;
 }
-.message_board_content_header{
+.line-bc {
+  padding: 20px 10px;
+  width: 50%;
+  margin: 15px auto;
+  font-size: 14px;
+  float:left;
+  border:solid 1px #fff;
+  border-width: 0 0 0 1px;
+  background:#fffafa;
+}
+
+.balloon6 {
+  width: 100%;
+  margin: 10px 0;
+  overflow: hidden;
+}
+
+.balloon6 .faceicon {
+  float: left;
+  margin-right: -50px;
+  width: 40px;
+}
+
+.balloon6 .faceicon img{
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+.balloon6 .chatting {
+  width: 100%;
   text-align: left;
+}
+.says {
+  display: inline-block;
+  position: relative;
+  margin: 0 0 0 50px;
+  padding: 10px;
+  max-width: 250px;
+  border-radius: 12px;
+  background: #edf1ee;
+}
+
+.says:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 3px;
+  left: -19px;
+  border: 8px solid transparent;
+  border-right: 18px solid #edf1ee;
+  -webkit-transform: rotate(35deg);
+  transform: rotate(35deg);
+}
+.says p {
+  margin: 0;
+  padding: 0;
+}
+
+/*以下、③右側の緑コメント*/
+.mycomment {
+  margin: 10px 0;
+  text-align:right;
+}
+.mycomment p {
+  display: inline-block;
+  position: relative;
+  margin: 0 10px 0 0;
+  padding: 8px;
+  max-width: 300px;
+  border-radius: 12px;
+  background: #E6ECF0;
+  font-size: 15px;
+}
+
+.mycomment p:after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  right: -19px;
+  border: 8px solid transparent;
+  border-left: 18px solid #E6ECF0;
+  -webkit-transform: rotate(-35deg);
+  transform: rotate(-35deg);
+}
+
+.message_board_talk_input{
+  text-align: center;
 }

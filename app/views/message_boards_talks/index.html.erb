@@ -1,27 +1,48 @@
 <div class="message_board_talk_index">
   <h1><%=@message_board.name%></h1>
-  <div class="message_board_talk_line">
+  <div class="message_board_list">
+    <h4>他の掲示板</h4>
+    <ul>
+      <%@message_boards.each do |message_board|%>
+        <li>
+          <%=link_to message_board.name,message_boards_talks_path(message_board.id)%>
+        </li>
+      <%end%>
+    </ul>
+  </div>
+  <div class="line-bc">
+    <h4>TALK</h4>
     <%@posts.each do |post|%>
-      <div class="message_board_content">
-        <div class="message_board_content_header">
-          <% if post.user.avatar.attached?%>
-              <%=image_tag url_for(post.user.avatar),:size =>"50x50" ,class: "avatar"%>
-          <%else%>
-            <%=image_tag "face1.jpg" ,:size =>"50x50" ,class: "avatar" %>
-          <%end%>
-          <%=post.user.name%>
-          <%=post.created_at.strftime("%m月%d日 %H:%M")%>
-        </div>
-        <div class="message_board_content_body">
-          <%=post.content%>
-        </div>
+      <%if post.user_id == current_user.id %>
+          <div class="mycomment">
+            <p>
+              <%=post.content%>
+            </p>
+          </div>
+      <%else%>
+          <div class="balloon6">
+            <div class="faceicon">
+                <% if post.user.avatar.attached?%>
+                    <%=image_tag url_for(post.user.avatar),:size =>"50x50" ,class: "avatar"%>
+                <%else%>
+                  <%=image_tag "face1.jpg" ,:size =>"50x50" ,class: "avatar" %>
+                <%end%>
+              </div>
+              <div class="chatting">
+                <div class="says">
+                  <p>
+                    <%=post.content%>
+                  </p>
+                </div>
+              </div>
+            </div>
+        <%end%>
+      <%end%>
+      <div class="message_board_talk_input">
+        <%=form_tag(posts_path(params[:id]))do%>
+          <textarea name="content" rows="5" cols="55"></textarea>
+          <input type="submit" value="投稿">
+      <%end%>
       </div>
-    <%end%>
-  </div>
-  <div class="message_board_talk_input">
-    <%=form_tag(posts_path(params[:id]))do%>
-      <textarea name="content" rows="5" cols="55"></textarea>
-      <input type="submit" value="投稿">
-    <%end%>
-  </div>
+    </div>
 </div>

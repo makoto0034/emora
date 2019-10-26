@@ -1,0 +1,20 @@
+<div class="table-responsive">
+  <table class="table table-bordered table-hover">
+    <thead>
+      <tr>
+        <th>名前</th>
+        <th>コード</th>
+        <th>op1</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @subjects.each do |subject|%>
+        <tr>
+          <td><%=link_to subject.name,subject_path(subject.id)%></td>
+          <td><%=subject.subject_code%></td>
+          <td><%=link_to "更新",timetable_cell_path(subject_id:subject.id),:method => :put%></td>
+        </tr>
+      <%end%>
+    </tbody>
+  </table>
+</div>

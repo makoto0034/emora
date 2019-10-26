@@ -1,11 +1,9 @@
 <div class="search">
   <div class="search_box">
     <h1>シラバス検索</h1>
-    <div class="search_box_inner">
-      <%= form_tag('/subjects/search_result',:method => 'get') do%>
-        <%=text_field_tag :search,'',class:"search_field",placeholder:"検索したい科目を入力してください",:size=>"30"%>
-        <%=submit_tag '検索', :name => nil, class:"submit_btn"%>
+      <%= form_tag('/subjects/search_result',:method => 'get',:class => 'search_container') do%>
+        <%=text_field_tag :search,'',class:"search_field",placeholder:"検索したい科目を入力してください"%>
+        <button type="submit"><i class="fas fa-search"></i></button>
       <%end%>
-    </div>
   </div>
 </div>

@@ -3,10 +3,21 @@ class TimetableCellsController < ApplicationController
   end
 
   def create
-    @timetable_cell = TimetableCell.new(day_of_the_week_id:params_int(params[:day_of_the_week_id]),period_id:params_int(params[:period_id]),subject_id:params_int(params[:subject_id]),timetable_id:params_int(params[:id]))
-    p params[:day_of_the_week_id]
+    @timetable_cell = TimetableCell.new(
+      day_of_the_week_id:params_int(params[:day_of_the_week_id]),
+      period_id:params_int(params[:period_id]),
+      subject_id:params_int(params[:subject_id]),
+      timetable_id:params_int(params[:id])
+    )
     @timetable_cell.save!
     redirect_to(new_timetable_cell_path)
+  end
+
+  def update
+    @timetable_cell=TimetableCell.find_by(timetable_id:params[:id])
+    @timetable_cell.subject_id = params[:subject_id]
+    @timetable_cell.save!
+    redirect_to(new_timetable_cell_path(params[:id]))
   end
 
   def params_int(model_params)

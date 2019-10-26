@@ -9,7 +9,9 @@
 
   <ul>
     <%@message_boards.each do |message_board|%>
-      <li><%=link_to message_board.name,message_boards_talks_path(message_board.id)%></li>
+      <li>
+        <%=link_to message_board.name,message_boards_talks_path(message_board.id,category_id:message_board.category.id)%>
+      </li>
     <%end%>
   </ul>
   <%=link_to'掲示板新規作成',new_message_board_path%>

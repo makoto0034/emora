@@ -1,14 +1,22 @@
 // Place all the styles related to the Timetable_cells controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.timetable table{
-  width: 800px;
+.timetable_cell_new{
+  width:80%;
   margin:0 auto;
+}
+
+.timetable_cell_new .timetable table{
   table-layout: fixed;
 }
 
-#table_th{
-  color:#fff;
-  background:#541B86;
-  width:50px;
+.timetable_cell_new table td{
+  width:20px;
+  height:100px;
+}
+
+.timetable_cell_new table td a{
+  width:100%;
+  height:100%;
+  display: block;
 }

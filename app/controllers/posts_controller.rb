@@ -3,7 +3,7 @@ class PostsController < ApplicationController
     @post=Post.new(
       content:params[:content],
       message_board_id:params[:id],
-      user:current_user
+      user_id:current_user.id
     )
     @post.save!
     redirect_to(message_boards_talks_path(params[:id]))

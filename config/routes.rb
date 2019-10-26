@@ -14,13 +14,13 @@ Rails.application.routes.draw do
   end
   resources :timetable, only: %i()do
     member do
-      resources :timetable_cells, only:%i(index create new)
+      resources :timetable_cells, only:%i(index create new update)
     end
   end
 
   resources :timetable_cells, only: %i()do
     member do
-      resources :timetable_cell_contents, only:%i(index create new)
+      resources :timetable_cell_contents, only:%i(create new edit)
     end
   end
 

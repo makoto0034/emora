@@ -1,30 +1,37 @@
-<h1>時間割内容作成</h1>
-<div class="timetable table-responsive">
-  <table class="table table-bordered table-hover">
-    <tr>
-      <th> </th>
-      <th>月</th>
-      <th>火</th>
-      <th>水</th>
-      <th>木</th>
-      <th>金</th>
-      <th>土</th>
-      <th>日</th>
-    </tr>
-    <%Period.all.each do |period|%>
+<div class="timetable_cell_new">
+  <div class="timetable table-responsive">
+      <h1>時間割内容作成</h1>
+      <span class="back_timetable_list"><%=link_to"時間割一覧に戻る",timetables_path(current_user)%></span>
+    <table class="table table-bordered table-hover">
       <tr>
-        <th><%=period.name%></th>
-        <%DayOfTheWeek.all.each do |day_of_the_week|%>
-          <td class="info">
-            <%if TimetableCell.where(day_of_the_week_id: day_of_the_week.id, period_id: period.id, timetable_id:params_int(params[:id])).present?%>
-              <%@subject1=subject_finder(day_of_the_week.id,period.id,params_int(params[:id]))%>
-              <%=@subject1%>
-            <%else%>
-              <%=link_to'　',new_timetable_cell_content_path(day_of_the_week_id: day_of_the_week.id, period_id: period.id) %>
-            <%end%>
-          </td>
-        <%end%>
+        <th> </th>
+        <th>月</th>
+        <th>火</th>
+        <th>水</th>
+        <th>木</th>
+        <th>金</th>
+        <th>土</th>
+        <th>日</th>
       </tr>
-    <%end%>
-  </table>
+      <%Period.all.each do |period|%>
+        <tr>
+          <th><%=period.name%></th>
+          <%DayOfTheWeek.all.each do |day_of_the_week|%>
+              <%if TimetableCell.where(day_of_the_week_id: day_of_the_week.id, period_id: period.id, timetable_id:params_int(params[:id])).present?%>
+                <td class="timetable_subject">
+                  <%@subject1=subject_finder(day_of_the_week.id,period.id,params_int(params[:id]))%>
+                  <%=link_to @subject1,edit_timetable_cell_content_path(day_of_the_week_id:day_of_the_week.id,period_id:period.id)%>
+                </td>
+              <%else%>
+                <td class="timetable_blank" data-week=<%=day_of_the_week.id%> data-period=<%=period.id%>>
+                  <%=link_to '__',new_timetable_cell_content_path(day_of_the_week_id:day_of_the_week.id,period_id:period.id)%>
+                </td>
+              <%end%>
+          <%end%>
+        </tr>
+      <%end%>
+    </table>
+  </div>
+  <%= javascript_include_tag 'timetable_cell.js', 'data-turbolinks-track': 'reload' %>
+
 </div>
