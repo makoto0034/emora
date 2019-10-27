@@ -28,7 +28,7 @@
         <div class="post_content">
           <div class="post_content_header">
             <%=post.created_at.strftime("%m月%d日 %H:%M")%>　
-            掲示板名：<%=link_to post.message_board.name,message_boards_talks_path(post.message_board.id)%>
+            掲示板名：<%=link_to post.message_board.name,message_boards_talks_path(post.message_board.id,category_id:post.message_board.category.id)%>
           </div>
           <div class="post_content_body">
             <%=post.content%>

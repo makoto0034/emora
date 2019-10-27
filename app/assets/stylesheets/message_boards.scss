@@ -26,3 +26,21 @@
   transform: translateY(4px);/*下に動く*/
   border-bottom: none;/*線を消す*/
 }
+
+.messageboard_container{
+  text-align:center;
+}
+
+
+.messageboard_container input[type="text"],select{
+  height:2rem;
+}
+
+.messageboard_container textarea{
+  border-radius:5px;
+  margin-left:45px;
+}
+
+.messageboard_detail{
+  margin-top:20px;
+}

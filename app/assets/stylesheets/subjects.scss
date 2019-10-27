@@ -47,6 +47,9 @@
   width:300px;
 }
 
+.search_field:focus::placeholder {
+  color: transparent;
+}
 
 .subject_show table{
   margin-top:50px;

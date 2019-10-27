@@ -1,10 +1,16 @@
-
-<%=form_tag(message_boards_path) do %>
-  <input type="text" name="name" placeholder="掲示板の名前を入力してください">
-  <select name="category_id">
-    <%@categories.each do |category|%>
-      <option value=<%=category.id%>><%=category.name%></option>
+<div class="messageboard_new">
+  <h1>掲示板新規作成</h1>
+    <%=form_tag(message_boards_path,:class => 'messageboard_container') do %>
+      <input type="text" name="name" placeholder="掲示板の名前">
+      <select name="category_id">
+        <%@categories.each do |category|%>
+          <option value=<%=category.id%>><%=category.name%></option>
+        <%end%>
+      </select>
+      <div class="messageboard_detail">
+        <h2>掲示板の詳細</h2>
+        <textarea name="detail" rows="5" cols="40"></textarea>
+        <input type="submit" value="作成">
+      </div>
     <%end%>
-  </select>
-  <input type="submit" value="作成">
-<%end%>
+</div>

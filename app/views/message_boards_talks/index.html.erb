@@ -1,48 +1,59 @@
 <div class="message_board_talk_index">
-  <h1><%=@message_board.name%></h1>
   <div class="message_board_list">
     <h4>他の掲示板</h4>
     <ul>
       <%@message_boards.each do |message_board|%>
         <li>
-          <%=link_to message_board.name,message_boards_talks_path(message_board.id)%>
+          <%=link_to message_board.name,message_boards_talks_path(message_board.id,category_id:message_board.category.id)%>
         </li>
       <%end%>
     </ul>
   </div>
-  <div class="line-bc">
-    <h4>TALK</h4>
-    <%@posts.each do |post|%>
-      <%if post.user_id == current_user.id %>
-          <div class="mycomment">
-            <p>
-              <%=post.content%>
-            </p>
-          </div>
-      <%else%>
-          <div class="balloon6">
-            <div class="faceicon">
-                <% if post.user.avatar.attached?%>
-                    <%=image_tag url_for(post.user.avatar),:size =>"50x50" ,class: "avatar"%>
-                <%else%>
-                  <%=image_tag "face1.jpg" ,:size =>"50x50" ,class: "avatar" %>
-                <%end%>
-              </div>
-              <div class="chatting">
-                <div class="says">
+  <div class="message_board_container">
+    <div class="line-bc">
+      <div class="message_board_header">
+        <h1><%=@message_board.name%></h1>
+        <%=@message_board.detail%>
+      </div>
+      <div class="message_board_body">
+        <h4>TALK画面</h4>
+        <%if @posts.empty? %>
+          <p>まだ一度も投稿がありません</p>
+        <%else%>
+          <%@posts.each do |post|%>
+            <%if post.user_id == current_user.id %>
+                <div class="mycomment">
                   <p>
                     <%=post.content%>
                   </p>
                 </div>
-              </div>
-            </div>
+            <%else%>
+                <div class="balloon6">
+                  <div class="faceicon">
+                      <% if post.user.avatar.attached?%>
+                          <%=image_tag url_for(post.user.avatar),:size =>"50x50" ,class: "avatar"%>
+                      <%else%>
+                        <%=image_tag "face1.jpg" ,:size =>"50x50" ,class: "avatar" %>
+                      <%end%>
+                    </div>
+                    <div class="chatting">
+                      <div class="says">
+                        <p>
+                          <%=post.content%>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+              <%end%>
+            <%end%>
         <%end%>
-      <%end%>
+      </div>
       <div class="message_board_talk_input">
         <%=form_tag(posts_path(params[:id]))do%>
-          <textarea name="content" rows="5" cols="55"></textarea>
+          <textarea name="content" rows="5"></textarea>
           <input type="submit" value="投稿">
-      <%end%>
+        <%end%>
       </div>
     </div>
+  </div>
 </div>

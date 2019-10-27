@@ -67,6 +67,7 @@ ActiveRecord::Schema.define(version: 2019_10_20_085647) do
 
   create_table "message_boards", force: :cascade do |t|
     t.string "name"
+    t.string "detail"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "category_id"
