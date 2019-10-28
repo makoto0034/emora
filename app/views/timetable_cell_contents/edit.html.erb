@@ -1,4 +1,5 @@
 <div class="table-responsive">
+  <%=link_to "戻る",new_timetable_cell_path(params[:id])%>
   <table class="table table-bordered table-hover">
     <thead>
       <tr>
@@ -12,7 +13,11 @@
         <tr>
           <td><%=link_to subject.name,subject_path(subject.id)%></td>
           <td><%=subject.subject_code%></td>
-          <td><%=link_to "更新",timetable_cell_path(subject_id:subject.id),:method => :put%></td>
+          <td>
+            <%=link_to(timetable_cell_path(subject_id:subject.id),:method => :put)do%>
+              <i class="fas fa-edit"></i>
+            <%end%>
+          </td>
         </tr>
       <%end%>
     </tbody>

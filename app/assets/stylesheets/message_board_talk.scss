@@ -123,12 +123,15 @@
   float:left;
 }
 
-.message_board_talk_input input[type="submit"]{
+.message_board_talk_input button[type="submit"]{
   width:20%;
+  margin-bottom:20px;
   float:left;
+  font-weight: bold;
+  font-size:20px;
 }
 
-.message_board_talk_input input[type="submit"],.message_board_talk_input textarea{
+.message_board_talk_input button[type="submit"],.message_board_talk_input textarea{
   height:110px;
   border:none;
 }

@@ -49,9 +49,9 @@
         <%end%>
       </div>
       <div class="message_board_talk_input">
-        <%=form_tag(posts_path(params[:id]))do%>
+        <%=form_tag(posts_path(params[:id],category_id:params[:category_id]))do%>
           <textarea name="content" rows="5"></textarea>
-          <input type="submit" value="投稿">
+          <button type="submit">投稿</button>
         <%end%>
       </div>
     </div>

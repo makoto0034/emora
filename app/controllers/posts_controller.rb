@@ -6,6 +6,6 @@ class PostsController < ApplicationController
       user_id:current_user.id
     )
     @post.save!
-    redirect_to(message_boards_talks_path(params[:id]))
+    redirect_to(message_boards_talks_path(params[:id],category_id:params[:category_id]))
   end
 end

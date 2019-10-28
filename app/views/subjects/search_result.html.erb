@@ -3,6 +3,7 @@
 
     <%else%>
       <%if @subjects.first == nil or @subjects == ""%>
+          <%=link_to'検索画面に戻る','/subjects/search',class:'back'%>
           <p>検索結果は０件です</p>
       <%else%>
 
