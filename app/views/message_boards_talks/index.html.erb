@@ -48,12 +48,10 @@
             <%end%>
         <%end%>
       </div>
-      <div class="message_board_talk_input">
-        <%=form_tag(posts_path(params[:id],category_id:params[:category_id]))do%>
-          <textarea name="content" rows="5"></textarea>
-          <button type="submit">投稿</button>
-        <%end%>
-      </div>
+      <%=form_tag(posts_path(params[:id],category_id:params[:category_id]),class:"message_board_talk_input")do%>
+        <textarea name="content" rows="5"></textarea>
+        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+      <%end%>
     </div>
   </div>
 </div>

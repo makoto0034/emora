@@ -41,9 +41,13 @@
                     </div>
                  </div>
               <% else %>
-                <ul class="logout_list">
-                  <li><%=link_to"ログイン",new_user_session_path,class:"login_var"%></li>
+                <ul class="logout_list">    
                   <li><%=link_to"新規登録",new_user_registration_path,class:"login_var"%></li>
+                  <li>
+                    <%=link_to(new_user_session_path,class:"login_var") do%>
+                      <i class="fas fa-sign-in-alt"></i>
+                    <%end%>
+                  </li>
                   <li>お問い合わせ</li>
                 </ul>
               <% end %>
