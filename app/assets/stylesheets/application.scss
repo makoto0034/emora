@@ -164,4 +164,8 @@ table{
   border-radius: 0.25rem
 }
 
-/*index*/
+@media screen and (max-width:500px){
+  #nav-content{
+    width:220px;
+  }
+}
