@@ -158,3 +158,9 @@
   letter-spacing: 0;
   font-size:3vw;
 }
+
+@media screen and (max-width:410px){
+  .message_board_talk_input textarea{
+  width:75%;
+  }
+}
