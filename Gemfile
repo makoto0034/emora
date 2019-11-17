@@ -70,3 +70,6 @@ gem "webpacker"
 
 gem 'bootstrap', '~> 4.1.1'
 gem 'jquery-rails'
+
+gem 'devise-i18n'
+gem 'devise-i18n-views'
