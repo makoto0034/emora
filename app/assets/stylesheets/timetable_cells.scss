@@ -2,17 +2,19 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .timetable_cell_new{
-  width:100%;
+  width:80%;
   margin:0 auto;
 }
 
 .timetable_cell_new .timetable table{
   table-layout: fixed;
+  width:100%;
+  height:100%;
 }
 
 .timetable_cell_new table td{
-  width:20px;
-  height:100px;
+  width:5%;
+  height:5vh;
 }
 
 .timetable_cell_new table td a{
@@ -22,5 +24,20 @@
 }
 
 .timetable_cell_new .timetable_subject{
-    font-size:2vw;
+    font-size:1vw;
+}
+
+@media screen and (max-width:660px){
+  .timetable_cell_new{
+    width:100%;
+  }
+  .timetable_cell_new .timetable_subject{
+    font-size:1px;
+  }
+
+  .timetable_cell_new table td{
+    width:5%;
+    height:2vh;
+  }
+
 }

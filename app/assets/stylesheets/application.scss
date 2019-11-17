@@ -15,6 +15,9 @@
  */
 @import "bootstrap";
 
+.entire{
+  margin-top:50px;
+}
 body{
   margin:0;
   padding:0;
@@ -140,6 +143,25 @@ header{
 
 table{
   text-align: center;
+}
+
+.notice,.alert,.success{
+  margin:0;
+  text-align: center;
+  font-weight:bold;
+}
+
+.alert{
+  background:tomato;
+}
+
+.success{
+  background:#1e90ff;
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem
 }
 
 /*index*/

@@ -41,7 +41,7 @@
                     </div>
                  </div>
               <% else %>
-                <ul class="logout_list">    
+                <ul class="logout_list">
                   <li><%=link_to"新規登録",new_user_registration_path,class:"login_var"%></li>
                   <li>
                     <%=link_to(new_user_session_path,class:"login_var") do%>
@@ -55,8 +55,14 @@
         </div>
       </div>
     </header>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-    <%= yield %>
+    <%if flash[:notice] or flash[:alert]%>
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+    <%elsif flash[:success]%>
+      <p class="success"><%= flash[:success] %></p>
+    <%end%>
+    <p class="entire">
+      <%= yield %>
+    </p>
   </body>
 </html>

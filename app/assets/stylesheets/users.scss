@@ -2,9 +2,20 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.user_show{
+  width:80%;
+  margin:0 auto;
+  display: flex;
+}
 
+.user_show .user_profile{
+  width:40%;
+}
+.user_show .user_post_list{
+  width:60%;
+}
 
-.user_avatar,.user_profile{
+.user_avatar,.user_introduce{
   text-align: center;
 }
 
@@ -12,17 +23,7 @@
   border-radius: 75px;
 }
 
-.user_show{
-  width:80%;
-  margin:0 auto;
-}
-
-
-.user_show #post_list{
-  width:40%;
-}
-
-.user_show .post_content{
+.user_show .user_post_list .post_content{
   background: #E6ECF0;
   box-shadow: 0 0 5px gray;
   border-radius: 5px;
@@ -30,19 +31,18 @@
   width:80%;
   margin:0 auto;
   margin-top: 20px;
-
 }
 
-.user_show .user_detail{
-  display: inline-block;
-  vertical-align: top;
-}
 
-.user_show .user_detail h2{
+.user_show .user_post_list h2{
   text-align: center;
 }
 
-.user_show .user_detail .user_profile{
+.user_show .user_profile h2{
+  text-align:center;
+}
+
+.user_show .user_introduce{
   background:#E6ECF0;
   width: 100%;
   height: 20vh;
@@ -61,4 +61,22 @@
 
 .user_edit .profile_edit{
   text-align: center;
+}
+
+.user_edit textarea{
+  width:60%;
+}
+
+.user_edit textarea, .user_edit .input[type="submit"]{
+  vertical-align: bottom;
+}
+
+@media screen and (max-width:470px){
+  .user_show{
+    width:100%;
+  }
+
+  .user_show .user_profile{
+    margin-left:10px;
+  }
 }

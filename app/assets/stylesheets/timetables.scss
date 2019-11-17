@@ -5,3 +5,11 @@
   width:80%;
   margin:0 auto;
 }
+
+.timetables_new{
+  width:80%;
+  margin:0 auto;
+}
+.timetable_new_box input[type="text"]:focus::placeholder{
+  color:transparent;
+}

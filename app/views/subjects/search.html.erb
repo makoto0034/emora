@@ -2,8 +2,16 @@
   <div class="search_box">
     <h1>シラバス検索</h1>
       <%= form_tag('/subjects/search_result',:method => 'get',:class => 'search_container') do%>
-        <%=text_field_tag :search,'',class:"search_field",placeholder:"検索したい科目を入力してください"%>
-        <button type="submit"><i class="fas fa-search"></i></button>
+        <div class="top_input">
+          <%=text_field_tag :name,'',class:"search_field",placeholder:"科目名"%>
+          <%=text_field_tag :instructor,'',class:"search_field",placeholder:"教員名"%>
+        </div>
+        <div class="under_input">
+          <%=text_field_tag :subject_code,'',class:"search_field",placeholder:"科目コード"%>
+        </div>
+        <div class="search_button">
+          <button type="submit"><i class="fas fa-search"></i></button>
+        </div>
       <%end%>
   </div>
 </div>

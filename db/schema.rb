@@ -90,7 +90,7 @@ ActiveRecord::Schema.define(version: 2019_10_20_085647) do
   end
 
   create_table "posts", force: :cascade do |t|
-    t.string "content"
+    t.string "content", null: false
     t.integer "user_id"
     t.integer "message_board_id"
     t.datetime "created_at", null: false
