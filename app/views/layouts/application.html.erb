@@ -25,7 +25,7 @@
                     <label id="nav-open" for="nav-input"><span></span></label>
                     <label class="nav-unshown" id="nav-close" for="nav-input"></label>
                     <div id="nav-content">
-                      <ul>
+                      <ul class="signed_in_list">
                         <li>
                           <i class="fas fa-user"></i> <%=link_to current_user.name,user_path(current_user)%>
                           <%=link_to destroy_user_session_path, method: :delete, class:"login_var" do %>
@@ -54,8 +54,9 @@
         </div>
       </div>
     </header>
-    <%if flash[:notice] or flash[:alert]%>
+    <%if flash[:notice] %>
       <p class="notice"><%= notice %></p>
+    <%elsif flash[:alert]%>
       <p class="alert"><%= alert %></p>
     <%elsif flash[:success]%>
       <p class="success"><%= flash[:success] %></p>

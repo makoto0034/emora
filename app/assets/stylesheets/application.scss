@@ -24,7 +24,7 @@ body{
   background: #FAFAFA;
 }
 header{
-  background: #9E76B4;
+  background: #a29bfe;
   height:12vh;
   font-size:20px;
   font-weight:bold;
@@ -151,21 +151,37 @@ table{
   font-weight:bold;
 }
 
-.alert{
-  background:tomato;
-}
-
-.success{
-  background:#1e90ff;
+.notice{
+  background:#55efc4;
   position: relative;
   padding: 0.75rem 1.25rem;
   margin-bottom: 1rem;
   border: 1px solid transparent;
-  border-radius: 0.25rem
+}
+
+.alert{
+  background:#ff6b6b;
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+}
+
+.success{
+  background:#55efc4;
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
 }
 
 @media screen and (max-width:500px){
   #nav-content{
     width:220px;
+  }
+
+  header .global_nav .logout_list li{
+    font-size:12px;
+    padding:5px;
   }
 }
