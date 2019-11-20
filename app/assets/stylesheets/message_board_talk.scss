@@ -162,7 +162,8 @@
 
 @media screen and (max-width:410px){
   .message_board_talk_input textarea{
-  width:75%;
+    width:75%;
+    border-radius:0;
   }
   .message_board_talk_input button[type="submit"]{
     border-radius:0;
@@ -172,5 +173,6 @@
   }
   .message_board_container{
     width:100%;
+    margin-bottom:20px;
   }
 }
