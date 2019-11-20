@@ -10,9 +10,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><%=button_to"削除",timetable_cell_path(
+        <td><%=link_to"削除",timetable_cell_path(
         day_of_the_week_id:params[:day_of_the_week_id],
-        period_id:params[:period_id],:method=> :delete)%>
+        period_id:params[:period_id]),:method=> :delete %>
       </td>
       </tr>
       <% @subjects.each do |subject|%>
