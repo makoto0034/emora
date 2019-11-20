@@ -2,7 +2,8 @@
   "name": "emora",
   "private": true,
   "dependencies": {
-    "@rails/webpacker": "^4.0.7"
+    "@rails/webpacker": "^4.0.7",
+    "rails-ujs": "^5.2.3"
   },
   "devDependencies": {
     "webpack-dev-server": "^3.8.0"

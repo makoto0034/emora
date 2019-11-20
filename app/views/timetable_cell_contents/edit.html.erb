@@ -5,16 +5,24 @@
       <tr>
         <th>名前</th>
         <th>コード</th>
-        <th>op1</th>
+        <th>更新</th>
       </tr>
     </thead>
     <tbody>
+      <tr>
+        <td><%=button_to"削除",timetable_cell_path(
+        day_of_the_week_id:params[:day_of_the_week_id],
+        period_id:params[:period_id],:method=> :delete)%>
+      </td>
+      </tr>
       <% @subjects.each do |subject|%>
         <tr>
           <td><%=link_to subject.name,subject_path(subject.id)%></td>
           <td><%=subject.subject_code%></td>
           <td>
-            <%=link_to(timetable_cell_path(subject_id:subject.id),:method => :put)do%>
+            <%=link_to(timetable_cell_path(subject_id:subject.id,
+            day_of_the_week_id:params[:day_of_the_week_id],
+            period_id:params[:period_id]),:method => :put)do%>
               <i class="fas fa-edit"></i>
             <%end%>
           </td>

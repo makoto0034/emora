@@ -14,9 +14,23 @@ class TimetableCellsController < ApplicationController
   end
 
   def update
-    @timetable_cell=TimetableCell.find_by(timetable_id:params[:id])
+    @timetable_cell=TimetableCell.find_by(
+      day_of_the_week_id:params_int(params[:day_of_the_week_id]),
+      period_id:params_int(params[:period_id]),
+      timetable_id:params_int(params[:id])
+    )
     @timetable_cell.subject_id = params[:subject_id]
     @timetable_cell.save!
+    redirect_to(new_timetable_cell_path(params[:id]))
+  end
+
+  def destroy
+    @timetable_cell=TimetableCell.find_by(
+    day_of_the_week_id:params_int(params[:day_of_the_week_id]),
+    period_id:params_int(params[:period_id]),
+    timetable_id:params_int(params[:id])
+  )
+    @timetable_cell.destroy
     redirect_to(new_timetable_cell_path(params[:id]))
   end
 

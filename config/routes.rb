@@ -14,7 +14,7 @@ Rails.application.routes.draw do
   end
   resources :timetable, only: %i()do
     member do
-      resources :timetable_cells, only:%i(index create new update)
+      resources :timetable_cells,only: %i(index create new edit destroy)
     end
   end
 

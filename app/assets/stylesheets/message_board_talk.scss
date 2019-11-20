@@ -149,6 +149,8 @@
   height:100%;
   display: table-cell;
   vertical-align: top;
+  // -webkit-appearance: none;
+   border-radius: 0;
 }
 
 .message_board_talk_input button[type="submit"] i{
