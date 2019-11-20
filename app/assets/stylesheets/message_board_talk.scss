@@ -149,8 +149,7 @@
   height:100%;
   display: table-cell;
   vertical-align: top;
-  // -webkit-appearance: none;
-   border-radius: 0;
+  border-radius: 0;
 }
 
 .message_board_talk_input button[type="submit"] i{
@@ -164,5 +163,14 @@
 @media screen and (max-width:410px){
   .message_board_talk_input textarea{
   width:75%;
+  }
+  .message_board_talk_input button[type="submit"]{
+    border-radius:0;
+  }
+  .message_board_talk_index .message_board_list{
+    display:none;
+  }
+  .message_board_container{
+    width:100%;
   }
 }
