@@ -147,10 +147,12 @@
   border:solid #000;
   border-width:0 1px 0 0;
 }
+
 .message_board_submit_button{
   width:20%;
   height:100%;
 }
+
 .message_board_talk_input button[type="submit"]{
   padding:10px;
   margin:0;
@@ -191,7 +193,9 @@
   .message_board_talk_index .message_board_list{
     display:none;
   }
-
+  .message_board_talk_index{
+    width:100%;
+  }
   .message_board_container{
     width:100%;
     margin-bottom:20px;
