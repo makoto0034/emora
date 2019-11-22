@@ -130,6 +130,7 @@
 }
 
 .message_board_talk_input{
+  display: flex;
   border: solid #000;
   border-width: 0 1px 1px 1px;
   box-sizing: border-box;
@@ -140,22 +141,23 @@
 .message_board_talk_input textarea{
   margin:0;
   padding:0;
-  width:78%;
+  width:80%;
   height:100%;
   border:none;
   border:solid #000;
   border-width:0 1px 0 0;
 }
-
+.message_board_submit_button{
+  width:20%;
+  height:100%;
+}
 .message_board_talk_input button[type="submit"]{
-  padding:0;
+  padding:10px;
   margin:0;
   line-height: 0;
   letter-spacing: 0;
-  width:20%;
+  width:100%;
   height:100%;
-  display: table-cell;
-  vertical-align: top;
   border-radius: 10px;;
   background:#000;
   border:none;
@@ -176,7 +178,6 @@
   }
 
   .message_board_talk_input textarea{
-    width:75%;
     border-radius:0;
   }
 

@@ -50,7 +50,10 @@
     </div>
     <%=form_tag(posts_path(params[:id],category_id:params[:category_id]),class:"message_board_talk_input")do%>
       <textarea name="content" rows="5" placeholder="メッセージを入力してください"></textarea>
-      <button type="submit"><i class="fas fa-paper-plane"></i></button>
+      <div class="message_board_submit_button">
+        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+      </div>
+
     <%end%>
   </div>
 </div>
