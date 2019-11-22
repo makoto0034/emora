@@ -16,7 +16,6 @@
         <%=@message_board.detail%>
       </div>
       <div class="message_board_body">
-        <h4>TALK画面</h4>
         <%if @posts.empty? %>
           <p>まだ一度も投稿がありません</p>
         <%else%>
@@ -50,7 +49,7 @@
       </div>
     </div>
     <%=form_tag(posts_path(params[:id],category_id:params[:category_id]),class:"message_board_talk_input")do%>
-      <textarea name="content" rows="5"></textarea>
+      <textarea name="content" rows="5" placeholder="メッセージを入力してください"></textarea>
       <button type="submit"><i class="fas fa-paper-plane"></i></button>
     <%end%>
   </div>

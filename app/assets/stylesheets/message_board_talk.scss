@@ -31,7 +31,6 @@
   font-size: 14px;
   border:solid 1px #fff;
   border-width: 0 0 0 1px;
-  background:#fffafa;
 }
 
 
@@ -90,6 +89,11 @@
   text-align:right;
 }
 
+.message_board_body .mycomment:first-child{
+  margin:0px;
+  padding-top:10px;
+}
+
 .mycomment p {
   display: inline-block;
   position: relative;
@@ -121,12 +125,15 @@
   border: solid 1px #000;
   border-width: 0 1px 1px 1px;
   min-height: 20vh;
+  margin:0;
+  padding:0;
 }
 
 .message_board_talk_input{
   border: solid #000;
   border-width: 0 1px 1px 1px;
-  height:128px;
+  box-sizing: border-box;
+  height:100px;
   width:100%;
 }
 
@@ -141,38 +148,53 @@
 }
 
 .message_board_talk_input button[type="submit"]{
-  margin:0;
   padding:0;
+  margin:0;
   line-height: 0;
   letter-spacing: 0;
   width:20%;
   height:100%;
   display: table-cell;
   vertical-align: top;
-  border-radius: 0;
+  border-radius: 10px;;
+  background:#000;
+  border:none;
 }
 
 .message_board_talk_input button[type="submit"] i{
   margin:0;
   padding:0;
+  color:#fff;
   line-height: 0;
   letter-spacing: 0;
   font-size:3vw;
 }
 
 @media screen and (max-width:410px){
+  .message_board_talk_input{
+    height:50px;
+  }
+
   .message_board_talk_input textarea{
     width:75%;
     border-radius:0;
   }
+
+    .message_board_talk_input textarea::placeholder{
+      font-size:15px;
+    }
+
   .message_board_talk_input button[type="submit"]{
     border-radius:0;
   }
+
   .message_board_talk_index .message_board_list{
     display:none;
   }
+
   .message_board_container{
     width:100%;
     margin-bottom:20px;
   }
+
 }
