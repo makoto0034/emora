@@ -19,7 +19,7 @@
   text-align: center;
 }
 
-.avatar{
+.user_show .avatar{
   border-radius: 75px;
 }
 
@@ -38,6 +38,10 @@
   text-align: center;
 }
 
+.user_show .user_post_list h5{
+  text-align: center;
+  margin-top:30px;
+}
 .user_show .user_profile h2{
   text-align:center;
 }

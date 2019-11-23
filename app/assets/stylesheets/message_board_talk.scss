@@ -46,11 +46,18 @@
   width: 40px;
 }
 
-.balloon6 .faceicon img{
+.balloon6 .faceicon .avatar_link{
+  position: relative;
+  width:100%;
+  height: 100%;
+}
+.balloon6 .faceicon .avatar{
   width: 100%;
-  height: auto;
+  height: 100%;
   border-radius: 50%;
 }
+
+
 
 .balloon6 .chatting {
   width: 100%;
@@ -90,8 +97,12 @@
 }
 
 .message_board_body .mycomment:first-child{
-  margin:0px;
   padding-top:10px;
+}
+
+.message_board_body .balloon6:first-child{
+  padding-top:10px;
+  margin-top:0;
 }
 
 .mycomment p {

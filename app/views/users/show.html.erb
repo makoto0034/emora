@@ -1,19 +1,22 @@
 <div class="user_show">
   <div class="user_profile">
     <div class="user_avatar">
-      <% if current_user.avatar.attached?%>
-          <%=image_tag url_for(current_user.avatar),:size =>"150x150" ,class: "avatar"%>
+      <% if @user.avatar.attached?%>
+          <%=image_tag url_for(@user.avatar),:size =>"150x150" ,class: "avatar"%>
       <%else%>
         <%=image_tag "face1.jpg" ,:size =>"150x150" ,class: "avatar" %>
       <%end%>
     </div>
-    <h2><%=current_user.name%>
-      <%=link_to(edit_user_path) do%>
-        <i class="fas fa-user-cog"></i>
-      <%end%>
+    <h2><%=@user.name%>
+      <%if @user.id ==current_user%>
+        <%=link_to(edit_user_path) do%>
+          <i class="fas fa-user-cog"></i>
+      <!-- 友達追加ボタン予定     -->
+        <%end%>
+      <%end%>  
     </h2>
     <div class="user_introduce">
-      <%=current_user.profile%>
+      <%=@user.profile%>
     </div>
   </div>
   <div class="user_post_list">

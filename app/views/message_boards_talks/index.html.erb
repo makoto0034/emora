@@ -30,9 +30,13 @@
                 <div class="balloon6">
                   <div class="faceicon">
                       <% if post.user.avatar.attached?%>
-                          <%=image_tag url_for(post.user.avatar),:size =>"50x50" ,class: "avatar"%>
+                          <%=link_to user_path(post.user_id),class:"avatar_link" do%>
+                            <%=image_tag url_for(post.user.avatar) ,class: "avatar"%>
+                          <%end%>
                       <%else%>
-                        <%=image_tag "face1.jpg" ,:size =>"50x50" ,class: "avatar" %>
+                        <%=link_to user_path(post.user_id),class:"avatar_link" do%>
+                          <%=image_tag "face1.jpg" ,:size =>"50x50" ,class: "avatar" %>
+                        <%end%>
                       <%end%>
                     </div>
                     <div class="chatting">
