@@ -8,12 +8,12 @@
       <%end%>
     </div>
     <h2><%=@user.name%>
-      <%if @user.id ==current_user%>
+      <%if @user.id ==current_user.id%>
         <%=link_to(edit_user_path) do%>
           <i class="fas fa-user-cog"></i>
       <!-- 友達追加ボタン予定     -->
         <%end%>
-      <%end%>  
+      <%end%>
     </h2>
     <div class="user_introduce">
       <%=@user.profile%>
