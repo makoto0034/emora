@@ -8,6 +8,77 @@ body{
   margin:0;
 }
 
+.main-home{
+  width:100%;
+}
+
+.emora-description{
+  width:80%;
+  margin:0 auto;
+}
+
+.emora-introduction{
+  width:80%;
+  margin:0 auto;
+  margin-top: 20px;
+}
+
+.welcome{
+  position: relative;
+  width:100%;
+}
+
+.welcome h1{
+  font-size:80px;
+  position: absolute;
+  font-weight:bold;
+  top:50%;
+  left:50%;
+  -ms-transform: translate(-50%,-50%);
+   -webkit-transform: translate(-50%,-50%);
+   transform: translate(-50%,-50%);
+   margin:0;
+   padding:0;
+
+}
+
+.welcome h2{
+  position: absolute;
+  top:60%;
+  left:50%;
+  -ms-transform: translate(-50%,-60%);
+  -webkit-transform: translate(-50%,-60%);
+  transform: translate(-50%,-60%);
+}
+
+.title-img{
+  width:100%;
+  height: 65vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+}
+
+.emora-introduction h1{
+  font-weight: bold;
+  text-align: center;
+}
+
+.emora-introduction p{
+  font-size:20px;
+  letter-spacing: 10px;
+  line-height: 1.5em;
+}
+
+.emora-introduction .only{
+  font-weight: bold;
+}
+
+.emora-description h1{
+  font-weight: bold;
+}
+
 .main-img{
     width:170px;
     height:200px;
@@ -26,16 +97,11 @@ body{
 
 .main_content{
   margin-top:50px;
+  background: #fafafa;
+  padding:10px;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.4)
 }
 
-.main-home{
-  width:100%;
-}
-
-.mainInner{
-  width:80%;
-  margin:0 auto;
-}
 
 .mainInner .main_content a{
   color:#000;
@@ -47,4 +113,29 @@ body{
 
 .mainInner .main_content a:link{
   color:#000;
+}
+
+@media screen and (max-width:640px){
+  .welcome h2{
+    font-size:25px;
+  }
+}
+
+@media screen and (max-width:500px){
+  .welcome h1{
+    font-size:70px;
+  }
+  .welcome h2{
+    font-size:20px;
+  }
+}
+
+@media screen and (max-width:400px){
+  .welcome h1{
+    font-size:60px;
+  }
+
+  .welcome h2{
+    font-size:15px;
+  }
 }
