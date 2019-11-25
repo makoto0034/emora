@@ -181,21 +181,90 @@ table{
   margin-bottom: 1rem;
   border: 1px solid transparent;
 }
+//deviseのcss
 
 .sign_in_box{
-  width:80%;
+  width:100%;
   margin:0 auto;
+}
+
+.sign_in_box input[type="email"],.sign_in_box input[type="password"]{
+  margin:10px;
+  padding:5px;
+  box-shadow: none;
+  border:solid #E9E9E9;
+  border-width:0 0 2px 0;
+  background: #fff;
+}
+
+.sign_in_box input[type="email"]:focus::placeholder,.sign_in_box input[type="password"]:focus::placeholder{
+  color:#fff;
 }
 
 .sign_in_box_inner{
-  width:70%;
+  width:95%;
   margin: 0 auto;
+  // border:solid #000;
+  // border-width:1px 1px 1px 1px;
+  border-radius: 10px;
+  padding:10px;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.4);
 }
 
-.sign_in_box{
+.welcome-image{
+  width:100%;
+}
+
+.sign_in_image,.sign_in_container{
+  width:50%;
+}
+
+.sign_in_container{
+  text-align: center;
+  position: relative;
+  border:solid #E9E9E9;
+  border-width:0 0 0 2px;
+}
+
+.sign_in_containerInner{
+  position: absolute;
+  width:100%;
+  top:40%;
+  left:50%;
+  -ms-transform: translate(-50%,-40%);
+  -webkit-transform: translate(-50%,-40%);
+  transform: translate(-50%,-40%);
+}
+
+.sign_in_containerInner h2{
+  font-weight: bold;
+}
+
+.sign_in_containerInner input[type="submit"]{
+  border:none;
+  background:#000;
+  color:#fff;
+  padding:10px;
+  transition: 0.3s ease;
+}
+
+.sign_in_containerInner input[type="submit"]:hover{
+  background:purple;
+}
+
+.sign_in_containerInner .devise-links{
+  margin-top:30px;
+}
+
+.sign_in_box_inner{
+  display: flex;
+}
+
+.sign_up_box{
   width:80%;
   margin:0 auto;
 }
+
 .sign_up_box_inner{
   width:70%;
   margin: 0 auto;
@@ -209,6 +278,36 @@ table{
   header .global_nav .logout_list li{
     font-size:12px;
     padding:5px;
+  }
+}
+
+@media screen and (max-width:830px){
+  .sign_in_box_inner{
+    display: block;
+    box-shadow:none;
+  }
+
+  .sign_in_image{
+    width:100%;
+  }
+
+  .welcome-image{
+    height:500px;
+    border-radius: 50%;
+  }
+
+  .sign_in_container{
+    width:100%;
+    border:none;
+    margin-top:30px;
+    margin-bottom:30px;
+  }
+
+  .sign_in_containerInner{
+    position: relative;
+    top:0;
+    left:0;
+    transform: none;
   }
 }
 
