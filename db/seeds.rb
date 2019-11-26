@@ -61,6 +61,67 @@ Category.create(name:"悩み")
 Category.create(name:"アニメ")
 Category.create(name:"スポーツ")
 
+# Faculty.create(name:"文学部",parent_id:1)
+# Faculty.create(name:"経済学部",parent_id:2)
+# Faculty.create(name:"理学部",parent_id:3)
+# Faculty.create(name:"社会学部",parent_id:4)
+# Faculty.create(name:"法学部",parent_id:5)
+# Faculty.create(name:"経営学部",parent_id:6)
+# Faculty.create(name:"異文化コミュニケーション学部",parent_id:7)
+# Faculty.create(name:"観光学部",parent_id:8)
+# Faculty.create(name:"コミュニティ福祉学部",parent_id:9)
+# Faculty.create(name:"現代心理学部",parent_id:10)
+# Faculty.create(name:"GLAP",parent_id:11)
+#
+# Course.create(name:"キリスト教文学科",parent_id:1)
+# Course.create(name:"文学科 英米文学専修",parent_id:1)
+# Course.create(name:"文学科 ドイツ文学専修",parent_id:1)
+# Course.create(name:"文学科 フランス文学専修",parent_id:1)
+# Course.create(name:"文学科 日本文学専修",parent_id:1)
+# Course.create(name:"文学科 文芸・思想専修",parent_id:1)
+# Course.create(name:"史学科",parent_id:1)
+# Course.create(name:"教育学科",parent_id:1)
+#
+# Course.create(name:"経済学科",parent_id:2)
+# Course.create(name:"経済政策学科",parent_id:2)
+# Course.create(name:"会計ファイナンス学科",parent_id:2)
+#
+# Course.create(name:"数学科",parent_id:3)
+# Course.create(name:"物理学科",parent_id:3)
+# Course.create(name:"科学科",parent_id:3)
+# Course.create(name:"生命理学科",parent_id:3)
+#
+# Course.create(name:"社会学科",parent_id:4)
+# Course.create(name:"現代文学学科",parent_id:4)
+# Course.create(name:"メディア社会学科",parent_id:4)
+#
+# Course.create(name:"法学科",parent_id:4)
+# Course.create(name:"国際ビジネス法学科",parent_id:4)
+# Course.create(name:"政治学科",parent_id:4)
+#
+# Course.create(name:"経営学科",parent_id:5)
+# Course.create(name:"国際経営学科",parent_id:5)
+#
+# Course.create(name:"異文化コミュニケーション学科",parent_id:6)
+#
+# Course.create(name:"観光学科",parent_id:7)
+# Course.create(name:"交流文化学科",parent_id:7)
+#
+# Course.create(name:"コミュニティ政策学科",parent_id:8)
+# Course.create(name:"福祉学科",parent_id:8)
+# Course.create(name:"スポーツウエルネス学科",parent_id:8)
+#
+# Course.create(name:"心理学科",parent_id:9)
+# Course.create(name:"映像身体学科",parent_id:9)
+#
+# Course.create(name:"GLAP",parent_id:10)
+
+
+
+
+
+
+
 
 data.each do |yaml|
   if yaml.title.nil?

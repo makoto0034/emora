@@ -22,7 +22,11 @@
   <div class="user_post_list">
     <h2>投稿一覧</h2>
     <% if @posts.empty? %>
-      <h5>まだ一度も投稿したことがありません<br>掲示板で投稿してみませんか？</h5>
+      <%if @user.id == current_user.id%>
+        <h5>まだ一度も投稿したことがありません<br>掲示板で投稿してみませんか？</h5>
+      <%else%>
+      <h5>このユーザーはまだ一度も投稿したことがありません</h5>
+      <%end%>
     <%else%>
       <%@posts.each do |post|%>
         <div class="post_content">
