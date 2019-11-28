@@ -54,6 +54,7 @@ header h1{
 .logout_list{
   margin-top:30px;
 }
+
 .logout_list li{
   display:inline;
   padding:10px;
@@ -70,6 +71,24 @@ header h1{
 
 .header_inner a:visited{
   color:#000;
+}
+
+.login_var{
+   position: relative;
+   display: inline-block;
+   font-weight: bold;
+   padding: 7px 10px 10px 10px;
+   text-decoration: none;
+   color: #FFF;
+   background: #a29bfe;
+   transition: .4s;
+}
+.login_var > span{
+  border-bottom: solid 2px #FFF;
+}
+
+.login_var:hover{
+  background: #a180dc;
 }
 
 #nav-drawer {

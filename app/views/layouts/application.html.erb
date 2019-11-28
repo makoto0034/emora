@@ -35,19 +35,21 @@
                         <li><%=link_to'時間割',timetables_path(current_user)%></li>
                         <li><%=link_to'掲示板',message_boards_path%></li>
                         <li><%=link_to"シラバス検索","/subjects/search"%></li>
-                        <li>お問い合わせ</li>
                       </ul>
                     </div>
                  </div>
               <% else %>
                 <ul class="logout_list">
-                  <li><%=link_to"新規登録",new_user_registration_path,class:"login_var"%></li>
                   <li>
-                    <%=link_to(new_user_session_path,class:"login_var") do%>
-                      <i class="fas fa-sign-in-alt"></i>
+                    <%=link_to(new_user_registration_path,class:"login_var") do%>
+                      <span>新規登録</span>
                     <%end%>
                   </li>
-                  <li>お問い合わせ</li>
+                  <li>
+                    <%=link_to(new_user_session_path,class:"login_var") do%>
+                      <span>ログイン</span>
+                    <%end%>
+                  </li>
                 </ul>
               <% end %>
           </nav>
