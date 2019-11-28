@@ -155,5 +155,10 @@ body{
 
   .welcome h2{
     font-size:15px;
+    top:60%;
+    left:50%;
+    -ms-transform: translate(-50%,-60%);
+    -webkit-transform: translate(-50%,-60%);
+    transform: translate(-50%,-60%);
   }
 }
