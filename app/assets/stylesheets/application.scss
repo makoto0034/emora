@@ -18,21 +18,26 @@
 .entire{
   margin-top:50px;
 }
+
 body{
   margin:0;
   padding:0;
   background: #fafafa;
   font-family: メイリオ, Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", "MS UI Gothic", Helvetica, Arial, sans-serif;
 }
+
 header{
-  background: #a29bfe;
+  background: #fafafa;
   height:12vh;
   font-size:20px;
   font-weight:bold;
+  border:solid #E9E9E9;
+  border-width: 0 0 5px 0;
 }
 
-header h1{
+header h1 a{
   font-weight: bold;
+  color:#a180dc;
 }
 
 
@@ -65,11 +70,19 @@ header h1{
   text-decoration: none;
 }
 
-.header_inner a:link{
+.header_title a:link{
+  color:#a180dc;
+}
+
+.header_title a:visited{
+  color:#a180dc;
+}
+
+.global_nav a:link{
   color:#000;
 }
 
-.header_inner a:visited{
+.global_nav a:visited{
   color:#000;
 }
 
@@ -77,15 +90,12 @@ header h1{
    position: relative;
    display: inline-block;
    font-weight: bold;
-   padding: 7px 10px 10px 10px;
+   padding:10px;
    text-decoration: none;
-   color: #FFF;
-   background: #a29bfe;
-   transition: .4s;
+   color: #000;
+   transition:0.4s;
 }
-.login_var > span{
-  border-bottom: solid 2px #FFF;
-}
+
 
 .login_var:hover{
   background: #a180dc;
@@ -178,10 +188,9 @@ table{
 }
 
 .notice{
-  background:#55efc4;
+  background:#fafafa;
   position: relative;
   padding: 0.75rem 1.25rem;
-  margin-bottom: 1rem;
   border: 1px solid transparent;
 }
 
@@ -189,15 +198,13 @@ table{
   background:#ff6b6b;
   position: relative;
   padding: 0.75rem 1.25rem;
-  margin-bottom: 1rem;
   border: 1px solid transparent;
 }
 
 .success{
-  background:#55efc4;
+  background:#fafafa;
   position: relative;
   padding: 0.75rem 1.25rem;
-  margin-bottom: 1rem;
   border: 1px solid transparent;
 }
 //deviseのcss
