@@ -16,7 +16,7 @@
 @import "bootstrap";
 
 .entire{
-  margin-top:50px;
+  margin-top:25px;
 }
 
 body{
@@ -190,23 +190,19 @@ table{
 .notice{
   background:#fafafa;
   position: relative;
-  padding: 0.75rem 1.25rem;
-  border: 1px solid transparent;
 }
 
 .alert{
   background:#ff6b6b;
   position: relative;
-  padding: 0.75rem 1.25rem;
-  border: 1px solid transparent;
 }
 
 .success{
   background:#fafafa;
   position: relative;
-  padding: 0.75rem 1.25rem;
-  border: 1px solid transparent;
 }
+
+
 //deviseのcss
 
 .sign_in_box{
