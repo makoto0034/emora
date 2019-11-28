@@ -28,7 +28,7 @@
                       <ul class="signed_in_list">
                         <li>
                           <i class="fas fa-user"></i> <%=link_to current_user.name,user_path(current_user)%>
-                          <%=link_to destroy_user_session_path, method: :delete, class:"login_var" do %>
+                          <%=link_to destroy_user_session_path, method: :delete, class:"logout_var" do %>
                             <i class="fas fa-sign-out-alt"></i>
                           <%end%>
                         </li>
