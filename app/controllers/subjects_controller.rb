@@ -17,5 +17,6 @@ class SubjectsController < ApplicationController
 
   def search_result
     @subjects = Subject.search(params[:name],params[:instructor],params[:subject_code])
+    @subjects = @subjects.page(params[:page]).per(50)
   end
 end

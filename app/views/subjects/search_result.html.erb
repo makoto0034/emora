@@ -9,6 +9,7 @@
 
       <%=link_to'検索画面に戻る','/subjects/search',class:'back'%>
       <div class="table-responsive">
+        <%= paginate @subjects %>
         <table class="table table-bordered table-hover">
           <thead>
             <tr>
@@ -25,6 +26,7 @@
             <%end%>
           </tbody>
         </table>
+        <%= paginate @subjects %>
       </div>
       <%end%>
     <%end%>

@@ -197,7 +197,7 @@ data.each do |yaml|
   yaml.textbook.each do |textbooks|
     begin
       if textbooks[:author] != nil
-        Textbok.create(
+        Textbook.create(
           author:textbooks[:author],
           title:textbooks[:book_title],
           publisher:textbooks[:publisher],
