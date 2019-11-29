@@ -15,7 +15,7 @@
       </tr>
       <%Period.all.each do |period|%>
         <tr>
-          <th><%=period.name%></th>
+          <th class="period_number"><%=period.name%></th>
           <%DayOfTheWeek.all.each do |day_of_the_week|%>
               <%if TimetableCell.where(day_of_the_week_id: day_of_the_week.id, period_id: period.id, timetable_id:params_int(params[:id])).present?%>
                 <td class="timetable_subject">
