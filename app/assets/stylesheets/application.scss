@@ -206,12 +206,14 @@ table{
 //deviseのcss
 
 .sign_in_box{
-  width:100%;
+  width:100vw;
+  height:100vh;
   margin:0 auto;
 }
 
 .sign_up_box{
-  width:100%;
+  width:100vw;
+  height:100vh;
   margin:0 auto;
 }
 
@@ -243,6 +245,7 @@ table{
 
 .sign_in_box_inner{
   width:95%;
+  height:90vh;
   margin: 0 auto;
   // border:solid #000;
   // border-width:1px 1px 1px 1px;
@@ -252,6 +255,7 @@ table{
 }
 .sign_up_box_inner{
   width:95%;
+  height:90vh;
   margin: 0 auto;
   // border:solid #000;
   // border-width:1px 1px 1px 1px;
