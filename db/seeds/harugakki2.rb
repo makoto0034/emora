@@ -13,6 +13,7 @@ data = open(Rails.root.join('db/seeds/yaml','harugakki2.yml'),'r:utf-8') { |f| Y
 require Rails.root.join('vendor', 'schedule_converter')
 
 data.each do |yaml|
+  p yaml.code
   if yaml.title.nil?
     subject = Subject.create(
       name:'',
@@ -47,13 +48,13 @@ data.each do |yaml|
     )
   end
 
-
   Evaluation.create(
     kind:yaml.evaluation["種類(Kind)"],
     portion:yaml.evaluation["割合(%)"],
     criteria:yaml.evaluation["基準(Criteria)"],
     subject:subject
   )
+
 
   author_reading = ""
   yaml.readings.each do |reading|
@@ -82,6 +83,7 @@ data.each do |yaml|
     end
   end
 
+
   author_textbooks = ""
   yaml.textbook.each do |textbooks|
     begin
@@ -109,21 +111,30 @@ data.each do |yaml|
     end
   end
 
-
   # p yaml.code
   # p yaml.schedule
-  schedules = yaml.schedule.split("\n")
-  schedules.each do |schedule|
-    semester = Semester.find_by(code: schedule_convert_semester_code(schedule))
-    day_of_the_week = DayOfTheWeek.find_by(code:schedule_convert_day_of_the_week_code(schedule))
-    period = Period.find_by(code:schedule_convert_period_code(schedule))
+  if yaml.schedule.nil?
     Schedule.create(
-      subject: subject,
-      semester: semester,
-      day_of_the_week: day_of_the_week,
-      period: period
+      subject:subject,
+      semester_id:17,
+      day_of_the_week_id:8,
+      period_id:10
     )
+  else
+    schedules = yaml.schedule.split("\n")
+    schedules.each do |schedule|
+      semester = Semester.find_by(code: schedule_convert_semester_code(schedule))
+      day_of_the_week = DayOfTheWeek.find_by(code:schedule_convert_day_of_the_week_code(schedule))
+      period = Period.find_by(code:schedule_convert_period_code(schedule))
+      Schedule.create(
+        subject: subject,
+        semester: semester,
+        day_of_the_week: day_of_the_week,
+        period: period
+      )
+    end
   end
+
 
   yaml.plan.each do |plan_key,plan_value|
       p plan_key

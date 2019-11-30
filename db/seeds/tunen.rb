@@ -20,6 +20,7 @@ DayOfTheWeek.create(name:"木" ,code:4)
 DayOfTheWeek.create(name:"金" ,code:5)
 DayOfTheWeek.create(name:"土" ,code:6)
 DayOfTheWeek.create(name:"日" ,code:7)
+DayOfTheWeek.create(name:"未定",code:8)
 
 Semester.create(name:"通年",code:1)
 Semester.create(name:"春学期",code:2)
@@ -48,6 +49,7 @@ Period.create(name:"G5",code:6)
 Period.create(name:"6",code:7)
 Period.create(name:"G6",code:8)
 Period.create(name:"7",code:9)
+Period.create(name:"未定",code:10)
 
 Category.create(name:"語学")
 Category.create(name:"旅行")
@@ -64,6 +66,7 @@ Category.create(name:"スポーツ")
 
 
 data.each do |yaml|
+  p yaml.code
   if yaml.title.nil?
     subject = Subject.create(
       name:'',
@@ -98,13 +101,13 @@ data.each do |yaml|
     )
   end
 
-
   Evaluation.create(
     kind:yaml.evaluation["種類(Kind)"],
     portion:yaml.evaluation["割合(%)"],
     criteria:yaml.evaluation["基準(Criteria)"],
     subject:subject
   )
+
 
   author_reading = ""
   yaml.readings.each do |reading|
@@ -133,6 +136,7 @@ data.each do |yaml|
     end
   end
 
+
   author_textbooks = ""
   yaml.textbook.each do |textbooks|
     begin
@@ -160,21 +164,30 @@ data.each do |yaml|
     end
   end
 
-
   # p yaml.code
   # p yaml.schedule
-  schedules = yaml.schedule.split("\n")
-  schedules.each do |schedule|
-    semester = Semester.find_by(code: schedule_convert_semester_code(schedule))
-    day_of_the_week = DayOfTheWeek.find_by(code:schedule_convert_day_of_the_week_code(schedule))
-    period = Period.find_by(code:schedule_convert_period_code(schedule))
+  if yaml.schedule.nil?
     Schedule.create(
-      subject: subject,
-      semester: semester,
-      day_of_the_week: day_of_the_week,
-      period: period
+      subject:subject,
+      semester_id:17,
+      day_of_the_week_id:8,
+      period_id:10
     )
+  else
+    schedules = yaml.schedule.split("\n")
+    schedules.each do |schedule|
+      semester = Semester.find_by(code: schedule_convert_semester_code(schedule))
+      day_of_the_week = DayOfTheWeek.find_by(code:schedule_convert_day_of_the_week_code(schedule))
+      period = Period.find_by(code:schedule_convert_period_code(schedule))
+      Schedule.create(
+        subject: subject,
+        semester: semester,
+        day_of_the_week: day_of_the_week,
+        period: period
+      )
+    end
   end
+
 
   yaml.plan.each do |plan_key,plan_value|
       p plan_key
