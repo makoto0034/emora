@@ -17,7 +17,7 @@
       </div>
       <div class="message_board_body">
         <%if @posts.empty? %>
-          <p>まだ一度も投稿がありません</p>
+          <p class="post_first_message">まだ一度も投稿がありません<br>最初の投稿をしましょう！</p>
         <%else%>
           <%@posts.each do |post|%>
             <%if post.user_id == current_user.id %>

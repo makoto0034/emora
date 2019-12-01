@@ -184,9 +184,10 @@
   font-size:3vw;
 }
 
-@media screen and (max-width:410px){
+@media screen and (max-width:550px){
   .message_board_talk_input{
-    height:50px;
+    height:8vh;
+    border-width:0 1px 1px 1px;
   }
 
   .message_board_talk_input textarea{
@@ -204,14 +205,29 @@
   .message_board_talk_index .message_board_list{
     display:none;
   }
+
   .message_board_talk_index{
-    width:90%;
-    height:100%;
+    width:100%;
+    height:100vh;
   }
+
   .message_board_container{
     width:100%;
-    height:100%;
+    height:100vh;
     margin-bottom:20px;
+  }
+
+  .message_board_header{
+    border-width:1px 0 1px 0;
+  }
+
+  .message_board_body{
+    height:60vh;
+    border-width:0 0 1px 0;
+  }
+
+  .post_first_message{
+    padding-top:20px;
   }
 
 }

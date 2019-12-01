@@ -8,6 +8,7 @@ class TimetableCellContentsController < ApplicationController
       @subjects = nil
     else
       @subjects = @schedules.map(&:subject)
+      @subjects = Kaminari.paginate_array(@subjects).page(params[:page]).per(50)
     end
   end
 
@@ -17,6 +18,7 @@ class TimetableCellContentsController < ApplicationController
       period_id:params_int(params[:period_id])
     )
     @subjects = @schedules.map(&:subject)
+    @subjects = Kaminari.paginate_array(@subjects).page(params[:page]).per(50)
   end
 
   def params_int(model_params)
