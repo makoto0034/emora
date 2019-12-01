@@ -54,7 +54,7 @@ def schedule_convert_day_of_the_week_code(schedule)
   elsif /Sun/  ===schedule
     7
   else
-    raise NameError('未定義の曜日です')
+    8
   end
 end
 
@@ -67,13 +67,17 @@ def schedule_convert_period_code(schedule)
     3
   elsif /４時限/ === schedule
     4
+  elsif /Ｇ５時限/ === schedule
+    6
   elsif /５時限/ === schedule
     5
+  elsif /Ｇ６時限/ === schedule
+    8
   elsif /６時限/ === schedule
-    6
-  elsif /７時限/ === schedule
     7
+  elsif /７時限/ === schedule
+    9
   else
-    raise NameError('未定義の時限です')
+    10
   end
 end

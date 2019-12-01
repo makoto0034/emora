@@ -122,6 +122,7 @@ data.each do |yaml|
     )
   else
     schedules = yaml.schedule.split("\n")
+
     schedules.each do |schedule|
       semester = Semester.find_by(code: schedule_convert_semester_code(schedule))
       day_of_the_week = DayOfTheWeek.find_by(code:schedule_convert_day_of_the_week_code(schedule))
