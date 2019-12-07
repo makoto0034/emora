@@ -27,14 +27,28 @@
                     <div id="nav-content">
                       <ul class="signed_in_list">
                         <li>
-                          <i class="fas fa-user"></i> <%=link_to current_user.name,user_path(current_user)%>
-                          <%=link_to destroy_user_session_path, method: :delete, class:"logout_var" do %>
-                            <i class="fas fa-sign-out-alt"></i>
+                          <%=link_to user_path(current_user) do%>
+                            <p><i class="fas fa-user"></i> <%=current_user.name%></p>
+                          <%end%>
+                          <%=link_to destroy_user_session_path, method: :delete do %>
+                            　<i class="fas fa-sign-out-alt"></i>
                           <%end%>
                         </li>
-                        <li><%=link_to'時間割',timetables_path(current_user)%></li>
-                        <li><%=link_to'掲示板',message_boards_path%></li>
-                        <li><%=link_to"シラバス検索","/subjects/search"%></li>
+                        <li>
+                          <%=link_to timetables_path(current_user) do%>
+                            <p><i class="fas fa-table"></i> 時間割</p>
+                          <%end%>
+                        </li>
+                        <li>
+                          <%=link_to message_boards_path do%>
+                            <p><i class="fas fa-comments"></i> 掲示板</p>
+                          <%end%>
+                        </li>
+                        <li>
+                          <%=link_to "/subjects/search" do%>
+                            <p><i class="fas fa-book-open"></i> シラバス検索</p>
+                          <%end%>
+                        </li>
                       </ul>
                     </div>
                  </div>
