@@ -187,7 +187,6 @@
 @media screen and (max-width:550px){
   .message_board_talk_input{
     height:8vh;
-    border-width:0 1px 1px 1px;
   }
 
   .message_board_talk_input textarea{
@@ -217,13 +216,12 @@
     margin-bottom:20px;
   }
 
-  .message_board_header{
-    border-width:1px 0 1px 0;
-  }
+  // .message_board_header{
+  //   border-width:1px 0 1px 0;
+  // }
 
   .message_board_body{
     height:60vh;
-    border-width:0 0 1px 0;
   }
 
   .post_first_message{
