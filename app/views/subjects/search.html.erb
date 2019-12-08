@@ -1,6 +1,5 @@
 <div class="search">
   <div class="search_box">
-    <h1>シラバス検索</h1>
       <%= form_tag('/subjects/search_result',:method => 'get',:class => 'search_container') do%>
         <div class="top_input">
           <%=text_field_tag :name,'',class:"search_field",placeholder:"科目名"%>
@@ -9,14 +8,14 @@
         <div class="middle_input">
           <%=text_field_tag :subject_code,'',class:"search_field",placeholder:"科目コード"%>
         </div>
-        <!-- <div class="under_input">
+        <div class="under_input">
           <select class="faculty" name="faculty">
-            <option value="" selected="selected">学部を選択</option>
+            <option value="" selected="selected">学部</option>
             <option value="bungaku">文学部</option>
             <option value="keizai">経済学部</option>
             <option value="rigaku">理学部</option>
             <option value="syakai">社会学部</option>
-            <option value="hou">法学部</option>
+            <option value="hougaku">法学部</option>
             <option value="keiei">経営学部</option>
             <option value="ibunka">異文化コミュニケーション学部</option>
             <option value="kankou">観光学部</option>
@@ -24,44 +23,44 @@
             <option value="gendai">現代心理学部</option>
             <option value="glap">GLAP(グローバルリベラルアーツプログラム)</option>
           </select>
-          <select class="course" name="" disabled>
-            <option value="" selected="selected">学科選択</option>
-            <option data-val="bungaku" value="キリスト教文学科">キリスト教文学科</option>
-            <option data-val="bungaku" value="文学科 英米文学専修">文学科 英米文学専修</option>
-            <option data-val="bungaku" value="文学科 ドイツ文学専修">文学科 ドイツ文学専修</option>
-            <option data-val="bungaku" value="文学科 フランス文学専修">文学科 フランス文学専修</option>
-            <option data-val="bungaku" value="文学科 日本文学専修">文学科 日本文学専修</option>
-            <option data-val="bungaku" value="文学科 文芸・思想専修">文学科 文芸・思想専修</option>
-            <option data-val="bungaku" value="史学科">史学科</option>
-            <option data-val="bungaku" value="教育学科">教育学科</option>
-            <option data-val="keizai" value="経済学科">経済学科</option>
-            <option data-val="keizai" value="経済政策学科">経済政策学科</option>
-            <option data-val="keizai" value="会計ファイナンス学科">会計ファイナンス学科</option>
-            <option data-val="rigaku" value="">数学科</option>
-            <option data-val="rigaku" value="">物理学科</option>
-            <option data-val="rigaku" value="">科学科</option>
-            <option data-val="rigaku" value="">生命理学科</option>
-            <option data-val="syakai" value="">社会学科</option>
-            <option data-val="syakai" value="">現代文学学科</option>
-            <option data-val="syakai" value="">メディア社会学科</option>
-            <option data-val="hougaku" value="">法学科</option>
-            <option data-val="hougaku" value="">国際ビジネス法学科</option>
-            <option data-val="hougaku" value="">政治学科</option>
-            <option data-val="keiei" value="">経営学科</option>
-            <option data-val="keiei" value="">国際経営学科</option>
-            <option data-val="ibunka" value="">異文化コミュニケーション学科</option>
-            <option data-val="kankou" value="">観光学科</option>
-            <option data-val="kankou" value="">交流文化学科</option>
-            <option data-val="komyu" value="">コミュニティ政策学科</option>
-            <option data-val="komyu" value="">福祉学科</option>
-            <option data-val="komyu" value="">スポーツウエルネス学科</option>
-            <option data-val="gendai" value="">心理学科</option>
-            <option data-val="gendai" value="">映像身体学科</option>
-            <option data-val="glap" value="">GLAP</option>
+          <select class="course" name="subject_num" disabled>
+            <option value="" selected="selected">学科</option>
+            <option data-val="bungaku" value="CHS">キリスト教文学科</option>
+            <option data-val="bungaku" value="EAL">文学科 英米文学専修</option>
+            <option data-val="bungaku" value="GRL">文学科 ドイツ文学専修</option>
+            <option data-val="bungaku" value="FRL">文学科 フランス文学専修</option>
+            <option data-val="bungaku" value="JAL">文学科 日本文学専修</option>
+            <option data-val="bungaku" value="PCW">文学科 文芸・思想専修</option>
+            <option data-val="bungaku" value="HIS">史学科</option>
+            <option data-val="bungaku" value="EDU">教育学科</option>
+            <option data-val="keizai" value="ECO">経済学科</option>
+            <option data-val="keizai" value="EPS">経済政策学科</option>
+            <option data-val="keizai" value="EAF">会計ファイナンス学科</option>
+            <option data-val="rigaku" value="MAT">数学科</option>
+            <option data-val="rigaku" value="PHY">物理学科</option>
+            <option data-val="rigaku" value="CHE">化学科</option>
+            <option data-val="rigaku" value="LFS">生命理学科</option>
+            <option data-val="syakai" value="SOC">社会学科</option>
+            <option data-val="syakai" value="CCS">現代文学学科</option>
+            <option data-val="syakai" value="CMS">メディア社会学科</option>
+            <option data-val="hougaku" value="LPX">法学科</option>
+            <option data-val="hougaku" value="LPX">国際ビジネス法学科</option>
+            <option data-val="hougaku" value="LPX">政治学科</option>
+            <option data-val="keiei" value="BUS">経営学科</option>
+            <option data-val="keiei" value="GBU">国際経営学科</option>
+            <option data-val="ibunka" value="ICC">異文化コミュニケーション学科</option>
+            <option data-val="kankou" value="TRS">観光学科</option>
+            <option data-val="kankou" value="TRC">交流文化学科</option>
+            <option data-val="komyu" value="CMC">コミュニティ政策学科</option>
+            <option data-val="komyu" value="CMB">福祉学科</option>
+            <option data-val="komyu" value="CMD">スポーツウエルネス学科</option>
+            <option data-val="gendai" value="PSY">心理学科</option>
+            <option data-val="gendai" value="BEC">映像身体学科</option>
+            <option data-val="glap" value="GLA">GLAP</option>
           </select>
-        </div> -->
+        </div>
         <div class="search_button">
-          <button type="submit"><i class="fas fa-search"></i></button>
+          <button type="submit"><i class="fas fa-search btn-black"></i></button>
         </div>
       <%end%>
   </div>

@@ -11,12 +11,17 @@ class SubjectsController < ApplicationController
 
   end
 
-  def search
-    @subjects = Subject.search(params[:name],params[:instructor],params[:subject_code])
-  end
+  # def search
+  #   @subjects = Subject.search(params[:name],params[:instructor],params[:subject_code])
+  # end
 
   def search_result
-    @subjects = Subject.search(params[:name],params[:instructor],params[:subject_code])
+    @subjects = Subject.search(
+      params[:name],
+      params[:instructor],
+      params[:subject_code],
+      params[:subject_num]
+    )
     @subjects = @subjects.page(params[:page]).per(50)
   end
 end

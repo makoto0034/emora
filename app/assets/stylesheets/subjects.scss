@@ -12,8 +12,9 @@
 }
 
 .search_box{
-  border:solid #000;
+  border:solid #E6E6E6;
   border-width: 1px 1px 1px 1px;
+  background:#FFFFFF;
   border-radius: 5px;
   padding:10px;
 }
@@ -21,6 +22,7 @@
 .search_container{
   width:80%;
   margin:0 auto;
+  padding:20px;
 }
 
 .search_field{
@@ -32,17 +34,25 @@
   text-align: center;
 }
 
+.search_box .under_input .faculty,.search_box .under_input .course{
+  width:40%;
+}
+
 .search_button{
   text-align: center;
+  margin-top: 20px;
 }
 
-.search_box button[type="submit"]{
+.search_box .search_button button[type="submit"]{
+  background: #A17FDE;
   width:10%;
-  margin-bottom: 5px;
+  outline:0;
+  border:0;
+  border-radius: 5px;
 }
 
-.search_field:focus::placeholder {
-  color: transparent;
+.btn-black{
+  color:#fafafa;
 }
 
 .search_field::placeholder{
@@ -92,8 +102,15 @@
   background:#93CAFF;   /*角を丸くする*/
 }
 
+
 @media screen and (max-width:840px){
-  .search button[type="submit"]{
+  .search_box .search_button button[type="submit"]{
     width:60px;
   }
+
+  .search_box select{
+    border: 1px solid #eee;
+    font-size:14px;
+  }
+
 }

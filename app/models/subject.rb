@@ -28,11 +28,12 @@ class Subject < ApplicationRecord
   has_many :readings
   has_and_belongs_to_many :timetable_cell
 
-  def self.search(name,instructor,subject_code)
+  def self.search(name,instructor,subject_code,subject_num)
     @subjects = Subject.all
     @subjects = @subjects.where('name LIKE ?',"%#{name}%")
     @subjects = @subjects.where('instructor LIKE ?',"%#{instructor}%")
     @subjects = @subjects.where('subject_code LIKE ?',"%#{subject_code}%")
+    @subjects = @subjects.where('num LIKE ?',"#{subject_num}%")
     return @subjects
   end
 
