@@ -1,26 +1,46 @@
 <div class="timetable_index">
-  <h1>時間割一覧</h1>
-  <div class="table_entire table-responsive">
-    <table class="table table-bordered table-hover">
-      <thead>
-        <tr>
-          <th>名前</th>
-          <th>削除</th>
-        </tr>
-      </thead>
-      <tbody>
-        <%@timetables.each do |timetable|%>
+    <% if @timetables.empty?%>
+    <div class="timetable_first_new">
+      <h2>まだ時間割を作成していません。<br>新規の時間割を作成しましょう！</h2>
+      <div class="timetables_new">
+        <%=form_tag (timetables_path(current_user))do %>
+          <div class="timetable_new_box">
+            <input type="text" name="name" placeholder="時間割の名前(例:春学期)">
+            <input type="submit" value="作成">
+          </div>
+        <% end %>
+      </div>
+    </div>
+    <%else%>
+    <div class="timetables_new">
+      <%=form_tag (timetables_path(current_user))do %>
+        <div class="timetable_new_box">
+          <input type="text" name="name" placeholder="時間割の名前(例:春学期)">
+          <input type="submit" value="作成">
+        </div>
+      <% end %>
+    </div>
+    <div class="table_entire table-responsive">
+      <table class="table table-bordered table-hover">
+        <thead>
           <tr>
-            <td><%=link_to timetable.name,new_timetable_cell_path(timetable.id)%></td>
-            <td>
-              <%= link_to timetable_path(timetable.id), :method => :delete do %>
-                <i class="fas fa-trash-alt"></i>
-              <%end%>
-            </td>
+            <th>名前</th>
+            <th>削除</th>
           </tr>
-        <%end%>
-      </tbody>
-    </table>
+        </thead>
+        <tbody>
+          <%@timetables.each do |timetable|%>
+            <tr>
+              <td><%=link_to timetable.name,new_timetable_cell_path(timetable.id)%></td>
+              <td>
+                <%= link_to timetable_path(timetable.id), :method => :delete do %>
+                  <i class="fas fa-trash-alt"></i>
+                <%end%>
+              </td>
+            </tr>
+          <%end%>
+        </tbody>
+      </table>
+    <%end%>
   </div>
-  <%=link_to'時間割新規作成',new_timetable_path(current_user)%>
 </div>

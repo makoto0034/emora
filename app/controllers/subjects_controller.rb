@@ -11,9 +11,9 @@ class SubjectsController < ApplicationController
 
   end
 
-  # def search
-  #   @subjects = Subject.search(params[:name],params[:instructor],params[:subject_code])
-  # end
+  def search
+    
+  end
 
   def search_result
     @subjects = Subject.search(
