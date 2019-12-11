@@ -23,7 +23,7 @@
 
 .timetable_cell_new table td a{
   width:100%;
-  height:100%;
+  // height:100%;
   display: block;
 }
 
@@ -32,20 +32,7 @@
 }
 
 @media screen and (max-width:660px){
-  .timetable_cell_new{
-    width:100%;
-  }
   .timetable_cell_new .timetable_subject{
     font-size:8px;
   }
-
-  .timetable_cell_new table td{
-    width:5%;
-    height:2vh;
-  }
-
-  .timetable_cell_new table .period_number{
-
-  }
-
 }
