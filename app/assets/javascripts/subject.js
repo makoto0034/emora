@@ -1,5 +1,6 @@
+
 //学部のselect要素が変更になるとイベントが発生
-$(window).on("load",function(){
+$(document).on('turbolinks:load', function() {
   var $children = $('.course'); //学科の要素を変数に入れます。
   var original = $children.html(); //後のイベントで、不要なoption要素を削除するため、オリジナルをとっておく
 
