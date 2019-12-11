@@ -12,6 +12,7 @@
   <div class="message_board_container">
     <div class="message_board_header">
       <h1><%=@message_board.name%></h1>
+      <h4><%=@message_board.detail%></h4>
       <div class="message_board_talk_input">
         <%=form_tag(posts_path(params[:id],category_id:params[:category_id]),class:"message_board_talk_input_inner")do%>
           <textarea name="content" rows="3" placeholder="メッセージを入力してください"></textarea>
@@ -20,10 +21,9 @@
           </div>
         <%end%>
       </div>
-      <%=@message_board.detail%>
     </div>
       <%if @posts.empty? %>
-        <p class="post_first_message">まだ一度も投稿がありません<br>最初の投稿をしましょう！</p>
+        <h4 class="post_first_message">まだ一度も投稿がありません<br>最初の投稿をしましょう！</h4>
       <%else%>
         <%@posts.each do |post|%>
         <%if post.user_id == current_user.id %>

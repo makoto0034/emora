@@ -20,4 +20,6 @@
 
 $(document).on('turbolinks:load', function(){
   setTimeout("$('.notice').fadeOut('slow')", 3000)
+  setTimeout("$('.alert').fadeOut('slow')", 3000)
+  setTimeout("$('.success').fadeOut('slow')", 3000)
 });
