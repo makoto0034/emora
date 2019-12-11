@@ -1,4 +1,3 @@
-
 //学部のselect要素が変更になるとイベントが発生
 $(document).on('turbolinks:load', function() {
   var $children = $('.course'); //学科の要素を変数に入れます。

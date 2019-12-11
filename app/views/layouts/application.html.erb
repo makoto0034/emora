@@ -71,11 +71,17 @@
       </div>
     </header>
     <%if flash[:notice] %>
-      <p class="notice"><%= notice %></p>
+      <div class="notice">
+        <p><%= notice %></p>
+      </div>
     <%elsif flash[:alert]%>
-      <p class="alert"><%= alert %></p>
+    <div class="alert">
+      <p><%= alert %></p>
+    </div>
     <%elsif flash[:success]%>
-      <p class="success"><%= flash[:success] %></p>
+    <div class="success">
+      <p><%= success %></p>
+    </div>
     <%end%>
      <p class="entire">
        <%= yield %>

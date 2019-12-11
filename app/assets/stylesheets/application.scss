@@ -16,6 +16,8 @@
 @import "bootstrap";
 
 .entire{
+  margin:0;
+  padding:0;
   margin-top:25px;
 }
 
@@ -189,25 +191,27 @@ table{
 
 .notice,.alert,.success{
   margin:0;
-  text-align: center;
   font-weight:bold;
   border-radius: 0;
 }
 
 .notice{
   background:#fafafa;
-  position: relative;
+}
+
+.notice p{
+  text-align: center;
+  margin:0;
 }
 
 .alert{
   background:#ff6b6b;
-  position: relative;
 }
 
 .success{
   background:#fafafa;
-  position: relative;
 }
+
 
 
 //deviseのcss
