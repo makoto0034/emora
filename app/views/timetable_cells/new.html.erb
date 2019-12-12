@@ -1,15 +1,15 @@
 <div class="timetable_cell_new">
-  <div class="timetable table-responsive">
+  <!-- <div class="timetable table-responsive"> -->
     <table class="table table-bordered table-hover">
       <h4><%=link_to"時間割一覧に戻る",timetables_path(current_user)%></h4>
       <tr>
-        <th> </th>
-        <th>月</th>
-        <th>火</th>
-        <th>水</th>
-        <th>木</th>
-        <th>金</th>
-        <th>土</th>
+        <th class="day_week"> </th>
+        <th class="day_week">月</th>
+        <th class="day_week">火</th>
+        <th class="day_week">水</th>
+        <th class="day_week">木</th>
+        <th class="day_week">金</th>
+        <th class="day_week">土</th>
       </tr>
       <%Period.all.slice(0..8).each do |period|%>
         <%if period.code == 6 or period.code == 8%>
@@ -33,7 +33,7 @@
         <%end%>
       <%end%>
     </table>
-  </div>
+  <!-- </div> -->
   <%= javascript_include_tag 'timetable_cell.js', 'data-turbolinks-track': 'reload' %>
 
 </div>
