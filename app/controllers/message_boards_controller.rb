@@ -19,7 +19,11 @@ class MessageBoardsController < ApplicationController
       detail:params[:detail],
       category_id:params[:category_id]
     )
-    @message_board.save
-    redirect_to(message_boards_talks_path(@message_board.id))
+    if @message_board.save
+      redirect_to(message_boards_talks_path(@message_board.id))
+    else
+      flash[:alert] = "掲示板の名前は１文字以上入力してください"
+      redirect_to(new_message_board_path)
+    end
   end
 end

@@ -5,8 +5,12 @@ class TimetablesController < ApplicationController
 
   def create
     @timetable = Timetable.new(name:params[:name],user:current_user)
-    @timetable.save!
-    redirect_to(timetables_path(current_user))
+    if @timetable.save
+      redirect_to(timetables_path(current_user))
+   else
+     flash[:alert] = "時間割の名前は１文字以上入力してください"
+     redirect_to(timetables_path(current_user))
+   end
   end
 
   def new
