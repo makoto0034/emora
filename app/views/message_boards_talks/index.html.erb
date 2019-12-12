@@ -47,7 +47,7 @@
               </div>
               <div class="post_detail">
                 <h4 class="post_user_name">
-                  <%=link_to user_path(post.user_id) do%>
+                  <%=link_to user_path(post.user_id),class:"other_post_user_name" do%>
                     <%=post.user.name%>
                   <%end%>
                   <span class="post_created">
