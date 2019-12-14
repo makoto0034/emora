@@ -60,8 +60,9 @@ Category.create(name:"サークル")
 Category.create(name:"授業")
 Category.create(name:"音楽")
 Category.create(name:"悩み")
-Category.create(name:"アニメ")
 Category.create(name:"スポーツ")
+Category.create(name:"運営へ")
+
 
 
 

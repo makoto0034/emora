@@ -1,9 +1,9 @@
 <div class="timetable_cell_new">
   <!-- <div class="timetable table-responsive"> -->
     <table class="table table-bordered table-hover">
-      <h4><%=link_to"時間割一覧に戻る",timetables_path(current_user)%></h4>
+      <h4><%=link_to"<< 時間割一覧",timetables_path(current_user)%></h4>
       <tr>
-        <th class="day_week"> </th>
+        <th class=""> </th>
         <th class="day_week">月</th>
         <th class="day_week">火</th>
         <th class="day_week">水</th>
@@ -21,7 +21,7 @@
                 <%if TimetableCell.where(day_of_the_week_id: day_of_the_week.id, period_id: period.id, timetable_id:params_int(params[:id])).present?%>
                   <td class="timetable_subject">
                     <%@subject1=subject_finder(day_of_the_week.id,period.id,params_int(params[:id]))%>
-                    <%=link_to @subject1,edit_timetable_cell_content_path(day_of_the_week_id:day_of_the_week.id,period_id:period.id)%>
+                    <%=link_to subject_name_cut(@subject1),edit_timetable_cell_content_path(day_of_the_week_id:day_of_the_week.id,period_id:period.id)%>
                   </td>
                 <%else%>
                   <td class="timetable_blank">

@@ -47,4 +47,15 @@ class TimetableCellsController < ApplicationController
       end
   end
   helper_method :subject_finder
+
+  def subject_name_cut(subject_name)
+    if subject_name.include?("(")
+        return subject_name.sub(/\(.*/m, "")
+        .sub(/\（[一-龠々]+\）/m,"").sub(/\（\p{Hiragana}+\）/,"")
+        .sub(/\（\p{Katakana}+\）/,"").sub(/[一-龠々]+\／/,"")
+    else
+      return subject_name
+    end
+  end
+  helper_method :subject_name_cut
 end

@@ -22,33 +22,46 @@
 }
 
 .timetable_cell_new table .day_week{
+  width:16.65%;
   height:0.1%;
 }
 
 .timetable_cell_new table td{
   width:16.65%;
-  overflow: hidden;
+  height:16.65%;
+  padding:0;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .timetable_cell_new table td a{
   width:100%;
+  height:100%;
   display: block;
+  font-size:16px;
 }
 
 .timetable_cell_new .timetable_subject{
     // font-size:20px;
 }
 
-@media screen and (max-width:660px){
-  // .timetable_cell_new .timetable_subject{
-  //   font-size:10px;
-  // }
-  // .timetable_cell_new table .period_number{
-  //   width:0.1%;
-  //   font-size:12px;
-  // }
-  //
-  // .timetable_cell_new h4{
-  //   font-size:16px;
-  // }
+.timetable_cell_new  h4{
+  margin-left:40px;
+}
+
+@media screen and (max-width:444px){
+  .timetable_cell_new table td a{
+    font-size:12px;
+  }
+
+  .timetable_cell_new  h4{
+    font-size:16px;
+  }
+
+}
+
+@media screen and (max-width:344px){
+  .timetable_cell_new table td a{
+    font-size:10px;
+  }
 }
