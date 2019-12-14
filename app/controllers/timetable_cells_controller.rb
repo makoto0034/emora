@@ -50,9 +50,16 @@ class TimetableCellsController < ApplicationController
 
   def subject_name_cut(subject_name)
     if subject_name.include?("(")
-        return subject_name.sub(/\(.*/m, "")
+        subject_kakko_cut = subject_name.sub(/\(.*/m, "")
         .sub(/\（[一-龠々]+\）/m,"").sub(/\（\p{Hiragana}+\）/,"")
-        .sub(/\（\p{Katakana}+\）/,"").sub(/[一-龠々]+\／/,"")
+        .sub(/\（\p{Katakana}+\）/,"")
+        if subject_kakko_cut.include?("／")
+          index_num = subject_kakko_cut.index("／")
+          subject_kakko_cut.slice!(0..index_num)
+          return subject_kakko_cut
+        else
+          return subject_kakko_cut
+        end
     else
       return subject_name
     end

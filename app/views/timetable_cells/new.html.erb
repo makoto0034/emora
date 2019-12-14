@@ -1,39 +1,35 @@
 <div class="timetable_cell_new">
-  <!-- <div class="timetable table-responsive"> -->
-    <table class="table table-bordered table-hover">
-      <h4><%=link_to"<< 時間割一覧",timetables_path(current_user)%></h4>
-      <tr>
-        <th class=""> </th>
-        <th class="day_week">月</th>
-        <th class="day_week">火</th>
-        <th class="day_week">水</th>
-        <th class="day_week">木</th>
-        <th class="day_week">金</th>
-        <th class="day_week">土</th>
-      </tr>
-      <%Period.all.slice(0..8).each do |period|%>
-        <%if period.code == 6 or period.code == 8%>
-          <%next%>
-        <%else%>
-          <tr>
-            <th class="period_number"><%=period.name%></th>
-            <%DayOfTheWeek.all.slice(0..5).each do |day_of_the_week|%>
-                <%if TimetableCell.where(day_of_the_week_id: day_of_the_week.id, period_id: period.id, timetable_id:params_int(params[:id])).present?%>
-                  <td class="timetable_subject">
-                    <%@subject1=subject_finder(day_of_the_week.id,period.id,params_int(params[:id]))%>
-                    <%=link_to subject_name_cut(@subject1),edit_timetable_cell_content_path(day_of_the_week_id:day_of_the_week.id,period_id:period.id)%>
-                  </td>
-                <%else%>
-                  <td class="timetable_blank">
-                    <%=link_to '__',new_timetable_cell_content_path(day_of_the_week_id:day_of_the_week.id,period_id:period.id)%>
-                  </td>
-                <%end%>
-            <%end%>
-          </tr>
-        <%end%>
+  <table class="table table-bordered table-hover">
+    <h4><%=link_to"<< 時間割一覧",timetables_path(current_user)%></h4>
+    <tr>
+      <th class=""> </th>
+      <th class="day_week">月</th>
+      <th class="day_week">火</th>
+      <th class="day_week">水</th>
+      <th class="day_week">木</th>
+      <th class="day_week">金</th>
+      <th class="day_week">土</th>
+    </tr>
+    <%Period.all.slice(0..8).each do |period|%>
+      <%if period.code == 6 or period.code == 8%>
+        <%next%>
+      <%else%>
+        <tr>
+          <th class="period_number"><%=period.name%></th>
+          <%DayOfTheWeek.all.slice(0..5).each do |day_of_the_week|%>
+              <%if TimetableCell.where(day_of_the_week_id: day_of_the_week.id, period_id: period.id, timetable_id:params_int(params[:id])).present?%>
+                <td class="timetable_subject">
+                  <%@subject1=subject_finder(day_of_the_week.id,period.id,params_int(params[:id]))%>
+                  <%=link_to subject_name_cut(@subject1),edit_timetable_cell_content_path(day_of_the_week_id:day_of_the_week.id,period_id:period.id)%>
+                </td>
+              <%else%>
+                <td class="timetable_blank">
+                  <%=link_to '__',new_timetable_cell_content_path(day_of_the_week_id:day_of_the_week.id,period_id:period.id)%>
+                </td>
+              <%end%>
+          <%end%>
+        </tr>
       <%end%>
-    </table>
-  <!-- </div> -->
-  <%= javascript_include_tag 'timetable_cell.js', 'data-turbolinks-track': 'reload' %>
-
+    <%end%>
+  </table>
 </div>
