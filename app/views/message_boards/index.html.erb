@@ -1,18 +1,31 @@
 <div class="message_board_index">
-  <ul class="category_list list-inline">
-    <%@categories.each do |category|%>
-      <li class="category_tab_list list-inline-item">
-        <%=link_to category.name,message_boards_path(category_id: category.id),class:"category_tab"%>
-      </li>
-    <%end%>
-  </ul>
-
-  <ul>
-    <%@message_boards.each do |message_board|%>
-      <li>
-        <%=link_to message_board.name,message_boards_talks_path(message_board.id,category_id:message_board.category.id)%>
-      </li>
-    <%end%>
-  </ul>
-  <%=link_to'掲示板新規作成',new_message_board_path%>
+  <div class="message_board_index_inner">
+    <div class="category_list">
+      <%=link_to'掲示板作成',new_message_board_path%>
+      <ul>
+        <%@categories.each do |category|%>
+          <li class="category_tab_list">
+            <%=link_to category.name,message_boards_path(category_id: category.id),class:"category_tab"%>
+          </li>
+        <%end%>
+      </ul>
+    </div>
+    <div class="message_board_list">
+      <ul>
+        <%@message_boards.each do |message_board|%>
+          <li>
+            <%=link_to message_boards_talks_path(message_board.id,category_id:message_board.category.id) do%>
+            <div class="message_board_content">
+              <div class="message_board_content_header">
+                <h4><%=message_board.name%></h4>
+                <p><%=message_board.created_at.strftime("%Y年%m月%d日 %H時%M分")%></p>
+              </div>
+              <p><%=message_board.detail%></p>
+            </div>
+            <%end%>
+          </li>
+        <%end%>
+      </ul>
+    </div>
+  </div>
 </div>

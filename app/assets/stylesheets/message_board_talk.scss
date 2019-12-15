@@ -7,12 +7,12 @@
   display: flex;
 }
 
-.message_board_list ul{
+.other_message_board_list ul{
   margin:0px;
   padding:0px;
 }
 
-.message_board_list{
+.other_message_board_list{
   width:30%;
 }
 
@@ -123,7 +123,7 @@
     border-radius:0;
   }
 
-  .message_board_talk_index .message_board_list{
+  .message_board_talk_index .other_message_board_list{
     display:none;
   }
 
