@@ -13,6 +13,9 @@
 }
 .user_show .user_post_list{
   width:60%;
+  min-height: 100vh;
+  margin-left: 30px;
+  padding:10px;
 }
 
 .user_avatar,.user_introduce{
@@ -24,13 +27,12 @@
 }
 
 .user_show .user_post_list .post_content{
-  background: #E6ECF0;
-  box-shadow: 0 0 5px gray;
-  border-radius: 5px;
+  background: #FCFEFF;
   min-height:10vh;
   width:80%;
   margin:0 auto;
-  margin-top: 20px;
+  border:solid  #E9E9E9;
+  border-width:3px 3px 0 3px;
 }
 
 
