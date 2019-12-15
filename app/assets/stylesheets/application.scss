@@ -41,6 +41,8 @@ header{
   font-weight:bold;
   border:solid #E9E9E9;
   border-width: 0 0 5px 0;
+  display: flex;
+  justify-content: space-around;
 }
 
 header h1 a{
@@ -48,11 +50,6 @@ header h1 a{
   color:#a180dc;
 }
 
-.header_inner{
-  display:flex;
-  justify-content: space-around;
-  align-items: center;
-}
 
 .slide-menu ul li{
   list-style: none;
@@ -81,7 +78,7 @@ header h1 a{
 }
 
 
-.header_inner a{
+.header_title a{
   text-decoration: none;
 }
 

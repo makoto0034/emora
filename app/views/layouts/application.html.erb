@@ -13,8 +13,8 @@
   </head>
   <body>
     <div class="global_nav">
-      <nav class="login_nav" id="slide-menu">
-          <% if user_signed_in? %>
+      <% if user_signed_in? %>
+        <nav class="login_nav" id="slide-menu">
               <ul class="signed_in_list">
                 <li>
                   <%=link_to user_path(current_user) do%>
@@ -42,32 +42,34 @@
                   <%end%>
                 </li>
               </ul>
-        </nav>
-        <nav class="logout_nav">
-          <% else %>
-            <ul class="logout_list">
-              <li>23
-                <%=link_to(new_user_registration_path,class:"login_var") do%>
-                  <span>新規登録</span>
-                <%end%>
-              </li>
-              <li>
-                <%=link_to(new_user_session_path,class:"login_var") do%>
-                  <span>ログイン</span>
-                <%end%>
-              </li>
-            </ul>
-          <% end %>
-      </nav>
+          </nav>
+      <% end %>
     </div>
     <div id="content">
+      <% if user_signed_in? %>
       <div class="menu-trigger"></div>
+      <%end%>
       <header>
-        <div class="header_inner">
-          <div class="header_title">
-            <h1><%=link_to"Emora","/"%></h1>
-          </div>
+        <div class="header_title">
+          <h1><%=link_to"Emora","/"%></h1>
         </div>
+        <%if user_signed_in?%>
+        <%else%>
+          <nav class="logout_nav">
+              <ul class="logout_list">
+                <li>
+                  <%=link_to(new_user_registration_path,class:"login_var") do%>
+                    <span>新規登録</span>
+                  <%end%>
+                </li>
+                <li>
+                  <%=link_to(new_user_session_path,class:"login_var") do%>
+                    <span>ログイン</span>
+                  <%end%>
+                </li>
+              </ul>
+          </nav>
+        <%end%>
       </header>
       <%if flash[:notice] %>
         <div class="notice">
