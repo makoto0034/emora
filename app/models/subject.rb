@@ -34,9 +34,9 @@ class Subject < ApplicationRecord
     @subjects = @subjects.where('instructor LIKE ?',"%#{instructor}%")
     @subjects = @subjects.where('subject_code LIKE ?',"%#{subject_code}%")
     @subjects = @subjects.where('num LIKE ?',"#{subject_num}%")
-    @subjects = @subjects.where('day_of_the_week_id LIKE ?',"%#{day_of_the_week}%")
-    @subjects = @subjects.where('period_id LIKE ?',"%#{period}%")
-    @subjects = @subjects.where('semester_id LIKE ?',"%#{semester}%")
+    @subjects = @subjects.where('cast(day_of_the_week_id as text) LIKE ?',"%#{day_of_the_week}%")
+    @subjects = @subjects.where('cast(period_id  as text) LIKE ?',"%#{period}%")
+    @subjects = @subjects.where('cast(semester_id as text) LIKE ?',"%#{semester}%")
     return @subjects
   end
 

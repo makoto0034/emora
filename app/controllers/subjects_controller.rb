@@ -18,7 +18,6 @@ class SubjectsController < ApplicationController
   end
 
   def search_result
-    @all_subjects = []
     @subjects = Subject.search(
       params[:name],
       params[:instructor],
