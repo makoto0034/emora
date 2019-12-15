@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .search{
-  width:80%;
+  width:90%;
   margin:0 auto;
 }
 
@@ -27,14 +27,14 @@
 
 .search_field{
   width:40%;
-  margin-bottom:5px;
 }
 
 .top_input,.middle_input,.under_input{
   text-align: center;
+  margin-bottom:5px;
 }
 
-.search_box .under_input .faculty,.search_box .under_input .course{
+.search_box .middle_input .faculty,.search_box .middle_input .course{
   width:40%;
 }
 

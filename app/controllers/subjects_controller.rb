@@ -12,15 +12,21 @@ class SubjectsController < ApplicationController
   end
 
   def search
-    
+    @periods = Period.all
+    @day_of_the_weeks = DayOfTheWeek.all
+    @semesters = Semester.all
   end
 
   def search_result
+    @all_subjects = []
     @subjects = Subject.search(
       params[:name],
       params[:instructor],
       params[:subject_code],
-      params[:subject_num]
+      params[:subject_num],
+      params[:day_of_the_week],
+      params[:period],
+      params[:semester]
     )
     @subjects = @subjects.page(params[:page]).per(50)
   end

@@ -25,6 +25,15 @@ $(document).on('turbolinks:load', function() {
     } else {
       $children.removeAttr('disabled');
     }
+  });
+});
 
+$(document).on('turbolinks:load',function(){
+  $('.day_of_the_week').change(function(){
+    if ($(this).val() == "") {
+      $(".period").attr('disabled','disabled');
+    }else{
+      $(".period").removeAttr('disabled');
+    }
   });
 });

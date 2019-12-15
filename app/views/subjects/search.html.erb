@@ -8,7 +8,7 @@
         <div class="middle_input">
           <%=text_field_tag :subject_code,'',class:"search_field",placeholder:"科目コード"%>
         </div>
-        <div class="under_input">
+        <div class="middle_input">
           <select class="faculty" name="faculty">
             <option value="" selected="selected">学部</option>
             <option value="bungaku">文学部</option>
@@ -57,6 +57,34 @@
             <option data-val="gendai" value="PSY">心理学科</option>
             <option data-val="gendai" value="BEC">映像身体学科</option>
             <option data-val="glap" value="GLA">GLAP</option>
+          </select>
+        </div>
+        <div class="under_input">
+          <select class="semester" name="semester">
+            <option value="">学期</option>
+            <%@semesters.each do |semester|%>
+              <%if semester.code.between?(1,4) or semester.code.between?(7,9) or semester.code == 12 or semester.code == 17 %>
+                <option value="<%=semester.code%>"><%=semester.name%></option>
+              <%else%>
+                <%next%>
+              <%end%>
+            <%end%>
+          </select>
+          <select class="day_of_the_week" name="day_of_the_week">
+            <option value="" selected>曜日</option>
+            <%@day_of_the_weeks.slice(0..8).each do |day_of_the_week|%>
+              <option value="<%=day_of_the_week.code%>"><%=day_of_the_week.name%></option>
+            <%end%>
+          </select>
+          <select class="period" name="period" disabled>
+            <option value="" selected>時限</option>
+            <%@periods.each do |period|%>
+              <%if period.code == 6 or period.code == 8%>
+                <%next%>
+              <%else%>
+                <option value="<%=period.code%>"><%=period.name%></option>
+              <%end%>
+            <%end%>
           </select>
         </div>
         <div class="search_button">
