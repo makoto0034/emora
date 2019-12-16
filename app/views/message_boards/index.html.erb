@@ -1,7 +1,7 @@
 <div class="message_board_index">
   <div class="message_board_index_inner">
     <div class="category_list">
-      <%=link_to'掲示板作成',new_message_board_path%>
+      <%=link_to'掲示板作成',new_message_board_path,class:"create_message_board"%>
       <ul>
         <%@categories.each do |category|%>
           <li class="category_tab_list">
@@ -11,6 +11,11 @@
       </ul>
     </div>
     <div class="message_board_list">
+      <%if @category.present?%>
+        <h1><%=@category.name%></h1>
+      <%else%>
+        <h1>総合</h1>
+      <%end%>
       <ul>
         <%@message_boards.each do |message_board|%>
           <li>

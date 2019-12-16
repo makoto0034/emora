@@ -3,6 +3,7 @@ class MessageBoardsController < ApplicationController
 
     if params[:category_id].present?
       @message_boards=MessageBoard.where(category_id:params[:category_id])
+      @category = Category.find(params[:category_id])
     else
       @message_boards=MessageBoard.all
     end
