@@ -41,3 +41,8 @@ Things you may want to cover:
 * ・講義のシラバス検索
 * ・時間割管理
 * ・掲示板
+
+* Technology
+* バックエンド    Ruby on Rails
+* フロントエンド  jQuery
+* インフラ        heroku
