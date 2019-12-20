@@ -13,59 +13,6 @@ data = open(Rails.root.join('db/seeds/yaml','tunen.yml'),'r:utf-8') { |f| YAML.l
 require Rails.root.join('vendor', 'schedule_converter')
 
 
-DayOfTheWeek.create!(name:"月" ,code:1)
-DayOfTheWeek.create(name:"火" ,code:2)
-DayOfTheWeek.create(name:"水" ,code:3)
-DayOfTheWeek.create(name:"木" ,code:4)
-DayOfTheWeek.create(name:"金" ,code:5)
-DayOfTheWeek.create(name:"土" ,code:6)
-DayOfTheWeek.create(name:"日" ,code:7)
-DayOfTheWeek.create(name:"未定",code:8)
-
-Semester.create(name:"通年",code:1)
-Semester.create(name:"春学期",code:2)
-Semester.create(name:"春学期１",code:3)
-Semester.create(name:"春学期２",code:4)
-Semester.create(name:"春学期他",code:5)
-Semester.create(name:"春期間外",code:6)
-Semester.create(name:"秋学期",code:7)
-Semester.create(name:"秋学期１",code:8)
-Semester.create(name:"秋学期２",code:9)
-Semester.create(name:"秋学期他",code:10)
-Semester.create(name:"秋期間外",code:11)
-Semester.create(name:"通年他",code:12)
-Semester.create(name:"春学期A",code:13)
-Semester.create(name:"春学期B",code:14)
-Semester.create(name:"秋学期A",code:15)
-Semester.create(name:"秋学期B",code:16)
-Semester.create(name:"未定",code:17)
-
-Period.create(name:"1",code:1)
-Period.create(name:"2",code:2)
-Period.create(name:"3",code:3)
-Period.create(name:"4",code:4)
-Period.create(name:"5",code:5)
-Period.create(name:"G5",code:6)
-Period.create(name:"6",code:7)
-Period.create(name:"G6",code:8)
-Period.create(name:"7",code:9)
-Period.create(name:"未定",code:10)
-
-Category.create(name:"語学")
-Category.create(name:"旅行")
-Category.create(name:"最近の話題")
-Category.create(name:"趣味")
-Category.create(name:"ゲーム")
-Category.create(name:"サークル")
-Category.create(name:"授業")
-Category.create(name:"音楽")
-Category.create(name:"悩み")
-Category.create(name:"スポーツ")
-Category.create(name:"運営へ")
-
-
-
-
 data.each do |yaml|
   p yaml.code
   if yaml.title.nil?

@@ -29,10 +29,10 @@
     13: '発表・合評 '
     14: '発表・合評 '
   outside: '毎授業行うメソード、テクニック、技法は学期中は授業後も反復して取り組んで貰いたい。 '
-  evaluation: &1
+  evaluation:
     種類(Kind): 平常点(In-class Points)
     割合(%): 100 　％
-    基準(Criteria): Homework(10%) 、Presentation (20%) 、Midterm(30%) 、最終テスト(Final Test)(40%)
+    基準(Criteria): 出席及び授業への取り組み(50%) 、課題への取り組み及びその成果(50%)
   textbook: !ruby/array:Array
   - なし
   readings: !ruby/array:Array
@@ -89,7 +89,11 @@
     express the research purposes, research questions, findings, and interpretations.\nFinal
     paper: After selecting one area from the class topic, students write an analytical
     paper.\n "
-  evaluation: *1
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): Thinking Notes(20%) 、mid-term paper(30%) 、class participation (20%)
+      、最終レポート(Final Report)(30%)
   textbook: !ruby/array:Array
   - Reading materials will be provided one week in advance in class.
   readings: !ruby/array:Array
@@ -146,7 +150,11 @@
     express the research purposes, research questions, findings, and interpretations.\nFinal
     paper: After selecting one area from the class topic, students write an analytical
     paper.\n "
-  evaluation: *1
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): Thinking Notes(20%) 、mid-term paper(30%) 、class participation (20%)
+      、最終レポート(Final Report)(30%)
   textbook: !ruby/array:Array
   - Reading materials will be provided one week in advance in class.
   readings: !ruby/array:Array
@@ -183,7 +191,10 @@
     13: 'ボランティアと市民教育 '
     14: 'ボランティア活動の可能性と課題（まとめ） '
   outside: '事前に参考文献を読み，関連情報を自分なりに調べてくると講義内容をより良く理解することが可能だろう。ボランティア論を勉強するために役立つ文献リストを最初の授業で配布したい。 '
-  evaluation: *1
+  evaluation:
+    種類(Kind): 筆記試験(Written Exam)
+    割合(%): 50 　％
+    基準(Criteria): " "
   textbook: !ruby/array:Array
   - 決まったテキストは使用しない。各回レジュメを配布。また，参考文献リストも配布したい。
   readings: !ruby/array:Array
@@ -232,7 +243,10 @@
     13: 'ボランティアと市民教育 '
     14: 'ボランティア活動の可能性と課題（まとめ） '
   outside: '事前に参考文献を読み，関連情報を自分なりに調べてくると講義内容をより良く理解することが可能だろう。ボランティア論を勉強するために役立つ文献リストを最初の授業で配布したい。 '
-  evaluation: *1
+  evaluation:
+    種類(Kind): 筆記試験(Written Exam)
+    割合(%): 50 　％
+    基準(Criteria): " "
   textbook: !ruby/array:Array
   - 決まったテキストは使用しない。各回レジュメを配布。また，参考文献リストも配布したい。
   readings: !ruby/array:Array
@@ -282,7 +296,10 @@
     13: 'SS7：起点を源から選択し、新しい現実を創る '
     14: 'SS7：リーダーシップ・コミュニケーションの振り返り '
   outside: '週2時間程度 '
-  evaluation: *1
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 授業中のアウトプット(発言・発表・質疑応答)(40%) 、課題提出物(40%) 、最終レポート(Final Report)(20%)
   textbook: !ruby/array:Array
   - なし
   readings: !ruby/array:Array
@@ -344,7 +361,10 @@
     13: '課題発表と講評（１） '
     14: '課題発表と講評（２） '
   outside: '課題シナリオを実写化するためのあらゆる準備。ただし，それは「学習」ではなく「実践」と認識してください。 '
-  evaluation: *1
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 平常点で評価する（課題製作を通してどれだけ「劇映画」に迫れたかの度合い）(100%)
   textbook: !ruby/array:Array
   - なし
   readings: !ruby/array:Array
@@ -381,7 +401,10 @@
     13: '実作クリティカル・リスニング⑷ '
     14: '音と映像の未来の可能性に向けて '
   outside: '講義内で上映する作品は部分的な抜粋になります。復習の為に全編を通して観直すことを推奨します。 '
-  evaluation: *1
+  evaluation:
+    種類(Kind): 筆記試験(Written Exam)
+    割合(%): 100 　％
+    基準(Criteria): " "
   textbook: !ruby/array:Array
   - なし
   readings: !ruby/array:Array
@@ -426,7 +449,11 @@
   outside: 'Selected reading from a variety of sources will be distributed throughout
     the course. There will also be a bibliography distributed for those wishing to
     read deeper on the subject. '
-  evaluation: *1
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): Class Participation(30%) 、Group Negotiation Paper(25%) 、Individual
+      Case Analysis(20%) 、Negotiation Journal and Paper(25%)
   textbook: !ruby/array:Array
   - なし
   readings: !ruby/array:Array
@@ -463,7 +490,11 @@
     13: '介護ビジネスにおける成長戦略（１） '
     14: '介護ビジネスにおける成長戦略（２） '
   outside: "介護産業全般に対して、多くの異業種の知見から学び、世界観や歴史観から常に新たな視点で成長戦略を描くことを普段から意識しておくこと\n "
-  evaluation: *1
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 最終レポート(Final Report)(20%) 、期中レポート(20%) 、クラス貢献(20%) 、他の受講生への貢献(20%)
+      、プレゼンテーション(20%)
   textbook: !ruby/array:Array
   - :no: '1.'
     :author: '田中道昭 '
@@ -554,7 +585,10 @@
     13: '2-7.ディスカウント・キャッシュ・フロー(DCF)法以外の企業価値評価法 '
     14: '3. 企業価値向上のために何が必要か '
   outside: '各回の予習範囲や課題は、講義内で説明する。 '
-  evaluation: *1
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 最終レポート(Final Report)(40%) 、講義内での課題報告(30%) 、講義への参加度合(30%)
   textbook: !ruby/array:Array
   - 全体を通じた教科書の指定はしない。
   readings: !ruby/array:Array
@@ -591,7 +625,10 @@
     13: 'アセアン・マーケティングのまとめ '
     14: 'テスト及び解説 '
   outside: '次回の予習範囲や課題は、各授業の最後およびblackboard上でコメントするが、基本的には個人予習（事前）、グループ討議（授業時、必要に応じて事前に）、クラス討議（授業時）という展開で進める '
-  evaluation: *1
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 最終テスト(Final Test)(40%) 、最終レポート(Final Report)(30%) 、授業で実施するプレゼンテーション(30%)
   textbook: !ruby/array:Array
   - :no: '1.'
     :author: '笠原英一翻訳、Ilan Alon他著 '
@@ -634,7 +671,10 @@
     13: '財務諸表分析のうち成長性分析について解説する。 '
     14: '財務会計２のまとめを行う。 '
   outside: "復習：　各回の講義の終わりに復習用の課題を提示するので、その課題を行うこと。\n予習：　事前準備が必要な回については、その前の授業の際に指示する。 "
-  evaluation: *1
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 授業への出席とディスカッション等への参加(60%) 、最終テスト(Final Test)(40%)
   textbook: !ruby/array:Array
   - :no: '1.'
     :author: '滝澤ななみ '
@@ -683,7 +723,10 @@
     13: '受講生の発表 '
     14: 'まとめ '
   outside: '講義中に指示する。 '
-  evaluation: *1
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 授業参加度(50%) 、授業内課題(50%)
   textbook: !ruby/array:Array
   - なし
   readings: !ruby/array:Array
@@ -720,7 +763,10 @@
     13: '企業分析発表 '
     14: '企業分析発表 '
   outside: 'ケース発表の準備。産業・企業の調査・発表。 '
-  evaluation: *1
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): クラス参加(30%) 、ケーススタディ(30%) 、産業・企業の発表(30%) 、宿題(10%)
   textbook: !ruby/array:Array
   - なし
   readings: !ruby/array:Array
@@ -757,7 +803,10 @@
     13: '再実験予備日(１) '
     14: '再実験予備日(２) '
   outside: 'ガイダンス時に配付するテキストの「レポートの作成」部分を事前に熟読し，理解しておくことを強く勧める。実験専用のノートを準備すること。 また，動物の解剖に関しては予習課題がある。 '
-  evaluation: *1
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): レポート（25% x 4）(100%)
   textbook: !ruby/array:Array
   - "「生物学実験指針」を初回に配付する。"
   readings: !ruby/array:Array
@@ -795,7 +844,10 @@
     13: '重回帰分析 '
     14: 'まとめ '
   outside: "ビジネスリテラシー1の内容である平均，分散，標準偏差，正規分布については理解しているものとして授業は展開される。\n毎回の講義内や後にwebから提出する宿題を用意している。 "
-  evaluation: *1
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): レポート2回(30%) 、クイズ・宿題(40%) 、授業内テスト(30%)
   textbook: !ruby/array:Array
   - 特に定めない。資料を配付する。
   readings: !ruby/array:Array
@@ -832,7 +884,10 @@
     13: '日本経済史・経営史に関する文献輪読(12) '
     14: '日本経済史・経営史に関する文献輪読(13) '
   outside: '課題文献を精読し，論点をまとめる。 '
-  evaluation: *1
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 授業参加度(50%) 、研究報告(50%)
   textbook: !ruby/array:Array
   - :no: '1.'
     :author: '沢井実・谷本雅之 '
@@ -878,7 +933,11 @@
     13: '企業分析発表 '
     14: '企業分析発表 '
   outside: 'ケース発表の準備。産業・企業の調査・発表。 '
-  evaluation: *1
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 最終テスト(Final Test)(20%) 、最終レポート(Final Report)(30%) 、Homework(10%)
+      、Case Studies(20%) 、Participation(20%)
   textbook: !ruby/array:Array
   - 授業時に指示。
   readings: !ruby/array:Array
@@ -915,7 +974,10 @@
     13: '観光経営研究２のまとめ '
     14: '最終テスト '
   outside: '講義資料は参考文献等から抜粋した資料で、専門用語を多用しているため、必ず講義前に熟読し専門用語の調査研究も事前に済ませておくこと。 '
-  evaluation: *1
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 最終テスト(Final Test)(40%) 、出席・授業への貢献(30%) 、小レポート(30%)
   textbook: !ruby/array:Array
   - 国土交通省「我が国クルーズ事業の現状と課題」をダウンロードし当該講義前に目を通しておくこと。
   readings: !ruby/array:Array
@@ -967,7 +1029,11 @@
     13: '企業分析発表 '
     14: '企業分析発表 '
   outside: 'ケース発表の準備。産業・企業の調査・発表。 '
-  evaluation: *1
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 最終テスト(Final Test)(20%) 、最終レポート(Final Report)(30%) 、Homework(10%)
+      、Case Studies(20%) 、Participation(20%)
   textbook: !ruby/array:Array
   - 授業時に指示。
   readings: !ruby/array:Array
@@ -1004,7 +1070,10 @@
     13: '食文化とツーリズムを発展させるための課題 '
     14: 'まとめ '
   outside: '授業時間外の学習に関する指示は、 必要に応じて別途指示します。 '
-  evaluation: *1
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 最終レポート(Final Report)(30%) 、出席及び授業への貢献(30%) 、レポート(20%) 、プレゼンテーション(20%)
   textbook: !ruby/array:Array
   - なし
   readings: !ruby/array:Array
@@ -1047,7 +1116,10 @@
     13: '第13章　チャネル提案 '
     14: '第14章　企画書作成 '
   outside: 'テキストを事前に読むことを推奨する '
-  evaluation: *1
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 最終レポート(Final Report)(40%) 、発表(60%)
   textbook: !ruby/array:Array
   - :no: '1.'
     :author: '西川英彦 '
@@ -1091,7 +1163,10 @@
     13: 'マーケティングと情報・表示（２） '
     14: 'マーケティングと情報・表示（３） '
   outside: '準備学習の指示は，履修登録後にBlackboard上で行う。各自が確認して予習すること。 '
-  evaluation: *1
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 授業時の発表(30%) 、議論への貢献(40%) 、授業内レポート(30%)
   textbook: !ruby/array:Array
   - 授業時に指示する。
   readings: !ruby/array:Array
@@ -1129,7 +1204,10 @@
     13: 'マーケティングと情報・表示（２） '
     14: 'マーケティングと情報・表示（３） '
   outside: '準備学習の指示は，履修登録後にBlackboard上で行う。各自が確認して予習すること。 '
-  evaluation: *1
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 授業時の発表(30%) 、議論への貢献(40%) 、授業内レポート(30%)
   textbook: !ruby/array:Array
   - 授業時に指示する。
   readings: !ruby/array:Array
@@ -1166,7 +1244,10 @@
     13: '企業分析レポート中間報告（２） '
     14: '最終試験 '
   outside: "本講義は，会計学の初級者を対象としている。そのため，講義で取り扱う内容は，基本的な事項が中心となるが，初学者（学習経験がなく、財務諸表にも接したことがない院生）は，財務諸表に用いられる基本的な用語を自習することが不可欠である。\n各回の講義に臨むための準備の内容については，講義内で説明する。 "
-  evaluation: *1
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 最終テスト(Final Test)(35%) 、最終レポート(Final Report)(35%) 、講義内への参加度合(30%)
   textbook: !ruby/array:Array
   - :no: '1.'
     :author: '青木茂男編著 '
@@ -1210,7 +1291,10 @@
     13: 'プレゼンテーション1 '
     14: 'プレゼンテーション2 '
   outside: "Excelの基礎的な操作方法について習得しておいて頂きたく思います。\nまたSPSSの操作に慣れるために出来るだけ授業後に操作復習を実施して頂きたく思います。 "
-  evaluation: *1
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 出席および課題提出(40%) 、最終テスト(Final Test)(20%) 、最終レポート(Final Report)(40%)
   textbook: !ruby/array:Array
   - なし
   readings: !ruby/array:Array
@@ -1247,7 +1331,10 @@
     13: 'プレゼンテーション・まとめ（１） '
     14: 'プレゼンテーション・まとめ（２） '
   outside: '日々の新聞やニュースに目を通しておいてください。 '
-  evaluation: *1
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 出席および授業ヘの貢献(40%) 、ディスカッションへの参加度(30%) 、プレゼンテーション(30%)
   textbook: !ruby/array:Array
   - 授業にて随時紹介します。
   readings: !ruby/array:Array
@@ -1284,7 +1371,11 @@
     13: '履修者による発表と議論（１） '
     14: '履修者による発表と議論（２）と総括 '
   outside: '毎回時間を超えた課題や発表準備がある。 '
-  evaluation: *1
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 最終テスト(Final Test)(40%) 、最終レポート(Final Report)(20%) 、その他のレポート(20%)
+      、議論への参加度(20%)
   textbook: !ruby/array:Array
   - :no: '1.'
     :author: '高柳寛樹 '
@@ -1327,7 +1418,10 @@
     13: 'アセトアニリドの合成 '
     14: 'アニリンの検出反応 '
   outside: 'ガイダンス時に配付するテキストのを熟読し，ノートを作成する（ノートの書き方は１回目に指導する）。予習のノートができていない場合には，当日の実験に入れない。 '
-  evaluation: *1
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 出席態度とレポートによる総合評価(100%)
   textbook: !ruby/array:Array
   - 化学実験指針
   readings: !ruby/array:Array
@@ -1365,7 +1459,10 @@
     13: '報告書作成法  '
     14: '再実験  '
   outside: 'ガイダンス時に配付するテキストの「レポートの作成」部分を事前に熟読し，理解しておくことを強く勧める。 '
-  evaluation: *1
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 出席態度とレポートによる総合評価(100%)
   textbook: !ruby/array:Array
   - 理学実験指針
   readings: !ruby/array:Array
@@ -1402,7 +1499,10 @@
     13: 'グローバル組織・人材のまとめ '
     14: '総括-企業の成長・存続に本当に大切なこと '
   outside: '講義時に指示する '
-  evaluation: *1
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 最終レポート(Final Report)(30%) 、講義への参加・貢献度合い(70%)
   textbook: !ruby/array:Array
   - 必要に応じて指示する
   readings: !ruby/array:Array
@@ -1445,7 +1545,10 @@
     13: '柔軟性の確立(1) '
     14: '柔軟性の確立(2) '
   outside: "予習：教科書の当該部分を熟読し、ディスカッションに備える。\n復習：学んだ内容を整理し、参考にできる事例や文献を整理する。 "
-  evaluation: *1
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 授業の参加度・発言(60%) 、最終レポート(Final Report)(40%)
   textbook: !ruby/array:Array
   - :no: '1.'
     :author: 'Cusumano, M. A. '
@@ -1490,7 +1593,10 @@
     13: '日本企業の組織デザインを考える（5） '
     14: '日本企業の組織デザインを考える（6） '
   outside: "ご自身のお仕事や職場、会社組織を素材として、どのような問題に直面しているのか、その問題はどのような問題であるのか、なぜそうした問題が生じているのか、考えてみてください。\nまた、参考文献にある書籍を読んでおくとよいでしょう。 "
-  evaluation: *1
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): ディスカッションへの参加(20%) 、授業内課題(80%)
   textbook: !ruby/array:Array
   - 講義時に指示します。
   readings: !ruby/array:Array
@@ -1557,7 +1663,10 @@
     13: 'まとめ '
     14: 'テスト '
   outside: '授業時間外の学習に関する指示は、必要に応じて別途行う。 '
-  evaluation: *1
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 最終テスト(Final Test)(40%) 、出席・授業への貢献度(60%)
   textbook: !ruby/array:Array
   - レジュメを配布する。
   readings: !ruby/array:Array
@@ -1612,7 +1721,10 @@
     13: '東アジアと中小企業３ '
     14: '総括 '
   outside: '準備学習の指示は，履修登録完了後，授業時にて，履修者に対して行う。 '
-  evaluation: *1
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 報告とディスカッション(100%)
   textbook: !ruby/array:Array
   - :no: '1.'
     :author: '末廣　昭 '
@@ -1656,7 +1768,10 @@
     13: '事例報告・討議（３） '
     14: '事例報告・討議（４） '
   outside: "事前学修（予習）：前回までの復習を実施し、授業に参加する。\n事後学修（復習）：授業内で詳細された概念等に関して整理し、ノートを作成し、理解を促進する。\n上記プロセスを繰り返し、授業内容の理解を獲得し、自律的学修を促進することを推奨しています。 "
-  evaluation: *1
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 事例報告(40%) 、参加度(30%) 、クラス討議貢献度(30%)
   textbook: !ruby/array:Array
   - なし
   readings: !ruby/array:Array
@@ -1693,7 +1808,10 @@
     13: 'ゲストスピーカー　講演(企業経営者・リーダーなど）② '
     14: '質疑応答・全体のまとめとフィードバック '
   outside: '講義内で別途指示する '
-  evaluation: *1
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 授業貢献（出席、発言など）(40%) 、授業内課題(60%)
   textbook: !ruby/array:Array
   - :no: '1.'
     :author: 'ロジャー・フィッシャー, ウィリアム・ユーリー 著, 岩瀬大輔 訳ー '
@@ -1736,7 +1854,10 @@
     13: "まとめ\n各回の授業の振り返りを行い、本講義を総括のうえ、テストを行う。\n "
     14: "テスト\n各回の授業の振り返りを行い、本講義を総括のうえ、テストを行う。\n "
   outside: '授業内で指示する。  '
-  evaluation: *1
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 最終テスト(Final Test)(35%) 、授業への出席と貢献(35%) 、授業内演習(30%)
   textbook: !ruby/array:Array
   - レジュメを配布する。
   readings: !ruby/array:Array
@@ -1779,7 +1900,10 @@
     13: 'まとめ　各回の授業の振り返りを行い、本講義を総括のうえ、試験を行う。 '
     14: 'テスト　各回の授業の振り返りを行い、本講義を総括のうえ、試験を行う。 '
   outside: '授業時間外の学習に関する指示は、必要に応じて別途指示する。 '
-  evaluation: *1
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 授業への出席および積極的な参加(30%) 、各回の課題への取組み(30%) 、最終テスト(Final Test)(40%)
   textbook: !ruby/array:Array
   - :no: '1.'
     :author: '川口有一郎 '
@@ -1835,7 +1959,10 @@
     13: 'ケーススタディ（ビジネスホテル投資）① '
     14: 'ケーススタディ（ビジネスホテル投資）② '
   outside: "- 実査やインターネット検索による予習を、必要に応じて別途指示する。\n- 東京都内のホテル施設にて学外授業を行なう可能性がある。\n "
-  evaluation: *1
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 最終レポート(Final Report)(30%) 、質問・発言など抗議への貢献度(50%) 、予習・復習状況(20%)
   textbook: !ruby/array:Array
   - なし
   readings: !ruby/array:Array
@@ -1886,7 +2013,10 @@
     13: '事例報告・討議（３） '
     14: '事例報告・討議（４） '
   outside: "事前学修（予習）：前回までの復習を実施し、授業に参加する。\n事後学修（復習）：授業内で詳細された概念等に関して整理し、ノートを作成し、理解を促進する。\n上記プロセスを繰り返し、授業内容の理解を獲得し、自律的学修を促進することを推奨しています。 "
-  evaluation: *1
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 事例報告(40%) 、参加度(30%) 、クラス討議貢献度(30%)
   textbook: !ruby/array:Array
   - なし
   readings: !ruby/array:Array
@@ -1929,7 +2059,10 @@
     13: 'ゲストスピーカー（１） '
     14: 'ゲストスピーカー（２） '
   outside: '原則、毎週、授業内容に応じた課題あり（翌週必ず提出）。 '
-  evaluation: *1
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 毎週の課題（全5回）(50%) 、ゲストスピーカー（１）感想文(25%) 、ゲストスピーカー（２）感想文(25%)
   textbook: !ruby/array:Array
   - :no: '1.'
     :author: '鈴木一功 '
@@ -1990,7 +2123,10 @@
     13: 'ゲストスピーカー（１） '
     14: 'ゲストスピーカー（２） '
   outside: '原則、毎週、授業内容に応じた課題あり（翌週必ず提出）。 '
-  evaluation: *1
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 毎週の課題（全5回）(50%) 、ゲストスピーカー（１）感想文(25%) 、ゲストスピーカー（２）感想文(25%)
   textbook: !ruby/array:Array
   - :no: '1.'
     :author: '鈴木一功 '
@@ -2051,7 +2187,10 @@
     13: 'まとめ（１） '
     14: 'まとめ（２） '
   outside: '講義毎に次回までの学習内容を指示する '
-  evaluation: *1
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 最終レポート(Final Report)(30%) 、出席のうえで議論への積極的な参加(40%) 、発表(30%)
   textbook: !ruby/array:Array
   - ハンドアウト配布
   readings: !ruby/array:Array
@@ -2088,7 +2227,10 @@
     13: '環境問題とイノベーション２ '
     14: '環境問題とイノベーション３ '
   outside: '毎回、World Economic Forum, BBC, ＴＥＤなど簡単な英語のビデオ（2分～10分程度）を予習課題として出します。それを視聴したうえで、授業に臨むこと。 '
-  evaluation: *1
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): ディスカッション参加度(100%)
   textbook: !ruby/array:Array
   - Ｗｏｒｌｄ　Economic Forum, BBC, ＴＥＤなどの最新の世界で起きている事象を理解してから、授業に臨むこと。
   readings: !ruby/array:Array
@@ -2125,7 +2267,10 @@
     13: 'ダイレクト・マーケティングとオンライン・マーケティング（その１） '
     14: 'ダイレクト・マーケティングとオンライン・マーケティング（その２） '
   outside: "①とくに専門用語に留意しつつ、事前に配布する印刷物を予習しておいてください。\n②各授業の最後に指定する内容について、復習してください。\n③日頃から、日本経済新聞、日経産業新聞、日経MJ（流通新聞）などの新聞や「週刊ダイヤモンド」「週刊\n東洋経済」「日経ビジネス」などの雑誌を読んだり、「クローズアップ現代+」「日経スペシャル　ガイアの夜\n明け」「日経スペシャル　カンブリア宮殿」「WBS（ワールドビジネスサテライト）」を観たりするなどして、マ\nーケティングに関心をもつようにしてください。 "
-  evaluation: *1
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): レジュメおよび発表の内容(30%) 、質疑応答やディスカッションの内容(30%) 、最終レポート(Final Report)(40%)
   textbook: !ruby/array:Array
   - :no: '1.'
     :author: 'フィリップ・コトラー、ゲイリー・アームストロング、恩藏直人（著） '
@@ -2168,7 +2313,10 @@
     13: "これからの観光のヒント（人、もの、金、財源）\n(1）　講義（人、もの、財源、情報の確保について）　　（２）対話\n※受講生の人数により変更あり "
     14: "これからの観光のヒント（人、もの、金、財源）\n(1）　講義（人、もの、財源、情報の確保について）　　（２）対話\n※受講生の人数により変更あり "
   outside: "地域を観光で元気にしたい！その想いを持って臨んでください。\n活性化させたい地域を想定しておいてください。 "
-  evaluation: *1
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 授業での発言、質問、取り組み姿勢など(100%)
   textbook: !ruby/array:Array
   - じゃらんリサーチセンターの研究冊子、各種調査レポートを適宜、配布します。
   readings: !ruby/array:Array
@@ -2205,7 +2353,10 @@
     13: 'パートタイム先進国オランダの働き方 '
     14: '自律性と多様性に向き合う '
   outside: '毎回発表者を決めて発表してもらいます。必ず事前に各章は読んできてください。 '
-  evaluation: *1
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 最終レポート(Final Report)(40%) 、「授業へのディスカッションにおける貢献」(60%)
   textbook: !ruby/array:Array
   - :no: '1.'
     :author: '武石恵美子 '
@@ -2248,7 +2399,10 @@
     13: 'ビジネスモデル演習① '
     14: 'ビジネスモデル演習② '
   outside: '必要に応じて別途指示する。 '
-  evaluation: *1
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): レポート取組状況(50%) 、演習取組状況(50%)
   textbook: !ruby/array:Array
   - 授業にて適宜資料を配付する
   readings: !ruby/array:Array
@@ -2287,7 +2441,10 @@
     13: 'まとめ '
     14: 'テスト '
   outside: '授業内で指示する。 '
-  evaluation: *1
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 最終テスト(Final Test)(35%) 、授業への出席と貢献(35%) 、授業内演習(30%)
   textbook: !ruby/array:Array
   - レジュメを配布する。
   readings: !ruby/array:Array
@@ -2330,7 +2487,10 @@
     13: '小テスト（２）と補論 '
     14: 'ゲストスピーカー（２） '
   outside: '毎回配布ないし指示する参考文献を必ず読むこと。関連科目の履修。 '
-  evaluation: *1
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 小テスト（１）(30%) 、小テスト（２）(30%) 、ゲストスピーカー（１）感想文(20%) 、ゲストスピーカー（２）感想文(20%)
   textbook: !ruby/array:Array
   - 特になし。
   readings: !ruby/array:Array
@@ -2367,7 +2527,10 @@
     13: "新商品企画書の作成\n・新商品企画書の作成方法\n・最終企画書の発表 "
     14: "新商品企画書の作成\n・まとめ、全体の振り返り "
   outside: '授業時間外での「新商品のアイデア出し」や「新商品企画書の作成」など適宜課題を課す。 '
-  evaluation: *1
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 最終レポート(Final Report)(40%) 、途中段階の発表、内容(30%) 、発言や授業寄与度(30%)
   textbook: !ruby/array:Array
   - |-
     原則として、テキストは配布しない（新商品開発１で配布したテキストを利用する）。
@@ -2424,7 +2587,10 @@
     13: '全体討議（ゲストスピーカーをお招きする予定） '
     14: 'ラップアップ '
   outside: '準備の指示は配布するプリントで行う '
-  evaluation: *1
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 提出物授業で指示した提出物(40%) 、グループワークに対する貢献(40%) 、授業での積極的な発表(20%)
   textbook: !ruby/array:Array
   - その度配布する
   readings: !ruby/array:Array
@@ -2493,7 +2659,10 @@
     13: 'Topics on experimental economics (I) '
     14: 'Topics on experimental economics (II) '
   outside: 'Readings on reference books and selected papers.  '
-  evaluation: *1
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): Homework(10%) 、Presentation (20%) 、Midterm(30%) 、最終テスト(Final Test)(40%)
   textbook: !ruby/array:Array
   - :no: '1.'
     :author: 'Walter Nicholson and Christopher M. Snyder  '

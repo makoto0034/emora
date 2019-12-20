@@ -12,6 +12,7 @@ data = open(Rails.root.join('db/seeds/yaml','harugakki2.yml'),'r:utf-8') { |f| Y
 
 require Rails.root.join('vendor', 'schedule_converter')
 
+
 data.each do |yaml|
   p yaml.code
   if yaml.title.nil?
