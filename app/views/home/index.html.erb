@@ -19,8 +19,9 @@
         <div class="main-content">
           <%=link_to "/subjects/search" do%>
             <h2><i class="fas fa-book-open"></i> シラバス検索</h2>
+            <%=image_tag "syllabus.jpg", alt: "syllabus", class: "main-img"%>
           <%end%>
-          <%=image_tag "syllabus.jpg", alt: "syllabus", class: "main-img"%>
+
           <p class="main-content-description">
             シラバス検索では立教大学公式のシラバス検索よりも快適に使えることができます。
           </p>
@@ -30,12 +31,13 @@
         <div class="main-content">
           <%if current_user == nil %>
             <h2><i class="fas fa-comments"></i> 掲示板</h2>
+            <%=image_tag "bulletin_board.jpg", alt: "bulletin_board", class: "main-img"%>
           <%else%>
             <%=link_to(message_boards_path) do%>
               <h2><i class="fas fa-comments"></i> 掲示板</h2>
+              <%=image_tag "bulletin_board.jpg", alt: "bulletin_board", class: "main-img"%>
             <%end%>
           <%end%>
-          <%=image_tag "bulletin_board.jpg", alt: "bulletin_board", class: "main-img"%>
           <%if current_user == nil %>
             <span class="only_sub">※会員限定</span><br>
           <%end%>
@@ -51,12 +53,14 @@
           <%else%>
             <%=link_to(timetables_path(current_user)) do%>
               <h2><i class="fas fa-table"></i> 時間割管理</h2>
+              <%=image_tag "timetable.jpg", alt: "timetable", class: "main-img"%>
             <%end%>
           <%end%>
-          <%=image_tag "timetable.jpg", alt: "timetable", class: "main-img"%>
+
           <%if current_user == nil %>
             <span class="only_sub">※会員限定</span><br>
-          <%end%>  
+            <%=image_tag "timetable.jpg", alt: "timetable", class: "main-img"%>
+          <%end%>
           <p class="main-content-description">
             シラバス検索で組み立てた時間割を管理することができます。
           </p>
