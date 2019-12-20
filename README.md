@@ -32,6 +32,8 @@ Things you may want to cover:
 
 * ゲストユーザー　メールアドレス：emora@rikkyo.ac.jp パスワード：emora123
 
+* アプリ名　Emora
+
 * Overview
 * こちらのアプリは立教大学生限定のアプリです。
 
