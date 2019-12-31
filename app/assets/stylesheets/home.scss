@@ -54,7 +54,7 @@ body{
   font-size:60px;
   color:purple;
   font-weight:bold;
-  font-family: 'Alfa Slab One', cursive;
+  font-family: 'Segoe UI';
 }
 
 @keyframes text{
@@ -277,8 +277,11 @@ body{
   .main-content{
     height:450px;
   }
-  .text1,.text2{
+  .text1{
     font-size:15px;
+  }
+  .text2{
+    font-size:30px;
   }
 }
 
