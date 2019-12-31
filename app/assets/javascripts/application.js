@@ -34,5 +34,51 @@ $(document).on('turbolinks:load', function(){
             $body.className = ( $body.className == 'menu-active' )? '' : 'menu-active';
         });
     }
+});
 
-}).call(this);
+$(document).on('turbolinks:load', function(){
+	setTimeout(function(){
+		$('.start_container p').fadeIn(1600);
+	},500); //0.5秒後にロゴをフェードイン!
+	setTimeout(function(){
+		$('.start_container').fadeOut(500);
+	},5000); //2.5秒後にロゴ含め真っ白背景をフェードアウト！
+});
+
+// $(document).on('turbolinks:load', function() {
+//   console.log("Aaa");
+//     var EffectH = 100;
+//     var EffectTop = 15;
+//     var EffectTime = 400;
+//
+//   $('.emora-description').css({
+//      position: 'relative',
+//      left: 0,
+//      top: EffectTop,
+//      opacity: 0,
+//      transition: EffectTime + 'ms'
+//    });
+//
+//   $(window).on('scroll load',function(){
+//     console.log('aaa');
+//     $('.emora-description').each( function(){
+//       console.log('aaa');
+//       var scTop = $(this).scrollTop();
+//       var scBottom = scTop + $(this).height();
+//       var effectPos = scBottom - EffectH;
+//       $(".scroll").text(effectPos);
+//     // エフェクト対象それぞれの位置とスクロール位置を比べて
+//     // 範囲に入っていればエフェクトを実行する
+//     $('.emora-description').each( function() {
+//       var thisPos = $(this).offset().top;
+//       $('.scroll2').text(thisPos);
+//       console.log(thisPos);
+//       if ( thisPos < effectPos ) {
+//         $(this).css({ 'opacity' : 1, top: 0 });
+//       }
+//     });
+//   });
+// });
+// });
+
+//scroll イベントが発火しない
