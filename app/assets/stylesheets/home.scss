@@ -11,6 +11,7 @@ body{
 .main-home{
   width:100%;
   position: relative;
+  font-family: 'Noto Sans JP';
 }
 
 
@@ -82,6 +83,9 @@ body{
 .emora-description{
   width:90%;
   margin:0 auto;
+  font-family: 'Noto Sans JP';
+  font-weight:900;
+
 }
 
 .emora-introduction{
@@ -89,6 +93,7 @@ body{
   margin:0 auto;
   margin-top: 50px;
   margin-bottom:50px;
+  font-weight:900;
 }
 
 .welcome{
@@ -139,8 +144,7 @@ body{
 
 .emora-introduction p{
   font-size:20px;
-  letter-spacing: 10px;
-  line-height: 1.5em;
+  line-height: 2;
 }
 
 .emora-introduction .only_rikkyo{
@@ -171,6 +175,7 @@ body{
   width:100%;
   height:350px;
   margin:0 auto;
+  line-height: 2;
   position: relative;
 }
 
@@ -289,7 +294,7 @@ body{
   }
 }
 
-@media screen and (max-width:400px){
+@media screen and (max-width:452px){
   .welcome h1{
     font-size:60px;
   }
