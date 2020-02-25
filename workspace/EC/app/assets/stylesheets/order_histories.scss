@@ -1,0 +1,38 @@
+// Place all the styles related to the order_histories controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.order_history_items_table{
+  border-collapse:collapse;
+  border: solid 1px;
+}
+
+.order_history_items_table th{
+  font-size:15px;
+  text-align: center;
+}
+
+.order_histories_header ul{
+  display: table;
+  table-layout: fixed;
+  width:100%;
+}
+
+.order_histories_header li{
+  display:table-cell;
+  font-size:15px;
+  list-style: none;
+}
+
+.order_histories_header span{
+  font-weight:bold;
+}
+
+.order_histories_content{
+  margin-top:100px;
+  margin:0 auto;
+  width:60%;
+}
+
+.order_histories_container{
+  margin-top:50px;
+}

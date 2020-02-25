@@ -1,0 +1,56 @@
+<div class="order_histories_index">
+  <%if @order_histories.empty?%>
+    <div class="container-fluid">
+      <div class="container text-center">
+        <h1>注文履歴はありません</h1>
+        <p class="lead">カート画面で注文を済ませましょう</p>
+        <%=link_to"カート画面へ",carts_path(current_user.id),class:"goCartLink btn btn-primary"%>
+      </div>
+      <div class="container">
+        <%=image_tag"cart.jpg",width:"100%",height:"300px"%>
+      </div>
+    </div>
+  <%else%>
+    <%@order_histories.each do |order_history|%>
+      <div class="orderHistoryContainer container border-dark border-bottom">
+        <div class="orderHistoryHeader">
+          <ul class="list-inline">
+            <li class="list-inline-item"><span>注文日：</span><%=order_history.created_at.strftime("%Y年%m月%d日 %H時%M分")%></li>
+            <li class="list-inline-item"><span>合計金額：￥</span><%=order_history.sum%></li>
+            <li class="list-inline-item"><span>注文状態：</span><%=order_history.status%></li>
+          </ul>
+        </div>
+        <%order_history_items_finder(order_history.id).each do |order_history_item|%>
+          <div class="orderHistoryProductItem container">
+            <div class="row">
+              <div class="col-md-6">
+                <%=image_tag order_history_item.product.image.url,class:"orderHistoryProductImage img-responsive",width:"200px",height:"300px"%>
+              </div>
+              <div class="col-md-6">
+                <h2 class="text-center"><%=link_to order_history_item.product.name,product_path(order_history_item.product.id)%></h2>
+                <table class="table table-bordred">
+                  <tr>
+                    <th>カテゴリ</th>
+                    <td><%=order_history_item.product.category.name%></td>
+                  </tr>
+                  <tr>
+                    <th>価格</th>
+                    <td><%=order_history_item.product.price%></td>
+                  </tr>
+                  <tr>
+                    <th>個数</th>
+                    <td><%=order_history_item.quantity%></td>
+                  </tr>
+                  <tr>
+                    <th>小計</th>
+                    <td><%=order_history_item.product.price * order_history_item.quantity%></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        <%end%>
+      </div>
+    <%end%>
+  <%end%>
+</div>

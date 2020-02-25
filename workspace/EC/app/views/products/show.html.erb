@@ -1,0 +1,40 @@
+<div class="product_show">
+  <div class="productContainer container text-center">
+    <div class="productHeader">
+      <h1><%=@product.name%></h1>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="productImg col-md-6">
+          <%=image_tag @product.image.url,class:"img-responsive",width:"100%",height:"300px"%>
+        </div>
+        <div class="productDetail col-md-6">
+          <table class="table table-bordered">
+            <tr>
+              <th>カテゴリー</th>
+              <td><%=@product.category.name%></td>
+            </tr>
+            <tr>
+              <th>発送日</th>
+              <td>明日発送</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="productDescription">
+      <h3>¥<%=@product.price%></h3>
+    </div>
+    <div class="payment_container">
+      <%=form_tag(cart_items_path) do%>
+        <select class="product_count" name="product_count">
+          <%for num in 1..10 do %>
+            <option value=<%=num%>><%=num%></option>
+          <%end%>
+        </select>
+        個
+        <input type="submit" value="カートに入れる" class="btn btn-danger">
+      <%end%>
+    </div>
+  </div>
+</div>
