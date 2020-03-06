@@ -1,0 +1,309 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+body{
+  padding:0;
+  margin:0;
+}
+
+.main-home{
+  width:100%;
+  position: relative;
+}
+
+
+.start_container{
+  text-align: center;
+  background: #FFF;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 9000;
+  background-image:url('welcome-emora.jpg');
+  background-position:center center;
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+.start_container p{
+  position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
+	z-index: 9999;
+	width: 100%;
+}
+
+.start_container span{
+  display: block;
+}
+
+.text1{
+  color:#000;
+  font-size:60px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  margin-bottom: 20px;
+  background:#FFF;
+  position: relative;
+  animation:text 3s 1;
+}
+
+.text2{
+  font-size:60px;
+  color:purple;
+  font-weight:bold;
+  font-family: 'Segoe UI';
+}
+
+@keyframes text{
+  0%{
+    color: black;
+    margin-bottom: -80px;
+  }
+  30%{
+    letter-spacing: 25px;
+    margin-bottom: -80px;
+  }
+
+  85%{
+    letter-spacing:  8px;
+    margin-bottom:-80px;
+
+  }
+
+}
+
+.emora-description{
+  width:90%;
+  margin:0 auto;
+}
+
+.emora-introduction{
+  width:80%;
+  margin:0 auto;
+  margin-top: 50px;
+  margin-bottom:50px;
+}
+
+.welcome{
+  position: relative;
+  width:100%;
+}
+
+.welcome h1{
+  font-size:80px;
+  position: absolute;
+  font-weight:bold;
+  top:50%;
+  left:50%;
+  -ms-transform: translate(-50%,-50%);
+   -webkit-transform: translate(-50%,-50%);
+   transform: translate(-50%,-50%);
+   margin:0;
+   padding:0;
+}
+
+.welcome h1:hover{
+  color:#a180dc;
+  transition: 0.3s ease;
+}
+
+.welcome h2{
+  position: absolute;
+  top:63%;
+  left:50%;
+  -ms-transform: translate(-50%,-63%);
+  -webkit-transform: translate(-50%,-63%);
+  transform: translate(-50%,-63%);
+}
+
+.title-img{
+  width:100%;
+  height: 65vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+}
+
+.emora-introduction h1{
+  font-weight: bold;
+  text-align: center;
+}
+
+.emora-introduction p{
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size:20px;
+  font-weight:900;
+  line-height: 2;
+}
+
+.emora-introduction .only_rikkyo{
+  font-weight: bold;
+  color:#a180dc;
+}
+
+.emora-description h1{
+  font-weight: bold;
+}
+
+.emora-description h1{
+  text-align: center;
+}
+
+.emora-description-inner section{
+  width:33%;
+  padding:10px;
+}
+
+.emora-description-inner{
+  margin-top: 10px;
+  display: flex;
+}
+
+
+.main-content{
+  width:100%;
+  height:350px;
+  margin:0 auto;
+  line-height: 2;
+  position: relative;
+}
+
+.main-img{
+  width:100%;
+  height:200px;
+}
+
+.main-content h2{
+  text-align: center;
+}
+
+.main-content p{
+  font-size:20px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight:900;
+}
+
+.main-content-description{
+  width:100%;
+}
+
+.main-content-header{
+  width:100%;
+}
+
+.only_sub{
+  font-size:12px;
+  color:red;
+  position: absolute;
+  top:12%;
+  left:80%;
+  transform: translate(-12%,-80%);
+  -ms-transform: translate(-12%,-80%);
+  -webkit-transform: translate(-12%,-80%);
+}
+
+@media screen and (max-width:1200px){
+  .only_sub{
+    top:5%;
+    left:75%;
+    transform: translate(-5%,-75%);
+    -ms-transform: translate(-5%,75%);
+    -webkit-transform: translate(-5%,75%);
+  }
+}
+
+@media screen and (max-width:950px){
+  .main-content{
+    height:430px;
+  }
+  .only_sub{
+    top:9%;
+    left:41%;
+    transform: translate(-9%,-41%);
+    -ms-transform: translate(-9%,-41%);
+    -webkit-transform: translate(-9%,-41%);
+  }
+
+}
+
+@media screen and (max-width:782px){
+  .text1,.text2a{
+    font-size:40px;
+  }
+}
+
+@media screen and (max-width:727px){
+
+  .emora-description-inner {
+    display: block;
+  }
+  .emora-description-inner section{
+    width:100%;
+  }
+
+  .welcome h2{
+    font-size:25px;
+  }
+
+  .main-img{
+    height:300px;
+  }
+
+  .only_sub{
+    font-size:12px;
+    color:red;
+    position: absolute;
+    top:10%;
+    left:80%;
+    -ms-transform: translate(-10%,-80%);
+    -webkit-transform: translate(-10%,-80%);
+    transform: translate(-10%,-80%);
+  }
+}
+
+@media screen and (max-width:500px){
+  .welcome h1,{
+    font-size:70px;
+  }
+  .welcome h2{
+    font-size:20px;
+  }
+  .text1,.text2{
+    font-size:25px;
+  }
+}
+
+@media screen and (max-width:450px){
+  .main-content{
+    height:450px;
+  }
+  .text1{
+    font-size:15px;
+  }
+  .text2{
+    font-size:30px;
+  }
+}
+
+@media screen and (max-width:452px){
+  .welcome h1{
+    font-size:60px;
+  }
+
+  .welcome h2{
+    font-size:15px;
+    top:60%;
+    left:50%;
+    -ms-transform: translate(-50%,-60%);
+    -webkit-transform: translate(-50%,-60%);
+    transform: translate(-50%,-60%);
+  }
+}

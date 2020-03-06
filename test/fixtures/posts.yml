@@ -1,0 +1,28 @@
+# == Schema Information
+#
+# Table name: posts
+#
+#  id               :integer          not null, primary key
+#  content          :string
+#  created_at       :datetime         not null
+#  updated_at       :datetime         not null
+#  message_board_id :integer
+#  user_id          :integer
+#
+# Indexes
+#
+#  index_posts_on_message_board_id  (message_board_id)
+#  index_posts_on_user_id           (user_id)
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  content: MyString
+  user: one
+  message_board: one
+
+two:
+  content: MyString
+  user: two
+  message_board: two
