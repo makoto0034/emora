@@ -1,0 +1,65 @@
+<div class="message_board_talk_index">
+  <div class="other_message_board_list">
+    <h4>他の掲示板</h4>
+    <ul>
+      <%@message_boards.each do |message_board|%>
+        <li>
+          <%=link_to message_board.name,message_boards_talks_path(message_board.id,category_id:message_board.category.id)%>
+        </li>
+      <%end%>
+    </ul>
+  </div>
+  <div class="message_board_container">
+    <div class="message_board_header">
+      <h1><%=@message_board.name%></h1>
+      <h4><%=@message_board.detail%></h4>
+      <div class="message_board_talk_input">
+        <%=form_tag(posts_path(params[:id],category_id:params[:category_id]),class:"message_board_talk_input_inner")do%>
+          <textarea name="content" rows="3" placeholder="メッセージを入力してください"></textarea>
+          <div class="message_board_submit">
+            <button type="submit">投稿する</button>
+          </div>
+        <%end%>
+      </div>
+    </div>
+      <%if @posts.empty? %>
+        <h4 class="post_first_message">まだ一度も投稿がありません<br>最初の投稿をしましょう！</h4>
+      <%else%>
+        <%@posts.each do |post|%>
+        <%if post.user_id == current_user.id %>
+          <div class="post_container">
+            <h4 class="post_user_name"><%=post.user.name%>　<span class="post_created"><%=post.created_at.strftime("%Y年%m月%d日 %H時%M分")%></span></h4>
+            <p><%=post.content%></p>
+          </div>
+        <%else%>
+          <div class="post_container">
+            <div class="post_header">
+              <div class="post_user_icon">
+                <% if post.user.avatar.attached?%>
+                    <%=link_to user_path(post.user_id),class:"avatar_link" do%>
+                      <%=image_tag url_for(post.user.avatar),:size =>"50x50" ,class: "avatar"%>
+                    <%end%>
+                <%else%>
+                  <%=link_to user_path(post.user_id),class:"avatar_link" do%>
+                    <%=image_tag "face1.jpg" ,:size =>"50x50" ,class: "avatar" %>
+                  <%end%>
+                <%end%>
+              </div>
+              <div class="post_detail">
+                <h4 class="post_user_name">
+                  <%=link_to user_path(post.user_id),class:"other_post_user_name" do%>
+                    <%=post.user.name%>
+                  <%end%>
+                  <span class="post_created">
+                    <%=post.created_at.strftime("%Y年%m月%d日 %H時%M分")%>
+                  </span>
+                </h4>
+              </div>
+            </div>
+            <p><%=post.content%></p>
+          </div>
+          <%end%>
+        <%end%>
+      <%end%>
+  </div>
+</div>

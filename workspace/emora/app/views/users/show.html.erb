@@ -1,0 +1,106 @@
+<div class="user_show">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="user_profile">
+          <div class="user_avatar">
+              <%=image_tag url_for(@user.avatar),:size =>"150x150" ,class: "avatar"%>
+          </div>
+          <h2><%=@user.name%>
+            <%if @user.id ==current_user.id%>
+              <%=link_to(edit_user_path) do%>
+                <i class="fas fa-user-cog"></i>
+              <%end%>
+            <%else%>
+                <%if current_user.following?(@user)%>
+                  <%= form_for(current_user.relationships.find_by(follow_id: @user.id), html: { method: :delete }) do |f| %>
+                    <%= hidden_field_tag :follow_id, @user.id %>
+                    <%= f.submit 'フォローを解除する', class: 'btn btn-danger btn-block' %>
+                  <%end%>
+                <%else%>
+                  <%= form_for(current_user.relationships.build) do |f| %>
+                    <%= hidden_field_tag :follow_id, @user.id %>
+                    <%= f.submit 'フォローする', class: 'btn btn-primary btn-block' %>
+                  <%end%>
+                <%end%>
+              <%end%>
+          </h2>
+          <div class="user_introduce">
+            <%if@user.profile%>
+              <%=@user.profile%>
+            <%else%>
+              <p>プロフィールが更新されていません</p>
+            <%end%>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 userControl">
+        <ul id="userTab" class="nav nav-tabs">
+          <li class="nav-item userProfTab"><a class="nav-link active" href="#userTabComment">投稿</a></li>
+          <li class="nav-item userProfTab"><a class="nav-link" href="#userTabFollow">フォロー</a></li>
+          <li class="nav-item userProfTab"><a class="nav-link" href="#userTabFollower">フォロワー</a></li>
+          <!-- <li class="nav-item"><a class="nav-link" href="#userTabFavorite">お気に入り</a></li> -->
+        </ul>
+
+        <div class="tab-content">
+          <div class="tab-pane active" id="userTabComment">
+            <div class="user_post_list">
+              <% if @posts.empty? %>
+                <%if @user.id == current_user.id%>
+                  <h5>まだ一度も投稿したことがありません<br>掲示板で投稿してみませんか？</h5>
+                  <%=link_to'掲示板で投稿する',message_boards_path	%>
+                  <%=image_tag("message.jpg",width:"100%")%>
+                <%else%>
+                <h5>このユーザーはまだ一度も投稿したことがありません</h5>
+                <%end%>
+              <%else%>
+                <%@posts.each do |post|%>
+                  <div class="post_content" id="userTabComment">
+                    <div class="post_content_header">
+                      <%=post.created_at.strftime("%m月%d日 %H:%M")%>　
+                      掲示板名：<%=link_to post.message_board.name,message_boards_talks_path(post.message_board.id,category_id:post.message_board.category.id)%>
+                    </div>
+                    <div class="post_content_body">
+                      <%=post.content%>
+                    </div>
+                  </div>
+                <%end%>
+              <%end%>
+            </div>
+          </div>
+          <div class="tab-pane" id="userTabFollow">
+            <% if @followings.empty? %>
+              <p>フォローしている人がいません。<br>誰かをフォローしませんか？</p>
+            <% else %>
+              <%@followings.each do |follow|%>
+                <%=link_to(user_path(follow.id)) do%>
+                  <div class="container userProfile">
+                    <%=image_tag url_for(follow.avatar),class:"userAvatar"%>
+                    <%=follow.name%>
+                  </div>
+                <%end%>
+              <%end%>
+            <% end %>
+          </div>
+          <div class="tab-pane" id="userTabFollower">
+            <% if @followers.empty?%>
+              <p>フォロワーがいません</p>
+            <% else %>
+              <%@followers.each do |follower|%>
+                <%=link_to(user_path(follower.id)) do%>
+                  <div class="container userProfile">
+                    <%=image_tag url_for(follower.avatar),class:"userAvatar"%>
+                    <%=follower.name%>
+                  </div>
+                <%end%>
+              <%end%>
+            <% end %>
+          </div>
+          <!-- <div class="tab-pane" id="userTabFavorite"">
+            <p>実装予定です。楽しみにしていてください！！</p>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

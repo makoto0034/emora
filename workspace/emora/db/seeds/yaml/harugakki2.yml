@@ -1,0 +1,3448 @@
+--- !ruby/array:Array
+- !ruby/struct:Course
+  code: IA273
+  title: "IA273／発育・発達・加齢論\n(Human Development and Aging) "
+  theme: ''
+  instructor: '石渡　貴之(ISHIWATA TAKAYUKI) '
+  schedule: |-
+    春学期２ (Spring Semester 2) 月曜日(Mon) １時限(Period 1) N221(Room)
+    春学期２ (Spring Semester 2) 月曜日(Mon) ２時限(Period 2) N221(Room)
+  credit: '２単位(2 Credits) '
+  num: 'CMX2310 '
+  lang: "日本語\n(Japanese) "
+  notes: " "
+  objective: '発育・発達の性差と個人差，運動との関係，現代のこどもの諸問題，加齢に伴う生体構造，機能の変化，発達障害や認知症についての知識を深める． '
+  contents: '成熟への過程で生じる様々な身体の部分や組織・器官の形態の増大をさす発育，行動や動作，運動能力などの時間経過に伴う機能的な変化をさす発達，そして老化に代表される成熟期以後の変化を捉えた加齢という３つの視点から，各期の身体的特徴及び心理的特徴，障害の特徴について学習する． '
+  plan:
+    1: '発育・発達の概念 '
+    2: '神経の発達，脳の構造変化 '
+    3: '運動機能の発達と脳内ネットワークの変化 '
+    4: '幼児の体格と生理機能の発達 '
+    5: '心の発達と健康 '
+    6: '身体機能の発達と運動，子供の生活習慣の必要性 '
+    7: '思春期の心と身体の変化 '
+    8: '障害の理解，捉え方 '
+    9: '発達障害の理解と支援（１） '
+    10: '発達障害の理解と支援（２） '
+    11: '老化の現象，変化について '
+    12: '認知症の理解 '
+    13: '加齢と身体の機能，老化予防 '
+    14: 'まとめ '
+  outside: '授業時間外学習の指示は，履修登録完了後にBlackbord上で履修者に対して行う．各自が確認して予習・復習すること． '
+  evaluation:
+    種類(Kind): 筆記試験(Written Exam)
+    割合(%): 70 　％
+    基準(Criteria): " "
+  textbook: !ruby/array:Array
+  - 特に指定しない．授業時に資料を配付する．
+  readings: !ruby/array:Array
+  - :no: '1.'
+    :author: '青柳　領 '
+    :book_title: '子どもの発育発達と健康  '
+    :publisher: 'ナカニシヤ出版 '
+    :date: '2006 '
+    :isbn_issn: " "
+  - :no: '2.'
+    :author: '髙石昌弘　監修 '
+    :book_title: 'からだの発達と加齢の科学  '
+    :publisher: '大修館書店 '
+    :date: '2012 '
+    :isbn_issn: " "
+  - :no: '3.'
+    :author: '日本介護福祉士養成施設協会　編 '
+    :book_title: '発達と老化の理解/認知症の理解/障害の理解/こころとからだのしくみ  '
+    :publisher: '法律文化社 '
+    :date: '2016 '
+    :isbn_issn: " "
+  - :others: ''
+  others: ''
+  notice: ''
+- !ruby/struct:Course
+  code: HN248
+  title: "抽選登録／映像系ワークショップ５\n(Workshop on Film and Video 5) "
+  theme: 'ドキュメンタリーにおける撮影技法 '
+  instructor: '山田　達也(YAMADA TATSUYA) '
+  schedule: |-
+    春学期２ (Spring Semester 2) 月曜日(Mon) １時限(Period 1) N636(Room)
+    春学期２ (Spring Semester 2) 月曜日(Mon) ２時限(Period 2) N636(Room)
+  credit: '２単位(2 Credits) '
+  num: 'BEC2120 '
+  lang: "日本語\n(Japanese) "
+  notes: " "
+  objective: "ドキュメンタリー撮影の方法と技術の習得。\nフィクションとノンフィクションの表面的な垣根を越えて「ドキュメンタリー映画におけるドラマとは何か」を作品制作の過程で探っていく。 "
+  contents: "学科保有機材や手持ち機材を使いドキュメンタリー作品制作を実際に行う。\nまた、インタビュー撮影の方法やフィクションの撮影方法も取り入れて行う。\n履修者の人数や進行度合いに応じて下記の計画から変更する可能性があります。\n月曜日午前の2コマ連続授業。\n "
+  plan:
+    1: 'ガイダンス、課題提示 '
+    2: '参考試写 '
+    3: '課題撮影① '
+    4: '課題撮影② '
+    5: '課題撮影③、課題編集 '
+    6: '課題編集 '
+    7: '講評 '
+    8: '企画 '
+    9: '課題制作 '
+    10: '課題制作 '
+    11: '課題制作 '
+    12: '課題制作 '
+    13: '講評 '
+    14: '講評 '
+  outside: '授業時に指示する。授業時間外での取材やロケハンなどある可能性あり。 '
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 課題制作と提出(70%) 、授業への取り組み(30%)
+  textbook: !ruby/array:Array
+  - 授業時に適宜配布する。
+  readings: !ruby/array:Array
+  - 必要に応じて指示する。
+  others: '企画によっては学外での撮影もある場合あり。 '
+  notice: ''
+- !ruby/struct:Course
+  code: DK184
+  title: "DK184／現代社会研究Ｂ\n(Studies of Contemporary Society B) "
+  theme: 'Interdisciplinary Approaches to Transnationalism '
+  instructor: 'キム，Ｈ．(KIM HYOJOUNG JACOB) '
+  schedule: |-
+    春学期２ (Spring Semester 2) 月曜日(Mon) ２時限(Period 2) 9B01(Room)
+    春学期２ (Spring Semester 2) 木曜日(Thu) ２時限(Period 2) 9B01(Room)
+  credit: '２単位(2 Credits) '
+  num: 'SOX3411 '
+  lang: "英語\n(English) "
+  notes: " "
+  objective: 'Since late 20th century globalization, people across the globe migrates
+    across national borders en masse, resulting in qualitative change in the personal,
+    national, and international organization of life. This course is designed to study
+    the structure and dynamics of international migration and their personal, social,
+    political, cultural and transnational consequences from interdisciplinary perspectives. '
+  contents: "The central questions that the course is designed to address include:\n・Why
+    do people migrate internationally?\n・Why is immigration so controversial?\n・What
+    theories of migration are there?\n・What is “transnationalism from below” and how
+    is it different from globalization?\n・How to understand transnational social spaces
+    and transnational communities?\n・What are the political consequences of migrant
+    transnationalism?\n・How international migration affects economic development of
+    the sending countries?\n・How transnationalism re-shapes the landscape of political
+    activism?\n・How immigrants and their children are received in the receiving countries?\n・What
+    are the types, causes and consequences of irregular/illegal migration?\n・How the
+    receiving countries regulate and manage international migration? "
+  plan:
+    1: "I .WHY DO PEOPLE MIGRATE INTERNATIONALLY?\nSession 1. Trends in International
+      Migration\nReadings:\n“International Migration Trends” World Migration Report
+      2005 (Pp. 379-403). Geneva, Switzerland: International Organization of Migration.
+      http://publications.iom.int/bookstore/index.php?main_page=product_info&cPath=37&products_id=176 "
+    2: "Session 2. Why Do People Migrate Internationally?\nReadings:\nStalker, Peter
+      (2000). Workers without Frontiers (Pp. 21-34, 117-129). Boulder, Col.: Lynne
+      Rienner.\nCohen, Jeffrey H. (2004). The Culture of Migration in Southern Mexico
+      (Pp. 124-141). Austin: University of Texas Press. "
+    3: "II. WHY IMMIGRATION SO CONTROVERCIAL?\nSession 3. Economic Effects of International
+      Migration\nReadings:\nGhosh, Bimal (2005). “Economic Effects of International
+      Migration.” Pp. 163-183 in World Migration Report 2005, Geneva, Switzerland:
+      International Organization of Migration.  "
+    4: "Session 4. Socio-Cultural Challenges to National Identity\nReadings:\nHuntington,
+      Samuel P. (2004). “The Hispanic Challenge.” Foreign Policy 141: 30-46.\nCitrin,
+      Jack, et al. (2007). “Testing Huntington: Is Hispanic Immigration a Threat to
+      American Identity?” Perspectives on Politics 5-1: 31-48.\nVideo: Shadow of Hope
+      (2004) "
+    5: "III. MIGRATION THEORY\nSession 5. Interdisciplinary Overview of Migration
+      Theories\nReadings:\nBrettell C. and J. Hollifield (2000). Migration Theory:
+      Talking Across Disciplines. Rougledge: New York. (Selected Chapters).\n "
+    6: "IV. Globalization and Transnationalism from Below\nReadings:\nMobasher, Mohsen,
+      and M. Sadri, (eds.) (2004).Migration, Globalization and Ethnic Relations (Chapter
+      15, pp. 213-27). Pearson: Upper Saddle River. "
+    7: "Session 7. Transnationalism from Below\nReadings:\nSmith, Michael P., and
+      Luis E. Guarnizo, (eds.) (1998). “Transnationalism From Below”. Comparative
+      Urban & Community Research V.6. New Brunswick: Transaction Publishers.\nLevitt,
+      Peggy (2004). “Transnational Migrants: When ‘Home’ Means More than One Country.”
+      Migration Information Source, Migration Policy Institute, October 1 "
+    8: "V. TRANSNATIONAL SOCIAL SPACES & COMMUNITIES\nSession 8. Transnational Social
+      Spaces\nReadings:\nFaist, Thomas (2000). “Transnationalization in International
+      Migration: Implications for the Study of Citizenship and Culture.” Ethnic and
+      Racial Studies 23-2: 189-222.\nLevitt, Peggy (2004) “Conceptualizing Simultaneity:
+      A Transnational Social Field Perspective on Society.” International Review V.
+      38-3: 1002-39. "
+    9: "Session 9. Transnational Communities\nReadings:\nCastles, Stephen (2002).
+      “Migration and Community Formation under Conditions of Globalization.” International
+      Migration Review V. 36-4: 1143-68.\nCastles, Thomas (2003). “Transnational Communities:
+      A New Form of Social Relations under Conditions of Globalization?” In J. Reitz,
+      (ed.), Host Societies and the Reception of Immigrants, Center for Comparative
+      Immigration Studies, University of California, San Diego. "
+    10: "VI. POLITICAL TRANSNATIONALISM\nSession 10. Political Theory of Migrant Transnationalism\nReadings:\nBaubock,
+      Rainer (2003). “Towards a Political Theory of Migrant Transnationalism.” International
+      Migration Review V.37-3: 700-23. "
+    11: "Session 11. Transnationalism, State, Citizenship\nReadings:\nSmith, Michael
+      Peter. (2003). “Transnationalism, the State, and the Extraterritorial Citizen.”
+      Politics and Society V. 31-4: 467-502.\nItzigsohn, Jose (2000). “Immigration
+      and the Boundaries of Citizenship: The Institutions of Immigrants’ Political
+      Transnationalism” International Migration Review V. 34-4: 1126-54. "
+    12: "VII. MIGRATION AND DEVELOPMENT\nSession 12. Migration and Development\nReadings:\nSarah
+      Gammage (2006). “Exporting People and Recruiting Remittances: A Development
+      Strategy for El Salvador?” Latin American Perspectives V. 33: 75-100.\nSession
+      12-1. Migration as Development Strategies?\nReadings:\nDe Haas, Hein (2005).
+      “International Migration, remittances and development: Myths and facts.” Third
+      World Quarterly V. 26-8: 1269-1284.\nDevesh Kapur and Kevin McHale. Give Us
+      Your Best and Brightest: The Global Hunt for Talent and its Impact on the Developing
+      World (Chapters 7 & 8). Washington: Center for Global Development. "
+    13: "VIII. TRANSNATIONAL POLITICAL ACTIVISM\nSession 13. Transnational Political
+      Activism\nReadings:\nGuarnizo, Luis Eduardo, et al. (2003). “Assimilation and
+      Transnationalism: Determinants of Transnational Political Action among Contemporary
+      Migrants.” American Journal of Sociology V. 108-6: 1211-48.\n "
+    14: "Session 14. Global Social Movements\nReadings:\nDella Porta, Donatella, and
+      Sidney Tarrow (2005). Transnational Protest and Global Activism (Chapter 10,
+      pp. 227-246). Rowman & Littlefield Publishers: Lanham.\nSarah Wayland. (2004).
+      “Ethnonatonalist Networks and Transnational Opportunities: the Sri Lankan Tamil
+      diaspora.” Review of International Studies V. 30: 405-26. "
+  outside: "This course emphasizes student’s active involvement in learning throughout
+    the class. To achieve this goal, the course is organized around the following
+    two formats:\nLectures: The instructor will provide a brief lecture and key theoretical
+    and/or practical issues involved in each session. This lecture will set the basic
+    framework upon which subsequent student-led seminars will develop.\nSeminars:
+    All class sessions will proceed in student-led seminar discussions. Each seminar
+    will proceed in a style of panel discussion in which a designed student for assigned
+    readings will lead the seminar with a seminar presentation. His/her presentation
+    will be then discussed by designated panel discussants on the strengths and shortcomings
+    of the assigned reading materials and student presentation. After the panel discussion,
+    the classroom discussion will be open to the entire class. "
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 最終テスト(Final Test)(30%) 、Midterm Test(30%) 、Seminar Presentation(20%)
+      、Panel Discussion(10%) 、In-class Participation(10%)
+  textbook: !ruby/array:Array
+  - There is no official textbook or coursepack. All assigned reading materials will
+    be available in electrical files at least one week before the class.
+  readings: !ruby/array:Array
+  - See the Course Schedule above for detailed reading assignments for each session.
+  others: "Study Required Outside of Class\n\nAll students are expected to come to
+    each class, having read all assigned reading materials.\n\nStudents who are responsible
+    for seminar presentations should prepare their presentations in Power Point Presentation
+    and submit the presentation file to the instructor one day before the presentation
+    day.\n "
+  notice: ''
+- !ruby/struct:Course
+  code: OW430
+  title: 'OW430/ Studies of Contemporary Society B '
+  theme: 'Interdisciplinary Approaches to Transnationalism '
+  instructor: 'キム，Ｈ．(KIM HYOJOUNG JACOB) '
+  schedule: |-
+    春学期２ (Spring Semester 2) 月曜日(Mon) ２時限(Period 2) 9B01(Room)
+    春学期２ (Spring Semester 2) 木曜日(Thu) ２時限(Period 2) 9B01(Room)
+  credit: '２単位(2 Credits) '
+  num: 'GLA3301 '
+  lang: "英語\n(English) "
+  notes: " "
+  objective: 'Since late 20th century globalization, people across the globe migrates
+    across national borders en masse, resulting in qualitative change in the personal,
+    national, and international organization of life. This course is designed to study
+    the structure and dynamics of international migration and their personal, social,
+    political, cultural and transnational consequences from interdisciplinary perspectives. '
+  contents: "The central questions that the course is designed to address include:\n・Why
+    do people migrate internationally?\n・Why is immigration so controversial?\n・What
+    theories of migration are there?\n・What is “transnationalism from below” and how
+    is it different from globalization?\n・How to understand transnational social spaces
+    and transnational communities?\n・What are the political consequences of migrant
+    transnationalism?\n・How international migration affects economic development of
+    the sending countries?\n・How transnationalism re-shapes the landscape of political
+    activism?\n・How immigrants and their children are received in the receiving countries?\n・What
+    are the types, causes and consequences of irregular/illegal migration?\n・How the
+    receiving countries regulate and manage international migration? "
+  plan:
+    1: "I .WHY DO PEOPLE MIGRATE INTERNATIONALLY?\nSession 1. Trends in International
+      Migration\nReadings:\n“International Migration Trends” World Migration Report
+      2005 (Pp. 379-403). Geneva, Switzerland: International Organization of Migration.
+      http://publications.iom.int/bookstore/index.php?main_page=product_info&cPath=37&products_id=176 "
+    2: "Session 2. Why Do People Migrate Internationally?\nReadings:\nStalker, Peter
+      (2000). Workers without Frontiers (Pp. 21-34, 117-129). Boulder, Col.: Lynne
+      Rienner.\nCohen, Jeffrey H. (2004). The Culture of Migration in Southern Mexico
+      (Pp. 124-141). Austin: University of Texas Press. "
+    3: "II. WHY IMMIGRATION SO CONTROVERCIAL?\nSession 3. Economic Effects of International
+      Migration\nReadings:\nGhosh, Bimal (2005). “Economic Effects of International
+      Migration.” Pp. 163-183 in World Migration Report 2005, Geneva, Switzerland:
+      International Organization of Migration.  "
+    4: "Session 4. Socio-Cultural Challenges to National Identity\nReadings:\nHuntington,
+      Samuel P. (2004). “The Hispanic Challenge.” Foreign Policy 141: 30-46.\nCitrin,
+      Jack, et al. (2007). “Testing Huntington: Is Hispanic Immigration a Threat to
+      American Identity?” Perspectives on Politics 5-1: 31-48.\nVideo: Shadow of Hope
+      (2004) "
+    5: "III. MIGRATION THEORY\nSession 5. Interdisciplinary Overview of Migration
+      Theories\nReadings:\nBrettell C. and J. Hollifield (2000). Migration Theory:
+      Talking Across Disciplines. Rougledge: New York. (Selected Chapters).\n "
+    6: "IV. Globalization and Transnationalism from Below\nReadings:\nMobasher, Mohsen,
+      and M. Sadri, (eds.) (2004).Migration, Globalization and Ethnic Relations (Chapter
+      15, pp. 213-27). Pearson: Upper Saddle River. "
+    7: "Session 7. Transnationalism from Below\nReadings:\nSmith, Michael P., and
+      Luis E. Guarnizo, (eds.) (1998). “Transnationalism From Below”. Comparative
+      Urban & Community Research V.6. New Brunswick: Transaction Publishers.\nLevitt,
+      Peggy (2004). “Transnational Migrants: When ‘Home’ Means More than One Country.”
+      Migration Information Source, Migration Policy Institute, October 1 "
+    8: "V. TRANSNATIONAL SOCIAL SPACES & COMMUNITIES\nSession 8. Transnational Social
+      Spaces\nReadings:\nFaist, Thomas (2000). “Transnationalization in International
+      Migration: Implications for the Study of Citizenship and Culture.” Ethnic and
+      Racial Studies 23-2: 189-222.\nLevitt, Peggy (2004) “Conceptualizing Simultaneity:
+      A Transnational Social Field Perspective on Society.” International Review V.
+      38-3: 1002-39. "
+    9: "Session 9. Transnational Communities\nReadings:\nCastles, Stephen (2002).
+      “Migration and Community Formation under Conditions of Globalization.” International
+      Migration Review V. 36-4: 1143-68.\nCastles, Thomas (2003). “Transnational Communities:
+      A New Form of Social Relations under Conditions of Globalization?” In J. Reitz,
+      (ed.), Host Societies and the Reception of Immigrants, Center for Comparative
+      Immigration Studies, University of California, San Diego. "
+    10: "VI. POLITICAL TRANSNATIONALISM\nSession 10. Political Theory of Migrant Transnationalism\nReadings:\nBaubock,
+      Rainer (2003). “Towards a Political Theory of Migrant Transnationalism.” International
+      Migration Review V.37-3: 700-23. "
+    11: "Session 11. Transnationalism, State, Citizenship\nReadings:\nSmith, Michael
+      Peter. (2003). “Transnationalism, the State, and the Extraterritorial Citizen.”
+      Politics and Society V. 31-4: 467-502.\nItzigsohn, Jose (2000). “Immigration
+      and the Boundaries of Citizenship: The Institutions of Immigrants’ Political
+      Transnationalism” International Migration Review V. 34-4: 1126-54. "
+    12: "VII. MIGRATION AND DEVELOPMENT\nSession 12. Migration and Development\nReadings:\nSarah
+      Gammage (2006). “Exporting People and Recruiting Remittances: A Development
+      Strategy for El Salvador?” Latin American Perspectives V. 33: 75-100.\nSession
+      12-1. Migration as Development Strategies?\nReadings:\nDe Haas, Hein (2005).
+      “International Migration, remittances and development: Myths and facts.” Third
+      World Quarterly V. 26-8: 1269-1284.\nDevesh Kapur and Kevin McHale. Give Us
+      Your Best and Brightest: The Global Hunt for Talent and its Impact on the Developing
+      World (Chapters 7 & 8). Washington: Center for Global Development. "
+    13: "VIII. TRANSNATIONAL POLITICAL ACTIVISM\nSession 13. Transnational Political
+      Activism\nReadings:\nGuarnizo, Luis Eduardo, et al. (2003). “Assimilation and
+      Transnationalism: Determinants of Transnational Political Action among Contemporary
+      Migrants.” American Journal of Sociology V. 108-6: 1211-48.\n "
+    14: "Session 14. Global Social Movements\nReadings:\nDella Porta, Donatella, and
+      Sidney Tarrow (2005). Transnational Protest and Global Activism (Chapter 10,
+      pp. 227-246). Rowman & Littlefield Publishers: Lanham.\nSarah Wayland. (2004).
+      “Ethnonatonalist Networks and Transnational Opportunities: the Sri Lankan Tamil
+      diaspora.” Review of International Studies V. 30: 405-26. "
+  outside: "This course emphasizes student’s active involvement in learning throughout
+    the class. To achieve this goal, the course is organized around the following
+    two formats:\nLectures: The instructor will provide a brief lecture and key theoretical
+    and/or practical issues involved in each session. This lecture will set the basic
+    framework upon which subsequent student-led seminars will develop.\nSeminars:
+    All class sessions will proceed in student-led seminar discussions. Each seminar
+    will proceed in a style of panel discussion in which a designed student for assigned
+    readings will lead the seminar with a seminar presentation. His/her presentation
+    will be then discussed by designated panel discussants on the strengths and shortcomings
+    of the assigned reading materials and student presentation. After the panel discussion,
+    the classroom discussion will be open to the entire class. "
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 最終テスト(Final Test)(30%) 、Midterm Test(30%) 、Seminar Presentation(20%)
+      、Panel Discussion(10%) 、In-class Participation(10%)
+  textbook: !ruby/array:Array
+  - There is no official textbook or coursepack. All assigned reading materials will
+    be available in electrical files at least one week before the class.
+  readings: !ruby/array:Array
+  - See the Course Schedule above for detailed reading assignments for each session.
+  others: "Study Required Outside of Class\n\nAll students are expected to come to
+    each class, having read all assigned reading materials.\n\nStudents who are responsible
+    for seminar presentations should prepare their presentations in Power Point Presentation
+    and submit the presentation file to the instructor one day before the presentation
+    day.\n "
+  notice: ''
+- !ruby/struct:Course
+  code: BT237
+  title: 'BT237／Topics in Business 2 '
+  theme: 'Team Sports Marketing '
+  instructor: 'ビョン，Ｋ．(BYON KUNWUNG)  '
+  schedule: |-
+    春学期２ (Spring Semester 2) 月曜日(Mon) ３時限(Period 3) 4256(Room)
+    春学期２ (Spring Semester 2) 月曜日(Mon) ４時限(Period 4) 4256(Room)
+  credit: '２単位(2 Credits) '
+  num: 'GBU3201 '
+  lang: "英語\n(English) "
+  notes: " "
+  objective: 'The objectives of the course are: (a) to introduce students to the application
+    of basic principles of marketing to the managed sport industry with emphasis on
+    sport teams and (b) to understand how and why fans make decisions to consume sport
+    teams '
+  contents: 'Students will learn various aspects about environment, resources, and
+    stakeholders associated with sport teams and how they function together to influence
+    sport fan''s various consumption behaviors. The class will be taught through lectures
+    and discussions of sport marketing cases.  '
+  plan:
+    1: 'Introduction of the course/lectures '
+    2: 'Class based on lecture and discussion of cases '
+    3: 'Class based on lecture and discussion of cases '
+    4: 'Class based on lecture and discussion of cases '
+    5: 'Class based on lecture and discussion of cases '
+    6: 'Class based on lecture and discussion of cases '
+    7: 'Class based on lecture and discussion of cases '
+    8: 'Class based on lecture and discussion of cases '
+    9: 'Class based on lecture and discussion of cases '
+    10: 'Class based on lecture and discussion of cases '
+    11: 'Class based on lecture and discussion of cases '
+    12: 'Class based on lecture and discussion of cases '
+    13: 'Class based on lecture and discussion of cases '
+    14: 'Test '
+  outside: 'Students are expected to read required readings that include chapters,
+    cases, and other readings. Students are also expected to prepare well for presentation
+    and discussion of weekly cases.  '
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): Written Assignment(20%) 、Oral Presentation(20%) 、SBJ Weekly Assignment(20%)
+      、Class Participation(10%) 、Test(30%)
+  textbook: !ruby/array:Array
+  - :no: '1.'
+    :author: 'Wakefield, K '
+    :book_title: 'Team Sports Marketing  '
+    :publisher: 'Team Sports Marketing '
+    :date: '2014 '
+    :isbn_issn: " "
+  - :no: '2.'
+    :author: 'Street & Smith''s Sports Business '
+    :book_title: 'Street & Smith''s Sports Business Journal Subscription  '
+    :publisher: 'Street & Smith '
+    :date: " "
+    :isbn_issn: " "
+  - :others: Wakefield, K. (2014). Team Sports Marketing available at http://teamsportsmarketing.com
+  readings: !ruby/array:Array
+  - :no: '1.'
+    :author: 'Shank & Lyberger '
+    :book_title: 'Sports Marketing: A Strategic Perspective (6th edition)  '
+    :publisher: 'Routledge '
+    :date: '2015 '
+    :isbn_issn: 
+  - :no: '2.'
+    :author: 'Mullin, Hardy, & Sutton '
+    :book_title: 'Sport Marketing (4th edition)  '
+    :publisher: 'Human Kinetics '
+    :date: '2014 '
+    :isbn_issn: 
+  - :others: |-
+      Sport Marketing Cases (Freely Available via Instructor)
+      The NFL’s Digital Media Strategy
+      Game Misconduct: Service Error Recovery Strategy (Case)
+      Developing a Pricing Strategy for the LA Dodgers (Case)
+      Sportscape factors influencing spectator attendance and satisfaction at a PGA tournament (Case)
+      Marketing the ‘Big Game’: Developing a Student Rewards Program in College Basketball (Case)
+      The Chicago Blackhawks: Greatest Sports Business Turnaround Ever
+      Sir Alex Ferguson: Managing Manchester United
+      The Richmond What?!? The Naming of a Minor League Baseball Franchise (Case)
+      Social Strategy at NIKE (Case)
+      NIKE Football: World Cup 2010 South Africa (Case)
+      The NFL’s Digital Media Strategy (Case)
+      Under Armour (Case)
+      Major League Soccer (Case)
+      Fitbit (Case)
+  others: 'The above course schedule is tentative and is subject to change. Detailed
+    syllabus will be provided at the beginning of the class.  '
+  notice: ''
+- !ruby/struct:Course
+  code: IC130
+  title: "IC130／地方自治論\n(Local Autonomy) "
+  theme: ''
+  instructor: '原田　晃樹(HARADA KOKI) '
+  schedule: |-
+    春学期２ (Spring Semester 2) 月曜日(Mon) ３時限(Period 3) N321(Room)
+    春学期２ (Spring Semester 2) 月曜日(Mon) ４時限(Period 4) N321(Room)
+  credit: '２単位(2 Credits) '
+  num: 'CMC1200 '
+  lang: "日本語\n(Japanese) "
+  notes: " "
+  objective: 'この授業では，地方行政の基本的な仕組みを理解し，今日の自治体の現状と課題に触れながら，地方自治の概念を理解するとともに，自治体が直面する課題を考察する。 '
+  contents: '私たちは，日常生活のあらゆる場面で政府の行政サービスや規制に接している。しかも，日本の場合，その大半は自治体を通じて行われている。なぜ、そうなっているのか？何が問題なのだろうか？この授業では，私たちが普段当たり前と捉えている制度・政策・慣行がなぜ存在し、何が問われているかということについて、毎回のテーマに沿って問いを設定して考えていく。その際，適宜グループ討議を行うとともに、現役の市長・議員・行政職員等をゲスト・スピーカーとして招聘し，自治体行政とそれを取り巻く政策動向や，自治とデモクラシーの関係についての理解をより深められるように配慮する。なお，近年，「ガバナンス論」といわれる改革の潮流とあいまって，行政の果たすべき役割やコミュニティのあり方が改めて問われつつある。そこで，授業では海外の映画も鑑賞しながら、地方自治のリアルな実態を学べるようにしたい。 '
+  plan:
+    1: 'ガイダンス '
+    2: '政府はなぜ必要なのか？ '
+    3: '自治はなぜ求められるのか？：自治の意義と社会統合 '
+    4: 'ケーススタディ：地方自治と福祉再分配 '
+    5: '地方自治を捉える視角①：国と地方の関係－日本は集権国家か？－ '
+    6: '地方自治を捉える視角②：都道府県と市町村の関係－広域自治体は自治の防波堤？か、国の出先か？－ '
+    7: '地方自治を捉える視角③：市町村と住民の関係－法令に則した政策と住民参加による政策をどのように両立させるか？ '
+    8: '地方自治を捉える視角④：地方自治体の区域・規模－地方自治体の適正規模とは？－ '
+    9: '地方自治を捉える視角⑤：公的サービスの社会的分担関係－公的サービスを民間がどこまで担うべきか？ '
+    10: '地方自治体の政策過程の実際（1） '
+    11: '地方自治体の政策過程の実際（2） '
+    12: '地方自治体の政策をめぐる論点①：イギリスの事例から考える '
+    13: '地方自治体の政策をめぐる論点②：イギリスの事例から考える '
+    14: 'まとめ '
+  outside: '講義レジュメで紹介する関連文献を予習・復習に利用して欲しい。また，関連する授業科目（政策学の基礎知識，市民参加論，地方財政論など）を受講しておくのが望ましい。 '
+  evaluation:
+    種類(Kind): 筆記試験(Written Exam)
+    割合(%): 80 　％
+    基準(Criteria): " "
+  textbook: !ruby/array:Array
+  - 開講時に指示する。
+  readings: !ruby/array:Array
+  - 随時指示する。
+  others: ''
+  notice: ''
+- !ruby/struct:Course
+  code: CB120
+  title: "CB120／理論物理学講究５（数理物理学）\n(Special Topic in Theoretical Physics 5(Mathematical
+    Physics)) "
+  theme: ''
+  instructor: '中山　優(NAKAYAMA YU) '
+  schedule: |-
+    春学期２ (Spring Semester 2) 月曜日(Mon) ４時限(Period 4) 9207(Room)
+    春学期２ (Spring Semester 2) 月曜日(Mon) ５時限(Period 5) 9207(Room)
+  credit: '２単位(2 Credits) '
+  num: 'PHY3210 '
+  lang: "日本語\n(Japanese) "
+  notes: 'LA205数理物理学と併合 '
+  objective: '経路積分を用いて場の量子論の初歩を学ぶ。 '
+  contents: '現代物理学の根幹をなす場の量子論を学ぶ。経路積分による量子電磁力学の定式化を目標に，現代的な場の量子論の構造を理解する。６月・７月に２コマ連続して授業を行う｡  '
+  plan:
+    1: 'イントロダクション  '
+    2: '古典場の理論と作用積分  '
+    3: '経路積分１  '
+    4: '経路積分２  '
+    5: '相関関数の計算１  '
+    6: '相関関数の計算２  '
+    7: '物理量の計算１  '
+    8: '物理量の計算２  '
+    9: '対称性と保存則  '
+    10: 'フェルミオン場の量子化  '
+    11: '電磁場の量子化  '
+    12: '量子電磁力学  '
+    13: 'くりこみ理論１ '
+    14: 'くりこみ理論２  '
+  outside: "「理論物理学講究２・素粒子論」の単位を取得していることが望ましい。毎週，出席確認を兼ねてレポート課題を提出してもらう。  "
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 複数回のレポート(40%) 、出席態度(60%)
+  textbook: !ruby/array:Array
+  - なし
+  readings: !ruby/array:Array
+  - :no: '1.'
+    :author: 'A. Zee '
+    :book_title: 'Quantum Field Theory in a nutshell  '
+    :publisher: 'Princeton Univ Pr  '
+    :date: '2010 '
+    :isbn_issn: 
+  - :others: ''
+  others: ''
+  notice: ''
+- !ruby/struct:Course
+  code: HN171
+  title: "その他登録／基礎演習１１\n(Basic Research Seminar 11) "
+  theme: '劇映画の演出について学ぶ '
+  instructor: '万田　邦敏(MANDA KUNITOSHI) '
+  schedule: |-
+    春学期２ (Spring Semester 2) 月曜日(Mon) ４時限(Period 4) N636(Room)
+    春学期２ (Spring Semester 2) 月曜日(Mon) ５時限(Period 5) N636(Room)
+  credit: '２単位(2 Credits) '
+  num: 'BEC2320 '
+  lang: "日本語\n(Japanese) "
+  notes: " "
+  objective: "劇映画における芝居と画面の演出とはどのようなものであるかを, 実践的に探る｡ 以下に該当する者を受講対象者とする｡\n1. 劇映画製作にスタッフまたはキャストとして真に参加したいという意欲のある者｡\n2.
+    劇映画製作という共同作業の場を、真に楽しみたいと思う者。\n3. 授業時間以外に課題に取り組むための多くの時間が必要となる｡ よって課題製作に取り組むための時間を積極的に作ることができる者｡ "
+  contents: "受講生は少人数グループに分かれ, 課題シナリオの実写化を行う｡ 実写化した課題を, 受講生と共に講評する｡授業は月曜日の４〜5限の２コマ続き（春学期２）であることに注意。\n以下の授業計画はあくまでも予定｡
+    ただし, 初回授業はグループ分けをするので必ず出席すること｡ "
+  plan:
+    1: 'グループ分け，および課題提示｡ '
+    2: '課題にどのように取り組むか '
+    3: '企画の検討 '
+    4: '企画の検討 '
+    5: 'プロットの検討 '
+    6: 'プロットの検討 '
+    7: 'シナリオの検討 '
+    8: 'シナリオの検討 '
+    9: 'リハーサル '
+    10: 'リハーサル '
+    11: '撮影と編集 (授業時間以外の作業を含む) '
+    12: '撮影と編集 (授業時間以外の作業を含む) '
+    13: '課題の発表と講評  '
+    14: '課題の発表と講評  '
+  outside: '課題を実写化するための準備作業｡ ただし, それは ｢学習｣ ではなく ｢実践｣ と認識してください｡  '
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 課題製作を通してどれだけ「劇映画」に迫れたかの度合い(100%)
+  textbook: !ruby/array:Array
+  - なし
+  readings: !ruby/array:Array
+  - 見ておくべき映画を授業時に提示する｡
+  others: ''
+  notice: ''
+- !ruby/struct:Course
+  code: LA205
+  title: "LA205／数理物理学\n(Mathematical Physics) "
+  theme: ''
+  instructor: '中山　優(NAKAYAMA YU) '
+  schedule: |-
+    春学期２ (Spring Semester 2) 月曜日(Mon) ４時限(Period 4) 9207(Room)
+    春学期２ (Spring Semester 2) 月曜日(Mon) ５時限(Period 5) 9207(Room)
+  credit: '２単位(2 Credits) '
+  num: 'PHY5290 '
+  lang: "日本語\n(Japanese) "
+  notes: 'CB120理論物理学講究５と併合 '
+  objective: '経路積分を用いて場の量子論の初歩を学ぶ。 '
+  contents: '現代物理学の根幹をなす場の量子論を学ぶ。経路積分による量子電磁力学の定式化を目標に，現代的な場の量子論の構造を理解する。６月・７月に２コマ連続して授業を行う｡  '
+  plan:
+    1: 'イントロダクション  '
+    2: '古典場の理論と作用積分  '
+    3: '経路積分１  '
+    4: '経路積分２  '
+    5: '相関関数の計算１  '
+    6: '相関関数の計算２  '
+    7: '物理量の計算１  '
+    8: '物理量の計算２  '
+    9: '対称性と保存則  '
+    10: 'フェルミオン場の量子化  '
+    11: '電磁場の量子化  '
+    12: '量子電磁力学  '
+    13: 'くりこみ理論１ '
+    14: 'くりこみ理論２  '
+  outside: "「理論物理学講究２・素粒子論」の単位を取得していることが望ましい。毎週，出席確認を兼ねてレポート課題を提出してもらう。  "
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 複数回のレポート(40%) 、出席態度(60%)
+  textbook: !ruby/array:Array
+  - なし
+  readings: !ruby/array:Array
+  - :no: '1.'
+    :author: 'A. Zee '
+    :book_title: 'Quantum Field Theory in a nutshell  '
+    :publisher: 'Princeton Univ Pr  '
+    :date: '2010 '
+    :isbn_issn: 
+  - :others: ''
+  others: ''
+  notice: ''
+- !ruby/struct:Course
+  code: KA332
+  title: "自動登録／国際経済特論２\n(Special Lecture on International Economics 2) "
+  theme: 'グローバリゼーションの時代 '
+  instructor: '宮崎　礼二(MIYAZAKI REIJI) '
+  schedule: |-
+    春学期２ (Spring Semester 2) 月曜日(Mon) ５時限(Period 5) 6403(Room)
+    春学期２ (Spring Semester 2) 月曜日(Mon) ６時限(Period 6) 6403(Room)
+  credit: '２単位(2 Credits) '
+  num: 'ECX5420 '
+  lang: "日本語\n(Japanese) "
+  notes: " "
+  objective: 'グローバリゼーションを政治経済学的に把握する． '
+  contents: "21世紀に入ってから、BRICSに象徴される新興国の台頭は，19世紀・20世紀の帝国主義列強諸国・先進工業国中心の世界経済地図を大きく書き換えつつある．とりわけ、中国の台頭は覇権国アメリカとの対抗関係を強めてもいる．また，イギリスのEU離脱やアメリカでのトランプ政権成立に象徴されるように，先進国の多くで「グローバル化恐怖症」（globaphobia）がそれまでのグローバリズムの興隆を凌駕しようとしている．不確定かつ不確実性の高まる時代を予兆させる．\n本講義は今日の国際経済を理解するために，第二次世界大戦前後から今日に至る世界経済の展開と変遷を，インターナショナルな経済関係からグローバルな経済への移行とその構造変化に焦点を当てながら，政治経済学的に考察をおこなう．さらに，この変遷過程に，現実経済と経済思想との関係性を見出し，政策面からも国際経済を捉える．講義では，個々の具体的な政治経済事象や政策展開を時系列的に取り上げ，それらの政治経済的な意味とそれらが現実の世界経済にどのような影響をもたらし，またどのような意義をもったのかを論じたい．したがって，本講義は理論を中心とする「学」ではなく，事実を踏まえて解釈する「論」に重きをおく．つまり，定量的ではなく定性的分析が主たるアプローチである．\n講義では，個々の具体的な国際経済事象や政策展開を時系列的に取り上げながら，それらの相互連関性，政治経済学的な意義，そしてそれらが現実の世界経済にどのような意味をもっていたのか，またどのような影響をもたらしたのかを考察する．日々流れる膨大な個別情報を統合して，今日の国際経済の状況を把握できるようにすることを目標とする．
+    \ "
+  plan:
+    1: 'ガイダンス '
+    2: 'イントロダクション '
+    3: 'ポスト冷戦時代の幕開け：Pax Americanaの再生とグローバリズムの始動 '
+    4: 'バブル連鎖：サブプライムローンと世界同時不況 '
+    5: 'グローバリゼーションと国民主権１ '
+    6: 'グローバリゼーションと国民主権２ '
+    7: '国際経済秩序を巡る米中対抗１ '
+    8: '国際経済秩序を巡る米中対抗２ '
+    9: '輪読１ '
+    10: '輪読２ '
+    11: '輪読３ '
+    12: '輪読４ '
+    13: '輪読５ '
+    14: '総括 '
+  outside: "参考文献と講義ノートでの毎講義の復習．\n輪読の課題． "
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 最終レポート(Final Report)(20%) 、平常点(60%) 、課題レポート(20%)
+  textbook: !ruby/array:Array
+  - 輪読文献については、受講者と相談して決める。
+  readings: !ruby/array:Array
+  - 講義で適宜紹介する。
+  others: '本講義は「連続物語」で進行するので，欠席をするとそれ以降のストーリー展開の把握が困難になることに注意． '
+  notice: ''
+- !ruby/struct:Course
+  code: KM302
+  title: "KM302／経営戦略特論２\n(Special Lecture on Strategic Management 2) "
+  theme: " "
+  instructor: '並木　伸晃(NAMIKI NOBUAKI) '
+  schedule: |-
+    春学期２ (Spring Semester 2) 月曜日(Mon) Ｇ５時限(Period G5) X105(Room)
+    春学期２ (Spring Semester 2) 月曜日(Mon) Ｇ６時限(Period G6) X105(Room)
+  credit: '２単位(2 Credits) '
+  num: 'MBU6200 '
+  lang: "日本語\n(Japanese) "
+  notes: " "
+  objective: "企業の競争力をいかに構築するか。特定の競争環境内では，どのような戦略が適しているか。環境の変化にいかに戦略的に，組織的に適応してゆくべきか。\nこのコーポレート・ストラテジー１，２では，主に競争戦略論のトピック（i.e.,　M.E.ポーターの５フォース，Generic
+    strategies等）に焦点を当てる。 "
+  contents: "競争環境のProfit potential（過去，現在，将来）を５フォース分析によって見極め，その外部環境と内部環境（企業内事情）に適したCompetitive
+    Strategyを構築するのが，競争戦略論である。\nまずは競争戦略論の基礎を学ぶ。\n次にケースを分析する。次のコーポレート・ストラテジー２では，多くのケース・スタディを使って日本企業・市場への適応方法を考察する。２，３人のグループをつくり，ケース･スタディをする。また，殆ど毎週，宿題，小レポートを出す。 "
+  plan:
+    1: 'レクチャー　企業戦略 '
+    2: 'レクチャー　企業戦略 '
+    3: 'レクチャー　組織戦略 '
+    4: 'レクチャー　組織戦略 '
+    5: 'グループによるケース発表 '
+    6: 'グループによるケース発表 '
+    7: 'レクチャー　コアコンピテンス '
+    8: 'レクチャー　Resource Based View; 多角化戦略等 '
+    9: 'グループによるケース発表 '
+    10: 'グループによるケース発表 '
+    11: 'グループによるケース発表 '
+    12: 'グループによるケース発表 '
+    13: '企業分析発表 '
+    14: '企業分析発表 '
+  outside: 'ケースの分析と発表の準備。産業、企業分析発表の準備。 '
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 最終テスト(Final Test)(20%) 、最終レポート(Final Report)(30%) 、Homework(10%)
+      、Participation(20%) 、Case Presentation(20%)
+  textbook: !ruby/array:Array
+  - 並木伸晃『参入の壁』（創成社　2006）。他は授業時に指示。ケースを使う。
+  readings: !ruby/array:Array
+  - 授業時に指示。
+  others: ''
+  notice: ''
+- !ruby/struct:Course
+  code: KN251
+  title: 'KN251／Advanced Seminar in Global Business 5 '
+  theme: 'Research Methods/Data Analysis '
+  instructor: 'ビョン，Ｋ．(BYON KUNWUNG)  '
+  schedule: |-
+    春学期２ (Spring Semester 2) 月曜日(Mon) ５時限(Period 5) 4256(Room)
+    春学期２ (Spring Semester 2) 月曜日(Mon) ６時限(Period 6) 4256(Room)
+  credit: '２単位(2 Credits) '
+  num: 'MIB6201 '
+  lang: "英語\n(English) "
+  notes: " "
+  objective: 'The objectives of the course are: (a) to introduce students to the concepts
+    associated with research method and advanced statistical analyses that are widely
+    adopted in sport, business management, (b) to provide in-depth understanding of
+    theoretical aspects of selected research methods and statistical analyses  '
+  contents: 'Students will learn (a) how to evaluate the appropriateness of the research
+    methodology for the study, (b) how to interpret quantitative data by performing
+    statistical analyses, (c) how to evaluate reliability and validity of the research
+    instrument used in the study, (d) how to assess the clarity and consistency of
+    the results. The class will be taught through lectures, evaluation of research
+    articles, and demonstration/practice of data analyses.  '
+  plan:
+    1: 'Introduction of the course/lectures '
+    2: 'Class based on lecture, research articles, data, actual practice of performing
+      data analyses. '
+    3: 'Class based on lecture, research articles, data, actual practice of performing
+      data analyses. '
+    4: 'Class based on lecture, research articles, data, actual practice of performing
+      data analyses. '
+    5: 'Class based on lecture, research articles, data, actual practice of performing
+      data analyses. '
+    6: 'Class based on lecture, research articles, data, actual practice of performing
+      data analyses. '
+    7: 'Class based on lecture, research articles, data, actual practice of performing
+      data analyses. '
+    8: 'Class based on lecture, research articles, data, actual practice of performing
+      data analyses. '
+    9: 'Class based on lecture, research articles, data, actual practice of performing
+      data analyses. '
+    10: 'Class based on lecture, research articles, data, actual practice of performing
+      data analyses. '
+    11: 'Class based on lecture, research articles, data, actual practice of performing
+      data analyses. '
+    12: 'Class based on lecture, research articles, data, actual practice of performing
+      data analyses. '
+    13: 'Class based on lecture, research articles, data, actual practice of performing
+      data analyses. '
+    14: 'Test '
+  outside: "Students are expected to read all the required readings to prepare class
+    discussion and presentation.\nStudents are required to purchase a book on statistical
+    analysis. "
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): Research Proposal(30%) 、Oral Presentation(15%) 、Data Analyses(25%)
+      、Test(30%)
+  textbook: !ruby/array:Array
+  - :no: '1.'
+    :author: 'Schuyler Huck '
+    :book_title: 'Reading Statistics and Research  '
+    :publisher: 'Addison Wesley '
+    :date: '2012 '
+    :isbn_issn: 
+  - :no: '2.'
+    :author: 'Morgan, Leech, Barrett '
+    :book_title: 'IBM SPSS for Introductory Statistics  '
+    :publisher: 'Routledge; '
+    :date: '2015 '
+    :isbn_issn: 
+  - :others: ''
+  readings: !ruby/array:Array
+  - :no: '1.'
+    :author: 'Morgan, Leech, Barrett '
+    :book_title: 'IBM SPSS for Intermediate Statistics  '
+    :publisher: 'Routledge '
+    :date: '2012 '
+    :isbn_issn: 
+  - :no: '2.'
+    :author: 'Hair, Black, Babin, & Anderson '
+    :book_title: 'Multivariate Data Analysis  '
+    :publisher: 'Prentice Hall '
+    :date: '2009 '
+    :isbn_issn: 
+  - :no: '3.'
+    :author: 'Byrne '
+    :book_title: 'Structural Equation Modeling (3rd edition)  '
+    :publisher: 'Routledge; '
+    :date: '2016 '
+    :isbn_issn: 
+  - :others: ''
+  others: 'The above course schedule is tentative and is subject to change. Detailed
+    syllabus will be provided at the beginning of the class.  '
+  notice: ''
+- !ruby/struct:Course
+  code: VL472
+  title: "VL472／原価計算基礎３\n(Cost Accounting 3) "
+  theme: " "
+  instructor: '青淵　正幸(AOBUCHI MASAYUKI) '
+  schedule: |-
+    春学期２ (Spring Semester 2) 月曜日(Mon) Ｇ５時限(Period G5) A202(Room)
+    春学期２ (Spring Semester 2) 月曜日(Mon) Ｇ６時限(Period G6) A202(Room)
+  credit: '２単位(2 Credits) '
+  num: 'BDS5200 '
+  lang: "日本語\n(Japanese) "
+  notes: " "
+  objective: '製品の製造費用の計算方法について学ぶ。 '
+  contents: "製造業は，原材料や製造に携わる工員など，有形・無形の資源を結合させて製品を生産し，その販売を通じて社会の富の形成に貢献している。製品販売時にはその対価を受け取ることになるが，果たしてその対価はいくらに設定すればよいだろうか。\n製品を生産するためにかかる費用は製造原価と呼ばれ，それは販売価格の決定に有用な情報として利用される。本講義では，製造原価の計算方法の基本的な構造について理解することを目標にしている。\nまた、標準原価計算や直接原価計算を取り上げ，コストマネジメントの基本を学ぶ。 "
+  plan:
+    1: '原価計算の基礎（１） '
+    2: '原価計算の基礎（２） '
+    3: '個別原価計算（１） '
+    4: '個別原価計算（２） '
+    5: '総合原価計算（１） '
+    6: '総合原価計算（２） '
+    7: '標準原価計算（１） '
+    8: '標準原価計算（２） '
+    9: '直接原価計算（１） '
+    10: '直接原価計算（２） '
+    11: '原価計算演習（１） '
+    12: '原価計算演習（２） '
+    13: '原価計算演習（３） '
+    14: '最終試験 '
+  outside: '計算方法をマスターするために，授業後には復習を行うこと。また，次回の講義までに準備しておくことは，講義内で説明する。 '
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 最終テスト(Final Test)(35%) 、講義内での課題演習(35%) 、講義への参加状況(30%)
+  textbook: !ruby/array:Array
+  - テキストは指定しない。
+  readings: !ruby/array:Array
+  - 必要に応じて，講義内で指示する。
+  others: "本講義は原価計算の初心者を対象として開講する。\n仮想の生産計画を用いて伝票や証憑類への記入、原価計算表の作成を繰り返し行う。 "
+  notice: ''
+- !ruby/struct:Course
+  code: VL236
+  title: "VL236／コーポレート・ストラテジー２\n(Corporate Strategy 2) "
+  theme: " "
+  instructor: '並木　伸晃(NAMIKI NOBUAKI) '
+  schedule: |-
+    春学期２ (Spring Semester 2) 月曜日(Mon) Ｇ５時限(Period G5) X105(Room)
+    春学期２ (Spring Semester 2) 月曜日(Mon) Ｇ６時限(Period G6) X105(Room)
+  credit: '２単位(2 Credits) '
+  num: 'BDS5300 '
+  lang: "日本語\n(Japanese) "
+  notes: " "
+  objective: "企業の競争力をいかに構築するか。特定の競争環境内では，どのような戦略が適しているか。環境の変化にいかに戦略的に，組織的に適応してゆくべきか。\nこのコーポレート・ストラテジー１，２では，主に競争戦略論のトピック（i.e.,　M.E.ポーターの５フォース，Generic
+    strategies等）に焦点を当てる。 "
+  contents: "競争環境のProfit potential（過去，現在，将来）を５フォース分析によって見極め，その外部環境と内部環境（企業内事情）に適したCompetitive
+    Strategyを構築するのが，競争戦略論である。\nまずは競争戦略論の基礎を学ぶ。\n次にケースを分析する。次のコーポレート・ストラテジー２では，多くのケース・スタディを使って日本企業・市場への適応方法を考察する。２，３人のグループをつくり，ケース･スタディをする。また，殆ど毎週，宿題，小レポートを出す。 "
+  plan:
+    1: 'レクチャー　企業戦略 '
+    2: 'レクチャー　企業戦略 '
+    3: 'レクチャー　組織戦略 '
+    4: 'レクチャー　組織戦略 '
+    5: 'グループによるケース発表 '
+    6: 'グループによるケース発表 '
+    7: 'レクチャー　コアコンピテンス '
+    8: 'レクチャー　Resource Based View; 多角化戦略等 '
+    9: 'グループによるケース発表 '
+    10: 'グループによるケース発表 '
+    11: 'グループによるケース発表 '
+    12: 'グループによるケース発表 '
+    13: '企業分析発表 '
+    14: '企業分析発表 '
+  outside: 'ケースの分析と発表の準備。産業、企業分析発表の準備。 '
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 最終テスト(Final Test)(20%) 、最終レポート(Final Report)(30%) 、Homework(10%)
+      、Participation(20%) 、Case Presentation(20%)
+  textbook: !ruby/array:Array
+  - 並木伸晃『参入の壁』（創成社　2006）。他は授業時に指示。ケースを使う。
+  readings: !ruby/array:Array
+  - 授業時に指示。
+  others: ''
+  notice: ''
+- !ruby/struct:Course
+  code: VL216
+  title: "VL216／サービス・マーケティング２\n(Services Marketing 2) "
+  theme: " "
+  instructor: '田中　道昭(TANAKA MICHIAKI) '
+  schedule: |-
+    春学期２ (Spring Semester 2) 月曜日(Mon) Ｇ５時限(Period G5) A302(Room)
+    春学期２ (Spring Semester 2) 月曜日(Mon) Ｇ６時限(Period G6) A302(Room)
+  credit: '２単位(2 Credits) '
+  num: 'BDS6700 '
+  lang: "日本語\n(Japanese) "
+  notes: " "
+  objective: 'すべての産業に対するホスピタリティーや顧客満足向上におけるマーケティング手法を最新のサービス工学等も交えて実践的に学んでいく '
+  contents: 'この授業では、サービス・マーケティングをサービス産業全般に対するサービス経営学の中核領域であると捉えることに加えて、すべての産業におけるホスピタリティーや顧客満足向上に対するマーケティング手法と捉えて、サービス・マーケティングを学んでいく。
+    具体的には、サービスの質と価値、ホスピタリティー、顧客価値、顧客満足、感動、CRMとサービス・マーケティング等のサービス・マーケティングの領域のみならず、サービス工学やサービスに関連する数理マーケティング等の先端分野も学んでいく。
+    サービス・マーケティング1と同様に、特にサービス・マーケティングの中核となるブランディングに重点を置き、サービスブランディングのみならず、店舗ブランディング、そして経営者や開発者のセルフブランディング、コーポレートブランディングについてもカバーし、最終的にはコーポレートバリューとブランドバリュー向上のためのサービス・マーケティングを実践していく。
+    またホスピタリティー、顧客価値、顧客満足、感動においては、実際に想定顧客とのロープレ演習等も行い、実践的にクラスを進めていく。 '
+  plan:
+    1: 'サービス工学とサービス・マーケティング（１） '
+    2: 'サービス工学とサービス・マーケティング（２） '
+    3: '数理マーケティングとサービス・マーケティング（１） '
+    4: '数理マーケティングとサービス・マーケティング（２） '
+    5: 'マネジメントシステムとサービス・マーケティング（１） '
+    6: 'マネジメントシステムとサービス・マーケティング（２） '
+    7: 'サービスの質と価値（１） '
+    8: 'サービスの質と価値（２） '
+    9: 'ホスピタリティー、顧客価値、顧客満足、感動（１） '
+    10: 'ホスピタリティー、顧客価値、顧客満足、感動（２） '
+    11: 'CRMとサービス・マーケティング（１） '
+    12: 'CRMとサービス・マーケティング（２） '
+    13: 'コーポレートバリューとブランドバリュー向上のためのサービス・マーケティング（１） '
+    14: 'コーポレートバリューとブランドバリュー向上のためのサービス・マーケティング（２） '
+  outside: " "
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 最終レポート(Final Report)(20%) 、期中レポート(20%) 、クラス貢献(20%) 、他の受講生への貢献(20%)
+      、プレゼンテーション(20%)
+  textbook: !ruby/array:Array
+  - :no: '1.'
+    :author: '田中道昭 '
+    :book_title: "『ミッションの経営学』  "
+    :publisher: 'すばる舎リンケージ '
+    :date: '2012 '
+    :isbn_issn: 
+  - :no: '2.'
+    :author: '田中道昭 '
+    :book_title: "『人と組織 リーダーシップの経営学』  "
+    :publisher: 'すばる舎リンケージ '
+    :date: '2013 '
+    :isbn_issn: 
+  - :no: '3.'
+    :author: '窪山哲雄 '
+    :book_title: "『ホスピタリティ・マーケティングの教科書』  "
+    :publisher: '実業之日本社 '
+    :date: '2014 '
+    :isbn_issn: 
+  - :no: '4.'
+    :author: '田中道昭 '
+    :book_title: "『アマゾンが描く2022年の世界』  "
+    :publisher: 'PHP研究所 '
+    :date: '2017 '
+    :isbn_issn: 
+  - :others: テキスト用レジュメ資料は授業内で別途配布する。教科書の購入については初回授業で指示する。
+  readings: !ruby/array:Array
+  - :no: '1.'
+    :author: 'ティム・ブラウン '
+    :book_title: "『デザイン思考が世界を変える』  "
+    :publisher: '早川書房 '
+    :date: '2014 '
+    :isbn_issn: 
+  - :no: '2.'
+    :author: 'ロバート・スコーブル/シェル・イスラエル '
+    :book_title: "『コンテクストの時代』  "
+    :publisher: '日経BP社 '
+    :date: '2014 '
+    :isbn_issn: 
+  - :no: '3.'
+    :author: '本村陽一 '
+    :book_title: "『サービス工学の技術』  "
+    :publisher: '東京電機大学出版局 '
+    :date: '2012 '
+    :isbn_issn: 
+  - :no: '4.'
+    :author: '泉田良輔 '
+    :book_title: "『Google vs. トヨタ—自動運転車は始まりにすぎない』  "
+    :publisher: '角川 '
+    :date: '2014 '
+    :isbn_issn: 
+  - :others: ''
+  others: "系統的履修\nサービス・マーケティング１を履修しておくこと。\n【双方向による授業】\n本科目は、講義に併用して、クラスあるいはチーム単位でのディスカッション形式での双方向授業を展開する。双方向による授業の割合は100％（14回中14回）である。\n【実務家教員による授業】\n本科目は、5年以上の実務経験を有する実務家教員による授業である。\n "
+  notice: ''
+- !ruby/struct:Course
+  code: VL270
+  title: "VL270／消費者行動論４\n(Consumer Behavior 4) "
+  theme: " "
+  instructor: '笠原　英一(KASAHARA EIICHI) '
+  schedule: |-
+    春学期２ (Spring Semester 2) 月曜日(Mon) Ｇ５時限(Period G5) A303(Room)
+    春学期２ (Spring Semester 2) 月曜日(Mon) Ｇ６時限(Period G6) A303(Room)
+  credit: '２単位(2 Credits) '
+  num: 'BDS5400 '
+  lang: "日本語\n(Japanese) "
+  notes: " "
+  objective: 'マーケティング戦略、マーケティング・リサーチおよび消費者行動論の有機的な関係を明らかにすると同時に、消費者行動論を理論体系として整理して理解し、実務で活用できるようになること。 '
+  contents: '消費者は、過去の経験と自己をとりまく環境などによってニーズやウォンツを感じ、製品・サービスを知覚して、選択する。その際には、環境のさまざまな要素を情報として受け入れる。更に、購買して、所有、使用した結果、満足あるいは不満足を感じる。以上のように消費者行動には多くの内的変数、外的変数が作用する。消費者行動論では、消費者が購入や所有、使用といった消費活動を行う際に、どのような変数が介在し、影響し、どのような結果が生じるかということを考察することをテーマとしている。消費者行動論とは、マーケティング戦略を立案するための、そして、マーケティング・リサーチを推進するための基盤的理論体系と考えられる。本講義では、消費者行動論３で構築した理論体系を基に、各種事業分野への応用事例を研究することを通して、消費者行動論に対する理解を深めると同時に実務家/プロフェッショナルとしての実践力を高めるためのコンテンツを提供する。 '
+  plan:
+    1: "消費者行動論とマーケティング\n・情報処理プロセスとマーケティング・マネジメント・プロセス\n・購買意思決定と価値伝達のデザイン "
+    2: "消費者行動論とブランディング\n・ブランド構築の視点、構成要素、 "
+    3: "定量的リサーチと消費者行動論\n・アンケート/サーベイ調査 "
+    4: "定量的リサーチと消費者行動論\n・コンジョイント分析 "
+    5: "定性的リサーチと消費者行動論\n・FGI、インデプス・インタビュー、顧客訪問、顧客アドバイザリーパネル "
+    6: "定性的リサーチと消費者行動論\n・デザインシンキング、エスノグラフィー "
+    7: "消費者行動論とマーケティング・マネジメント\n・セグメンテーション及びターゲティングに関する定量分析 "
+    8: "消費者行動論とマーケティング・マネジメント\n・セグメンテーション及びターゲティングに関する定量分析 "
+    9: "消費者行動論とマーケティング・マネジメント\n・ポジショニング/パーセプション・マップに関する定量分析 "
+    10: "消費者行動論とマーケティング・マネジメント\n・ポジショニング/パーセプション・マップに関する定量分析 "
+    11: "消費者行動論に関するケース・スタディ\n・消費財ケース "
+    12: "消費者行動論に関するケース・スタディ\n・産業財ケース "
+    13: '消費者行動論に関するまとめ '
+    14: 'テスト及び解説 '
+  outside: '次回の予習範囲や課題は、各授業の最後およびblackboard上でコメントする。 '
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 最終テスト(Final Test)(40%) 、最終レポート(Final Report)(40%) 、授業で実施するクイズや授業での発表(20%)
+  textbook: !ruby/array:Array
+  - 各セッションでハンドアウトを用意する。日米欧の最新論文を基に、新しいコンテンツをカスタマイズして配布する。
+  readings: !ruby/array:Array
+  - :no: '1.'
+    :author: '笠原英一 '
+    :book_title: "『強い会社が実行している「経営戦略」の教科書』  "
+    :publisher: '中経出版 '
+    :date: '2013 '
+    :isbn_issn: " "
+  - :others: ''
+  others: "【双方向による授業割合】\n100%\n\n※20年間、経営コンサルタントとして、国内外の上場企業に対して、戦略、マーケティング、組織に関する実践的課題に取り組んできた実務家教員による授業である。 "
+  notice: ''
+- !ruby/struct:Course
+  code: VL784
+  title: "VL784／租税論２\n(Tax Theory 2) "
+  theme: " "
+  instructor: '清田　幸弘(SEITA YUKIHIRO) '
+  schedule: |-
+    春学期２ (Spring Semester 2) 月曜日(Mon) Ｇ５時限(Period G5) D402(Room)
+    春学期２ (Spring Semester 2) 月曜日(Mon) Ｇ６時限(Period G6) D402(Room)
+  credit: '２単位(2 Credits) '
+  num: 'BDS5100 '
+  lang: "日本語\n(Japanese) "
+  notes: 'ランドマーク税理士法人　寄附講座 '
+  objective: '本講義では各税目の成り立ちや仕組み、特徴を理解することを目的とする。 '
+  contents: '租税は企業や個人、多方面に多大な影響を与えており、税制の適切な理解があってこそ実体経済の把握が可能となる。本講義では相続税法、事業承継税制、さらに国際課税、米国税制も扱う。また、各税目の第一線に立っている実務家ならではの経験や最新事例も併せて解説を行う。 '
+  plan:
+    1: 'ガイダンス '
+    2: '相続税法(１) '
+    3: '相続税法(２) '
+    4: '相続税法(３) '
+    5: '事業承継税制(１) '
+    6: '事業承継税制（２） '
+    7: '国際課税(１) '
+    8: '国際課税（２） '
+    9: '米国税制(１) '
+    10: '米国税制(２) '
+    11: '租税手続法(１) '
+    12: '租税手続法(２) '
+    13: 'まとめ '
+    14: 'テスト '
+  outside: '授業内で指示する。 '
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 最終テスト(Final Test)(40%) 、授業への出席と貢献(60%)
+  textbook: !ruby/array:Array
+  - :no: '1.'
+    :author: '石村耕治 '
+    :book_title: "『税金のすべてがわかる　現代税法入門塾(第9版)』  "
+    :publisher: '清文社 '
+    :date: '2018 '
+    :isbn_issn: 
+  - :no: '2.'
+    :author: '清田幸弘 '
+    :book_title: "『平成30年度　都市農家・地主の税金ガイド』  "
+    :publisher: '税務研究会出版局 '
+    :date: '2018 '
+    :isbn_issn: 
+  - :others: ''
+  readings: !ruby/array:Array
+  - ''
+  others: ''
+  notice: ''
+- !ruby/struct:Course
+  code: VL180
+  title: "VL180／デジタル・ビジネスプランニング\n(Digital Business Planning) "
+  theme: " "
+  instructor: '青木　明彦(AOKI AKIHIKO) '
+  schedule: |-
+    春学期２ (Spring Semester 2) 月曜日(Mon) Ｇ５時限(Period G5) D302(Room)
+    春学期２ (Spring Semester 2) 月曜日(Mon) Ｇ６時限(Period G6) D302(Room)
+  credit: '２単位(2 Credits) '
+  num: 'BDS6600 '
+  lang: "日本語\n(Japanese) "
+  notes: "（一社）日本データビジネス協会　寄附講座 "
+  objective: 'デジタルビジネストランスフォーメーションが加速する昨今、ビジネスにおける競争優位獲得のための経営戦略立案において、データ活用の必要性がこれまで以上に重要視されている。本科目では、AI等最新技術およびデータを活用した「デジタル・ビジネスプランニング」を学び、実践的な「データサイエンティスト」を目指す。デジタル技術とデータを活用した新規ビジネスの創出および業務改善のための実践的なスキルと知識を学びたい人向けの内容となっている。 '
+  contents: '多種多様なデジタル・ビジネス事例をケーススタディする。デジタル・ビジネスにおいてデータ活用は必須でありデータおよびその活用方法についての基礎を学ぶ。またプランニングの手順を含めた方法についても学ぶ。マーケティング、ITなどプランニングに必要となる知識については概要レベルで全体を講義する。幅広い知識を必要とするが、高度な専門知識は前提としない。終盤は各自またはグループでデジタル・ビジネスプラン作成にチャレンジする。毎回ディスカッションする時間を確保する。 '
+  plan:
+    1: 'イントロダクション：「AI、IoTと中心としたデジタルトランスフォーメーションの実態」「データ活用の現状」最新の事例からデジタルビジネスを俯瞰する。 '
+    2: "データマネジメント\nデータマネジメント知識体系ガイドに沿ってデータ活用の基礎を理解する。 "
+    3: "デジタル・ビジネスプランニング概論\nデジタル・ビジネスプランの全体構成を学び、各自の領域におけるプランニングテーマを設定する。 "
+    4: "データサイエンティストの知識とスキル\nデータサイエンティストで必要に必要な知識とスキルについて学ぶ。 "
+    5: "データ活用事例研究１（ビッグデータ）\nSNSが生み出すビッグデータのマーケティング領域での活用事例について考察する。 "
+    6: "データ活用事例研究２（オープンデータ・クローズドデータ）\nオープンデータと企業内クローズドデータによる活用事例について考察する。 "
+    7: "デジタル・ビジネスプランニングメソッド\nプランニングのアプローチ方法、目的、手順、成果物について学ぶ。 "
+    8: "データデザイン（データの定義・収集・加工・分析）\nデジタル・ビジネスプランニングに必要なデータデザインについて学ぶ。 "
+    9: "プロジェクトマネジメント\nデジタル・ビジネスプラン実行プロジェクトのマネジメントについて学ぶ。 "
+    10: "クラウド活用\nハイブリットクラウドの活用について学ぶ。 "
+    11: "デジタル・ビジネスプランニング演習1\n学習してきた方法に基づき各自またはチームでプランニングを行う。 "
+    12: 'デジタル・ビジネスプランニング演習2 '
+    13: "デジタル・ビジネスプランの評価1\n演習で作成したプランをそれぞれ発表し、検討評価する。 "
+    14: 'デジタル・ビジネスプランの評価2 '
+  outside: "11､12の演習内容は、レポート（プレゼン資料）提出となる。\n最新鋭インターネットデータセンターの見学を実施する。（希望者5名以上で実施） "
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 最終レポート(40%) 、授業の参加度・発言(60%)
+  textbook: !ruby/array:Array
+  - 毎回、資料を配布する。
+  readings: !ruby/array:Array
+  - 特定の文献は使用しない。授業中必要な情報はオンライン参照する。参考となる文献は都度紹介する。
+  others: '本科目を履修する場合、他のデジタルビジネストランスフォーメーションモジュール内科目と関連性があるので、興味があり可能であればモジュール内科目を併せて履修することを推奨する。必須ではない。 '
+  notice: ''
+- !ruby/struct:Course
+  code: VL721
+  title: "VL721／ホテルマネジメント２\n(Hotel Management 2) "
+  theme: " "
+  instructor: '沢柳　知彦(SAWAYANAGI TOMOHIKO) '
+  schedule: |-
+    春学期２ (Spring Semester 2) 月曜日(Mon) Ｇ５時限(Period G5) 6409(Room)
+    春学期２ (Spring Semester 2) 月曜日(Mon) Ｇ６時限(Period G6) 6409(Room)
+  credit: '２単位(2 Credits) '
+  num: 'BDS6700 '
+  lang: "日本語\n(Japanese) "
+  notes: " "
+  objective: "- 持続的な利益計上を可能とするホテル経営を行なうためのフレームワークとマネジメントツールを習得する。\n- 事実上の世界標準となっている米国ホテル会計基準（Uniform
+    System of Accounts for Lodging Industry）を理解する。\n- ホテルオーナーとの関係・業務の棲み分けを整理する。\n "
+  contents: "- テキストの物語に沿い、ホテル再建を通じて様々なマネジメント課題を取り上げ、講義する。\n- Plan-Do-Seeサイクル、Key Performance
+    Indexモニタリング等、マネジャーとしての基本動作を紹介する。\n- 毎回、ホテル経営に関する事前課題が出題され、講義冒頭でディスカッションを行なう。\n-
+    講義出席者間でマネジメント課題の議論を行ない、知識の定着を図る。\n- ホテル経営の歴史、ホスピタリティの概念等、社会学的アプローチは採り上げない。\n "
+  plan:
+    1: '労働生産性、レベニューマネジメント① '
+    2: '労働生産性、レベニューマネジメント② '
+    3: 'メニューエンジニアリング、期待値コントロール① '
+    4: 'メニューエンジニアリング、期待値コントロール② '
+    5: '投資ファンド、リスクマネジメント① '
+    6: '投資ファンド、リスクマネジメント② '
+    7: 'ホテル売買と従業員、地域貢献と投資リターン① '
+    8: 'ホテル売買と従業員、地域貢献と投資リターン② '
+    9: 'メディアコントロール、資本政策① '
+    10: 'メディアコントロール、資本政策② '
+    11: 'マネジメント契約ストラクチャー① '
+    12: 'マネジメント契約ストラクチャー② '
+    13: 'ケーススタディ① '
+    14: 'ケーススタディ② '
+  outside: "- ホテルロビーでのチェックイン客の観察など、予習課題は必要に応じて別途指示する。\n- 東京都内のホテル施設にて学外授業を行なう可能性がある。\n "
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 最終レポート(Final Report)(30%) 、質問・発言など講義への貢献度(50%) 、予習・復習状況(20%)
+  textbook: !ruby/array:Array
+  - :no: '1.'
+    :author: '江上剛 '
+    :book_title: 'リベンジ・ホテル  '
+    :publisher: '講談社文庫 '
+    :date: '2012年 '
+    :isbn_issn: 
+  - :others: ''
+  readings: !ruby/array:Array
+  - :no: '1.'
+    :author: '田尾桂子 '
+    :book_title: 'グローバルオペレーターが変えるホテル経営: マネジメント契約はホテル産業に何をもたらしたか  '
+    :publisher: '白桃書房 '
+    :date: '2016年 '
+    :isbn_issn: 
+  - :no: '2.'
+    :author: 'グレッグ・デントン他 '
+    :book_title: 'ホテルアセットマネジメント-原理と実践  '
+    :publisher: '立教大学出版会 '
+    :date: '2014年 '
+    :isbn_issn: 
+  - :others: ''
+  others: "- https://www.amworks.jp/glossary.html\n- http://www.hotelnewsnow.com/Articles/ByCategory?category=News\n-
+    VL719ホテルマネジメント１の履修を推奨\n "
+  notice: ''
+- !ruby/struct:Course
+  code: IB395
+  title: "IB395／メンタルマネジメント\n(Mental Management) "
+  theme: '柔軟に健やかに生きる '
+  instructor: '遠藤　伸太郎（ENDO SHINTARO) '
+  schedule: |-
+    春学期２ (Spring Semester 2) 火曜日(Tue) １時限(Period 1) N331(Room)
+    春学期２ (Spring Semester 2) 火曜日(Tue) ２時限(Period 2) N331(Room)
+  credit: '２単位(2 Credits) '
+  num: 'CMB3250 '
+  lang: "日本語\n(Japanese) "
+  notes: '他学科用科目コードID355 '
+  objective: 'ストレス反応や認知行動理論などの基礎的な知識を理解し、ストレスを生じにくい考え方、あるいはストレスフルな状況に適切に対処できるスキルを身に着ける。 '
+  contents: '一般に、ストレスに対する認知は様々であるため、同様な環境においても健康やウエルネスレベルには個人差が大きい。また、人生観などの価値観を変えることで、内的には大きな変化が生じうる。本講義では、まずメンタルマネジメントについての基礎的スキルを身に着け、次にポジティブ心理学の発想法や先人の知恵からよりよく生きるためのヒントを学ぶ。2時間連続した講義になるので、時には休憩や種々のワークを導入しながら、臨機応変に講義を進める。 '
+  plan:
+    1: 'メンタルマネジメントとは（総論） '
+    2: 'ストレスの評価 '
+    3: 'ストレスコーピング '
+    4: 'ストレスと首尾一貫感覚SOC '
+    5: 'プラシーボ・ノーシーボ '
+    6: 'ポジティブ心理学への招待Ⅰ '
+    7: 'ポジティブ心理学への招待Ⅱ '
+    8: 'アサーションスキルⅠ '
+    9: 'アサーションスキルⅡ '
+    10: 'フランクルのロゴセラピーⅠ '
+    11: 'フランクルのロゴセラピーⅡ '
+    12: 'キュブラー･ロスの価値観Ⅰ '
+    13: 'キュブラー･ロスの価値観Ⅱ '
+    14: 'まとめ '
+  outside: '授業前や授業後に課題を提示し、その提出や発表を求めることがある。２コマ連続した講義となるので、履修するにはそれなりの覚悟が必要となる。 '
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 最終レポート(Final Report)(40%) 、リアクションペーパー(40%) 、講義内に提示する課題等(20%)
+  textbook: !ruby/array:Array
+  - 事前に用意すべきテキストや参考書は考えていない。必要に応じて資料を配布する予定である。
+  readings: !ruby/array:Array
+  - ''
+  others: "ストレス反応やストレス対処スキル等に関する基礎的知識については、別に担当する「スポーツウエルネス心理学」や「ストレスマネジメント」等の講義と重複する部分があるので留意されたい。\nまた、最低限の出席回数を満たしていても、最終レポートやリアクションペーパー等課題の内容が基準を満たさない場合には単位を取得できない場合があるので、十分に注意したい。 "
+  notice: ''
+- !ruby/struct:Course
+  code: ID355
+  title: "ID355／メンタルマネジメント\n(Mental Management) "
+  theme: '柔軟に健やかに生きる '
+  instructor: '遠藤　伸太郎（ENDO SHINTARO) '
+  schedule: |-
+    春学期２ (Spring Semester 2) 火曜日(Tue) １時限(Period 1) N331(Room)
+    春学期２ (Spring Semester 2) 火曜日(Tue) ２時限(Period 2) N331(Room)
+  credit: '２単位(2 Credits) '
+  num: 'CMD3610 '
+  lang: "日本語\n(Japanese) "
+  notes: " "
+  objective: 'ストレス反応や認知行動理論などの基礎的な知識を理解し、ストレスを生じにくい考え方、あるいはストレスフルな状況に適切に対処できるスキルを身に着ける。 '
+  contents: '一般に、ストレスに対する認知は様々であるため、同様な環境においても健康やウエルネスレベルには個人差が大きい。また、人生観などの価値観を変えることで、内的には大きな変化が生じうる。本講義では、まずメンタルマネジメントについての基礎的スキルを身に着け、次にポジティブ心理学の発想法や先人の知恵からよりよく生きるためのヒントを学ぶ。2時間連続した講義になるので、時には休憩や種々のワークを導入しながら、臨機応変に講義を進める。 '
+  plan:
+    1: 'メンタルマネジメントとは（総論） '
+    2: 'ストレスの評価 '
+    3: 'ストレスコーピング '
+    4: 'ストレスと首尾一貫感覚SOC '
+    5: 'プラシーボ・ノーシーボ '
+    6: 'ポジティブ心理学への招待Ⅰ '
+    7: 'ポジティブ心理学への招待Ⅱ '
+    8: 'アサーションスキルⅠ '
+    9: 'アサーションスキルⅡ '
+    10: 'フランクルのロゴセラピーⅠ '
+    11: 'フランクルのロゴセラピーⅡ '
+    12: 'キュブラー･ロスの価値観Ⅰ '
+    13: 'キュブラー･ロスの価値観Ⅱ '
+    14: 'まとめ '
+  outside: '授業前や授業後に課題を提示し、その提出や発表を求めることがある。２コマ連続した講義となるので、履修するにはそれなりの覚悟が必要となる。 '
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 最終レポート(Final Report)(40%) 、リアクションペーパー(40%) 、講義内に提示する課題等(20%)
+  textbook: !ruby/array:Array
+  - 事前に用意すべきテキストや参考書は考えていない。必要に応じて資料を配布する予定である。
+  readings: !ruby/array:Array
+  - ''
+  others: "ストレス反応やストレス対処スキル等に関する基礎的知識については、別に担当する「スポーツウエルネス心理学」や「ストレスマネジメント」等の講義と重複する部分があるので留意されたい。\nまた、最低限の出席回数を満たしていても、最終レポートやリアクションペーパー等課題の内容が基準を満たさない場合には単位を取得できない場合があるので、十分に注意したい。 "
+  notice: ''
+- !ruby/struct:Course
+  code: UM215
+  title: "UM215／認知・言語心理学特殊研究\n(Advanced Studies in Cognitive and Linguistic Psychology) "
+  theme: ''
+  instructor: '浅野　倫子(ASANO MICHIKO) '
+  schedule: |-
+    春学期２ (Spring Semester 2) 火曜日(Tue) １時限(Period 1) N849(Room)
+    春学期２ (Spring Semester 2) 火曜日(Tue) ２時限(Period 2) N849(Room)
+  credit: '２単位(2 Credits) '
+  num: 'PSY5320 '
+  lang: "日本語\n(Japanese) "
+  notes: " "
+  objective: '研究論文を読み、その内容について議論し、認知心理学の、特に言語の認知処理や多感覚情報の結びつけ、注意、物体や情景の認知を中心とした領域の最近の研究動向を知る。さらに、研究に対する批判力と、研究を大局的な視点から評価する力を養う。また、研究についてのディスカッションやプレゼンテーションのしかたを身につける。 '
+  contents: "認知心理学の、特に言語の認知処理や多感覚情報の結びつけ、注意、物体や情景の認知を中心とした領域の最近の研究論文（基本的に英語論文）を読み、毎回の担当者が発表し、受講者全員で議論する。担当する論文は受講者それぞれの興味を考慮しつつ決める。ただ単に論文の内容を読むだけではなく、論文のIntroductionやDiscussionに書かれている内容について深く掘り下げて読み、その論文の研究が行われた理論的背景や、学問の大きな流れの中での位置づけについても調べ、議論する。そのため、1つの論文を読む際には、他の関連する論文等の調査も欠かせない。また、特に発表者は、これらの内容について、受講者全体の理解や議論を促進できるようなプレゼンテーションを行うことが求められる。このような視点での論文の読み方、ディスカッションのしかた、プレゼンテーションのしかたについて指導する。\n上記の通り、認知心理学を中心とした研究領域を主に扱うが、この領域を自分自身の専門としていなくても、この授業の内容に興味を持つすべての学生の履修を歓迎する。 "
+  plan:
+    1: 'ガイダンス '
+    2: '発表と討論1 '
+    3: '発表と討論2 '
+    4: '発表と討論3 '
+    5: '発表と討論4 '
+    6: '発表と討論5 '
+    7: '発表と討論6 '
+    8: '発表と討論7 '
+    9: '発表と討論8 '
+    10: '発表と討論9 '
+    11: '発表と討論10 '
+    12: '発表と討論11 '
+    13: '発表と討論12 '
+    14: '発表と討論13 '
+  outside: '受講者は全員、毎回の授業で扱う論文を事前によく読んでくること。また発表担当の論文についてはプレゼンテーションの準備を行う必要がある。 '
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 発表(50%) 、毎回の授業での積極的な議論参加(50%)
+  textbook: !ruby/array:Array
+  - なし
+  readings: !ruby/array:Array
+  - 授業内で適宜紹介する。
+  others: ''
+  notice: ''
+- !ruby/struct:Course
+  code: KN171
+  title: 'KN171／Strategic Financial Management '
+  theme: 'Introduction to Financial Valuation '
+  instructor: "竹澤　伸哉(TAKEZAWA NOBUYA)\n本合　暁詩(HONGO AKASHI) "
+  schedule: |-
+    春学期２ (Spring Semester 2) 火曜日(Tue) ４時限(Period 4) 7204(Room)
+    春学期２ (Spring Semester 2) 火曜日(Tue) ５時限(Period 5) 7204(Room)
+  credit: '２単位(2 Credits) '
+  num: 'MIB6201 '
+  lang: "英語\n(English) "
+  notes: " "
+  objective: "The course provides an overview of financial valuation (enterprise valuation).
+    By the end of the term you should:\n1) be better equipped to understand & appreciate
+    the role of financial valuation in strategic management decisions.\n2) better
+    understand the link between financial models and business (models).\n3) be able
+    to critically examine a valuation report produced by an investment bank (or other
+    financial institution) for M&A, IPOs, etc.\n4) be able to undertake a “preliminary
+    valuation” of a business on your own using EXCEL. "
+  contents: 'The course is an introduction to enterprise valuation in the context
+    of discounted cash flow analysis using WACC as well as variations on this theme
+    including multiples and economic value added (EVA). The course will require students
+    to undertake valuation exercises using spreadsheets and a project using EVA. This
+    is an intensive Quarter 2 course; students must be prepared to discuss reading
+    for each class. '
+  plan:
+    1: 'Review of Basic Concepts: Weighted Average Cost of Capital and Free Cash Flow '
+    2: 'Multiples Based Valuation '
+    3: 'Multiples Valuation: Case '
+    4: 'WACC and Enterprise Valuation '
+    5: 'WACC and Valuation: Spreadsheet Exercise '
+    6: 'WACC and Valuation; Spreadsheet Exercise '
+    7: 'Economic Value Added (EVA): Theory and Framework '
+    8: 'Economic Value Added (EVA): Theory and Framework '
+    9: 'EVA: Applications and Case '
+    10: 'EVA: Applications and Case '
+    11: 'EVA: Project Workshop '
+    12: 'EVA: Project Workshop '
+    13: 'Project Presentation '
+    14: 'Project Presentation '
+  outside: 'Detailed course outline distributed during first week of class via Blackboard.
+    Notes posted on Blackboard. Case readings distributed in-class. '
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): Participation (including in-class exercises and case discussion)(30%)
+      、Spreadsheet Assignment(15%) 、Midterm Test(15%) 、Final Presentation(10%) 、Final
+      Report(30%)
+  textbook: !ruby/array:Array
+  - :no: '1.'
+    :author: 'Akashi Hongo '
+    :book_title: 'A Bilingual Introduction to Corporate Finance  '
+    :publisher: 'Chuo Keizai '
+    :date: " "
+    :isbn_issn: " "
+  - :others: ''
+  readings: !ruby/array:Array
+  - :no: '1.'
+    :author: 'Aswath Damodaran '
+    :book_title: 'The Dark Side of Valuation 3rd ed  '
+    :publisher: 'Pearson FT Press '
+    :date: " "
+    :isbn_issn: " "
+  - :no: '2.'
+    :author: 'Aswath Damodaran '
+    :book_title: 'Narrative and Numbers: The Value of Stories in Business  '
+    :publisher: 'Columbia University Press '
+    :date: " "
+    :isbn_issn: " "
+  - :no: '3.'
+    :author: 'Stephan Penman '
+    :book_title: 'Accounting for Value  '
+    :publisher: 'Columbia U. Press '
+    :date: " "
+    :isbn_issn: " "
+  - :no: '4.'
+    :author: 'Simon Benninga & Oded Sarig '
+    :book_title: 'Financial Modeling  '
+    :publisher: 'MIT Press '
+    :date: " "
+    :isbn_issn: " "
+  - :no: '5.'
+    :author: 'G. Bennett Stewart III '
+    :book_title: 'Best Practice EVA  '
+    :publisher: 'Wiley '
+    :date: " "
+    :isbn_issn: " "
+  - :others: ''
+  others: 'Prerequisite: MIB Module 5 (Finance & Financial Accounting) or equivalent.
+    Familiarity with EXCEL required. '
+  notice: ''
+- !ruby/struct:Course
+  code: KA108
+  title: "自動登録／景気変動特論２\n(Special Lecture on Business Cycles 2) "
+  theme: ''
+  instructor: '二宮　健史郎(NINOMIYA KENSHIRO) '
+  schedule: |-
+    春学期２ (Spring Semester 2) 火曜日(Tue) Ｇ５時限(Period G5) 研究室(Room)
+    春学期２ (Spring Semester 2) 火曜日(Tue) Ｇ６時限(Period G6) 研究室(Room)
+  credit: '２単位(2 Credits) '
+  num: 'ECX5120 '
+  lang: "日本語\n(Japanese) "
+  notes: " "
+  objective: 'サブプライム問題に端を発した世界的な金融危機により、異端の経済学者ミンスキーの金融不安定性仮説は注目を集めた。 本講義では、金融不安定性仮説を数理モデルに展開した諸研究を概観することにより金融的な景気変動を理解し、モデル分析の素養を身につけることを目標とする。 '
+  contents: '本講義では、ミンスキーの金融不安定性仮説、金融不安定性仮説を数理モデルに展開した諸研究を概観し、関連する論文を輪読する。授業計画の「報告」と書かれている部分は、受講者による論文などの報告である。報告してもらう論文等はこちらが指定する。報告者は、レジュメ、スライド（TeX
+    of Power Point)等を作成して報告すること。 '
+  plan:
+    1: 'ガイダンス '
+    2: '金融不安定性仮説の基本的な考え方(1) 報告 '
+    3: '金融不安定性仮説の基本的な考え方(2) 報告 '
+    4: '金融不安定性仮説の理論構造(1) '
+    5: '金融不安定性仮説の理論構造(2) '
+    6: '金融不安定性仮説の理論構造(3) '
+    7: '金融不安定性のマクロ動学(1) '
+    8: '金融不安定性のマクロ動学(2) '
+    9: '金融不安定性のマクロ動学(3) '
+    10: '論文輪読(1) 報告 '
+    11: '論文輪読(2)報告 '
+    12: '論文輪読(3) 報告 '
+    13: '論文輪読(4) 報告 '
+    14: '金融不安定性のマクロ動学研究の展望 '
+  outside: '復習に重点を置くことを勧める。経済数学(特に、微分、微分方程式など)を予習しておくことが望ましい。論文を報告する際には、数式の導出まで説明できるようにすること。 '
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 授業の報告・討論(60%) 、授業内のテスト(40%)
+  textbook: !ruby/array:Array
+  - :no: '1.'
+    :author: '二宮健史郎 '
+    :book_title: '金融不安定性のマクロ動学  '
+    :publisher: '大月書店 '
+    :date: '2018 '
+    :isbn_issn: " "
+  - :others: ''
+  readings: !ruby/array:Array
+  - :no: '1.'
+    :author: '二宮健史郎 '
+    :book_title: '金融恐慌のマクロ経済学  '
+    :publisher: '中王経済社 '
+    :date: '2006 '
+    :isbn_issn: " "
+  - :others: ''
+  others: '景気変動論1も受講すること。本科目では、全授業回数の50％以上がディスカッションなどの双方向形式の授業によって運営される。 '
+  notice: ''
+- !ruby/struct:Course
+  code: KA456
+  title: "自動登録／経済史特論２\n(Special Lecture on Economic History 2) "
+  theme: '日本経営史にみる経営革新と企業家群像 '
+  instructor: '佐々木　聡(SASAKI SATOSHI) '
+  schedule: |-
+    春学期２ (Spring Semester 2) 火曜日(Tue) Ｇ５時限(Period G5) 4401(Room)
+    春学期２ (Spring Semester 2) 火曜日(Tue) Ｇ６時限(Period G6) 4401(Room)
+  credit: '２単位(2 Credits) '
+  num: 'ECX5720 '
+  lang: "日本語\n(Japanese) "
+  notes: " "
+  objective: '日本の経営発展に貢献した代表的な企業家たちの足跡をたどり、革新とその歴史的意義を理解する。 '
+  contents: 'テキストの輪読と講義、およびテキストの内容に即した映像教材によって理解を深める。 '
+  plan:
+    1: '幕末・維新期の企業家活動ー１．安田善次郎・浅野総一郎・大倉喜八郎 '
+    2: '幕末・維新期の企業家活動ー２．岩崎弥太郎・弥之助（三菱）と渋沢栄一 '
+    3: '明治期の企業者活動ー１．初代長瀬富郎（花王）と２代鈴木三郎助（味の素） '
+    4: '明治期の企業者活動ー２．初代小林冨次郎（ライオン）と福永有信（資生堂） '
+    5: '大正～昭和戦時期の企業者活動ー１．豊田喜一郎（トヨタ）と鮎川義介（日産） '
+    6: '大正～昭和戦時期の企業者活動ー２．小林一三（阪急）と堤康次郎（西武） '
+    7: '大正～昭和戦時期の企業者活動－３．鳥井信治郎（サントリー）と石橋正二郎（ブリジストン） '
+    8: '大正～昭和戦後期の企業者活動－１．服部金太郎（セイコー）と早川徳次（シャープ） '
+    9: '大正～昭和戦後期の企業者活動－２．小平浪平（日立）と松下幸之助（パナソニック） '
+    10: '戦後の企業者活動ー１．小林宏治（ＮＥＣ）と丸田芳郎（花王） '
+    11: '戦後の企業者活動ー２．井深大・盛田昭夫（ソニー）と本田宗一郎・藤沢武郎（ホンダ） '
+    12: '戦後の企業者活動ー３．田口利八（西濃運輸）と飯田亮（セコム） '
+    13: '戦後の企業者活動ー４．中内功（ダイエー）と鈴木敏文（セブンイレブン） '
+    14: '総括 '
+  outside: '輪読担当時のレジュメ作成の時間が必要となる。 '
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 最終レポート(Final Report)(20%) 、レジュメ発表時の内容(40%) 、討論の内容(40%)
+  textbook: !ruby/array:Array
+  - :no: '1.'
+    :author: '佐々木聡 '
+    :book_title: "『日本の企業家群像』  "
+    :publisher: '丸善 '
+    :date: '2001 '
+    :isbn_issn: " "
+  - :no: '2.'
+    :author: '佐々木聡 '
+    :book_title: "『日本の企業家群像Ⅱ』  "
+    :publisher: '丸善出版 '
+    :date: '2003 '
+    :isbn_issn: " "
+  - :no: '3.'
+    :author: '佐々木聡 '
+    :book_title: "『日本の企業家群像Ⅲ』  "
+    :publisher: '丸善出版 '
+    :date: '2011 '
+    :isbn_issn: " "
+  - :no: '4.'
+    :author: '佐々木聡 '
+    :book_title: "『日本の企業家９　丸田芳郎』  "
+    :publisher: 'PHP研究所 '
+    :date: '2017 '
+    :isbn_issn: 
+  - :others: ''
+  readings: !ruby/array:Array
+  - :no: '1.'
+    :author: '佐々木聡 '
+    :book_title: "『暮らしを変えた美容と衛生』  "
+    :publisher: '芙蓉書房出版 '
+    :date: '2009 '
+    :isbn_issn: " "
+  - :others: ''
+  others: ''
+  notice: ''
+- !ruby/struct:Course
+  code: VL277
+  title: "VL277／インターナショナルビジネス２\n(International Business 2) "
+  theme: " "
+  instructor: '並木　伸晃(NAMIKI NOBUAKI) '
+  schedule: |-
+    春学期２ (Spring Semester 2) 火曜日(Tue) Ｇ５時限(Period G5) X202(Room)
+    春学期２ (Spring Semester 2) 火曜日(Tue) Ｇ６時限(Period G6) X202(Room)
+  credit: '２単位(2 Credits) '
+  num: 'BDS6000 '
+  lang: "日本語\n(Japanese) "
+  notes: " "
+  objective: '数多くの日本企業がグローバル化しようとしている。グローバル化する時に必要な資源は何なのか？どのようなハードシップがグローバル化する時にあるのか？等をこのクラスで学ぶ。また，グローバル・リーダーに必要な特徴，特質，経験，キャリアは何なのかをケースを使いながら学ぶ '
+  contents: 'グローバル化，グローバル企業，グローバル戦略等に関する理論，コンセプトを学ぶ。これらの理論，コンセプトの理解を深めるために，幾つかのケーススタディをする。また，それぞれの国特有の文化，経済，政治がいかにビジネス，グローバル化に影響するかも研究調査する。どのグローバル産業，または，国・市場を研究調査するかは学生の要望も考慮する。 '
+  plan:
+    1: 'グローバル企業の例 '
+    2: 'グローバル企業の例 '
+    3: 'グローバルマーケティング '
+    4: 'グローバルマーケティング '
+    5: 'グローバル人材・HRM '
+    6: 'グローバル人材・HRM '
+    7: 'ケース・スタディ '
+    8: 'ケース・スタディ '
+    9: 'ケース・スタディ '
+    10: 'ケース・スタディ '
+    11: 'リーダーシップ論 '
+    12: 'リーダーシップ論 '
+    13: '企業の国際化、グローバル化の調査・発表 '
+    14: '企業の国際化、グローバル化の調査・発表 '
+  outside: 'ケース分析、発表の準備。国、企業の調査、発表の準備。 '
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 最終テスト(Final Test)(20%) 、最終レポート(Final Report)(30%) 、Participation(20%)
+      、宿題(10%) 、ケーススタディ(20%)
+  textbook: !ruby/array:Array
+  - 授業時に指示
+  readings: !ruby/array:Array
+  - 授業時に指示
+  others: ''
+  notice: ''
+- !ruby/struct:Course
+  code: VL404
+  title: "VL404／管理会計２\n(Managerial Accounting 2) "
+  theme: " "
+  instructor: '香取　徹(KATORI TORU) '
+  schedule: |-
+    春学期２ (Spring Semester 2) 火曜日(Tue) Ｇ５時限(Period G5) 8503(Room)
+    春学期２ (Spring Semester 2) 火曜日(Tue) Ｇ６時限(Period G6) 8503(Room)
+  credit: '２単位(2 Credits) '
+  num: 'BDS5200 '
+  lang: "日本語\n(Japanese) "
+  notes: " "
+  objective: 'DCF法とくにNPVやIRR回収期間などの基本的な技法を理解し、一般的な投資案から様々なケースの投資案の評価方法を理解する。 '
+  contents: '計算練習とExcelによる実習によって、複雑な投資案の採算性を評価する技法を理解する。 '
+  plan:
+    1: "ガイダンス\n資金価値の換算 "
+    2: '換算の実習1 '
+    3: '換算の実習2 '
+    4: 'Excelによる実習1 '
+    5: 'Excelによる実習2 '
+    6: '税引後キャッシュフロー '
+    7: '投資案の作成 '
+    8: '投資案の評価 '
+    9: '独立案とその評価 '
+    10: '排反案とその評価 '
+    11: '混合案とその評価 '
+    12: '寿命の異なる投資案 '
+    13: '応用実習 '
+    14: '最終授業内テスト '
+  outside: 'Excelの基本的操作ができること。 '
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 毎回の課題・宿題(20%) 、最終テスト(Final Test)(40%) 、中間テスト(40%)
+  textbook: !ruby/array:Array
+  - :no: '1.'
+    :author: '香取　徹 '
+    :book_title: '意思決定の管理会計  '
+    :publisher: '創成社 '
+    :date: '2014 '
+    :isbn_issn: " "
+  - :others: ''
+  readings: !ruby/array:Array
+  - :no: '1.'
+    :author: '伊藤・香取他 '
+    :book_title: 'キャッシュフロー管理会計  '
+    :publisher: '中央経済社 '
+    :date: '1999 '
+    :isbn_issn: " "
+  - :no: '2.'
+    :author: '香取　徹 '
+    :book_title: '資本予算の管理会計  '
+    :publisher: '中央経済社 '
+    :date: '2011 '
+    :isbn_issn: " "
+  - :others: ''
+  others: ''
+  notice: ''
+- !ruby/struct:Course
+  code: VL176
+  title: "VL176／統計学２\n(Statistics 2) "
+  theme: " "
+  instructor: '山口　誠一(YAMAGUCHI SEIICHI) '
+  schedule: |-
+    春学期２ (Spring Semester 2) 火曜日(Tue) Ｇ５時限(Period G5) 8302(Room)
+    春学期２ (Spring Semester 2) 火曜日(Tue) Ｇ６時限(Period G6) 8302(Room)
+  credit: '２単位(2 Credits) '
+  num: 'BDS5800 '
+  lang: "日本語\n(Japanese) "
+  notes: " "
+  objective: '目的に応じて適切な多変量解析を実行できる力を身につける '
+  contents: "大量で多様なデータが次々に生まれ蓄積され続けており，「ビッグデータ」という言葉が次第に社会に浸透している。このようなこともあり，社会の中で統計学への関心が高まっており，データをもとに意思決定できる人材への期待は増している。しかしながら，実際にデータを活用できる人材は不足しているのが現状である。データをもとに意思決定するためには，目的に応じてデータを適切に取得し統計学的知識を用いて活用する方法を学ばなくてはならない。\nまずは，統計分析の中でも特に使用されることの多い分散分析や回帰分析について学習し，SPSSやEXCELなどのソフトウェアを用いて実際にデータの分析を行う。その後，より応用的な共分散構造分析等の手法について学んでいく。授業では統計的知識の講義を行う時間と，学んだ内容をSPSSやAmosといったPCソフトウェアを用いて実行する時間を設ける。様々なデータを実際に分析することで，より実践的な授業を目指す。\n "
+  plan:
+    1: 'イントロダクション '
+    2: '演習（PCソフトウェアなどで） '
+    3: '分散分析 '
+    4: '分散分析 演習（PCソフトウェアなどで） '
+    5: '単回帰分析 '
+    6: '単回帰分析 演習（PCソフトウェアなどで） '
+    7: '重回帰分析① '
+    8: '重回帰分析① 演習（PCソフトウェアなどで） '
+    9: '重回帰分析② '
+    10: '重回帰分析② 演習（PCソフトウェアなどで） '
+    11: '多変量解析① '
+    12: '多変量解析② '
+    13: '多変量解析③ '
+    14: '多変量解析④ '
+  outside: '授業時間外の学習に関する指示は、必要に応じて別途指示する '
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 授業内課題(60%) 、授業への参加度(40%)
+  textbook: !ruby/array:Array
+  - |-
+    特に指定しない。
+    資料を配付予定。
+  readings: !ruby/array:Array
+  - :no: '1.'
+    :author: '鳥居泰彦 '
+    :book_title: 'はじめての統計学  '
+    :publisher: '日本経済新聞社 '
+    :date: '1994 '
+    :isbn_issn: 
+  - :no: '2.'
+    :author: '竹原卓真  '
+    :book_title: 'SPSSのススメ<1>  '
+    :publisher: '北大路書房 '
+    :date: '2007 '
+    :isbn_issn: 
+  - :others: ''
+  others: '統計学1の内容（推定・仮説検定の基礎）を習得していることが望ましい '
+  notice: ''
+- !ruby/struct:Course
+  code: VH196
+  title: "VH196／ホスピタリティデザイン特講３Ｂ\n(Special Seminar on Hospitality Design 3B) "
+  theme: " "
+  instructor: '西村　剛(NISHIMURA GO) '
+  schedule: |-
+    春学期２ (Spring Semester 2) 火曜日(Tue) Ｇ５時限(Period G5) X102(Room)
+    春学期２ (Spring Semester 2) 火曜日(Tue) Ｇ６時限(Period G6) X102(Room)
+  credit: '２単位(2 Credits) '
+  num: 'BDS6700 '
+  lang: "日本語\n(Japanese) "
+  notes: " "
+  objective: '連携科目であるホスピタリティデザイン特講３Aで修得した知見と本科目の前段で新たに習得するサービスドミナントロジック、サブスクリプション、生産性の知識習得を活用して我が国サービス産業の生産性革命をいかに図るかの主題の討究を行う。 '
+  contents: '本科目では我が国にとって喫緊の課題である「サービス産業の生産性革命」を図るうえで必須な最新のホスピタリティマネジメントや国際生産性の知見を手掛かりに、サービス産業の生産性向上の提言等を具体的に分析する。 '
+  plan:
+    1: 'サービス・デザイン（１）デザイン思考と経営 '
+    2: 'サービス・デザイン（１）サービス・ドミナント・ロジック '
+    3: 'サービス・デザイン（２）価値共創① '
+    4: 'サービス・デザイン（２）価値共創② '
+    5: '労働生産性の国際比較（１）生産性とは何か '
+    6: '労働生産性の国際比較（１）成長会計 '
+    7: 'サブスクリプション（１）理論 '
+    8: 'サブスクリプション（２）事例 '
+    9: '日本の労働生産性の動向　2018 '
+    10: '労働生産性の国際比較2018年版 '
+    11: '労働力喪失時代における持続可能な社会経済システム「スマートエコノミー」の実現をめざして① '
+    12: '労働力喪失時代における持続可能な社会経済システム「スマートエコノミー」の実現をめざして② '
+    13: 'ホスピタリティデザイン特講３Bのまとめ '
+    14: '最終テスト '
+  outside: '参考文献から抜粋した教材（パワポ）に必ず事前に目を通し、専門用語の理解を万全にすること。実務に役立つ項目が満載されているので、時間をつくって参考文献もよく目を通しておくこと。 '
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 最終テスト(Final Test)(40%) 、出席・授業への貢献(30%) 、小レポート(30%)
+  textbook: !ruby/array:Array
+  - 日本生産性本部提言「労働力喪失時代における持続可能な社会経済システム『スマートエコノミー』の実現をめざして」（2018年11月30日）を各自ダウンロードしておくこと。
+  readings: !ruby/array:Array
+  - :no: '1.'
+    :author: '武山政直 '
+    :book_title: 'サービスデザインの教科書  '
+    :publisher: 'NTT出版 '
+    :date: '2017 '
+    :isbn_issn: 
+  - :no: '2.'
+    :author: 'テイエン・ツオ '
+    :book_title: 'サブスクリプション  '
+    :publisher: 'ダイヤモンド社 '
+    :date: '2018 '
+    :isbn_issn: 
+  - :no: '3.'
+    :author: '森川正之 '
+    :book_title: '生産性　誤解と真実  '
+    :publisher: '日本経済新聞出版社 '
+    :date: '2018 '
+    :isbn_issn: 
+  - :no: '4.'
+    :author: '宮川努 '
+    :book_title: '生産性とは何かー日本経済の活力を問い直す  '
+    :publisher: 'ちくま新書 '
+    :date: '2018 '
+    :isbn_issn: 
+  - :others: ''
+  others: '本講義では極力アクティブラーニングに心がけるため、質問等に積極的に応えていただきたい。研究テーマが我が国ホスピタリティ産業で最もホットな喫緊の課題であるだけに講義を進めるにあたって受講者の実務上の知見も反映したい。 '
+  notice: ''
+- !ruby/struct:Course
+  code: VD456
+  title: "VD456／スポーツウエルネス研究６\n(Studies in Sports Wellness 6) "
+  theme: 'グローバル時代の「スポーツ栄養学」 '
+  instructor: '杉浦　克己(SUGIURA KATSUMI) '
+  schedule: |-
+    春学期２ (Spring Semester 2) 水曜日(Wed) １時限(Period 1) N325(Room)
+    春学期２ (Spring Semester 2) 水曜日(Wed) ２時限(Period 2) N325(Room)
+  credit: '２単位(2 Credits) '
+  num: 'CMH5410 '
+  lang: "日本語\n(Japanese) "
+  notes: " "
+  objective: '運動時の物質代謝とこれに伴う栄養要求の変化について，運動の種類や強度・時間を踏まえて理解し，さらに栄養教育の理論と応用についても学ぶ '
+  contents: '欧米の学部レベルの英語の教科書あるいは英語の研究論文の講読を通して，スポーツと栄養の関係をより深く学び，スポーツ現場で直面する実践的な課題についても議論していく。同時に海外のスポーツ栄養学の研究と普及の現状についても解説していく。受講生は栄養学の基本的知識を身につけていることと英文を読むのを苦にしない英語力を持っていることが望ましい。 '
+  plan:
+    1: 'ガイダンス，スポーツ栄養学の歴史 '
+    2: 'スポーツ栄養学の基礎 '
+    3: '食事の基本（フードピラミッドと食事バランスガイド） '
+    4: 'エネルギー代謝とは '
+    5: '炭水化物と練習・試合 '
+    6: '脂肪と体組成・ウエイトコントロール '
+    7: 'タンパク質と筋肉づくり '
+    8: 'ミネラルと骨・血液の健康 '
+    9: 'ビタミン・抗酸化物質とコンディショニング '
+    10: '水分補給と体温調節 '
+    11: 'サプリメントとエルゴジェニック '
+    12: '成長期と女性スポーツの注意点 '
+    13: '栄養アセスメント '
+    14: '栄養教育 '
+  outside: '毎回の授業の2/3は英文の訳をプレゼンしてもらうので，予習が前提となる。また，1/3を前週の復習に充てるので復習も大事であり，予習・復習に毎週約5時間を要する '
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 最終テスト(Final Test)(30%) 、出席および討議への参加度(50%) 、宿題などの提出物(20%)
+  textbook: !ruby/array:Array
+  - 初回の授業において決める
+  readings: !ruby/array:Array
+  - Melvin H. Williams“Nutrition for Health, Fitness &amp; Sports（10th Ed)”（McGraw-Hill　2012）
+  others: ''
+  notice: ''
+- !ruby/struct:Course
+  code: KA340
+  title: "自動登録／企業環境Ｃ特論２\n(Special Lectur on Economics and Environment C-2) "
+  theme: '財務分析の技法と課題抽出アプローチ '
+  instructor: '玉木　昭宏(TAMAKI AKIHIRO) '
+  schedule: |-
+    春学期２ (Spring Semester 2) 水曜日(Wed) Ｇ５時限(Period G5) 9B02(Room)
+    春学期２ (Spring Semester 2) 水曜日(Wed) Ｇ６時限(Period G6) 9B02(Room)
+  credit: '２単位(2 Credits) '
+  num: 'ECX5820 '
+  lang: "日本語\n(Japanese) "
+  notes: " "
+  objective: '学生が企業の経営課題を財務面からも見極めることができるよう，財務分析に必要な知識を企業活動や事業戦略と関連付けて理解し、それを分析時に実践できるスキル習得を目標とする。 '
+  contents: '財務数字を入口に，企業経営の状況を分析・評価する技法を学ぶ。損益計算書，貸借対照表各々の体系と主要項目について，経営や事業活動の側から見た意味合いを理解するとともに，上場企業を題材とした財務分析ケースに取り組むことで，財務指標の読み解き方や企業活動との関連を肌感覚として養う。 '
+  plan:
+    1: '損益計算書の体系と分析・評価の視点（1） '
+    2: '損益計算書の体系と分析・評価の視点（2） '
+    3: '損益計算書の体系と分析・評価の視点（3） '
+    4: '損益計算書の体系と分析・評価の視点（4） '
+    5: '貸借対照表（バランスシート）の体系と分析・評価の視点（1） '
+    6: '貸借対照表（バランスシート）の体系と分析・評価の視点（2） '
+    7: '貸借対照表（バランスシート）の体系と分析・評価の視点（3） '
+    8: '貸借対照表（バランスシート）の体系と分析・評価の視点（4） '
+    9: '企業経営の視点から構築する財務分析のフレームワーク(1) '
+    10: '企業経営の視点から構築する財務分析のフレームワーク（2） '
+    11: '財務分析ケーススタディ '
+    12: '財務分析ケーススタディ '
+    13: '振り返りとまとめ，Ｑ＆Ａ '
+    14: '振り返りとまとめ，Ｑ＆Ａ '
+  outside: '会計分野の基礎知識について，自身で選んだ書籍等で確認しておくことが望ましい。 '
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 最終レポート(Final Report)(30%) 、授業への出席およびクラス貢献度（発言、質問、事前準備、グループワーク参加など）(70%)
+  textbook: !ruby/array:Array
+  - 講義の都度，資料を配布する。
+  readings: !ruby/array:Array
+  - :no: '1.'
+    :author: '玉木昭宏 '
+    :book_title: "『夜11時からのビジネス会計トレーニング』  "
+    :publisher: '中央経済社 '
+    :date: '2014年 '
+    :isbn_issn: 'ISBN-10: 4502096407'
+  - :others: ''
+  others: ''
+  notice: ''
+- !ruby/struct:Course
+  code: UA677
+  title: "UA677／経営財務２\n(Financial Management2) "
+  theme: " "
+  instructor: '野田　健太郎(NODA KENTARO) '
+  schedule: |-
+    春学期２ (Spring Semester 2) 水曜日(Wed) Ｇ５時限(Period G5) A304(Room)
+    春学期２ (Spring Semester 2) 水曜日(Wed) Ｇ６時限(Period G6) A304(Room)
+  credit: '２単位(2 Credits) '
+  num: 'TRG5300 '
+  lang: "日本語\n(Japanese) "
+  notes: '池袋キャンパス開講 '
+  objective: '本講義は、経営財務に関する幅広い知識の修得を目指す。 '
+  contents: '財務諸表の見方、企業審査について解説する。後半では無形資産やＣＳＲのトピックについても触れる。実際の企業の動きを見ながら、プレゼン・ディスカッションをベースに授業を進める。 '
+  plan:
+    1: 'ガイダンス '
+    2: '企業審査を取り上げ解説及びディスカッションを行う。 '
+    3: 'リスクマネジメントを取り上げ解説及びディスカッションを行う（１）。 '
+    4: 'リスクマネジメントを取り上げ解説及びディスカッションを行う（２）。 '
+    5: 'CSRを取り上げ解説及びディスカッションを行う。 '
+    6: 'コーポレートガバナンスを取り上げ解説及びディスカッションを行う。 '
+    7: 'リスクコミュニケーションを取り上げ解説及びディスカッションを行う。 '
+    8: 'リスクマネジメントの効果を取り上げ解説及びディスカッションを行う。 '
+    9: '実証分析を取り上げ解説及びディスカッションを行う。 '
+    10: 'リスクマネジメントの事例についてプレゼン・ディスカッションを行う（１）。 '
+    11: 'リスクマネジメントの事例についてプレゼン・ディスカッションを行う（2）。 '
+    12: 'リスクマネジメントの事例についてプレゼン・ディスカッションを行う（3）。 '
+    13: 'リスク情報の活用を取り上げ解説及びディスカッションを行う。 '
+    14: 'まとめ（最終テスト） '
+  outside: '担当の回についてはレジメを準備すること '
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 出席、報告内容などによって総合的に評価する。(70%) 、最終テスト(Final Test)(30%)
+  textbook: !ruby/array:Array
+  - :no: '1.'
+    :author: '野田健太郎 '
+    :book_title: '事業継続計画による企業分析  '
+    :publisher: '中央経済社 '
+    :date: '2013 '
+    :isbn_issn: 
+  - :others: ''
+  readings: !ruby/array:Array
+  - :no: '1.'
+    :author: '野田健太郎 '
+    :book_title: '戦略的リスクマネジメントで企業を強くする  '
+    :publisher: '中央経済社 '
+    :date: '2017年 '
+    :isbn_issn: 978-4-502-21761-6 C3034
+  - :no: '2.'
+    :author: '野田健太郎 '
+    :book_title: 'ベンチャー育成論入門  '
+    :publisher: '大学教育出版 '
+    :date: '2004年 '
+    :isbn_issn: " "
+  - :others: ''
+  others: "本科目は、簡単な講義に続いてクラスあるいはチーム単位でプレゼン、ディスカッション形式で授業を展開する。双方向による授業の割合は100％である。\n本科目は、5年以上の実務経験を有する実務家教員による授業である。 "
+  notice: ''
+- !ruby/struct:Course
+  code: UA675
+  title: "UA675／コーポレートファイナンス研究２\n(Seminar on Corporate Finance2) "
+  theme: " "
+  instructor: '野田　健太郎(NODA KENTARO) '
+  schedule: |-
+    春学期２ (Spring Semester 2) 水曜日(Wed) Ｇ５時限(Period G5) A304(Room)
+    春学期２ (Spring Semester 2) 水曜日(Wed) Ｇ６時限(Period G6) A304(Room)
+  credit: '２単位(2 Credits) '
+  num: 'TRG5300 '
+  lang: "日本語\n(Japanese) "
+  notes: '池袋キャンパス開講 '
+  objective: '本講義は、経営財務に関する幅広い知識の修得を目指す。 '
+  contents: '財務諸表の見方、企業審査について解説する。後半では無形資産やＣＳＲのトピックについても触れる。実際の企業の動きを見ながら、プレゼン・ディスカッションをベースに授業を進める。 '
+  plan:
+    1: 'ガイダンス '
+    2: '企業審査を取り上げ解説及びディスカッションを行う。 '
+    3: 'リスクマネジメントを取り上げ解説及びディスカッションを行う（１）。 '
+    4: 'リスクマネジメントを取り上げ解説及びディスカッションを行う（２）。 '
+    5: 'CSRを取り上げ解説及びディスカッションを行う。 '
+    6: 'コーポレートガバナンスを取り上げ解説及びディスカッションを行う。 '
+    7: 'リスクコミュニケーションを取り上げ解説及びディスカッションを行う。 '
+    8: 'リスクマネジメントの効果を取り上げ解説及びディスカッションを行う。 '
+    9: '実証分析を取り上げ解説及びディスカッションを行う。 '
+    10: 'リスクマネジメントの事例についてプレゼン・ディスカッションを行う（１）。 '
+    11: 'リスクマネジメントの事例についてプレゼン・ディスカッションを行う（2）。 '
+    12: 'リスクマネジメントの事例についてプレゼン・ディスカッションを行う（3）。 '
+    13: 'リスク情報の活用を取り上げ解説及びディスカッションを行う。 '
+    14: 'まとめ（最終テスト） '
+  outside: '担当の回についてはレジメを準備すること '
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 出席、報告内容などによって総合的に評価する。(70%) 、最終テスト(Final Test)(30%)
+  textbook: !ruby/array:Array
+  - :no: '1.'
+    :author: '野田健太郎 '
+    :book_title: '事業継続計画による企業分析  '
+    :publisher: '中央経済社 '
+    :date: '2013 '
+    :isbn_issn: 
+  - :others: ''
+  readings: !ruby/array:Array
+  - :no: '1.'
+    :author: '野田健太郎 '
+    :book_title: '戦略的リスクマネジメントで企業を強くする  '
+    :publisher: '中央経済社 '
+    :date: '2017年 '
+    :isbn_issn: 978-4-502-21761-6 C3034
+  - :no: '2.'
+    :author: '野田健太郎 '
+    :book_title: 'ベンチャー育成論入門  '
+    :publisher: '大学教育出版 '
+    :date: '2004年 '
+    :isbn_issn: " "
+  - :others: ''
+  others: "本科目は、簡単な講義に続いてクラスあるいはチーム単位でプレゼン、ディスカッション形式で授業を展開する。双方向による授業の割合は100％である。\n本科目は、5年以上の実務経験を有する実務家教員による授業である。 "
+  notice: ''
+- !ruby/struct:Course
+  code: VH212
+  title: "VH212／医療経営学概論\n(Management of Health Care) "
+  theme: " "
+  instructor: '八木　麻衣子(YAGI MAIKO) '
+  schedule: |-
+    春学期２ (Spring Semester 2) 水曜日(Wed) Ｇ５時限(Period G5) X105(Room)
+    春学期２ (Spring Semester 2) 水曜日(Wed) Ｇ６時限(Period G6) X105(Room)
+  credit: '２単位(2 Credits) '
+  num: 'BDS6700 '
+  lang: "日本語\n(Japanese) "
+  notes: " "
+  objective: '医療機関や介護施設における組織運営について経営学的な幅広い視点で理解する '
+  contents: "医療機関や介護施設は、数年ごとにもたらされる診療報酬制度の改訂という外部環境の急激な変化に対し、その都度、ビジョンや戦略の変更を余儀なくされる状況に置かれている。また、多くの高度専門職種を抱えるがゆえ、個人のキャリア形成と組織としてのガバナンスをどのように両立させるかなど、その運営に困難さを抱えている。\n一方で、これまでの医療機関においては、医療の特殊性や非営利性が強調され、組織的問題に対する取り組みが十分に行われてこなかったことも否定できない。医療の品質管理をはじめとして、一般企業における取り組みが応用できる場面は多いと考えられるが、十分に検討されてきたとは言えない状況も存在する。また、今後は病院のみならずクリニック・介護施設を含めた統合や、地域における法人間の連携による運営の効率化など、押さえるべき要点が多く存在する。\nそこで本講義では、医療経済学概論で整理した医療・介護サービス産業のマクロ的背景や変化しつつある外部環境を踏まえ、医療・介護領域の組織運営に関連した事象について、ミクロ的な視点の整理をもとに理解を深め、戦略に基づいた医療機関や介護施設における組織運営について考察する。\nなお、本講義は問題提起のための材料を講義にて提示し、それをもとにした参加者によるディスカッションを中心とした構成とする。医療・介護領域の組織運営者や医療者のみならず、幅広い分野からの参加者とともに、現在の医療現場における問題を探り解決の一端を見出す場としたい。\n "
+  plan:
+    1: 'オリエンテーション '
+    2: '医療機関・介護施設の概要 '
+    3: '医療機関・介護施設のステークスホルダーと取るべき戦略 '
+    4: '医療機関・介護施設の資金調達方法 '
+    5: '医療機関の株式会社化の是非 '
+    6: '医療機関の財務状況開示の必要性 '
+    7: '医療機関・介護施設における人材マネジメントの特徴と問題点（１） '
+    8: '医療機関・介護施設における人材マネジメントの特徴と問題点（２） '
+    9: '医療機関におけるクリニカルガバナンス '
+    10: '医療におけるコストの考え方 '
+    11: '医療機関と医療安全とその経済性 '
+    12: '医療・介護の品質管理と第三者評価 '
+    13: '期末プレゼンテーション（１） '
+    14: '期末プレゼンテーション（２） '
+  outside: '授業時間外の学習に関する指示は、必要に応じて別途指示する。 '
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 授業への出席、参加の度合い(40%) 、授業中におけるプレゼンテーションの内容(40%) 、期末プレゼンテーションの完成度(20%)
+  textbook: !ruby/array:Array
+  - なし
+  readings: !ruby/array:Array
+  - ''
+  others: "・テキストや参考文献は授業にて随時紹介する。\n・医療経済学概論と合わせての履修が望ましい。 "
+  notice: ''
+- !ruby/struct:Course
+  code: VG506
+  title: "VG506／経営財務２\n(Financial Management 2) "
+  theme: " "
+  instructor: '野田　健太郎(NODA KENTARO) '
+  schedule: |-
+    春学期２ (Spring Semester 2) 水曜日(Wed) Ｇ５時限(Period G5) A304(Room)
+    春学期２ (Spring Semester 2) 水曜日(Wed) Ｇ６時限(Period G6) A304(Room)
+  credit: '２単位(2 Credits) '
+  num: 'BDS5200 '
+  lang: "日本語\n(Japanese) "
+  notes: " "
+  objective: '本講義は、経営財務に関する幅広い知識の修得を目指す。 '
+  contents: '財務諸表の見方、企業審査について解説する。後半では無形資産やＣＳＲのトピックについても触れる。実際の企業の動きを見ながら、プレゼン・ディスカッションをベースに授業を進める。 '
+  plan:
+    1: 'ガイダンス '
+    2: '企業審査を取り上げ解説及びディスカッションを行う。 '
+    3: 'リスクマネジメントを取り上げ解説及びディスカッションを行う（１）。 '
+    4: 'リスクマネジメントを取り上げ解説及びディスカッションを行う（２）。 '
+    5: 'CSRを取り上げ解説及びディスカッションを行う。 '
+    6: 'コーポレートガバナンスを取り上げ解説及びディスカッションを行う。 '
+    7: 'リスクコミュニケーションを取り上げ解説及びディスカッションを行う。 '
+    8: 'リスクマネジメントの効果を取り上げ解説及びディスカッションを行う。 '
+    9: '実証分析を取り上げ解説及びディスカッションを行う。 '
+    10: 'リスクマネジメントの事例についてプレゼン・ディスカッションを行う（１）。 '
+    11: 'リスクマネジメントの事例についてプレゼン・ディスカッションを行う（2）。 '
+    12: 'リスクマネジメントの事例についてプレゼン・ディスカッションを行う（3）。 '
+    13: 'リスク情報の活用を取り上げ解説及びディスカッションを行う。 '
+    14: 'まとめ（最終テスト） '
+  outside: '担当の回についてはレジメを準備すること '
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 出席、報告内容などによって総合的に評価する。(70%) 、最終テスト(Final Test)(30%)
+  textbook: !ruby/array:Array
+  - :no: '1.'
+    :author: '野田健太郎 '
+    :book_title: '事業継続計画による企業分析  '
+    :publisher: '中央経済社 '
+    :date: '2013 '
+    :isbn_issn: 
+  - :others: ''
+  readings: !ruby/array:Array
+  - :no: '1.'
+    :author: '野田健太郎 '
+    :book_title: '戦略的リスクマネジメントで企業を強くする  '
+    :publisher: '中央経済社 '
+    :date: '2017年 '
+    :isbn_issn: 978-4-502-21761-6 C3034
+  - :no: '2.'
+    :author: '野田健太郎 '
+    :book_title: 'ベンチャー育成論入門  '
+    :publisher: '大学教育出版 '
+    :date: '2004年 '
+    :isbn_issn: " "
+  - :others: ''
+  others: "本科目は、簡単な講義に続いてクラスあるいはチーム単位でプレゼン、ディスカッション形式で授業を展開する。双方向による授業の割合は100％である。\n本科目は、5年以上の実務経験を有する実務家教員による授業である。 "
+  notice: ''
+- !ruby/struct:Course
+  code: VL679
+  title: "VL679／経済学基礎２\n(Introduction to Economics 2) "
+  theme: " "
+  instructor: '亀川　雅人(KAMEKAWA MASATO) '
+  schedule: |-
+    春学期２ (Spring Semester 2) 水曜日(Wed) Ｇ５時限(Period G5) D601(Room)
+    春学期２ (Spring Semester 2) 水曜日(Wed) Ｇ６時限(Period G6) D601(Room)
+  credit: '２単位(2 Credits) '
+  num: 'BDS5100 '
+  lang: "日本語\n(Japanese) "
+  notes: " "
+  objective: 'マクロ経済学の認識対象を修得する。所得格差や保護主義、そして豊かさとは何かを考える機会を持つ。 '
+  contents: 'GDP(国内総生産）や貿易収支、失業、景気対策などのマクロの経済事象について考察し、豊かさの概念を考え、世界で生じている保護主義の動きや所得格差について論じる。市場経済と計画経済の相違がもたらす社会構造及び価値観の相違についても考察する。 '
+  plan:
+    1: 'マクロ経済学とは何かⅠ　ミクロ経済学とマクロ経済学の違いを考える。 '
+    2: 'マクロ経済学とは何かⅡ　政府の介入と市場の価格機構について考える。 '
+    3: '社会の富と所得について考える。 '
+    4: '経済発展と資本蓄積について考える。 '
+    5: 'GDPの測定方法を考える。 '
+    6: '豊かさの尺度について考える。 '
+    7: '財政政策について考える。 '
+    8: '金融政策について考える。 '
+    9: '計画経済と市場経済の違いを考える。 '
+    10: '価格は計画的に決定できるか。経済計算論争について考える。 '
+    11: '教育と経済発展について考察する。 '
+    12: '教育投資と物的投資の相違を検討する。 '
+    13: '失業問題を考える。 '
+    14: '所得格差について考える。 '
+  outside: '経済に関する様々な書籍を読みましょう。 '
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 参加度(30%) 、リポート(30%) 、プレゼンテーション(40%)
+  textbook: !ruby/array:Array
+  - なし
+  readings: !ruby/array:Array
+  - :no: '1.'
+    :author: '亀川雅人 '
+    :book_title: '株式会社の資本論  '
+    :publisher: '中央経済社 '
+    :date: '2018 '
+    :isbn_issn: " "
+  - :no: '2.'
+    :author: '亀川雅人 '
+    :book_title: 'ガバナンスと利潤の経済学  '
+    :publisher: '創成社 '
+    :date: '2015 '
+    :isbn_issn: " "
+  - :others: ''
+  others: ''
+  notice: ''
+- !ruby/struct:Course
+  code: VL616
+  title: "VL616／スタートアップ・ストラテジー２\n(Strategy to Start Up 2) "
+  theme: " "
+  instructor: '高柳　寛樹(TAKAYANAGI HIROKI) '
+  schedule: |-
+    春学期２ (Spring Semester 2) 水曜日(Wed) Ｇ５時限(Period G5) D302(Room)
+    春学期２ (Spring Semester 2) 水曜日(Wed) Ｇ６時限(Period G6) D302(Room)
+  credit: '２単位(2 Credits) '
+  num: 'BDS6300 '
+  lang: "日本語\n(Japanese) "
+  notes: " "
+  objective: 'この20年で4社のスタートアップに主体的に関わりその内2社はエクイティファイナンスを伴うベンチャー企業の経営を経験した担当者が招聘したゲストスピーカーのスピーチと議論からのアプローチでスタートアップストラテジーを考える。 '
+  contents: '主要な要素はスタートアップストラテジー（１）を参照されたい。（１）との大きな違いは多数のスタートアップ経営者を招聘しそのゲストスピーチによるアプローチから「スタートアップストラテジー」を理解する。ゲストスピーカーは「debt
+    finance実践者」「equity finance実践者」「未上場企業創業者」「上場企業創業者」「倒産経験者」「家族経営実践者」「非営利団体経営者」「職人マネジメント実践者」「音楽家」「スポーツ選手」「新設学校法人経営者」などの切り口で招聘する予定（このシラバス執筆時点では未定）。（２）の履修にあたり（１）の履修は必須ではないく、原則として（１）と（２）は切り離して考える。ゲストスピーチを聞いた後の「議論」が大切な要素を締めるため積極的に議論に参加できない履修者は歓迎しない（評価できないため）。また担当者の他の講義のように距離による理由でのテレカン参加は＜原則＞認めない。理由としてはゲストスピーカーによるスピーチが中心を成すため。 '
+  plan:
+    1: 'イントロダクションと自己紹介（履修者同士の自己紹介） '
+    2: '輪読と発表による「スタートアップ」再定義と最低限のコンセンサスの構築 '
+    3: 'ゲストスピーカー（１） '
+    4: 'ゲストスピーカー（２） '
+    5: 'ゲストスピーカー（３） '
+    6: 'ゲストスピーカー（４） '
+    7: 'ゲストスピーカー（５） '
+    8: 'ゲストスピーカー（６） '
+    9: 'ゲストスピーカー（７） '
+    10: 'ゲストスピーカー（１）から（７）で行われた議論の整理と理解 '
+    11: 'スタートアップストラテジーの文脈における「IT前提経営®️」の整理と理解 '
+    12: '学生発表（１） '
+    13: '学生発表（２） '
+    14: '総括 '
+  outside: '少なくとも毎回のゲストスピーチに対する一定のルールを守ったレポートの提出を求める。加えて発表準備など時間を超えた作業になる。 '
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 最終テスト(Final Test)(20%) 、最終レポート(Final Report)(20%) 、ゲストスピーチに対するレポート(40%)
+      、授業への参加度(20%)
+  textbook: !ruby/array:Array
+  - :no: '1.'
+    :author: '高柳寛樹 '
+    :book_title: 'まったく新しい働き方の実践〜「IT前提経営」による「地方創生」〜  '
+    :publisher: 'ハーベスト社 '
+    :date: '2017 '
+    :isbn_issn: 
+  - :others: ''
+  readings: !ruby/array:Array
+  - 適宜講義の中で指示する。
+  others: "担当者プロフィール：\nhttps://hiroki.st/profile/ "
+  notice: ''
+- !ruby/struct:Course
+  code: VG156
+  title: "VG156／テクノトレンド２\n(Trend of Technology 2) "
+  theme: " "
+  instructor: '平井　直樹(HIRAI NAOKI) '
+  schedule: |-
+    春学期２ (Spring Semester 2) 水曜日(Wed) Ｇ５時限(Period G5) X102(Room)
+    春学期２ (Spring Semester 2) 水曜日(Wed) Ｇ６時限(Period G6) X102(Room)
+  credit: '２単位(2 Credits) '
+  num: 'BDS6600 '
+  lang: "日本語\n(Japanese) "
+  notes: " "
+  objective: 'ビジネスや生活において、広く使われているテクノロジーやそれに関わる企業動向について理解することを目的とする。 '
+  contents: "今日、日常生活やビジネスの世界に限らず、多くのテクノロジーを使いこなすことが求められています。\nビジネスの改善や新たなビジネスの創出するうえでも、こういったテクノロジーの動向を掴んでおくことが重要となります。\n本講義では、単に最新のテクノロジーやトレンドを追うのではなく、どのようにビジネスに利用されてきたのか、または利用されようとしているのか、さらに自社のビジネスに活用するにはどうすればよいか、事例（ケース）やディスカッションを通じて、理解を深めていきます。 "
+  plan:
+    1: 'オリエンテーション（１） '
+    2: 'オリエンテーション（２） '
+    3: 'RPA・AI（１） '
+    4: 'RPA・AI（２） '
+    5: 'AR・VR（１） '
+    6: 'AR・VR（２） '
+    7: 'クラウドコンピューティング（１） '
+    8: 'クラウドコンピューティング（２） '
+    9: 'UI/UX（１） '
+    10: 'UI/UX（２） '
+    11: 'シェアリングエコノミー・ドローン（１） '
+    12: 'シェアリングエコノミー・ドローン（２） '
+    13: 'プレゼンテーション・まとめ（１） '
+    14: 'プレゼンテーション・まとめ（２） '
+  outside: '日々の新聞やニュースに目を通しておいてください。 '
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 出席および授業ヘの貢献(40%) 、ディスカッションへの参加度(30%) 、プレゼンテーション(30%)
+  textbook: !ruby/array:Array
+  - 授業にて随時紹介します。
+  readings: !ruby/array:Array
+  - 授業にて随時紹介します。
+  others: "「テクノトレンド１」「テクノトレンド２」を併せて履修することが望ましい。 "
+  notice: ''
+- !ruby/struct:Course
+  code: BT236
+  title: 'BT236／Topics in Business 1 '
+  theme: 'Ethics and CSR in Sport Management '
+  instructor: '井上　雄平(INOUE YUHEI) '
+  schedule: |-
+    春学期２ (Spring Semester 2) 木曜日(Thu) ３時限(Period 3) 1204(Room)
+    春学期２ (Spring Semester 2) 木曜日(Thu) ４時限(Period 4) 1204(Room)
+  credit: '２単位(2 Credits) '
+  num: 'GBU3201 '
+  lang: "英語\n(English) "
+  notes: " "
+  objective: 'Upon successful completion of this course, students should be able to:
+    (a) discuss key ethical issues in a range of sport contexts, including youth sport,
+    interscholastic sport, and professional sport; (b) apply ethical theories and
+    concepts to sport management issues and dilemmas; (c) explain the concept of corporate
+    social responsibility (CSR) and its application to sport organizations; (d) discuss
+    a strategic approach to CSR; and (e) explain the concept of creating shared value
+    (CSV) and apply it to the management of sport organizations. '
+  contents: 'In sport management we have many opportunities to ask questions regarding
+    acts and decisions as right or wrong. What does it mean to act in a way that characterizes
+    good behavior? What are our personal values and moral orientations? What is meant
+    by the term corporate social responsibility? How do we make decisions that are
+    good, right, and beneficial for both business and society? In this course, these
+    questions will be explored from ethics and corporate social responsibility (CSR)
+    perspectives. The process of critical reading, thinking, writing, and discussion
+    will be emphasized.  '
+  plan:
+    1: 'Introduction of the course/lectures '
+    2: 'Class based on lecture and discussion of cases '
+    3: 'Class based on lecture and discussion of cases '
+    4: 'Class based on lecture and discussion of cases '
+    5: 'Class based on lecture and discussion of cases '
+    6: 'Class based on lecture and discussion of cases '
+    7: 'Class based on lecture and discussion of cases '
+    8: 'Class based on lecture and discussion of cases '
+    9: 'Class based on lecture and discussion of cases '
+    10: 'Class based on lecture and discussion of cases '
+    11: 'Class based on lecture and discussion of cases '
+    12: 'Class based on lecture and discussion of cases '
+    13: 'Project presentation '
+    14: 'Test '
+  outside: 'Students are expected to read all the required readings to prepare class
+    discussion and presentation. '
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): Written Assignment(25%) 、Oral Presentation(25%) 、Class Discussion(20%)
+      、Test(30%)
+  textbook: !ruby/array:Array
+  - なし
+  readings: !ruby/array:Array
+  - :no: '1.'
+    :author: 'Paramio-Salcines, J. L., Babiak, K., & Walters, G. (Eds.). (2013). Routledge
+      handbook of sport and corporate  '
+    :book_title: 'Routledge handbook of sport and corporate social responsibility  '
+    :publisher: 'Routledge '
+    :date: '2013 '
+    :isbn_issn: 
+  - :others: ''
+  others: "All required readings will be provided as PDF documents and will be freely
+    available via instructor.\n\nThe above course schedule is tentative and is subject
+    to change. Detailed syllabus will be provided at the beginning of the class.  "
+  notice: ''
+- !ruby/struct:Course
+  code: UA685
+  title: "UA685／マーケティング・エッセンシャルズ２\n(Marketing Essentials 2) "
+  theme: " "
+  instructor: '斎藤　明(SAITO AKIRA) '
+  schedule: |-
+    春学期２ (Spring Semester 2) 木曜日(Thu) Ｇ５時限(Period G5) 9B01(Room)
+    春学期２ (Spring Semester 2) 木曜日(Thu) Ｇ６時限(Period G6) 9B01(Room)
+  credit: '２単位(2 Credits) '
+  num: 'TRG5300 '
+  lang: "日本語\n(Japanese) "
+  notes: '池袋キャンパス開講 '
+  objective: "１．マーケティング・マネジメントにおける基本的概念やフレームワークの理解\n２．今後のマーケティング分野での発展科目の履修や自律的研究に向けた基盤の確立
+    \ "
+  contents: "マーケティングは20世紀初めに市場創造の理念や方法として開発され、以来ビジネスにおいて重要な役割を果し続けています。今日、マーケティングは、ビジネス（製造業、流通業、サービス業等）だけでなく、行政機関や地域、非営利組織へと活用領域を広げています。\n本講義は、マーケティングの基本的な考え方と活動を中心に学習し、今後のマーケティング分野での発展科目の履修や当該分野自律的学習に向けた基礎的準備講座とします。 "
+  plan:
+    1: 'ブランド（１）：ブランド概説 '
+    2: 'ブランド（２）：ブランディング '
+    3: '消費者行動（１）：消費者行動概説（影響要因） '
+    4: '消費者行動（２）：消費者行動概説（意思決定プロセス） '
+    5: '消費者行動（３）：消費者行動諸概念（態度・関与） '
+    6: 'マーケティング・リサーチ '
+    7: 'サービスとマーケティング：サービス概説 '
+    8: 'サービスとマーケティング：事例 '
+    9: 'インターネットとマーケティング：概説 '
+    10: 'インターネットとマーケティング：事例 '
+    11: '事例報告・討議（１） '
+    12: '事例報告・討議（２） '
+    13: '事例報告・討議（３） '
+    14: '事例報告・討議（４） '
+  outside: "事前学修（予習）：前回までの復習を実施し、授業に参加する。\n事後学修（復習）：授業内で詳細された概念等に関して整理し、ノートを作成し、理解を促進する。\n上記プロセスを繰り返し、授業内容の理解を獲得し、自律的学修を促進することを推奨しています。 "
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 事例報告(40%) 、参加度(30%) 、クラス討議貢献度(30%)
+  textbook: !ruby/array:Array
+  - なし
+  readings: !ruby/array:Array
+  - :no: '1.'
+    :author: '和田 充夫 (編集), 日本マーケティング協会 (編集) '
+    :book_title: 'マーケティング用語辞典 (日経文庫)  '
+    :publisher: '日本経済新聞社 '
+    :date: '2005 '
+    :isbn_issn: 
+  - :others: ''
+  others: "本講義は、マーケティングの基本的な考え方を中心に学習し、そうしたマーケティング分野での発展科目の履修や自律的学習に向けた基礎的準備講座と位置づけられます。\n本研究科では、マーケティング分野において、多くの発展科目・応用科目（B2B,、サービス、ブランド、グローバル、ストラテジー、リサーチ等）が開講されています。\n実務で関連した業務（営業系業務）経験や、学部レベルで基礎的専門用語や概念について学習した経験のある方は、本科目の履修を経ずに、多く開講されている発展科目・応用科目の積極的な履修を推奨します。 "
+  notice: ''
+- !ruby/struct:Course
+  code: VL342
+  title: "VL342／オペレーション・マネジメント２\n(Operations Management 2) "
+  theme: " "
+  instructor: '平井　直樹(HIRAI NAOKI) '
+  schedule: |-
+    春学期２ (Spring Semester 2) 木曜日(Thu) Ｇ５時限(Period G5) X207(Room)
+    春学期２ (Spring Semester 2) 木曜日(Thu) Ｇ６時限(Period G6) X207(Room)
+  credit: '２単位(2 Credits) '
+  num: 'BDS6000 '
+  lang: "日本語\n(Japanese) "
+  notes: " "
+  objective: 'オペレーションに関わる分野と、各企業が取り組んできた特徴や強みを理解するとともに、企業の活動を俯瞰できることを目的とする。 '
+  contents: "オペレーションをマネジメントするということは、単にサプライチェーンなどの業務のやり方を管理、改善することだけではありません。\nオペレーションは、企業戦略の実行に関わるものであり、生産・販売活動、組織構造、意思決定、マーケティング、情報技術など様々な企業活動が結びついています。\n本講義では、オペレーションに関わる要素について、具体的な企業事例（ケース）を挙げながら、ディスカッションを通じて理解を深めていきます。 "
+  plan:
+    1: 'オリエンテーション '
+    2: '企業活動の俯瞰 '
+    3: '組織とオペレーション（１） '
+    4: '組織とオペレーション（２） '
+    5: '知識創造とオペレーション（１） '
+    6: '知識創造とオペレーション（２） '
+    7: '改善活動とオペレーション（１） '
+    8: '改善活動とオペレーション（２） '
+    9: '情報技術とオペレーション（１） '
+    10: '情報技術とオペレーション（２） '
+    11: '社会的責任・持続的開発とオペレーション（１） '
+    12: '社会的責任・持続的開発とオペレーション（２） '
+    13: 'プレゼンテーションとまとめ（１） '
+    14: 'プレゼンテーションとまとめ（２） '
+  outside: '適宜、講義内で指示します '
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 出席および授業ヘの貢献(40%) 、ディスカッションへの参加度(30%) 、プレゼンテーション(30%)
+  textbook: !ruby/array:Array
+  - 授業にて随時紹介します
+  readings: !ruby/array:Array
+  - 授業にて随時紹介します
+  others: "「オペレーションマネジメント１」「オペレーションマネジメント２」を併せて履修することが望ましい "
+  notice: ''
+- !ruby/struct:Course
+  code: VG283
+  title: "VG283／テクノロジーマネジメント２\n(Technology Management 2) "
+  theme: " "
+  instructor: '深見　嘉明(FUKAMI YOSHIAKI) '
+  schedule: |-
+    春学期２ (Spring Semester 2) 木曜日(Thu) Ｇ５時限(Period G5) 6408(Room)
+    春学期２ (Spring Semester 2) 木曜日(Thu) Ｇ６時限(Period G6) 6408(Room)
+  credit: '２単位(2 Credits) '
+  num: 'BDS6600 '
+  lang: "日本語\n(Japanese) "
+  notes: " "
+  objective: 'IoTやビッグデータなど、あらゆる業種においてインターネットを始めとする情報技術を用いたビジネスプロセスの革新が求められる。製品のみならず、サービス産業においても最新技術の活用と、オペレーションへの適用が常に求められるようになった。この授業では、新技術を組織内でいかに生み出し、また活用することによりビジネスモデルならびにビジネススキームを創造・改善していくかという経営学の一領域であるMOT
+    (Management of Technology)の基礎を学ぶ。理論を理解し、受講者自身のビジネスにおいて技術開発やイノベーションを企業戦略立案において活かすことのできる能力を身につけることを目標とする。 '
+  contents: 'MOT分野における最新の教科書を用い、最新の技術トレンドをベースにしたMOTの基礎知識を身につける。授業は教科書の内容を解説する日本語の講義、ならびに講義内容をベースにしたディスカッションを実施する。単に知識を身につけるのではなく、知識を元に施策を立案し、実行するための発想力と実行力を養うことを目指す。また、修士論文執筆における参考文献探索の入り口としても活用できる情報を提供する。情報通信技術、特にソフトウェア・エンジニアリングやインターネットの活用と言った点で、先進的な理論を収録する英語の教科書を用いるが、授業は日本語で行う。(発表・ディスカッションも日本語)テクノロジーマネジメント1を既に履修していることが望ましい。 '
+  plan:
+    1: 'イノベーション事例の創出(1) '
+    2: 'イノベーション事例の創出(2) '
+    3: '新製品・サービスの創造(1) '
+    4: '新製品・サービスの創造(2) '
+    5: 'オープンイノベーション (1) '
+    6: 'オープンイノベーション (2) '
+    7: 'コラボレーション (1) '
+    8: 'コラボレーション (2) '
+    9: 'アントレプレナーシップ(1) '
+    10: 'アントレプレナーシップ(2) '
+    11: 'イノベーションからの利益確保 (1) '
+    12: 'イノベーションからの利益確保 (2) '
+    13: 'イノベーションからの知見獲得 (1) '
+    14: 'イノベーションからの知見獲得 (2) '
+  outside: "予習：教科書の当該部分を熟読し、ディスカッションに備える。\n復習：学んだ内容を整理し、参考にできる事例や文献を整理する。 "
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 授業の参加度・発言(60%) 、最終レポート(Final Report)(40%)
+  textbook: !ruby/array:Array
+  - :no: '1.'
+    :author: 'Tidd, J., Pavitt, K., & Bessant, J '
+    :book_title: 'Managing Innovation: Integrating Technological, Market and Organizational
+      Change, 5th Edition  '
+    :publisher: 'Wiley '
+    :date: '2013 '
+    :isbn_issn: 
+  - :others: ''
+  readings: !ruby/array:Array
+  - 講義中に適宜紹介する。
+  others: "https://github.com/icat-lab/technology_management\nInnovation Portal http://www.innovation-portal.info/\n\n【実務家教員による授業】\n本科目は、5年以上の実務経験を有する実務家教員による授業である。\n【双方向による授業割合】\n50% "
+  notice: ''
+- !ruby/struct:Course
+  code: VL556
+  title: "VL556／ビジネス・オーガニゼーション４\n(Business Organization 4) "
+  theme: " "
+  instructor: '山中　伸彦(YAMANAKA NOBUHIKO) '
+  schedule: |-
+    春学期２ (Spring Semester 2) 木曜日(Thu) Ｇ５時限(Period G5) 4151(Room)
+    春学期２ (Spring Semester 2) 木曜日(Thu) Ｇ６時限(Period G6) 4151(Room)
+  credit: '２単位(2 Credits) '
+  num: 'BDS5500 '
+  lang: "日本語\n(Japanese) "
+  notes: " "
+  objective: "「ビジネス・オーガニゼーション3」に続き、組織デザインの基本原理と諸問題について学ぶ。 "
+  contents: '本科目では、「ビジネス・オーガニゼーション3」に続き、組織について、その原理や原則に立ち戻って理論的に考察することを通じて今日の企業組織の現状を批判的に捉え、その問題を発見することにつながるような知識を学びたいと考えている。特に「4」では、今日の企業組織や様々な事業体の組織デザインを理解するための理論的知識を修得し、さらにそれを活用して日本企業の組織デザインの現状を批判的に考えてみたい。 '
+  plan:
+    1: '組織のコンフィギュレーション：基本類型の特徴と問題（1） '
+    2: '組織のコンフィギュレーション：基本類型の特徴と問題（2） '
+    3: '組織のコンフィギュレーション：基本類型の特徴と問題（3） '
+    4: '組織のコンフィギュレーション：基本類型の特徴と問題（4） '
+    5: '組織のコンフィギュレーション：基本類型の特徴と問題（5） '
+    6: '組織のコンフィギュレーション：基本類型の特徴と問題（6） '
+    7: '新たな組織デザイン（1） '
+    8: '新たな組織デザイン（2） '
+    9: '日本企業の組織デザインを考える（1） '
+    10: '日本企業の組織デザインを考える（2） '
+    11: '日本企業の組織デザインを考える（3） '
+    12: '日本企業の組織デザインを考える（4） '
+    13: '日本企業の組織デザインを考える（5） '
+    14: '日本企業の組織デザインを考える（6） '
+  outside: "ご自身のお仕事や職場、会社組織を素材として、どのような問題に直面しているのか、その問題はどのような問題であるのか、なぜそうした問題が生じているのか、考えてみてください。\nまた、参考文献にある書籍を読んでおくとよいでしょう。 "
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): ディスカッションへの参加(20%) 、授業内課題(80%)
+  textbook: !ruby/array:Array
+  - 講義時に指示します。
+  readings: !ruby/array:Array
+  - :no: '1.'
+    :author: 'ピコー、ディートル、フランク '
+    :book_title: "『新制度派経済学による組織入門』  "
+    :publisher: '白桃書房 '
+    :date: '2007 '
+    :isbn_issn: " "
+  - :no: '2.'
+    :author: '佐久間信夫編 '
+    :book_title: "『新版現代経営学』  "
+    :publisher: '学文社 '
+    :date: '2005 '
+    :isbn_issn: " "
+  - :no: '3.'
+    :author: 'ヘンリー・ミンツバーグ '
+    :book_title: "『H・ミンツバーグ経営論』  "
+    :publisher: 'ダイヤモンド社 '
+    :date: '2007 '
+    :isbn_issn: " "
+  - :no: '4.'
+    :author: 'ジョン・ロバーツ '
+    :book_title: "『現代企業の組織デザイン』  "
+    :publisher: 'NTT出版 '
+    :date: '2005 '
+    :isbn_issn: " "
+  - :no: '5.'
+    :author: '秋野・關・坂本・山中・井口・荒井 '
+    :book_title: "『グローバル化とイノベーションの経営学』  "
+    :publisher: '税務経理協会 '
+    :date: '2018 '
+    :isbn_issn: " "
+  - :others: そのほか、講義において随時紹介します。
+  others: "「ビジネス･オーガニゼーション3」を履修しておくことが望ましいと思いますが、「4」のみの履修も可能です。 "
+  notice: ''
+- !ruby/struct:Course
+  code: VL205
+  title: "VL205／マーケティング・エッセンシャルズ２\n(Marketing Essentials 2) "
+  theme: " "
+  instructor: '斎藤　明(SAITO AKIRA) '
+  schedule: |-
+    春学期２ (Spring Semester 2) 木曜日(Thu) Ｇ５時限(Period G5) 9B01(Room)
+    春学期２ (Spring Semester 2) 木曜日(Thu) Ｇ６時限(Period G6) 9B01(Room)
+  credit: '２単位(2 Credits) '
+  num: 'BDS5400 '
+  lang: "日本語\n(Japanese) "
+  notes: " "
+  objective: "１．マーケティング・マネジメントにおける基本的概念やフレームワークの理解\n２．今後のマーケティング分野での発展科目の履修や自律的研究に向けた基盤の確立
+    \ "
+  contents: "マーケティングは20世紀初めに市場創造の理念や方法として開発され、以来ビジネスにおいて重要な役割を果し続けています。今日、マーケティングは、ビジネス（製造業、流通業、サービス業等）だけでなく、行政機関や地域、非営利組織へと活用領域を広げています。\n本講義は、マーケティングの基本的な考え方と活動を中心に学習し、今後のマーケティング分野での発展科目の履修や当該分野自律的学習に向けた基礎的準備講座とします。 "
+  plan:
+    1: 'ブランド（１）：ブランド概説 '
+    2: 'ブランド（２）：ブランディング '
+    3: '消費者行動（１）：消費者行動概説（影響要因） '
+    4: '消費者行動（２）：消費者行動概説（意思決定プロセス） '
+    5: '消費者行動（３）：消費者行動諸概念（態度・関与） '
+    6: 'マーケティング・リサーチ '
+    7: 'サービスとマーケティング：サービス概説 '
+    8: 'サービスとマーケティング：事例 '
+    9: 'インターネットとマーケティング：概説 '
+    10: 'インターネットとマーケティング：事例 '
+    11: '事例報告・討議（１） '
+    12: '事例報告・討議（２） '
+    13: '事例報告・討議（３） '
+    14: '事例報告・討議（４） '
+  outside: "事前学修（予習）：前回までの復習を実施し、授業に参加する。\n事後学修（復習）：授業内で詳細された概念等に関して整理し、ノートを作成し、理解を促進する。\n上記プロセスを繰り返し、授業内容の理解を獲得し、自律的学修を促進することを推奨しています。 "
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 事例報告(40%) 、参加度(30%) 、クラス討議貢献度(30%)
+  textbook: !ruby/array:Array
+  - なし
+  readings: !ruby/array:Array
+  - :no: '1.'
+    :author: '和田 充夫 (編集), 日本マーケティング協会 (編集) '
+    :book_title: 'マーケティング用語辞典 (日経文庫)  '
+    :publisher: '日本経済新聞社 '
+    :date: '2005 '
+    :isbn_issn: 
+  - :others: ''
+  others: "本講義は、マーケティングの基本的な考え方を中心に学習し、そうしたマーケティング分野での発展科目の履修や自律的学習に向けた基礎的準備講座と位置づけられます。\n本研究科では、マーケティング分野において、多くの発展科目・応用科目（B2B,、サービス、ブランド、グローバル、ストラテジー、リサーチ等）が開講されています。\n実務で関連した業務（営業系業務）経験や、学部レベルで基礎的専門用語や概念について学習した経験のある方は、本科目の履修を経ずに、多く開講されている発展科目・応用科目の積極的な履修を推奨します。 "
+  notice: ''
+- !ruby/struct:Course
+  code: KN221
+  title: 'KN221／Advanced Seminar in Global Business 2 '
+  theme: 'International Sports Business, A CSR Perspective '
+  instructor: '井上　雄平(INOUE YUHEI) '
+  schedule: |-
+    春学期２ (Spring Semester 2) 金曜日(Fri) ３時限(Period 3) 7205(Room)
+    春学期２ (Spring Semester 2) 金曜日(Fri) ４時限(Period 4) 7205(Room)
+  credit: '２単位(2 Credits) '
+  num: 'MIB6201 '
+  lang: "英語\n(English) "
+  notes: " "
+  objective: 'Upon successful completion of this course, students should be able to
+    (a) explain the characteristics of products, organizations, and environment related
+    to sports business; (b) explain sport management through its four distinctive
+    functions; (c) understand the role of vision, mission, and values in guiding the
+    planning of sport organizations; (d) explain the importance of managing diversity
+    for sport organizations; and (e) explain the concepts of corporate social responsibility
+    (CSR) and creating shared value (CSV) and apply them to the management of sport
+    organizations.  '
+  contents: 'This course provides comprehensive analyses of the organization and management
+    of sports business. The course is designed for students to understand the uniqueness
+    of sport products, organizations, and environment as well as how the principle
+    of corporate social responsibility (CSR) can be incorporated into the management
+    and planning processes of sport organizations.  '
+  plan:
+    1: 'Introduction of the course/lectures '
+    2: 'Class based on lecture, cases, industry publication, and research articles. '
+    3: 'Class based on lecture, cases, industry publication, and research articles. '
+    4: 'Class based on lecture, cases, industry publication, and research articles. '
+    5: 'Class based on lecture, cases, industry publication, and research articles. '
+    6: 'Class based on lecture, cases, industry publication, and research articles. '
+    7: 'Class based on lecture, cases, industry publication, and research articles. '
+    8: 'Class based on lecture, cases, industry publication, and research articles. '
+    9: 'Class based on lecture, cases, industry publication, and research articles. '
+    10: 'Class based on lecture, cases, industry publication, and research articles. '
+    11: 'Class based on lecture, cases, industry publication, and research articles. '
+    12: 'Class based on lecture, cases, industry publication, and research articles. '
+    13: 'Project presentation '
+    14: 'Test '
+  outside: "Students are expected to read all the required readings to prepare class
+    discussion and presentation.\nStudents are required to purchase selected cases
+    through Harvard business school press. "
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): Written Assignments(25%) 、Oral Presentations(25%) 、Class Discussion(20%)
+      、Test(30%)
+  textbook: !ruby/array:Array
+  - :no: '1.'
+    :author: 'Chelladurai, P.  '
+    :book_title: 'Managing organizations for sport and physical activity (4th ed.).  '
+    :publisher: 'Holcomb Hathaway Publishers '
+    :date: '2014 '
+    :isbn_issn: 
+  - :others: ''
+  readings: !ruby/array:Array
+  - :no: '1.'
+    :author: 'Paramio-Salcines, J. L., Babiak, K., & Walters, G. (Eds.). (2013). Routledge
+      handbook of sport and corporate  '
+    :book_title: 'Routledge handbook of sport and corporate social responsibility  '
+    :publisher: 'Routledge '
+    :date: '2013 '
+    :isbn_issn: 
+  - :others: ''
+  others: 'The above course schedule is tentative and is subject to change. Detailed
+    syllabus will be provided at the beginning of the class.  '
+  notice: ''
+- !ruby/struct:Course
+  code: IC365
+  title: "IC365／パートナーシップ論\n(Public Private Partnerships) "
+  theme: ''
+  instructor: '久保　善慎(KUBO YOSHICHIKA) '
+  schedule: |-
+    春学期２ (Spring Semester 2) 金曜日(Fri) ４時限(Period 4) N311(Room)
+    春学期２ (Spring Semester 2) 金曜日(Fri) ５時限(Period 5) N311(Room)
+  credit: '２単位(2 Credits) '
+  num: 'CMC3200 '
+  lang: "日本語\n(Japanese) "
+  notes: " "
+  objective: 'このコースの目的は、学生がパートナーシップ（協働）概念について理解することです。国内で実施されるパートナーシップ政策、各国が進めるパートナーシップ政策について研究する。 '
+  contents: 'パートナーシップは従来の形式だけのものから、政策実施に不可欠なものとして近年注目されています。この授業では，主に行政とＮＰＯ/地域団体とのパートナーシップの現状と課題について理解し、自らの考えや意見を持てるようにすることを目的としています。例えば、東日本大震災のような大規模災害が発生すると、発災直後・復旧・復興のすべての局面で行政機関だけで被災者支援のすべてを行うことはできせん。被災地の避難所で１日三食のお弁当を避難している全員に渡す、倒壊した高齢者の住宅のがれき撤去をするには、行政・ＮＰＯ・地域団体・企業などの連携が必要とされるのです。それぞれの組織が水平的な関係を構築する際の現状と課題について理解する。 '
+  plan:
+    1: 'ガイダンス '
+    2: 'パートナーシップ（協働）とは何か '
+    3: 'ガバメントからガバナンスへ '
+    4: "「ガバナンス」概念の台頭とパートナーシップ "
+    5: '行財政改革とパートナーシップ: NPM(New Public Management)の位相 '
+    6: '政策ネットワーク '
+    7: "「新しい公共」概念と公共サービスを担うパートナーシップ "
+    8: 'イギリスのパートナーシップの発展動向[1] '
+    9: 'アメリカのパートナーシップの発展動向[2] '
+    10: '日本の自治体におけるパートナーシップ政策 '
+    11: 'パートナーシップ政策（企業とPFI） '
+    12: 'パートナーシップ政策（サードセクター、クァンゴ） '
+    13: 'パートナーシップの現状・課題・展望 '
+    14: '総括 '
+  outside: '教科書は指定しない。授業の中で適宜参考図書を紹介する。中間レポートの作成時にあたり、授業の内容を予復習し理解を深めるために、参考図書を読む。 '
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 中間レポート(30%) 、授業への積極的な参加及び貢献(30%) 、最終テスト(Final Test)(40%)
+  textbook: !ruby/array:Array
+  - テキストは特に指定しない。
+  readings: !ruby/array:Array
+  - :no: '1.'
+    :author: '山本 啓  '
+    :book_title: "『パブリック・ガバナンスの政治学』  "
+    :publisher: '勁草書房  '
+    :date: '2014 '
+    :isbn_issn: 
+  - :no: '2.'
+    :author: '辻中 豊, 伊藤 修一郎 （編） '
+    :book_title: "『ローカル・ガバナンス―地方政府と市民社会 (現代市民社会叢書 3)』  "
+    :publisher: '木鐸社 '
+    :date: '2010 '
+    :isbn_issn: 
+  - :no: '3.'
+    :author: 'Ｄ・Ｐ・アルドリッチ '
+    :book_title: "『災害復興におけるソーシャル・キャピタルの役割とは何か―地域再建とレジリエンスの構築』  "
+    :publisher: 'ミネルヴァ書房 '
+    :date: '2015 '
+    :isbn_issn: 
+  - :others: ''
+  others: '各自の考える社会課題とその解決方法について考えておくこと。例として、独居高齢者が自立して生活するにはどのような協力・協働が必要なのか。少子化が続くとどのような問題が発生するのか。世界で急増する移民・外国人労働者にはどのような政策が必要なのかなど、私達の生活に身近な課題を取り上げながら授業をすすめます。 '
+  notice: ''
+- !ruby/struct:Course
+  code: UA673
+  title: "UA673／ラグジュアリーブランド・マネジメント２\n(Luxury Brand Management 2) "
+  theme: " "
+  instructor: '庄司　貴行(SHOJI TAKAYUKI) '
+  schedule: |-
+    春学期２ (Spring Semester 2) 金曜日(Fri) Ｇ５時限(Period G5) D302(Room)
+    春学期２ (Spring Semester 2) 金曜日(Fri) Ｇ６時限(Period G6) D302(Room)
+  credit: '２単位(2 Credits) '
+  num: 'TRG5300 '
+  lang: "日本語\n(Japanese) "
+  notes: '池袋キャンパス開講 '
+  objective: 'ラグジュアリーブランド・マネジメントの実際とその基本戦略を理解する。 '
+  contents: "本講義では，いわゆる「高級ブランド品」を製造・販売するラグジュアリーブランド企業の経営を分析する。20世紀後半以降の日本経済力の源泉は，電気機器ならびに自動車産業に代表される加工組立型工業にほぼ限定されており，そこでは高品質の製品を相対的低価格で量産することで国際競争力を発揮してきたと考えられる。しかし一方で，「ブランド品」とされるような高付加価値型の製品・サービスの分野においては，むしろ欧米系企業が優位にあり，日本企業は必ずしも国際競争力を発揮できてはいない。\nさらには，製品・サービスを価格以外で差別化することが困難になる現象がコモディティー化として多くの産業分野において指摘されるなかで，品質や性能といった製品・サービスそのものの価値ではなく，購入したり使用したりする「経験」こそが差別化要因として注目されるようになっている。ラグジュアリーブランドのビジネスは，まさにそうした「経験」による差別化を実践する先端的業種のひとつという側面を有している。\nこの講義では，これまであまり体系的に研究されてこなかったラグジュアリーブランドビジネスについて，可能な限り実務家をゲストスピーカーに招き，また現実のケースを紹介しながら，その多面的な理解を目指す。 "
+  plan:
+    1: 'ラグジュアリーブランド企業のＥコマース戦略 '
+    2: 'ヴァーチャル店舗とリアル店舗 '
+    3: 'ラグジュアリーブランド企業のＭＤ戦略 '
+    4: 'マーチャンダイジングとビジネス・プランニング '
+    5: 'ラグジュアリーブランド企業における販売戦略 '
+    6: 'ブランド・ストレッチングとセカンドブランド戦略 '
+    7: 'ラグジュアリーブランド企業の流通戦略 '
+    8: 'ラグジュアリーブランド企業と百貨店 '
+    9: 'ラグジュアリーブランド企業のライセンス戦略 '
+    10: 'ラグジュアリーブランド企業と総合商社 '
+    11: '日本市場におけるラグジュアリーブランド・ビジネス '
+    12: 'ラグジュアリーブランド・ビジネスの現在 '
+    13: 'ラグジュアリービジネスの新領域1 '
+    14: 'ラグジュアリービジネスの新領域2 '
+  outside: 'ラグジュアリーブランド・マネジメント１を受講していることが望ましい。 '
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 最終成果物(60%) 、授業内ディスカッションへの貢献度(40%)
+  textbook: !ruby/array:Array
+  - 講義のなかで必要に応じて配布する。
+  readings: !ruby/array:Array
+  - 授業内で必要に応じて配布する。
+  others: ''
+  notice: ''
+- !ruby/struct:Course
+  code: VL356
+  title: "VL356／エンターテインメント・ビジネス論２\n(Entertainment Business 2) "
+  theme: " "
+  instructor: '佐藤　真(SATOU MAKOTO) '
+  schedule: |-
+    春学期２ (Spring Semester 2) 金曜日(Fri) Ｇ５時限(Period G5) 1103(Room)
+    春学期２ (Spring Semester 2) 金曜日(Fri) Ｇ６時限(Period G6) 1103(Room)
+  credit: '２単位(2 Credits) '
+  num: 'BDS6700 '
+  lang: "日本語\n(Japanese) "
+  notes: " "
+  objective: 'エンターテインメント・ビジネスをコンテンツ・ビジネスと捉え直し、その内実を理解し、分析し、エンターテインメント・ビジネスの可能性を考察する。 '
+  contents: "エンターテインメント産業の中核である映画・音楽・ステージにフォーカスして、主にマネージメント、マーケティングという観点から整理し、その現状、課題について検討する。\nその場合、それぞれの業界にたずさわる事業者、関係者をゲストスピーカーにお呼びする。現場の〈生〉の声を聞き、履修生とのディスカッションを通して、エンターテインメント・ビジネスの意義および未来について語り合う。\nさらに、今年度も最後にタウン・サーベイを行い、まちにひらかれたエンターテインメントの種子を見つけ出す。\n "
+  plan:
+    1: '映画ビジネス論①……映画のつくり方、映画づくりの楽しみ① '
+    2: '映画ビジネス論②……映画のつくり方、映画づくりの楽しみ② '
+    3: '映画ビジネス論③……コミュニケーション・ツールとしての映画① '
+    4: '映画ビジネス論④……コミュニケーション・ツールとしての映画② '
+    5: '音楽ビジネス論①……音楽のつくり方、音楽づくりの楽しみ① '
+    6: '音楽ビジネス論②……音楽のつくり方、音楽づくりの楽しみ② '
+    7: ".音楽ビジネス論③……ライブ・エンターテインメント時代の音楽 "
+    8: '音楽ビジネス論④……ライブ・エンターテインメント時代の音楽 '
+    9: 'ステージビジネスへのシステム・アプローチ① '
+    10: 'ステージビジネスへのシステム・アプローチ② '
+    11: 'アートイベントとクリエティブ都市論①  '
+    12: 'アートイベントとクリエティブ都市論② '
+    13: "［タウン・サーベイ］まちとビジネス①……エンターテインメントのシーズを探す "
+    14: "［タウン・サーベイ］まちとビジネス②……「今・ここ」性を求めて "
+  outside: "音楽、映画、ステージ、スポーツ、アートイベントなどのライブ・エンターテインメントのいずれかを\n数本(回)鑑賞(参加)しておくこと。\n "
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 最終レポート(Final Report)(40%) 、授業への参加度(30%) 、ゲストスピーカーとの質疑応答への参加(30%)
+  textbook: !ruby/array:Array
+  - なし
+  readings: !ruby/array:Array
+  - :no: '1.'
+    :author: '米谷尚子著 '
+    :book_title: "『演劇は仕事になるのか?』  "
+    :publisher: '彩流社 '
+    :date: '2011 '
+    :isbn_issn: " "
+  - :no: '2.'
+    :author: '八木良太著 '
+    :book_title: "『音楽産業 再成長のための組織戦略』  "
+    :publisher: '東洋経済新報社 '
+    :date: '2015 '
+    :isbn_issn: " "
+  - :no: '3.'
+    :author: '柴那典著 '
+    :book_title: "『ヒットの崩壊』  "
+    :publisher: '講談社現代新書 '
+    :date: '2016 '
+    :isbn_issn: " "
+  - :no: '4.'
+    :author: '永井純一著 '
+    :book_title: "『ロックフェスの社会学』  "
+    :publisher: 'ミネルヴァ書房 '
+    :date: '2016 '
+    :isbn_issn: " "
+  - :no: '5.'
+    :author: '北川フラム著 '
+    :book_title: "『ひらく美術 地域と人間のつながりを取り戻す』  "
+    :publisher: 'ちくま新書 '
+    :date: '2015 '
+    :isbn_issn: " "
+  - :no: '6.'
+    :author: '増渕敏之著 '
+    :book_title: "『路地裏が文化を生む! 』  "
+    :publisher: '青弓社 '
+    :date: '2012 '
+    :isbn_issn: " "
+  - :no: '7.'
+    :author: '東京工科大学編 '
+    :book_title: "『響く言葉』  "
+    :publisher: '河出書房新社 '
+    :date: '2017 '
+    :isbn_issn: " "
+  - :others: ''
+  others: ''
+  notice: ''
+- !ruby/struct:Course
+  code: VL739
+  title: "VL739／ビジネスモデル入門\n(Introduction to Business Model) "
+  theme: " "
+  instructor: '張　輝(CHOH KI) '
+  schedule: |-
+    春学期２ (Spring Semester 2) 金曜日(Fri) Ｇ５時限(Period G5) 1201(Room)
+    春学期２ (Spring Semester 2) 金曜日(Fri) Ｇ６時限(Period G6) 1201(Room)
+  credit: '２単位(2 Credits) '
+  num: 'BDS6000 '
+  lang: "日本語\n(Japanese) "
+  notes: " "
+  objective: '今日，ビジネスプランの策定や新規事業やサービスの創出，またビジネスシミュレーションなどには，ビジネスモデルを構想することが不可欠であり，この認識は日々広がっている。この科目は，マーケティング、競争戦略、イノベーションといったキーワードや，AIの実用化とIoTの普及にも留意しつつ，事業化構想に直結するビジネスモデル論について、動学的なアプローチから考察する。 '
+  contents: '本授業では，日本企業は既存ビジネスモデルの転換や事業開発に必要な新規ビジネスモデルの創出を加速化しなければならない，と言われる中で，ビジネスモデルをめぐる主な議論や事例を俯瞰し，真の顧客価値とは，その実現に必要な業務プロセス及び経営資源とは，競争的優位性の創出とは，収益モデルとは，ビジネスモデルの構造化などについて，多彩な事例をもって順次紹介し議論する。具体的には講義形式ではなく，基本的な紹介，説明及び視点の提示以外，主に質疑応答やディスカッションを通じて講義のポイントを共に考えていく。受講者には１回の調査発表をしてもらう。 '
+  plan:
+    1: '序説：ビジネスモデル論が注目される理由 '
+    2: 'ビジネスモデルをめぐる主な考え方、「4つの箱」論 '
+    3: 'ビジネスモデルの原点：顧客価値の提案 '
+    4: '事例レビュー１（事業化構想と顧客価値の変化） '
+    5: 'ビジネスモデルの接点：主要業務のプロセス '
+    6: '事例レビュー２（ビジネスモデル特許とＩoＴ等の関係） '
+    7: 'ビジネスモデルの視点：主要経営資源の配置 '
+    8: '事例レビュー３（競争的優位性／専有可能性の考案） '
+    9: 'ビジネスモデルの支点：利益方程式の生成 '
+    10: '事例レビュー４（多様な収益モデルの比較検討） '
+    11: '履修者によるプレゼンⅠ '
+    12: '履修者によるプレゼンⅡ '
+    13: '履修者によるプレゼンⅢ '
+    14: '結語：ビジネスモデルのイノベーション '
+  outside: '授業計画に沿って，授業内で別途指示する。 '
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 最終テスト(Final Test)(30%) 、出席や授業時の発言(40%) 、プレゼン(30%)
+  textbook: !ruby/array:Array
+  - テキストは使用しない。履修者によるプレゼンテーション以外，参考文献を配布する。
+  readings: !ruby/array:Array
+  - :no: '1.'
+    :author: 'マーク・ジョンソン '
+    :book_title: 'ホワイトスペース戦略  '
+    :publisher: '阪急コミュニケーションズ '
+    :date: '2011 '
+    :isbn_issn: 
+  - :no: '2.'
+    :author: '張輝 '
+    :book_title: '実務と研究の「壁」をどう破るのか  '
+    :publisher: 'インプレスR&D '
+    :date: '2018 '
+    :isbn_issn: 
+  - :others: ビジネスモデル学会『BMAジャーナル』 http://www.jctbf.org/BMA_J/top.htm　（編集長，張輝） ，他
+  others: "【双方向による授業】\n本科目は，簡単な講義に続いて，クラスあるいはチーム単位でのディスカッション形式で授業を展開する。双方向による授業の割合は71.4％
+    （14回中10回）である。\n\n【実務家教員による授業】\n本科目は，15年以上の実務経験を有する実務家教員による授業である。  "
+  notice: ''
+- !ruby/struct:Course
+  code: VL642
+  title: "VL642／ＢｔｏＢマーケティング２\n(B to B Marketing 2) "
+  theme: " "
+  instructor: '笠原　英一(KASAHARA EIICHI) '
+  schedule: |-
+    春学期２ (Spring Semester 2) 金曜日(Fri) Ｇ５時限(Period G5) 6206(Room)
+    春学期２ (Spring Semester 2) 金曜日(Fri) Ｇ６時限(Period G6) 6206(Room)
+  credit: '２単位(2 Credits) '
+  num: 'BDS5400 '
+  lang: "日本語\n(Japanese) "
+  notes: " "
+  objective: '本講義は、産業財メーカーで、マーケター、営業、企画、開発もしくは購買を担当している方はもちろんのこと、消費財メーカー、金融、サービス業等で、法人営業を担当している方にとっても有益な視点を提供できるものと考えている。実際の講義は、ケーススタディ（グループディスカッションおよびクラスディスカッション）とエクササイズを展開することにより、理論の理解を深めながら、Ｂ２Ｂのプロフェッショナルマーケターとしての応用力を確立する。 '
+  contents: '本講義では、伝統的なマーケティング・マネジメントのフレームワークを踏まえながら、B to Bマーケティングの本質である以下の二つの点にスポット当てて、B
+    to Bマーケティング独自の理論を組み立てていく。二つの点とは、買い手企業の組織購買行動と売り手と買い手企業間のインタラクティブな関係性である。この特徴をベースにマーケティング戦略の総論である、ターゲット市場の評価・選択、それに対する提供効用の明確化、および各論であるマーケティング・ミックス、つまり、製品コンセプト開発、価格設定、チャネル設計と運用、プロモーション展開等の活動はどうあるべきかを理論的に論じる。ケーススタディ及びエクササイズに力点を置く。 '
+  plan:
+    1: "・組織購買行動論に関するエクササイズ "
+    2: "・産業財市場における顧客関係性管理に関するエクササイズ "
+    3: '事業機会の評価と資源配分に関するエクササイズ '
+    4: "・事業領域（製品・市場マトリックス）の検討に関するエクササイズ\n・ＰＰＭ（プロダクト・ポートフォリオ・マネジメント） "
+    5: "・競争戦略に関するエクササイズ "
+    6: "ＳＴＰに関するエクササイズ\n・セグメンテーション（市場の細分化）\n・標的市場と購買決定要因の抽出（マクロ・ターゲティング）\n・ポジショニング（提供する効用の明確化） "
+    7: "・製品開発（製品コンセプト、効用曲線、デザインシンキング）に関するエクササイズ "
+    8: "・価格付け（効用、競合、コスト）に関するエクササイズ "
+    9: "・チャネル（リーチvs. リッチネス）に関するエクササイズ "
+    10: "・販売促進（広告、展示会、ウエッブ）に関するエクササイズ "
+    11: "営業戦略に関するエクササイズ\n・顧客の選択（ミクロ・ターゲティング）\n・関係性のマネジメント（信頼・コミットメント） "
+    12: "営業体制・営業活動評価に関するエクササイズ\n・バリューvs. ナンバー、プロセス vs. アウトプット） "
+    13: 'グローバル市場における展開戦略に関するエクササイズ '
+    14: "事業性評価に関するエクササイズ\nビジネスモデルキャンバス、売上モデル、費用モデルに関するエクササイズ "
+  outside: '次回の予習範囲や課題は、各授業の最後およびblackboard上でコメントするが、基本的には個人予習（事前）、グループ討議（授業時、必要に応じて事前に）、クラス討議（授業時）という展開で進める '
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 最終テスト(Final Test)(40%) 、最終レポート(Final Report)(30%) 、授業で実施するプレゼンテーション(30%)
+  textbook: !ruby/array:Array
+  - :no: '1.'
+    :author: 'マイケル・ハット＋トーマス・スペイ（著）、笠原英一（解説・訳） '
+    :book_title: "『産業財マーケティング・マネジメント－ケース編』  "
+    :publisher: '白桃書房 '
+    :date: '2012 '
+    :isbn_issn: " "
+  - :others: ''
+  readings: !ruby/array:Array
+  - :no: '1.'
+    :author: 'マイケル・ハット＋トーマス・スペイ（著）、笠原英一（解説・訳） '
+    :book_title: "『マーケティング・マネジメント－理論編』  "
+    :publisher: '白桃書房 '
+    :date: '2009 '
+    :isbn_issn: " "
+  - :no: '2.'
+    :author: '笠原英一 '
+    :book_title: '戦略的産業財マーケティング  '
+    :publisher: '東洋経済 '
+    :date: '2018 '
+    :isbn_issn: " "
+  - :others: ''
+  others: "http://www.aprim.jp/\n\n【双方向による授業割合】\n100%\n\n※20年間、経営コンサルタントとして、国内外の上場企業に対して、戦略、マーケティング、組織に関する実践的課題に取り組んできた実務家教員による授業である。 "
+  notice: ''
+- !ruby/struct:Course
+  code: VL322
+  title: "VL322／ラグジュアリーブランド・マネジメント２\n(Luxury Brand Management 2) "
+  theme: " "
+  instructor: '庄司　貴行(SHOJI TAKAYUKI) '
+  schedule: |-
+    春学期２ (Spring Semester 2) 金曜日(Fri) Ｇ５時限(Period G5) D302(Room)
+    春学期２ (Spring Semester 2) 金曜日(Fri) Ｇ６時限(Period G6) D302(Room)
+  credit: '２単位(2 Credits) '
+  num: 'BDS6400 '
+  lang: "日本語\n(Japanese) "
+  notes: " "
+  objective: 'ラグジュアリーブランド・マネジメントの実際とその基本戦略を理解する。 '
+  contents: "本講義では，いわゆる「高級ブランド品」を製造・販売するラグジュアリーブランド企業の経営を分析する。20世紀後半以降の日本経済力の源泉は，電気機器ならびに自動車産業に代表される加工組立型工業にほぼ限定されており，そこでは高品質の製品を相対的低価格で量産することで国際競争力を発揮してきたと考えられる。しかし一方で，「ブランド品」とされるような高付加価値型の製品・サービスの分野においては，むしろ欧米系企業が優位にあり，日本企業は必ずしも国際競争力を発揮できてはいない。\nさらには，製品・サービスを価格以外で差別化することが困難になる現象がコモディティー化として多くの産業分野において指摘されるなかで，品質や性能といった製品・サービスそのものの価値ではなく，購入したり使用したりする「経験」こそが差別化要因として注目されるようになっている。ラグジュアリーブランドのビジネスは，まさにそうした「経験」による差別化を実践する先端的業種のひとつという側面を有している。\nこの講義では，これまであまり体系的に研究されてこなかったラグジュアリーブランドビジネスについて，可能な限り実務家をゲストスピーカーに招き，また現実のケースを紹介しながら，その多面的な理解を目指す。 "
+  plan:
+    1: 'ラグジュアリーブランド企業のＥコマース戦略 '
+    2: 'ヴァーチャル店舗とリアル店舗 '
+    3: 'ラグジュアリーブランド企業のＭＤ戦略 '
+    4: 'マーチャンダイジングとビジネス・プランニング '
+    5: 'ラグジュアリーブランド企業における販売戦略 '
+    6: 'ブランド・ストレッチングとセカンドブランド戦略 '
+    7: 'ラグジュアリーブランド企業の流通戦略 '
+    8: 'ラグジュアリーブランド企業と百貨店 '
+    9: 'ラグジュアリーブランド企業のライセンス戦略 '
+    10: 'ラグジュアリーブランド企業と総合商社 '
+    11: '日本市場におけるラグジュアリーブランド・ビジネス '
+    12: 'ラグジュアリーブランド・ビジネスの現在 '
+    13: 'ラグジュアリービジネスの新領域1 '
+    14: 'ラグジュアリービジネスの新領域2 '
+  outside: 'ラグジュアリーブランド・マネジメント１を受講していることが望ましい。 '
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 最終成果物(60%) 、授業内ディスカッションへの貢献度(40%)
+  textbook: !ruby/array:Array
+  - 講義のなかで必要に応じて配布する。
+  readings: !ruby/array:Array
+  - 授業内で必要に応じて配布する。
+  others: ''
+  notice: ''
+- !ruby/struct:Course
+  code: VL510
+  title: "VL510／リーダーシップ論２\n(Leadership 2) "
+  theme: " "
+  instructor: '安部　哲也(ABE TETSUYA) '
+  schedule: |-
+    春学期２ (Spring Semester 2) 金曜日(Fri) Ｇ５時限(Period G5) D603(Room)
+    春学期２ (Spring Semester 2) 金曜日(Fri) Ｇ６時限(Period G6) D603(Room)
+  credit: '２単位(2 Credits) '
+  num: 'BDS6500 '
+  lang: "日本語\n(Japanese) "
+  notes: " "
+  objective: 'リーダーとして、コーチングスキルを学び、部下や同僚などに対し、コーチングを実践活用できるレベルになることを目指す。 '
+  contents: '企業・組織を取り巻く環境が複雑化、多様化する中、企業・組織の経営資源である「ヒト・モノ・カネ・情報」において「ヒト」をどう動機づけ、どう育成していくかが、さらに重要かつ難しい課題となってきている。経営者、リーダー、マネージャーがメンバーを動機付け、育成するための実践的なリーダーシップ・コーチング・スキルを習得する。コーチングスキルは欧米において、経営者やリーダー、マネージャーに不可欠なスキルとして定着してきており、また日本やアジアの企業・組織においても導入が急速に進んでいる。コーチングの基本的な考え方、コミュニケーションスキル、ビジョン実現モデルなどを理論と実践的演習などを通じて学ぶ。 '
+  plan:
+    1: "リーダーシップ・コーチングの定義\nティーチングとコーチング　メリットとデメリット、使い分け "
+    2: '信頼関係の構築　スマート・トラスト '
+    3: 'コーチング・コミュニケーション・スキル演習①：　アクティブリスニング '
+    4: 'コーチング・コミュニケーション・スキル演習②：　効果的な質問スキル '
+    5: 'コーチング・コミュニケーション・スキル演習③：　フィードバックスキル '
+    6: "コーチング・コミュニケーション・スキル演習④：　ロールプレー演習\nケース例）仕事をかかえこむメンバーへのコーチング　など "
+    7: 'コーチング　ビジョン実現（ＧＲＯＷ）モデル　演習 '
+    8: '組織文化について　　　ケース例）テルモ　等 '
+    9: "ラーニング・オーガニゼーション（学習する組織）とは\n実践方法 "
+    10: 'リーダーシップ開発プランの進捗確認とフィードバック '
+    11: '自主テーマ研究発表（経営者，リーダーへのインタビュー，事例研究など）　 '
+    12: 'ゲスト・スピーカーによる講義・議論①　　例）企業経営者・リーダーなど '
+    13: 'ゲスト・スピーカーによる講義・議論②　　例）企業経営者・リーダーなど '
+    14: 'リーダーシップ開発プランの進捗発表・質疑応答・まとめ '
+  outside: '講義内で別途指示する '
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 授業貢献（出席、発言など）(40%) 、授業内課題(60%)
+  textbook: !ruby/array:Array
+  - 講義時に配布，指示する。
+  readings: !ruby/array:Array
+  - :no: '1.'
+    :author: '安部　哲也 '
+    :book_title: '課長の心得  '
+    :publisher: '総合法令出版 '
+    :date: '2017 '
+    :isbn_issn: 
+  - :no: '2.'
+    :author: 'ピーター M センゲ '
+    :book_title: '学習する組織―システム思考で未来を創造する  '
+    :publisher: '英治出版 '
+    :date: '2011 '
+    :isbn_issn: 
+  - :others: ''
+  others: "系統的履修 リーダーシップ論１も履修すること。\n【双方向による授業】簡単な講義に続いてクラスあるいはチーム単位でのディスカッション形式で授業を展開する。双方向による授業の割合は約70％（14回中10回）である。\n【実務家教員による授業】5年以上の実務経験を有する実務家教員による授業である。 "
+  notice: ''
+- !ruby/struct:Course
+  code: FD117
+  title: "栄養の科学\n(Sciencesof Nutrition) "
+  theme: '身近にある食と栄養の「へぇ～」に気付こう '
+  instructor: '酒井　健介(SAKAI KENSUKE) '
+  schedule: |-
+    春学期２ (Spring Semester 2) 土曜日(Sat) １時限(Period 1) 1202(Room)
+    春学期２ (Spring Semester 2) 土曜日(Sat) ２時限(Period 2) 1202(Room)
+  credit: '２単位(2 Credits) '
+  num: 'CMP2400 '
+  lang: "日本語\n(Japanese) "
+  notes: " "
+  objective: '食物，栄養，生命活動の関係を概念的に理解し，身体の機能と栄養との関係についての理解を深め，自らの食生活を管理するための方策を身につける。 '
+  contents: '近年，健康や食と栄養への関心が高まっている。本講義を通じて，「食と栄養」に関して「日常を科学する」知識や視点を持ち合わせるよう指導する。また，体重管理や競技力向上，健康増進や疾病予防などさまざまな状況下での「食と栄養」についての自己管理を促す機会と知識やスキルを提供する。 '
+  plan:
+    1: 'ガイダンス・ヒトのカラダと栄養　①ヒトのカラダの構成を食事・栄養　課題1 '
+    2: 'ガイダンス・ヒトのカラダと栄養　②筋骨格系の健康の維持と食事 '
+    3: 'ガイダンス・ヒトのカラダと栄養　③脂質・水分と体重の関係 '
+    4: 'ガイダンス・ヒトのカラダと栄養　④体位・体格と食事 '
+    5: '食生活・栄養に関するガイドラインや指針　課題2 '
+    6: '食物と物質（栄養素）の関係 '
+    7: '食事のバランス：自分の食事を見直そう　課題3 '
+    8: 'エネルギー収支と体重管理 '
+    9: '食品表示（正しい食品の購入方法） '
+    10: '健康食品について '
+    11: '消化と吸収 '
+    12: '各論　糖質・脂質・タンパク質の栄養 '
+    13: '各論　ビタミン・ミネラルの栄養 '
+    14: '授業内テスト '
+  outside: '食物と栄養，そしてヒトのカラダについて興味関心を持ち，日常の食行動の変容や健康的な食生活の獲得に意欲を持つこと。 '
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 最終テスト(Final Test)(40%) 、授業内レポート(40%) 、出席および授業態度(20%)
+  textbook: !ruby/array:Array
+  - 指定しない。必要に応じ授業時にプリントを配付。
+  readings: !ruby/array:Array
+  - 必要に応じて授業中に紹介。
+  others: ''
+  notice: ''
+- !ruby/struct:Course
+  code: VL148
+  title: "VL148／企業財務基礎\n(Introduction to Corporate Finance) "
+  theme: " "
+  instructor: '井潟　正彦(IGATA MASAHIKO) '
+  schedule: |-
+    春学期２ (Spring Semester 2) 土曜日(Sat) １時限(Period 1) 6206(Room)
+    春学期２ (Spring Semester 2) 土曜日(Sat) ２時限(Period 2) 6206(Room)
+  credit: '２単位(2 Credits) '
+  num: 'BDS5200 '
+  lang: "日本語\n(Japanese) "
+  notes: " "
+  objective: 'コーポレート・ファイナンスの体系の中から、実務に直結する分野を優先して習得する。 '
+  contents: "「負債資本と株主（自己）資本の役割と相違」、「資本構成」、「資本コスト（WACC）」、「企業価値評価」などの知識について、座学のみならず、グループ・ディスカッションや計算問題なども通じて習得する。 "
+  plan:
+    1: '株式会社の仕組みと役割 '
+    2: '負債資本と株主資本の役割と相違 '
+    3: '資本構成を巡る議論（MM理論） '
+    4: '資本構成を巡る議論（エージェンシー理論） '
+    5: '資本構成を巡る議論（現実の財務データの観察・・・業種別、上場企業とスタートアップ、中小企業） '
+    6: '信用リスクと格付け '
+    7: '優先株式やメザニン・ファイナンス、種類株式 '
+    8: '割引現在価値の考え方 '
+    9: '資本コスト（WACC）と企業価値評価（インカムアプローチ） '
+    10: '企業価値評価（マーケットアプローチ） '
+    11: 'コーポレート・ガバナンスを巡る議論 '
+    12: 'ゲストスピーカー（１） '
+    13: '総括と補論 '
+    14: 'ゲストスピーカー（２） '
+  outside: '毎週原則、前週の内容確認のための小テスト（計6回）を行う。 '
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 小テスト（計6回）(60%) 、ゲストスピーカー（１）感想文(20%) 、ゲストスピーカー（２）感想文(20%)
+  textbook: !ruby/array:Array
+  - なし
+  readings: !ruby/array:Array
+  - :no: '1.'
+    :author: '松田千恵子 '
+    :book_title: 'コーポレートファイナンス実務の教科書  '
+    :publisher: '日本実業出版社 '
+    :date: '2016 '
+    :isbn_issn: 
+  - :no: '2.'
+    :author: '鈴木一功 '
+    :book_title: '企業価値評価　入門編  '
+    :publisher: 'ダイヤモンド社 '
+    :date: '2018 '
+    :isbn_issn: 
+  - :no: '3.'
+    :author: '朝倉祐介 '
+    :book_title: 'ファイナンス思考  '
+    :publisher: 'ダイヤモンド社 '
+    :date: '2018 '
+    :isbn_issn: 
+  - :others: 毎週、必要に応じて、上記以外の書籍や論文などについても紹介する。
+  others: ''
+  notice: ''
+- !ruby/struct:Course
+  code: VL186
+  title: "VL186／経営学基礎２\n(Introduction to Management 2) "
+  theme: " "
+  instructor: '木村　剛(KIMURA TSUYOSHI) '
+  schedule: |-
+    春学期２ (Spring Semester 2) 土曜日(Sat) １時限(Period 1) 1203(Room)
+    春学期２ (Spring Semester 2) 土曜日(Sat) ２時限(Period 2) 1203(Room)
+  credit: '２単位(2 Credits) '
+  num: 'BDS5000 '
+  lang: "日本語\n(Japanese) "
+  notes: " "
+  objective: '本コースは、経営学の基礎的な概念、理論を習得するための入門的な科目である。経営学基礎１・２を通じて経営戦略を中心とする経営学を幅広く取り扱うが、経営学基礎２では、マーケティング論、ファイナンス論および組織論（マクロ・ミクロ）の基礎的項目の理解を目的としている。 '
+  contents: '経営学基礎２では、「マーケティング論」から始める。“顧客”や“市場”というキーワードでビジネスをとらえなおし、また、消費者行動にも着目する。続く「ファイナンス論」では、経営資源のうち“カネ”に着目し、企業価値を高めるための資金調達や投資評価に関する基礎的項目を議論する。「組織論」では、“ヒト”に着目し、組織体制や制度（マクロ）およびリーダーシップや動機付けの組織行動（ミクロ）に関して議論する。なお、講義は、演習や議論を中心に行う。 '
+  plan:
+    1: 'イントロダクション '
+    2: 'マーケティング論① '
+    3: 'マーケティング論② '
+    4: 'マーケティング論③ '
+    5: 'ファイナンス論① '
+    6: 'ファイナンス論② '
+    7: '中間テスト '
+    8: '総合的議論 '
+    9: 'マクロ組織論① '
+    10: 'マクロ組織論② '
+    11: 'ミクロ組織論（組織行動論）① '
+    12: 'ミクロ組織論（組織行動論）② '
+    13: '最終テスト '
+    14: '総合的議論とコースのまとめ '
+  outside: '授業計画に沿って、毎回の講義の際に指示する。 '
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 出席と授業への貢献、週次の課題レポート(40%) 、中間テスト(30%) 、最終テスト(Final Test)(30%)
+  textbook: !ruby/array:Array
+  - なし
+  readings: !ruby/array:Array
+  - :no: '1.'
+    :author: '沼上 幹  '
+    :book_title: 'わかりやすいマーケティング戦略  '
+    :publisher: '有斐閣 '
+    :date: '2008 '
+    :isbn_issn: 
+  - :no: '2.'
+    :author: '二村 敏子  '
+    :book_title: '現代ミクロ組織論―その発展と課題  '
+    :publisher: '有斐閣 '
+    :date: '2004 '
+    :isbn_issn: 
+  - :no: '3.'
+    :author: '岸田 民樹  '
+    :book_title: '現代経営組織論  '
+    :publisher: '有斐閣 '
+    :date: '2005 '
+    :isbn_issn: 
+  - :no: '4.'
+    :author: '朝倉 智也  '
+    :book_title: '一生モノのファイナンス入門  '
+    :publisher: 'ダイヤモンド社 '
+    :date: '2016 '
+    :isbn_issn: 
+  - :others: ''
+  others: "「経営学基礎１」を履修していること。 "
+  notice: ''
+- !ruby/struct:Course
+  code: KA426
+  title: "自動登録／税法Ｂ特論２\n(Special Lecture on Taxation B-2) "
+  theme: '租税法の基礎理論　－　法人税法、国際課税 '
+  instructor: '田中　光史(TANAKA KOSHI) '
+  schedule: |-
+    春学期２ (Spring Semester 2) 土曜日(Sat) ３時限(Period 3) X108(Room)
+    春学期２ (Spring Semester 2) 土曜日(Sat) ４時限(Period 4) X108(Room)
+  credit: '２単位(2 Credits) '
+  num: 'ECX5920 '
+  lang: "日本語\n(Japanese) "
+  notes: " "
+  objective: "経済活動の中での重要な一要素である租税について理解を深めることは、事業者や会計専門家にとって不可欠である。\n税法Ｂ特論１、２の講義を通じて、学生が、租税法全体の基本原則を理解し、具体的な問題に関して、租税法条文を的確に解釈し、当てはめることができる能力を身につけることを目標とする。 "
+  contents: "法人税法の課税要件に関する基本部分及び国際課税について概説する。\n関連する重要判例を素材に、学生の積極的なプレゼンや議論を求めつつ、課税庁と納税者それぞれの主張の違いを整理し、判決の論理を検討することにより、具体的な課税事案において、租税法がどのように解釈され適用されるかについて理解を促す。\nなお、講義は実際に条文に当たりながら進めるので、条文を参照できる法令集等を持参のこと。 "
+  plan:
+    1: '法人税法の基本構造と基本的な考え方 '
+    2: '納税者の区分 '
+    3: '企業会計と法人所得計算 '
+    4: '個人所得課税と法人所得課税の調整、受取配当 '
+    5: '資産の評価益、評価損、寄附金 '
+    6: '交際費 '
+    7: '役員賞与 '
+    8: '減価償却、繰延資産、圧縮記帳 '
+    9: '貸倒れ、欠損金 '
+    10: 'グループ法人税制、連結納税制度 '
+    11: '国際課税（ソースルール等） '
+    12: '国際課税（二重課税の排除等） '
+    13: '国際課税（移転価格税制） '
+    14: '国際課税（移転価格税制） '
+  outside: 'テキスト、参考文献等をしっかり予習すること。 '
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 最終レポート(Final Report)(40%) 、判例等のプレゼンなど授業への参画度合(60%)
+  textbook: !ruby/array:Array
+  - :no: '1.'
+    :author: '金子宏 '
+    :book_title: "『租税法』第22版  "
+    :publisher: '弘文堂 '
+    :date: '2017 '
+    :isbn_issn: 
+  - :no: '2.'
+    :author: '中里実他編 '
+    :book_title: "『租税判例百選』第6版  "
+    :publisher: '有斐閣 '
+    :date: '2016 '
+    :isbn_issn: 
+  - :no: '3.'
+    :author: '中里実他編 '
+    :book_title: "『租税判例六法』第3版  "
+    :publisher: '有斐閣 '
+    :date: '2015 '
+    :isbn_issn: 
+  - :no: '4.'
+    :author: '渡辺徹也 '
+    :book_title: "『スタンダード法人税法』  "
+    :publisher: '弘文堂 '
+    :date: '2018 '
+    :isbn_issn: 
+  - :no: '5.'
+    :author: '増井良啓 '
+    :book_title: "『国際租税法』第3版  "
+    :publisher: '東京大学出版会 '
+    :date: '2015 '
+    :isbn_issn: 
+  - :others: ''
+  readings: !ruby/array:Array
+  - :no: '1.'
+    :author: '金子宏他 '
+    :book_title: "『ケースブック租税法』第5版  "
+    :publisher: '弘文堂 '
+    :date: '2017 '
+    :isbn_issn: 
+  - :others: ''
+  others: '税制について財務省ＨＰを、通達等の解説について国税庁ＨＰを、判例については裁判所ＨＰを、適宜参考にすること。 '
+  notice: ''
+- !ruby/struct:Course
+  code: KT321
+  title: 'KT321／Public Private Partnership '
+  theme: "- Collaborative public service deliveries by public and private sectors
+    - "
+  instructor: '荒川　潤(ARAKAWA JUN) '
+  schedule: |-
+    春学期２ (Spring Semester 2) 土曜日(Sat) ３時限(Period 3) 6211(Room)
+    春学期２ (Spring Semester 2) 土曜日(Sat) ４時限(Period 4) 6211(Room)
+  credit: '２単位(2 Credits) '
+  num: 'MIB6211 '
+  lang: "英語\n(English) "
+  notes: " "
+  objective: 'Major objectives of the course are to learn 1) basic theories and practices
+    of Public Private Partnership (PPP, P3 or 3P), collaborative public service deliveries
+    by public and private sectors, in the context of dynamic government reforms, and
+    2) actual PPP examples of students’ countries through mini researches and presentations
+    required in the class. '
+  contents: 'The “Public Private Partnership (PPP)” is an introductory course, and
+    composed of (1) lectures on theories and practices of PPP, (2) student presentations
+    and (3) discussions. For (2), all students are required to make a 15-minite presentation
+    on an actual PPP example, as a case of dynamic government reforms, in their own
+    countries. Through the course, students will obtain more and better knowledges
+    on PPP, including the latest perspectives, and be able to increase their own options
+    in delivering public services when they return to the real world. For those who
+    have backgrounds in the private sector, the course will help them think about
+    new business opportunities with public sector in the real world. '
+  plan:
+    1: 'Introduction: Backgrounds and perspectives on PPP '
+    2: 'Various PPP schemes '
+    3: 'PPP practice (1): Outsourcing '
+    4: 'Case study (1) '
+    5: 'PPP practice (2): Private Finance Initiative (PFI) '
+    6: 'Case study (2) '
+    7: 'PPP practice (3): Concession '
+    8: 'Case study (3) '
+    9: 'PPP practice (4): Market testing, and insourcing '
+    10: 'Case study (4) '
+    11: "“PPP failure” and PPP governance "
+    12: "“PPP failure” and PPP governance "
+    13: 'Privatization and other PPP schemes '
+    14: 'Conclusion: Challenges and future direction of PPP '
+  outside: 'Explorative learning will be announced as needed. '
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 最終レポート(Final Report)(40%) 、Student Presentation(20%) 、Active Participation
+      into Course Discussions(40%)
+  textbook: !ruby/array:Array
+  - :no: '1.'
+    :author: 'E. S. Savas '
+    :book_title: 'Privatization and Public-Private Partnerships  '
+    :publisher: 'CQ Press '
+    :date: '1999 '
+    :isbn_issn: 
+  - :no: '2.'
+    :author: 'Stephen P. Osborne '
+    :book_title: 'The New Public Governance?: Emerging Perspectives on the Theory
+      and Practice of Public Governance  '
+    :publisher: 'Routledge '
+    :date: '2009 '
+    :isbn_issn: 
+  - :others: ''
+  readings: !ruby/array:Array
+  - ''
+  others: ''
+  notice: ''
+- !ruby/struct:Course
+  code: VL418
+  title: "VL418／原価計算基礎１\n(Cost Accounting 1) "
+  theme: " "
+  instructor: '濱田　眞樹人(HAMADA MAKITO) '
+  schedule: |-
+    春学期２ (Spring Semester 2) 土曜日(Sat) ３時限(Period 3) 1203(Room)
+    春学期２ (Spring Semester 2) 土曜日(Sat) ４時限(Period 4) 1203(Room)
+  credit: '２単位(2 Credits) '
+  num: 'BDS5200 '
+  lang: "日本語\n(Japanese) "
+  notes: " "
+  objective: '当科目は非財務系管理者・経営者のための基礎の原価計算（Basic Cost Accounting for Non-financial Managers）である。「原価計算基礎」では，企業の経営において経営者や経営現場のリーダーが把握すべき原価に関する概念，記録の仕組み，管理手法を習得する。 '
+  contents: '工業簿記などの知識が無い場合，初めて原価計算を学ぶ場合でも，原価を計算する仕組みを理解できることを目標とする。前半は原価の概念とその計算の基礎実習を，後半は原価を使った経営管理について学ぶ。  '
+  plan:
+    1: "イントロダクション，原価計算とは何か？\n・講義案内\n・原価とは，原価計算の目的と歴史\n "
+    2: "イントロダクション，原価計算とは何か？\n・直接費と間接費，変動費と固定費\n・事例研究\n "
+    3: "原価の諸概念\n・材料費・労務費・経費\n "
+    4: "原価の諸概念\n・在庫と仕掛品\n・演習\n "
+    5: "原価計算の仕組み\n・個別原価計算と総合原価計算，損益計算\n "
+    6: "原価計算の仕組み\n・個別原価計算と総合原価計算，損益計算\n・演習\n "
+    7: "原価差異分析\n・標準原価と差異分析\n "
+    8: "原価差異分析\n・標準原価と差異分析\n・演習\n "
+    9: "間接費等\n・配賦計算，仕損と減損，副産物の計算\n "
+    10: "間接費等\n・配賦計算，仕損と減損，副産物の計算\n・演習\n "
+    11: "直接原価計算と損益分岐点\n・CVP 分析\n・利益率計算\n "
+    12: "直接原価計算と損益分岐点\n・CVP 分析\n・利益率計算\n・演習\n "
+    13: 'まとめ '
+    14: 'テスト '
+  outside: '授業内で指示する。 '
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 最終テスト(Final Test)(35%) 、授業への出席と貢献(35%) 、授業内演習(30%)
+  textbook: !ruby/array:Array
+  - レジュメを配布する。
+  readings: !ruby/array:Array
+  - :no: '1.'
+    :author: '加登豊・山本浩二 '
+    :book_title: "『原価計算の知識〈第2版〉』  "
+    :publisher: '日本経済新聞社 '
+    :date: '2012 '
+    :isbn_issn: 
+  - :others: ''
+  others: "【系統的履修】「会計学基礎」を履修することが望ましい。 "
+  notice: ''
+- !ruby/struct:Course
+  code: VG556
+  title: "VG556／証券経済論２\n(Stock Market 2) "
+  theme: " "
+  instructor: '井潟　正彦(IGATA MASAHIKO) '
+  schedule: |-
+    春学期２ (Spring Semester 2) 土曜日(Sat) ３時限(Period 3) 1103(Room)
+    春学期２ (Spring Semester 2) 土曜日(Sat) ４時限(Period 4) 1103(Room)
+  credit: '２単位(2 Credits) '
+  num: 'BDS5200 '
+  lang: "日本語\n(Japanese) "
+  notes: " "
+  objective: '先進国、とくに日本における経済発展に対して証券市場の果たす役割が近年急速に拡大している。そうした証券市場において近年、主役としての地位を高めているのが機関投資家（とくに海外の機関投資家）である。インベストメントチェーンにおける機関投資家の重要性と、その仕組み、行動、課題などについて理解と知見を深める。 '
+  contents: "機関投資家を巡るトピックについて、毎週（2コマ）、オムニバス形式的に取り上げる。\n座学のみならず、グループ・ディスカッションなどを積極的に行う。 "
+  plan:
+    1: '経済発展とインベストメントチェーン '
+    2: 'アセット・オーナーとアセット・マネージャー '
+    3: '運用の意志決定プロセス、投資対象、運用手法についての概論（１） '
+    4: '運用の意志決定プロセス、投資対象、運用手法についての概論（２） '
+    5: 'スチュワードシップ・コード（１） '
+    6: 'スチュワードシップ・コード（２） '
+    7: '小テスト（１）と補論 '
+    8: 'ゲストスピーカー（１） '
+    9: 'GPIFを巡る議論 '
+    10: 'パッシブ運用の拡大に伴うコモン・オーナーシップ問題 '
+    11: 'ESG投資への対応 '
+    12: '日本の機関投資家の課題と展望 '
+    13: '小テスト（２）と補論 '
+    14: 'ゲストスピーカー（２） '
+  outside: '毎回配布ないし指示する参考文献を必ず読むこと。関連科目の履修。 '
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 小テスト（１）(30%) 、小テスト（２）(30%) 、ゲストスピーカー（１）感想文(20%) 、ゲストスピーカー（２）感想文(20%)
+  textbook: !ruby/array:Array
+  - 特になし。
+  readings: !ruby/array:Array
+  - 毎回配布ないし指示する参考文献を必ず読むこと。
+  others: ''
+  notice: ''
+- !ruby/struct:Course
+  code: VL567
+  title: "VL567／ヒューマン・リソース・マネジメント４\n(Human Resource Management 4) "
+  theme: " "
+  instructor: '中川　有紀子(NAKAGAWA YUKIKO) '
+  schedule: |-
+    春学期２ (Spring Semester 2) 土曜日(Sat) ３時限(Period 3) 1101(Room)
+    春学期２ (Spring Semester 2) 土曜日(Sat) ４時限(Period 4) 1101(Room)
+  credit: '２単位(2 Credits) '
+  num: 'BDS5500 '
+  lang: "日本語\n(Japanese) "
+  notes: " "
+  objective: "「働き方改革」「生産性革命」というキーコンセプトが政府から打ち出されているが、市場経済社会における経済活動の主役はあくまで民間であり、天然資源が乏しく、人口減少も本格化している日本においては、”働き手一人ひとり”の能力を高めていくことこそが重要である。 "
+  contents: '失業なき雇用流動化のジレンマの背後にある構図を解明し、そのソリューションを学ぶ。 '
+  plan:
+    1: '雇用制度改革のプロセスの問題 '
+    2: '解雇ルールをどう見直すべきか。 '
+    3: '雇用・賃金のマトリックスモデル '
+    4: '働き手にメリットのある限定型正社員のあり方 '
+    5: 'グループ企業内労働移動の再評価 '
+    6: '人生100年時代の高齢者の活用 '
+    7: '地方創生に向けて、地方と都市の人材をかき混ぜる '
+    8: 'バブル入社組世代の人的資本 '
+    9: '女性人財を本気で活用できるか否か。 '
+    10: 'ダイバーシティ経営 '
+    11: '働き方改革　1 '
+    12: '働き方改革　2 '
+    13: '働き方改革　3 '
+    14: '人的資源管理が企業業績に及ぼすメカニズム '
+  outside: '順番を決めて発表。ディベートするためには、予習必須。全員参加型のファシリテーション型議論を導入。 '
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 最終レポート(40%) 、「授業へのディスカッションにおける貢献」(60%)
+  textbook: !ruby/array:Array
+  - :no: '1.'
+    :author: '山田　久 '
+    :book_title: '失業なき雇用流動化  '
+    :publisher: '慶應義塾大学出版会 '
+    :date: '2016 '
+    :isbn_issn: 
+  - :others: ''
+  readings: !ruby/array:Array
+  - 日経新聞
+  others: "【実務家教員による授業】\n担当教員は日米企業人事部経験25年の実務家教員であり経営コンサルタントも務める。現場と理論の融合から、人と組織のマネジメントについて、双方向ディスカッションする。\n【双方向による授業割合】\n60%。 "
+  notice: ''
+- !ruby/struct:Course
+  code: VL092
+  title: "VL092／コンサルティング・メソッド２\n(Consulting Methods 2) "
+  theme: " "
+  instructor: "青淵　正幸(AOBUCHI MASAYUKI)\n手塚　貞治(TEZUKA SADAHARU)\n柴田　徹(SHIBATA TORU) "
+  schedule: |-
+    春学期２ (Spring Semester 2) 土曜日(Sat) ５時限(Period 5) 7203(Room)
+    春学期２ (Spring Semester 2) 土曜日(Sat) ５時限(Period 5) 7202(Room)
+    春学期２ (Spring Semester 2) 土曜日(Sat) ６時限(Period 6) 7203(Room)
+    春学期２ (Spring Semester 2) 土曜日(Sat) ６時限(Period 6) 7202(Room)
+  credit: '２単位(2 Credits) '
+  num: 'BDS6000 '
+  lang: "日本語\n(Japanese) "
+  notes: '巣鴨信用金庫　寄附講座／「その他」登録 '
+  objective: '中小企業へのコンサルティング過程を学ぶ（実践編） '
+  contents: 'この科目はコンサルティング・メソッド1を引き継ぐところからはじまる。協力企業に対してコンサルティングを行い、具体的な提案（新規事業の提案もしくは改善提案等）を行うことを最終目的とする。担当する企業について、製品や商品、サービスや立地、保有設備、従業員の状況等、企業のリソースを十分に理解したうえでの提案が必要となる。必要に応じて経営者へのヒアリングや意見交換を実施し、提案の方向性を確認しながら、実践的な提案内容へと仕上げていく。なお、チーム研究が中心となるため、時間割表に示された時限以外に各自で分担した調査・研究の成果を持ち寄って討論や取り纏めを行ったりする時間が必要となる。 '
+  plan:
+    1: '提案に向けたショートレクチャー '
+    2: 'コンサルティングの方向性の確認・点検（１） '
+    3: 'コンサルティング対象企業の分析実習（１） '
+    4: 'コンサルティング対象企業の分析実習（２） '
+    5: 'コンサルティング対象企業の分析実習（３） '
+    6: 'コンサルティングの方向性の確認・点検（２） '
+    7: 'コンサルティング対象企業実地演習（１） '
+    8: 'コンサルティング対象企業実地演習（２） '
+    9: 'コンサルティング内容の体系化（１） '
+    10: 'コンサルティング内容の体系化（２） '
+    11: '研究成果プレ報告（１） '
+    12: '研究成果プレ報告（２）および講評 '
+    13: '最終研究成果報告（１） '
+    14: '最終研究成果報告（２）と講評 '
+  outside: '講義内もしくは電子メール等にて伝達する。 '
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 講義への参加状況(35%) 、チーム作業への貢献度(30%) 、中間報告および最終報告の成果(35%)
+  textbook: !ruby/array:Array
+  - |-
+    テキストは使用しない。
+    必要に応じて資料を配付する。
+  readings: !ruby/array:Array
+  - 必要に応じて指示する。
+  others: "・コンサルティング・メソッド１（VL091）からの継続履修となる。当科目のみの履修は不可。\n・履修者の選抜結果はコンサルティング・メソッド１と同時に掲示で行う。履修登録は独立研究科事務室で行う。\n・コンサルティング・メソッド１と同様、履修には秘密保持契約への同意が必要となる。\n・最終報告の評価は、企業経営者、巣鴨信用金庫担当者および教員が行う。\n・提案内容の採否は協力企業の経営者が決定する（本科目のゴールは提案と評価までである）。\n・最終成果物は、調査した資料集、コンサル報告書、最終プレゼン資料の3つを想定している。 "
+  notice: ''
+- !ruby/struct:Course
+  code: KA140
+  title: "自動登録／財政学Ｂ特論２\n(Special Lecture on Public Finance B-2) "
+  theme: '国税・地方税を通じた税制の体系と運用を考察し税制改正の課題を検討 '
+  instructor: '小室　裕一(KOMURO YUICHI) '
+  schedule: |-
+    春学期２ (Spring Semester 2) 木曜日(Thu) Ｇ５時限(Period G5) 6208(Room)
+    春学期２ (Spring Semester 2) 木曜日(Thu) Ｇ６時限(Period G6) 6208(Room)
+  credit: '２単位(2 Credits) '
+  num: 'ECX5620 '
+  lang: "日本語\n(Japanese) "
+  notes: " "
+  objective: '社会・経済・政治を反映し、歴史的に積み上げられてきた税制は、公的活動を支える礎である。これまで幾度も税制改革に取り組み、消費税が10パーセントへ改定されようとしている。生活や経済に多大な影響を与える税制を分析し、今後の税制の在り方について議論していく。 '
+  contents: '我が国税制の概要・特徴を抑えたのち、所得課税・消費課税・資産課税の各税制を検討していく。特に、消費税率の改定にあたり、軽減税率導入などの課題に着目する。また、国税に加えて、重要性をます地方税についても検討する。課税・徴収、マイナンバー制度を理解するとともに、税制改正のプロセスを学び、その方向と課題を探る。 '
+  plan:
+    1: '我が国税制の概要（歴史・役割・課題） '
+    2: '国・地方を通じた現行税制の特徴と税制理論 '
+    3: '所得税の仕組みと公平性 '
+    4: '所得税の算定（簡単な事例で自ら計算し、制度を体感する） '
+    5: '法人税と経済の活性化 '
+    6: '地方法人課税と偏在是正 '
+    7: '消費税の概要 '
+    8: '地方消費税等の論議 '
+    9: '酒・たばこ税、自動車・環境関連税制 '
+    10: '国の資産課税（相続税等） '
+    11: '固定資産税等地方の資産課税 '
+    12: '地方の課税自主権 '
+    13: '課税・聴衆とマイナンバーの活用 '
+    14: '税制改正プロセスと総括 '
+  outside: '税制に関するニュース、記事、著作にできるだけ触れ、生活や経済への影響を意識して、興味を持って調べ、考える。そして、税制論議に発言できるよう心掛けることを期待する。 '
+  evaluation:
+    種類(Kind): 平常点(In-class Points)
+    割合(%): 100 　％
+    基準(Criteria): 授業参加(60%) 、レポート(40%)
+  textbook: !ruby/array:Array
+  - テキストは用いず、毎回資料等を教員が用意する。
+  readings: !ruby/array:Array
+  - :no: '1.'
+    :author: '吉沢浩二郎 '
+    :book_title: '図説日本の税制平成３０年度版  '
+    :publisher: '財経詳報社 '
+    :date: '2018 '
+    :isbn_issn: 
+  - :no: '2.'
+    :author: '金子宏 '
+    :book_title: '租税法（第2３版）  '
+    :publisher: '弘文堂 '
+    :date: '2019 '
+    :isbn_issn: 
+  - :others: 授業において、その都度必要な範囲で指示する。
+  others: ''
+  notice: ''
