@@ -9,12 +9,12 @@ class Users::SessionsController < Devise::SessionsController
   # end
 
   # POST /resource/sign_in
-  def create
-    unless current_user.avatar.attached?
-      current_user.avatar.attach(io: File.open("app/assets/images/face2.jpg"), filename: "face2.jpg", content_type: "image/jpg")
-    end
-    super
-  end
+  # def create
+  #   unless current_user.avatar.attached?
+  #     current_user.avatar.attach(io: File.open("app/assets/images/face2.jpg"), filename: "face2.jpg", content_type: "image/jpg")
+  #   end
+  #   super
+  # end
 
   # DELETE /resource/sign_out
   # def destroy

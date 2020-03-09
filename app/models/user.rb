@@ -39,11 +39,14 @@ class User < ApplicationRecord
   has_one_attached :avatar
 
   has_many :timetables
+  has_many :message_board
   has_many :posts
   has_many :relationships
   has_many :followings, through: :relationships, source: :follow
   has_many :reverse_of_relationships, class_name: 'Relationship', foreign_key: 'follow_id'
   has_many :followers, through: :reverse_of_relationships, source: :user
+  has_many :post_favorites
+  has_many :posts, through: :favorites
 
   def follow(other_user)
     unless self == other_user
@@ -58,6 +61,14 @@ class User < ApplicationRecord
 
   def following?(other_user)
     self.followings.include?(other_user)
+  end
+
+  def postFavoriteAttached?(post)
+    return true if self.post_favorites.find_by(post_id:post)
+  end
+
+  def self.search(name)
+    @users = User.where('name LIKE ?',"%#{name}%")
   end
 
 end

@@ -12,12 +12,14 @@ data = open(Rails.root.join('db/seeds/yaml','harugakki1.yml'),'r:utf-8') { |f| Y
 
 require Rails.root.join('vendor', 'schedule_converter')
 
-User.create!(email: 'emora@rikkyo.ac.jp', name:"emora",password: 'emora123', confirmed_at: Time.now)
-User.create!(email: 'emora1@rikkyo.ac.jp', name:"emora1",password: 'emora123', confirmed_at: Time.now)
-User.create!(email: 'emora2@rikkyo.ac.jp', name:"emora2",password: 'emora123', confirmed_at: Time.now)
-User.create!(email: 'emora3@rikkyo.ac.jp', name:"emora3",password: 'emora123', confirmed_at: Time.now)
-User.create!(email: 'emora4@rikkyo.ac.jp', name:"emora4",password: 'emora123', confirmed_at: Time.now)
-User.create!(email: 'emora5@rikkyo.ac.jp', name:"emora5",password: 'emora123', confirmed_at: Time.now)
+defaultUser = User.create!(email: 'emora@rikkyo.ac.jp', name:"emora",password: 'emora123', confirmed_at: Time.now)
+defaultUser.avatar.attach(io: File.open("app/assets/images/face6.jpg"), filename: "face2.jpg", content_type: "image/jpg")
+
+5.times do |i|
+  i = i.to_s
+  user = User.create!(email:"emora#{i}@rikkyo.ac.jp",name:"emora#{i}",password: 'emora123', confirmed_at: Time.now)
+  user.avatar.attach(io: File.open("app/assets/images/face#{i}.jpg"), filename: "face2.jpg", content_type: "image/jpg")
+end
 
 DayOfTheWeek.create!(name:"月" ,code:1)
 DayOfTheWeek.create(name:"火" ,code:2)

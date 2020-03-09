@@ -5,11 +5,11 @@ Rails.application.routes.draw do
   get 'home/index'
   post 'users/update'
   devise_for :users, :controllers => {
-   :sessions => 'users/sessions'
+   :registrations => 'users/registrations'
  }
   resources :subjects
   resources :relationships,only: [:create, :destroy]
-
+  resources :post_favorites,only: [:create,:destroy]
   resources :users, only: %i(show edit)do
     member do
       resources :timetables, only: %i(index create new destroy)
