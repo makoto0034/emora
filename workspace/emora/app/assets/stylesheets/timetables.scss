@@ -2,20 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .timetable_index{
-  width:100%;
+  width:80%;
 }
-
-.timetables_new{
-  width:60%;
-  margin: 0 auto;
-}
-
-@media screen and (max-width:600px){
-  .timetable_first_new h2{
-    font-size:22px;
-  }
-}
-
 @media screen and (max-width:375px){
   .timetable_first_new h2{
     font-size:16px;

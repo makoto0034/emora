@@ -2,97 +2,117 @@
   <div class="search_box">
       <%= form_tag('/subjects/search_result',:method => 'get',:class => 'search_container') do%>
         <div class="top_input">
-          <%=text_field_tag :name,'',class:"search_field",placeholder:"科目名"%>
-          <%=text_field_tag :instructor,'',class:"search_field",placeholder:"教員名"%>
+          <div class="row">
+            <div class="form-group col-md-6">
+              <input type="text" name="name" class="search_field form-control" placeholder="科目名">
+            </div>
+            <div class="form-group col-md-6">
+              <input type="text" name="instructor" class="search_field form-control" placeholder="教員名">
+            </div>
+            <div class="form-group col align-self-center">
+              <input type="text" name="subject_code" class="search_field form-control" placeholder="科目コード">
+            </div>
+          </div>
         </div>
         <div class="middle_input">
-          <%=text_field_tag :subject_code,'',class:"search_field",placeholder:"科目コード"%>
-        </div>
-        <div class="middle_input">
-          <select class="faculty" name="faculty">
-            <option value="" selected="selected">学部</option>
-            <option value="bungaku">文学部</option>
-            <option value="keizai">経済学部</option>
-            <option value="rigaku">理学部</option>
-            <option value="syakai">社会学部</option>
-            <option value="hougaku">法学部</option>
-            <option value="keiei">経営学部</option>
-            <option value="ibunka">異文化コミュニケーション学部</option>
-            <option value="kankou">観光学部</option>
-            <option value="komyu">コミュニティ福祉学部</option>
-            <option value="gendai">現代心理学部</option>
-            <option value="glap">GLAP(グローバルリベラルアーツプログラム)</option>
-          </select>
-          <select class="course" name="subject_num" disabled>
-            <option value="" selected="selected">学科</option>
-            <option data-val="bungaku" value="CHS">キリスト教文学科</option>
-            <option data-val="bungaku" value="EAL">文学科 英米文学専修</option>
-            <option data-val="bungaku" value="GRL">文学科 ドイツ文学専修</option>
-            <option data-val="bungaku" value="FRL">文学科 フランス文学専修</option>
-            <option data-val="bungaku" value="JAL">文学科 日本文学専修</option>
-            <option data-val="bungaku" value="PCW">文学科 文芸・思想専修</option>
-            <option data-val="bungaku" value="HIS">史学科</option>
-            <option data-val="bungaku" value="EDU">教育学科</option>
-            <option data-val="keizai" value="ECO">経済学科</option>
-            <option data-val="keizai" value="EPS">経済政策学科</option>
-            <option data-val="keizai" value="EAF">会計ファイナンス学科</option>
-            <option data-val="rigaku" value="MAT">数学科</option>
-            <option data-val="rigaku" value="PHY">物理学科</option>
-            <option data-val="rigaku" value="CHE">化学科</option>
-            <option data-val="rigaku" value="LFS">生命理学科</option>
-            <option data-val="syakai" value="SOC">社会学科</option>
-            <option data-val="syakai" value="CCS">現代文学学科</option>
-            <option data-val="syakai" value="CMS">メディア社会学科</option>
-            <option data-val="hougaku" value="LPX">法学科</option>
-            <option data-val="hougaku" value="LPX">国際ビジネス法学科</option>
-            <option data-val="hougaku" value="LPX">政治学科</option>
-            <option data-val="keiei" value="BUS">経営学科</option>
-            <option data-val="keiei" value="GBU">国際経営学科</option>
-            <option data-val="ibunka" value="ICC">異文化コミュニケーション学科</option>
-            <option data-val="kankou" value="TRS">観光学科</option>
-            <option data-val="kankou" value="TRC">交流文化学科</option>
-            <option data-val="komyu" value="CMC">コミュニティ政策学科</option>
-            <option data-val="komyu" value="CMB">福祉学科</option>
-            <option data-val="komyu" value="CMD">スポーツウエルネス学科</option>
-            <option data-val="gendai" value="PSY">心理学科</option>
-            <option data-val="gendai" value="BEC">映像身体学科</option>
-            <option data-val="glap" value="GLA">GLAP</option>
-          </select>
+          <div class="row">
+            <div class="form-group col-md-6">
+              <select class="faculty form-control" name="faculty">
+                <option value="" selected="selected">学部</option>
+                <option value="bungaku">文学部</option>
+                <option value="keizai">経済学部</option>
+                <option value="rigaku">理学部</option>
+                <option value="syakai">社会学部</option>
+                <option value="hougaku">法学部</option>
+                <option value="keiei">経営学部</option>
+                <option value="ibunka">異文化コミュニケーション学部</option>
+                <option value="kankou">観光学部</option>
+                <option value="komyu">コミュニティ福祉学部</option>
+                <option value="gendai">現代心理学部</option>
+                <option value="glap">GLAP(グローバルリベラルアーツプログラム)</option>
+              </select>
+            </div>
+            <div class="form-group col-md-6">
+              <select class="course form-control" name="subject_num" disabled>
+                <option value="" selected="selected">学科</option>
+                <option data-val="bungaku" value="CHS">キリスト教文学科</option>
+                <option data-val="bungaku" value="EAL">文学科 英米文学専修</option>
+                <option data-val="bungaku" value="GRL">文学科 ドイツ文学専修</option>
+                <option data-val="bungaku" value="FRL">文学科 フランス文学専修</option>
+                <option data-val="bungaku" value="JAL">文学科 日本文学専修</option>
+                <option data-val="bungaku" value="PCW">文学科 文芸・思想専修</option>
+                <option data-val="bungaku" value="HIS">史学科</option>
+                <option data-val="bungaku" value="EDU">教育学科</option>
+                <option data-val="keizai" value="ECO">経済学科</option>
+                <option data-val="keizai" value="EPS">経済政策学科</option>
+                <option data-val="keizai" value="EAF">会計ファイナンス学科</option>
+                <option data-val="rigaku" value="MAT">数学科</option>
+                <option data-val="rigaku" value="PHY">物理学科</option>
+                <option data-val="rigaku" value="CHE">化学科</option>
+                <option data-val="rigaku" value="LFS">生命理学科</option>
+                <option data-val="syakai" value="SOC">社会学科</option>
+                <option data-val="syakai" value="CCS">現代文学学科</option>
+                <option data-val="syakai" value="CMS">メディア社会学科</option>
+                <option data-val="hougaku" value="LPX">法学科</option>
+                <option data-val="hougaku" value="LPX">国際ビジネス法学科</option>
+                <option data-val="hougaku" value="LPX">政治学科</option>
+                <option data-val="keiei" value="BUS">経営学科</option>
+                <option data-val="keiei" value="GBU">国際経営学科</option>
+                <option data-val="ibunka" value="ICC">異文化コミュニケーション学科</option>
+                <option data-val="kankou" value="TRS">観光学科</option>
+                <option data-val="kankou" value="TRC">交流文化学科</option>
+                <option data-val="komyu" value="CMC">コミュニティ政策学科</option>
+                <option data-val="komyu" value="CMB">福祉学科</option>
+                <option data-val="komyu" value="CMD">スポーツウエルネス学科</option>
+                <option data-val="gendai" value="PSY">心理学科</option>
+                <option data-val="gendai" value="BEC">映像身体学科</option>
+                <option data-val="glap" value="GLA">GLAP</option>
+              </select>
+            </div>
+          </div>
         </div>
         <div class="under_input">
-          <select class="semester" name="semester">
-            <option value="">学期</option>
-            <%@semesters.each do |semester|%>
-              <%if semester.code.between?(1,4) or semester.code.between?(7,9) or semester.code == 12 or semester.code == 17 %>
-                <option value="<%=semester.code%>"><%=semester.name%></option>
-              <%else%>
-                <%next%>
-              <%end%>
-            <%end%>
-          </select>
-          <select class="day_of_the_week" name="day_of_the_week">
-            <option value="" selected>曜日</option>
-            <%@day_of_the_weeks.slice(0..8).each do |day_of_the_week|%>
-              <option value="<%=day_of_the_week.code%>"><%=day_of_the_week.name%></option>
-            <%end%>
-          </select>
-          <select class="period" name="period">
-            <option value="" selected>時限</option>
-            <%@periods.each do |period|%>
-              <%if period.code == 6 or period.code == 8%>
-                <%next%>
-              <%else%>
-                <option value="<%=period.code%>"><%=period.name%></option>
-              <%end%>
-            <%end%>
-          </select>
+          <div class="row">
+            <div class="form-group col-md-4">
+              <select class="semester form-control" name="semester">
+                <option value="">学期</option>
+                <%@semesters.each do |semester|%>
+                  <%if semester.code.between?(1,4) or semester.code.between?(7,9) or semester.code == 12 or semester.code == 17 %>
+                    <option value="<%=semester.code%>"><%=semester.name%></option>
+                  <%else%>
+                    <%next%>
+                  <%end%>
+                <%end%>
+              </select>
+            </div>
+            <div class="form-group col-md-4"">
+              <select class="day_of_the_week form-control" name="day_of_the_week">
+                <option value="" selected>曜日</option>
+                <%@day_of_the_weeks.slice(0..8).each do |day_of_the_week|%>
+                  <option value="<%=day_of_the_week.code%>"><%=day_of_the_week.name%></option>
+                <%end%>
+              </select>
+            </div>
+            <div class="form-group col-md-4"">
+              <select class="period form-control" name="period">
+                <option value="" selected>時限</option>
+                <%@periods.each do |period|%>
+                  <%if period.code == 6 or period.code == 8%>
+                    <%next%>
+                  <%else%>
+                    <option value="<%=period.code%>"><%=period.name%></option>
+                  <%end%>
+                <%end%>
+              </select>
+            </div>
+          </div>
         </div>
         <div class="search_button">
           <button type="submit"><i class="fas fa-search btn-black"></i></button>
         </div>
       <%end%>
-  </div>
-  <div style="width:100%" >
-    <%=image_tag "syllabus1.jpg",width:"100%",height:"350px"%>
-  </div>
+   </div>
+   <div class="text-center">
+     <%=image_tag "syllabus2.jpg",class:"syllabusSearchImg"%>
+   </div>
 </div>

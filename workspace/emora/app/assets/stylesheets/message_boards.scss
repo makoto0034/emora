@@ -50,6 +50,13 @@
   color:#FAFAFA;
 }
 
+.message_board_content_header .row{
+  align-items: center;
+}
+
+.message_board_creator{
+  padding: 0;
+}
 
 
 
@@ -94,7 +101,7 @@
 }
 
 .messageboard_new{
-  width:50%;
+  width:80%;
   margin:0 auto;
 }
 
@@ -147,14 +154,5 @@
   }
   .message_board_index .message_board_list{
     width:65%;
-  }
-}
-
-@media screen and (max-width:410px){
-  .messageboard_container textarea{
-    width:80%;
-  }
-  .messageboard_container select{
-    margin-top:10px;
   }
 }

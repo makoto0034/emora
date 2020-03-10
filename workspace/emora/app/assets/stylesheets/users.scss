@@ -7,6 +7,10 @@
   margin: 0 auto;
 }
 
+.userControl{
+  padding: 0;
+}
+
 .user_show .user_post_list{
   padding: 20px;
 }
@@ -39,9 +43,13 @@
   margin-right: 50px;
 }
 
-.userProfile{
+.userProfile,.otherUserListContainer{
   padding: 10px;
   border-bottom: solid 1px #E6ECF0;
+}
+
+.noneFollow,.noneFollower{
+  padding: 20px;
 }
 
 .post_content{
@@ -51,13 +59,86 @@
     border-bottom: solid 1px #E6ECF0;
 }
 
-.userProfTab{
+.followImg{
+  width: 60%;
+  border-radius: 15px;
+  margin-top: 10px;
+}
 
+.postFavoriteContainer{
+  padding: 20px;
+}
+
+.otherUserSearch{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.modalTrigger{
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.modal{
+  display: none;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+}
+
+.modal__bg{
+  background:rgba(0,0,0,0.8);
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+}
+
+.modal__content{
+  position: absolute;
+  width: 30%;
+  min-height:40%;
+  background: #fff;
+  left: 50%;
+  top: 50%;
+  transform:translate(-50%,-50%);
+  border-radius: 15px;
+  padding: 40px;
+}
+.modal__content input[type="text"]{
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.modal__content input[type="submit"]{
+  margin-top: 10px;
+}
+
+.modal_close_button{
+  position: absolute;
+  top:0;
+  left:0;
+  margin-left: 5px;
+}
+
+.js-modal-close{
+  color:#000;
+}
+
+.otherUserListContainerInner{
+  align-items: center;
 }
 
 .user_edit{
   width:80%;
   margin:0 auto;
+}
+.otherUserName{
+  margin-left: 5px;
 }
 
 .user_edit .profile_edit{
@@ -75,5 +156,15 @@
 @media screen and (max-width:767px){
   .userControl{
     margin-top: 10px;
+  }
+}
+@media screen and (max-width:1049px){
+  .modal__content{
+    width: 60%;
+  }
+}
+@media screen and (max-width:400px){
+  .modal__content{
+    width: 80%;
   }
 }

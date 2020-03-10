@@ -26,40 +26,43 @@
         <h4 class="post_first_message">まだ一度も投稿がありません<br>最初の投稿をしましょう！</h4>
       <%else%>
         <%@posts.each do |post|%>
-        <%if post.user_id == current_user.id %>
-          <div class="post_container">
-            <h4 class="post_user_name"><%=post.user.name%>　<span class="post_created"><%=post.created_at.strftime("%Y年%m月%d日 %H時%M分")%></span></h4>
-            <p><%=post.content%></p>
-          </div>
-        <%else%>
-          <div class="post_container">
-            <div class="post_header">
-              <div class="post_user_icon">
-                <% if post.user.avatar.attached?%>
-                    <%=link_to user_path(post.user_id),class:"avatar_link" do%>
-                      <%=image_tag url_for(post.user.avatar),:size =>"50x50" ,class: "avatar"%>
-                    <%end%>
-                <%else%>
-                  <%=link_to user_path(post.user_id),class:"avatar_link" do%>
-                    <%=image_tag "face1.jpg" ,:size =>"50x50" ,class: "avatar" %>
-                  <%end%>
-                <%end%>
-              </div>
-              <div class="post_detail">
-                <h4 class="post_user_name">
-                  <%=link_to user_path(post.user_id),class:"other_post_user_name" do%>
-                    <%=post.user.name%>
-                  <%end%>
-                  <span class="post_created">
-                    <%=post.created_at.strftime("%Y年%m月%d日 %H時%M分")%>
-                  </span>
-                </h4>
-              </div>
+          <%if post.user_id == current_user.id %>
+            <div class="post_container">
+              <h4 class="post_user_name"><%=post.user.name%>　<span class="post_created"><%=post.created_at.strftime("%Y年%m月%d日 %H時%M分")%></span></h4>
+              <p><%=post.content%></p>
             </div>
-            <p><%=post.content%></p>
-          </div>
+          <%else%>
+            <div class="post_container">
+              <div class="post_header">
+                <div class="post_user_icon">
+                  <%=link_to user_path(post.user_id),class:"avatar_link" do%>
+                    <%=image_tag url_for(post.user.avatar),:size =>"50x50" ,class: "avatar"%>
+                  <%end%>
+                </div>
+                <div class="post_detail">
+                  <h4 class="post_user_name">
+                    <%=link_to user_path(post.user_id),class:"other_post_user_name" do%>
+                      <%=post.user.name%>
+                    <%end%>
+                    <span class="post_created">
+                      <%=post.created_at.strftime("%Y年%m月%d日 %H時%M分")%>
+                    </span>
+                    <%if current_user.postFavoriteAttached?(post.id)%>
+                      <%=link_to post_favorite_path(post_id:post.id,message_board_id:params[:id]),method: :delete do%>
+                        <i class="fas fa-heart"></i>
+                      <%end%>
+                    <%else%>
+                      <%=link_to post_favorites_path(post_id:post.id,message_board_id:params[:id]),method: :post do%>
+                        <i class="far fa-heart"></i>
+                      <%end%>
+                    <%end%>
+                  </h4>
+                </div>
+              </div>
+              <p><%=post.content%></p>
+            </div>
+            <%end%>
           <%end%>
-        <%end%>
       <%end%>
   </div>
 </div>

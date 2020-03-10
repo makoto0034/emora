@@ -18,5 +18,7 @@
 class Post < ApplicationRecord
   belongs_to :user
   belongs_to :message_board
+  has_many :post_favorites
+  has_many :users, through: :favorites
   validates :content, presence: true
 end

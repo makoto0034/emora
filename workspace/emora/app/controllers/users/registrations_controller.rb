@@ -56,7 +56,11 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # end
 
   # The path used after sign up for inactive accounts.
-  # def after_inactive_sign_up_path_for(resource)
-  #   super(resource)
-  # end
+  def after_inactive_sign_up_path_for(resource)
+    user = User.find_by(email:params[:user][:email])
+    unless user.avatar.attached?
+      user.avatar.attach(io: File.open("app/assets/images/face2.jpg"), filename: "face2.jpg", content_type: "image/jpg")
+    end
+    super(resource)
+  end
 end

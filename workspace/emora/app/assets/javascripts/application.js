@@ -15,16 +15,18 @@
 //= require popper
 //= require bootstrap-sprockets
 //= require rails-ujs
+//= require infinite-scroll.pkgd.min
 //= require turbolinks
 //= require_tree .
 
+//flashの設定
 $(document).on('turbolinks:load', function(){
   setTimeout("$('.notice').fadeOut('slow')", 3000)
   setTimeout("$('.alert').fadeOut('slow')", 3000)
   setTimeout("$('.success').fadeOut('slow')", 3000)
 });
 
-
+//ハンバーガーメニューの設定
 $(document).on('turbolinks:load', function(){
     var $body = document.body
     , $menu_trigger = $body.getElementsByClassName('menu-trigger')[0];
@@ -36,6 +38,7 @@ $(document).on('turbolinks:load', function(){
     }
 });
 
+//emoraロゴアニメーション設定
 $(document).on('turbolinks:load', function(){
 	setTimeout(function(){
 		$('.start_container p').fadeIn(1600);
@@ -45,12 +48,24 @@ $(document).on('turbolinks:load', function(){
 	},5000); //2.5秒後にロゴ含め真っ白背景をフェードアウト！
 });
 
-
+//ユーザー詳細画面のタブ設定
 $(document).on('turbolinks:load', function(){
   $('#userTab a').click(function(e){
     e.preventDefault();
     $(this).tab('show');
   });
+});
+
+//ユーザー 詳細画面のユーザ検索画面（モーダルウィンドウ）
+$(document).on('turbolinks:load', function(){
+  $('.js-modal-open').on('click',function(){
+    $('.js-modal').fadeIn();
+    return false;
+  });
+  $('.js-modal-close').on('click',function(){
+    $('.js-modal').fadeOut();
+    return false;
+  })
 });
 // $(document).on('turbolinks:load', function() {
 //   console.log("Aaa");

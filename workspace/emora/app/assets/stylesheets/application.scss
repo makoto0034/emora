@@ -330,21 +330,13 @@ body.menu-active div#content .menu-trigger { right: 320px; }
   width:95%;
   height:90vh;
   margin: 0 auto;
-  // border:solid #000;
-  // border-width:1px 1px 1px 1px;
-  border-radius: 10px;
   padding:10px;
-  box-shadow: 10px 10px 10px rgba(0,0,0,0.4);
 }
 .sign_up_box_inner{
   width:95%;
   height:90vh;
   margin: 0 auto;
-  // border:solid #000;
-  // border-width:1px 1px 1px 1px;
-  border-radius: 10px;
   padding:10px;
-  box-shadow: 10px 10px 10px rgba(0,0,0,0.4);
 }
 
 .welcome-image{
@@ -368,15 +360,11 @@ body.menu-active div#content .menu-trigger { right: 320px; }
 .sign_in_container{
   text-align: center;
   position: relative;
-  border:solid #E9E9E9;
-  border-width:0 0 0 2px;
 }
 
 .sign_up_container{
   text-align: center;
   position: relative;
-  border:solid #E9E9E9;
-  border-width:0 0 0 2px;
 }
 
 .sign_in_containerInner{
@@ -471,7 +459,7 @@ body.menu-active div#content .menu-trigger { right: 320px; }
     display: block;
     box-shadow:none;
   }
-
+}
   .sign_up_box_inner{
     display: block;
     box-shadow:none;
@@ -517,4 +505,3 @@ body.menu-active div#content .menu-trigger { right: 320px; }
     left:0;
     transform: none;
   }
-}
