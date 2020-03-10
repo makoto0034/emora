@@ -1,0 +1,190 @@
+<div class="user_show">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5">
+        <div class="user_profile">
+          <div class="user_avatar">
+              <%=image_tag url_for(@user.avatar),:size =>"150x150" ,class: "avatar"%>
+          </div>
+          <h2><%=@user.name%>
+            <%if @user.id ==current_user.id%>
+              <%=link_to(edit_user_path) do%>
+                <i class="fas fa-user-cog"></i>
+              <%end%>
+            <%else%>
+                <%if current_user.following?(@user)%>
+                  <%= form_for(current_user.relationships.find_by(follow_id: @user.id), html: { method: :delete }) do |f| %>
+                    <%= hidden_field_tag :follow_id, @user.id %>
+                    <%= f.submit 'フォローを解除する', class: 'btn btn-danger btn-block' %>
+                  <%end%>
+                <%else%>
+                  <%= form_for(current_user.relationships.build) do |f| %>
+                    <%= hidden_field_tag :follow_id, @user.id %>
+                    <%= f.submit 'フォローする', class: 'btn btn-primary btn-block' %>
+                  <%end%>
+                <%end%>
+              <%end%>
+          </h2>
+          <div class="user_introduce">
+            <%if@user.profile%>
+              <%=@user.profile%>
+            <%else%>
+              <p>プロフィールが更新されていません</p>
+            <%end%>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-7 userControl">
+        <ul id="userTab" class="nav nav-tabs">
+          <li class="nav-item userProfTab"><a class="nav-link active" href="#userTabComment">投稿</a></li>
+          <li class="nav-item userProfTab"><a class="nav-link" href="#userTabFollow">フォロー</a></li>
+          <li class="nav-item userProfTab"><a class="nav-link" href="#userTabFollower">フォロワー</a></li>
+          <li class="nav-item"><a class="nav-link" href="#userTabFavorite">お気に入り</a></li>
+        </ul>
+
+        <div class="tab-content">
+          <div class="tab-pane active" id="userTabComment">
+            <div class="user_post_list">
+              <% if @posts.empty? %>
+                <%if @user.id == current_user.id%>
+                  <h5>まだ一度も投稿したことがありません<br>掲示板で投稿してみませんか？</h5>
+                  <%=link_to'掲示板で投稿する',message_boards_path,class:"btn btn-primary"	%>
+                  <%=image_tag("message.jpg",width:"100%")%>
+                <%else%>
+                <h5>このユーザーはまだ一度も投稿したことがありません</h5>
+                <%end%>
+              <%else%>
+                <%@posts.each do |post|%>
+                  <div class="post_content" id="userTabComment">
+                    <div class="post_content_header">
+                      <%=post.created_at.strftime("%m月%d日 %H:%M")%>　
+                      掲示板名：<%=link_to post.message_board.name,message_boards_talks_path(post.message_board.id,category_id:post.message_board.category.id)%>
+                    </div>
+                    <div class="post_content_body">
+                      <%=post.content%>
+                    </div>
+                  </div>
+                <%end%>
+                <%=paginate @posts%>
+              <%end%>
+            </div>
+          </div>
+          <div class="tab-pane" id="userTabFollow">
+            <% if @followings.empty? %>
+              <div class="noneFollow">
+                <% if current_user.id == @user.id %>
+                  <h5>フォローしている人がいません。<br>誰かをフォローしませんか？</h5>
+                  <div class="otherUserSearch">
+                    <div class="modalTrigger">
+                      <a href="#" class="js-modal-open btn btn-primary">ユーザを検索する</a>
+                    </div>
+                    <div class="modal js-modal">
+                      <div class="modal__bg js-modal-close"></div>
+                      <div class="modal__content">
+                            <%= form_tag(url_for(:action => 'show'), :remote => true,method: :get,class:"userSearchForm") do %>
+                            <div class="text-center">
+                              <input type="text" name="userName" placeholder="ユーザー名">
+                              <input type="submit" value="検索" class="btn btn-primary">
+                            </div>
+                            <% end %>
+                          <div class="otherUserList">
+                            <div class="text-center">
+                              <%=image_tag "friends.jpg",width:"80%"%>
+                            </div>
+                            <!-- ユーザリスト追加 -->
+                          </div>
+                          <div class="modal_close_button">
+                            <a href="#" class="js-modal-close"><i class="fas fa-times-circle"></i></a>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="followImgContainer">
+                    <%=image_tag("follow.jpg",class:"followImg")%>
+                  </div>
+                <% else %>
+                  <h5>フォローしている人がいません。</h5>
+                <% end %>
+              </div>
+            <% else %>
+            <div class="otherUserSearch">
+              <div class="modalTrigger">
+                <a href="#" class="js-modal-open btn btn-primary">ユーザを検索する</a>
+              </div>
+              <div class="modal js-modal">
+                <div class="modal__bg js-modal-close"></div>
+                <div class="modal__content">
+                      <%= form_tag(url_for(:action => 'show'), :remote => true,method: :get,class:"userSearchForm") do %>
+                      <div class="text-center">
+                        <input type="text" name="userName" placeholder="ユーザー名">
+                        <input type="submit" value="検索" class="btn btn-primary">
+                      </div>
+                      <% end %>
+                    <div class="otherUserList">
+                      <div class="text-center">
+                        <%=image_tag "friends.jpg",width:"80%"%>
+                      </div>
+                      <!-- ユーザリスト追加 -->
+                    </div>
+                    <div class="modal_close_button">
+                      <a href="#" class="js-modal-close"><i class="fas fa-times-circle"></i></a>
+                    </div>
+                </div>
+              </div>
+            </div>
+              <%@followings.each do |follow|%>
+                <%=link_to(user_path(follow.id)) do%>
+                  <div class="container userProfile">
+                    <%=image_tag url_for(follow.avatar),class:"userAvatar"%>
+                    <%=follow.name%>
+                  </div>
+                <%end%>
+              <%end%>
+            <% end %>
+          </div>
+          <div class="tab-pane" id="userTabFollower">
+            <% if @followers.empty?%>
+            <div class="noneFollower">
+              <%if current_user.id == @user.id%>
+                <h5>フォロワーがいません<br>掲示板でもっと会話を楽しみましょう！！</h5>
+              <%=link_to'掲示板で投稿する',message_boards_path,class:"btn btn-primary"	%>
+              <% else %>
+                <h5>フォロワーがいません。<br>このユーザーをフォローしませんか？</h5>
+              <% end %>
+            </div>
+            <% else %>
+              <%@followers.each do |follower|%>
+                <%=link_to(user_path(follower.id)) do%>
+                  <div class="container userProfile">
+                    <%=image_tag url_for(follower.avatar),class:"userAvatar"%>
+                    <%=follower.name%>
+                  </div>
+                <%end%>
+              <%end%>
+            <% end %>
+          </div>
+          <div class="tab-pane" id="userTabFavorite"">
+            <div class="postFavoriteContainer">
+              <%if @postFavorites.empty?%>
+                  <h5>お気に入りがありません。</h5>
+              <%else%>
+                <%@postFavorites.each do |postFavorite|%>
+                  <div class="post_content">
+                    <div class="post_content_header">
+                      <%=postFavorite.post.created_at.strftime("%m月%d日 %H:%M")%>　
+                      掲示板名：<%=link_to postFavorite.post.message_board.name,message_boards_talks_path(
+                      postFavorite.post.message_board.id,category_id:postFavorite.post.message_board.category.id)%>
+                    </div>
+                    <div class="post_content_body">
+                      <%=postFavorite.post.content%>
+                    </div>
+                  </div>
+                <%end%>
+              <%end%>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+<div class="user_edit">
+  <div class="profile_edit">
+    <%=form_tag ({ :controller => 'users', :action => 'update' }),multipart: true do%>
+      <h2>プロフィール画像</h2>
+        <%=file_field_tag "image" %>
+      <h2>プロフィール</h2>
+      <textarea name="profile" rows="5" cols="80">
+        <%=current_user.profile%>
+      </textarea>
+      <input type="submit" value="変更">
+    <%end%>
+  </div>
+</div>
