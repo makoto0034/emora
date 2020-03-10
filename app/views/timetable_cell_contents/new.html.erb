@@ -1,0 +1,34 @@
+<div class="timetable_cell_content_new">
+  <% if @subjects == nil%>
+    <%=link_to "戻る",new_timetable_cell_path(params[:id])%>
+    <p>選択できる科目がありません</p>
+  <%else%>
+  <div class="table-responsive">
+    <%=link_to "戻る",new_timetable_cell_path(params[:id])%>
+    <%= paginate @subjects,window:1%>
+    <table class="table table-bordered table-hover">
+      <thead>
+        <tr>
+          <th>名前</th>
+          <th>コード</th>
+          <th>追加</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @subjects.each do |subject|%>
+          <tr>
+            <td><%=link_to subject.name,subject_path(subject.id)%></td>
+            <td><%=subject.subject_code%></td>
+            <td>
+              <%=link_to(timetable_cells_path(subject_id:subject.id,day_of_the_week_id:params[:day_of_the_week_id],period_id:params[:period_id]),method: :post)do%>
+                <i class="fas fa-plus-circle"></i>
+              <%end%>
+            </td>
+          </tr>
+        <%end%>
+      </tbody>
+    </table>
+    <%= paginate @subjects,window:1%>
+  </div>
+  <%end%>
+</div>

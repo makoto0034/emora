@@ -1,0 +1,38 @@
+<div class="sign_up_box">
+  <div class="sign_up_box_inner">
+    <div class="sign_up_image">
+      <%=image_tag "welcome.jpg" ,alt:"welcome",class:"welcome-image"%>
+    </div>
+    <div class="sign_up_container">
+      <div class="sign_up_containerInner">
+        <h2>SignUp</h2>
+        <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+          <%= render "devise/shared/error_messages", resource: resource %>
+
+          <div class="field">
+            <%= f.email_field :email, placeholder:"メールアドレス", autofocus: true, autocomplete: "email" %>
+          </div>
+
+          <div class="field">
+            <%= f.text_field :name,placeholder:"ユーザー名" %>
+          </div>
+
+          <div class="field">
+              <%= f.password_field :password, placeholder:"パスワード(6文字以上)", autocomplete: "new-password" %>
+          </div>
+
+          <div class="field">
+            <%= f.password_field :password_confirmation, placeholder:"確認用パスワード", autocomplete: "new-password" %>
+          </div>
+
+          <div class="actions">
+            <%= f.submit "登録" %>
+          </div>
+        <% end %>
+        <div class="devise-links">
+          <%= render "devise/shared/links" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,53 @@
+<div class="timetable_index">
+    <% if @timetables.empty?%>
+      <div class="timetable_first_new">
+        <h2 class="text-center">まだ時間割を作成していません。<br>新規の時間割を作成しましょう！</h2>
+        <div class="timetables_new">
+          <%=form_tag (timetables_path(current_user,class:"form-inline"))do %>
+            <div class="input-group mb-3 center-block">
+              <input type="text" class="form-control" placeholder="時間割の名前" aria-describedby="basic-addon2" name="name">
+              <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="submit">作成</button>
+              </div>
+            </div>
+          <%end%>
+        </div>
+      </div>
+      <div class="container">
+        <%=image_tag "timetable1.jpg",width:"100%"%>
+      </div>
+    <%else%>
+    <div class="timetables_new">
+      <%=form_tag (timetables_path(current_user))do %>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="時間割の名前" aria-describedby="basic-addon2" name="name">
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="submit">作成</button>
+          </div>
+        </div>
+      <%end%>
+    </div>
+    <div class="table_entire table-responsive">
+      <table class="table table-bordered table-hover">
+        <thead>
+          <tr>
+            <th>名前</th>
+            <th>削除</th>
+          </tr>
+        </thead>
+        <tbody>
+          <%@timetables.each do |timetable|%>
+            <tr>
+              <td><%=link_to timetable.name,new_timetable_cell_path(timetable.id)%></td>
+              <td>
+                <%= link_to timetable_path(timetable.id), :method => :delete do %>
+                  <i class="fas fa-trash-alt"></i>
+                <%end%>
+              </td>
+            </tr>
+          <%end%>
+        </tbody>
+      </table>
+    <%end%>
+  </div>
+</div>
