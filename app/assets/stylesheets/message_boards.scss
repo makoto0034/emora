@@ -111,6 +111,7 @@
 }
 
 
+<<<<<<< HEAD
 .messageboard_container textarea{
   border-radius:5px;
   width:100%;
@@ -118,6 +119,21 @@
 
 .messageboard_new input[type="submit"]{
   color:#FAFAFA;
+=======
+.messageboard_container input[type="text"],select{
+  height:2rem;
+}
+
+.messageboard_container textarea{
+  border-radius:5px;
+  display: block;
+  width:50%;
+  margin:0 auto;
+  margin-bottom: 10px;
+}
+
+.messageboard_new input[type="submit"]{
+>>>>>>> origin/master
   background: #A17FDE;
   outline:0;
   border:0;
@@ -125,6 +141,12 @@
   padding:10px 30px;
 }
 
+<<<<<<< HEAD
+=======
+.messageboard_detail{
+  margin-top:20px;
+}
+>>>>>>> origin/master
 
 @media screen and (max-width:613px){
   .message_board_index .category_list{
@@ -156,3 +178,15 @@
     width:65%;
   }
 }
+<<<<<<< HEAD
+=======
+
+@media screen and (max-width:410px){
+  .messageboard_container textarea{
+    width:80%;
+  }
+  .messageboard_container select{
+    margin-top:10px;
+  }
+}
+>>>>>>> origin/master

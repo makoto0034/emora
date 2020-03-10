@@ -78,6 +78,7 @@
       </header>
       <%if flash[:notice] %>
         <div class="notice">
+<<<<<<< HEAD
           <p><%= flash[:notice] %></p>
         </div>
       <%elsif flash[:alert]%>
@@ -87,6 +88,17 @@
       <%elsif flash[:success]%>
       <div class="success">
         <p><%= flash[:success] %></p>
+=======
+          <p><%= notice %></p>
+        </div>
+      <%elsif flash[:alert]%>
+      <div class="alert">
+        <p><%= alert %></p>
+      </div>
+      <%elsif flash[:success]%>
+      <div class="success">
+        <p><%= success %></p>
+>>>>>>> origin/master
       </div>
       <%end%>
       <div class="entire">

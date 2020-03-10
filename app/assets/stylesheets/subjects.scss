@@ -7,6 +7,13 @@
   margin:0 auto;
 }
 
+<<<<<<< HEAD
+=======
+.search h1{
+  text-align: center;
+}
+
+>>>>>>> origin/master
 .search_box{
   border:solid #E6E6E6;
   border-width: 1px 1px 1px 1px;
@@ -22,6 +29,7 @@
 }
 
 .search_field{
+<<<<<<< HEAD
   padding: 5px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -37,6 +45,18 @@
 
 .top_input,.middle_input,.under_input{
   margin-bottom:5px;
+=======
+  width:40%;
+}
+
+.top_input,.middle_input,.under_input{
+  text-align: center;
+  margin-bottom:5px;
+}
+
+.search_box .middle_input .faculty,.search_box .middle_input .course{
+  width:40%;
+>>>>>>> origin/master
 }
 
 .search_button{
@@ -44,6 +64,7 @@
   margin-top: 20px;
 }
 
+<<<<<<< HEAD
 .search_button button[type="submit"]{
   background:#A17FDE;
   width:10%;
@@ -51,12 +72,30 @@
   border:0;
   border-radius:5px;
   padding: 10px;
+=======
+.search_box .search_button button[type="submit"]{
+  background: #A17FDE;
+  width:10%;
+  height:30px;
+  outline:0;
+  border:0;
+  border-radius: 5px;
+>>>>>>> origin/master
 }
 
 .btn-black{
   color:#fafafa;
 }
 
+<<<<<<< HEAD
+=======
+.search_field::placeholder{
+  text-align: center;
+  font-size:15px;
+}
+
+
+>>>>>>> origin/master
 .subject_show{
   width:95%;
   margin:0 auto;
@@ -77,18 +116,26 @@
   text-align: center;
 }
 
+<<<<<<< HEAD
 .syllabusSearchImg{
   width:60%;
   height:350px;
 }
 
+=======
+>>>>>>> origin/master
 .pagination{
   width:100%;
 }
 
 .pagination>li>a {
+<<<<<<< HEAD
   border: none;
   color: #696969;
+=======
+  border: none;     /*枠線をなくす*/
+  color: #696969;   /*文字の色を変える*/
+>>>>>>> origin/master
 }
 
 /* 表示しているページ番号のデザイン */
@@ -113,10 +160,14 @@
     border: 1px solid #A9A9A9;
     font-size:14px;
   }
+<<<<<<< HEAD
 }
 
 @media screen and (max-width:650px){
   .syllabusSearchImg{
     width: 100%;
   }
+=======
+
+>>>>>>> origin/master
 }
