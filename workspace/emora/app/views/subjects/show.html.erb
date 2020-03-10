@@ -1,0 +1,187 @@
+<div class="subject_show">
+  <h2><%=@subject.name%></h2>
+  <div class="table-responsive">
+    <table class="table table-bordered">
+      <tr>
+        <th>科目コード</th>
+        <td><%=@subject.subject_code%></td>
+      </tr>
+      <tr>
+        <th>テーマ</th>
+        <td><%=@subject.theme%></td>
+      </tr>
+      <tr>
+        <th>担当者</th>
+        <td><%=@subject.instructor%></td>
+      </tr>
+      <tr>
+        <th>時間割</th>
+        <td></td>
+      </tr>
+      <tr>
+        <th>単位</th>
+        <td><%=@subject.credit%></td>
+      </tr>
+      <tr>
+        <th>科目ナンバリング</th>
+        <td><%=@subject.num%></td>
+      </tr>
+      <tr>
+        <th>使用言語</th>
+        <td><%=@subject.lang%></td>
+      </tr>
+      <tr>
+        <th>備考</th>
+        <td><%=@subject.notes%></td>
+      </tr>
+    </table>
+  </div>
+  <div class="table-responsive">
+    <h3>成績評価</h3>
+    <table class="table table-bordered">
+      <%@evaluations.each do |evaluation|%>
+        <tr>
+          <th>種類(Kind)</th>
+          <td><%=evaluation.kind%></td>
+        </tr>
+        <tr>
+          <th>割合(Ratio)</th>
+          <td><%=evaluation.criteria%></td>
+        </tr>
+        <tr>
+          <th>基準(Criteria)</th>
+          <td><%=evaluation.portion%></td>
+        </tr>
+      <%end%>
+    </table>
+  </div>
+  <div class="table-responsive">
+    <table class="table table-bordered">
+      <tr>
+        <th>授業の目標</th>
+        <td><%=@subject.objective%></td>
+      </tr>
+      <tr>
+        <th>授業の内容</th>
+        <td><%=@subject.contents%></td>
+      </tr>
+      <tr>
+        <th>授業計画</th>
+        <td>
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <%@plans.each do |plan|%>
+                <tr>
+                  <th id="table_th"><%=plan.number%></th>
+                  <td><%=plan.content%></td>
+                </tr>
+              <%end%>
+            </table>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <th>授業時間外の学習</th>
+        <td><%=@subject.outside%></td>
+      </tr>
+    </table>
+  </div>
+  <div class="table-responsive">
+    <table class="table table-bordered">
+      <tr>
+        <th>参考文献</th>
+        <td>
+          <%if @readings.first.author.nil?%>
+            <%@readings.each do |reading|%>
+              <%=reading.content%>
+            <%end%>
+          <%else%>
+            <div class="table-responsive">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>著者名(Author/Editor)</th>
+                    <th>書籍名(Title)</th>
+                    <th>出版社(Publisher)</th>
+                    <th>出版年(Date)</th>
+                    <th>ISBN/ISSN</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <%@readings.each do |reading|%>
+                    <tr>
+                      <td><%=reading.author%></td>
+                      <td><%=reading.title%></td>
+                      <td><%=reading.publisher%></td>
+                      <td><%=reading.year%></td>
+                      <td><%=reading.isbn%></td>
+                    </tr>
+                    <%if reading.others%>
+                      <tr>
+                        <th>その他(Others)</th>
+                        <td colspan="4"><%=reading.others%></td>
+                      </tr>
+                    <%end%>
+                  <%end%>
+                </tbody>
+              </table>
+            </div>
+          <%end%>
+        </td>
+      </tr>
+      <tr>
+        <th>テキスト</th>
+        <td>
+          <%if @textbooks.first.author.nil?%>
+            <%@textbooks.each do |textbook|%>
+              <%=textbook.content%>
+            <%end%>
+          <%else%>
+            <div class="table-responsive">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>著者名(Author/Editor)</th>
+                    <th>書籍名(Title)</th>
+                    <th>出版社(Publisher)</th>
+                    <th>出版年(Date)</th>
+                    <th>ISBN/ISSN</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <%@textbooks.each do |textbook|%>
+                    <tr>
+                      <td><%=textbook.author%></td>
+                      <td><%=textbook.title%></td>
+                      <td><%=textbook.publisher%></td>
+                      <td><%=textbook.year%></td>
+                      <td><%=textbook.isbn%></td>
+                    </tr>
+                    <%if textbook.others %>
+                    <tr>
+                      <th>その他(Others)</th>
+                      <td colspan="4"><%=textbook.others%></td>
+                    </tr>
+                    <%end%>
+                  <%end%>
+                </tbody>
+              </table>
+            </div>
+          <%end%>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div class="table-responsive">
+    <table class="table table-bordered">
+      <tr>
+        <th>その他</th>
+        <td><%=@subject.others%></td>
+      </tr>
+      <tr>
+        <th>注意事項</th>
+        <td><%=@subject.notice%></td>
+      </tr>
+    </table>
+  </div>
+</div>

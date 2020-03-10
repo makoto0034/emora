@@ -1,0 +1,36 @@
+<div class="products_container">
+  <div class="container-fluid">
+      <div class="productSearchBox text-center">
+      <%=form_tag (products_path),:method => 'get' do%>
+          <input type="text" name="productName" placeholder="キーワードを入力してください">
+          <button type="submit"><i class="fas fa-search"></i></button>
+      <%end%>
+      </div>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="productCategory">
+          <ul class="categoryList　list-group">
+            <%@categories.each do |category|%>
+              <li class="list-group-item"><%=link_to category.name,products_path(category_id:category.id)%></li>
+            <%end%>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-10">
+        <%unless @category.nil?%>
+          <h2><%=@category.name%></h2>
+        <%end%>
+        <div class="row">
+          <%@products.each do |product|%>
+            <div class="product col-md-4 col-sm-6 text-center">
+              <%=link_to product_path(product.id), target: "_blank" do%>
+                <%=image_tag product.image.url,alt:product,class: "img-responsive",width:"100px",height:"200px"%><br>
+                <%=product.name%>　￥<%=product.price%>
+              <%end%>
+            </div>
+          <%end%>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

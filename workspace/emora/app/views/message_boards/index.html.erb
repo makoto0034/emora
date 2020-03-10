@@ -1,0 +1,50 @@
+<div class="message_board_index">
+  <div class="message_board_index_inner">
+    <div class="category_list">
+      <div class="create_message_board">
+        <%=link_to'掲示板作成',new_message_board_path,class:"create_message_board_btn btn"%>
+      </div>
+      <ul>
+        <li class="category_tab_list">
+          <%=link_to '新着',message_boards_path,class:"category_tab"%>
+        </li>
+        <%@categories.each do |category|%>
+          <li class="category_tab_list">
+            <%=link_to category.name,message_boards_path(category_id: category.id),class:"category_tab"%>
+          </li>
+        <%end%>
+      </ul>
+    </div>
+    <div class="message_board_list">
+      <%if @category.present?%>
+        <h1><%=@category.name%></h1>
+      <%else%>
+        <h1>新着</h1>
+      <%end%>
+      <ul>
+        <%@message_boards.each do |message_board|%>
+          <li>
+            <%=link_to message_boards_talks_path(message_board.id,category_id:message_board.category.id) do%>
+            <div class="message_board_content">
+              <div class="message_board_content_header">
+                <div class="row">
+                  <div class="col-md-2">
+                    <h4><%=message_board.name%></h4>
+                  </div>
+                  <div class="col-auto message_board_creator">
+                    by
+                    <%=image_tag url_for(message_board.user.avatar),:size =>"50x50" ,class: "avatar"%>
+                    <%= message_board.user.name%>
+                  </div>
+                </div>
+                <p><%=message_board.created_at.strftime("%Y年%m月%d日 %H時%M分")%></p>
+              </div>
+              <p><%=message_board.detail%></p>
+            </div>
+            <%end%>
+          </li>
+        <%end%>
+      </ul>
+    </div>
+  </div>
+</div>

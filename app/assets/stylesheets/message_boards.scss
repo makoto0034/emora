@@ -118,11 +118,29 @@
 
 .messageboard_new input[type="submit"]{
   color:#FAFAFA;
+}
+.messageboard_container input[type="text"],select{
+  height:2rem;
+}
+
+.messageboard_container textarea{
+  border-radius:5px;
+  display: block;
+  width:50%;
+  margin:0 auto;
+  margin-bottom: 10px;
+}
+
+.messageboard_new input[type="submit"]{
   background: #A17FDE;
   outline:0;
   border:0;
   border-radius: 5px;
   padding:10px 30px;
+}
+
+.messageboard_detail{
+  margin-top:20px;
 }
 
 
@@ -156,3 +174,12 @@
     width:65%;
   }
 }
+
+// @media screen and (max-width:410px){
+//   .messageboard_container textarea{
+//     width:80%;
+//   }
+//   .messageboard_container select{
+//     margin-top:10px;
+//   }
+// }

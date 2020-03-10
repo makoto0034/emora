@@ -1,0 +1,38 @@
+// Place all the styles related to the carts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.cart_show .cart_table{
+  border:solid 1px;
+  border-collapse:collapse;
+}
+
+.cart_show .cart_table th,td{
+  text-align: center;
+}
+
+.cart_show .cart_table th{
+  font-weight:bold;
+  font-size:20px;
+}
+
+.cart_show h1{
+  color: #000;
+}
+
+
+.cat_show{
+  position:absolute;
+}
+.cart_show .cart_content{
+  position: relative;
+  left:25%;
+  margin-top:5%;
+}
+.cart_content{
+  width:50%;
+}
+
+.total_payment{
+  text-align: center;
+}
