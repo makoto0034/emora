@@ -42,10 +42,10 @@ $(document).on('turbolinks:load', function(){
 $(document).on('turbolinks:load', function(){
 	setTimeout(function(){
 		$('.start_container p').fadeIn(1600);
-	},500); //0.5秒後にロゴをフェードイン!
+	},500); 
 	setTimeout(function(){
 		$('.start_container').fadeOut(500);
-	},5000); //2.5秒後にロゴ含め真っ白背景をフェードアウト！
+	},5000);
 });
 
 //ユーザー詳細画面のタブ設定

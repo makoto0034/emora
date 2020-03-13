@@ -8,11 +8,10 @@
 }
 
 .search_box{
-  border:solid #E6E6E6;
-  border-width: 1px 1px 1px 1px;
   background:#FFFFFF;
   border-radius: 5px;
   padding:10px;
+  box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2);
 }
 
 .search_container{
@@ -60,6 +59,10 @@
 .search_field::placeholder{
   text-align: center;
   font-size:15px;
+}
+
+.syllabusImg{
+  margin-top: 30px;
 }
 
 

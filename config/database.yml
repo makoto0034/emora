@@ -21,7 +21,10 @@ test:
   database: db/test.sqlite3
 
 production:
-  <<: *default
-  database: emora
-  username: emora
-  password: <%= ENV['MYAPP_DATABASE_PASSWORD'] %>
+  adapter: mysql2
+  encoding: utf8
+  pool: 5
+  database: emora_production
+  username: root
+  password: emora@0034
+  socket: /var/lib/mysql/mysql.sock
