@@ -7,8 +7,11 @@
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
 server '13.115.212.180', user: 'emora', roles: %w{app db web}
-set :ssh_options, keys: '~/.ssh/emora_key_rsa'
-
+set :ssh_options, {
+  keys: '~/.ssh/emora_key_rsa',
+  forward_agent: true,
+  auth_methods: %w(publickey)
+}
 
 
 # role-based syntax
