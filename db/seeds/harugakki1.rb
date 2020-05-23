@@ -69,6 +69,11 @@ Category.create(name:"授業")
 Category.create(name:"音楽")
 Category.create(name:"悩み")
 Category.create(name:"スポーツ")
+Category.create(name:"漫画・アニメ")
+Category.create(name:"今日のワロタ")
+Category.create(name:"ガールズトーク")
+Category.create(name:"ボーイズトーク")
+Category.create(name:"誰にも言えないこと")
 Category.create(name:"運営へ")
 
 

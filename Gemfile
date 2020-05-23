@@ -35,6 +35,7 @@ end
 
 group :production, :staging do
   gem 'unicorn'
+  gem 'pg'
 end
 
 group :development do
