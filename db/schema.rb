@@ -68,26 +68,12 @@ ActiveRecord::Schema.define(version: 2020_03_07_092617) do
   create_table "message_boards", force: :cascade do |t|
     t.string "name"
     t.string "detail"
-<<<<<<< HEAD
     t.integer "user_id"
-=======
-<<<<<<< HEAD
-    t.integer "user_id"
-=======
->>>>>>> origin/master
->>>>>>> origin/master
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "category_id"
     t.index ["category_id"], name: "index_message_boards_on_category_id"
-<<<<<<< HEAD
     t.index ["user_id"], name: "index_message_boards_on_user_id"
-=======
-<<<<<<< HEAD
-    t.index ["user_id"], name: "index_message_boards_on_user_id"
-=======
->>>>>>> origin/master
->>>>>>> origin/master
   end
 
   create_table "periods", force: :cascade do |t|
@@ -105,10 +91,6 @@ ActiveRecord::Schema.define(version: 2020_03_07_092617) do
     t.integer "subject_id"
   end
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> origin/master
   create_table "post_favorites", force: :cascade do |t|
     t.integer "user_id", null: false
     t.integer "post_id", null: false
@@ -118,11 +100,6 @@ ActiveRecord::Schema.define(version: 2020_03_07_092617) do
     t.index ["user_id"], name: "index_post_favorites_on_user_id"
   end
 
-<<<<<<< HEAD
-=======
-=======
->>>>>>> origin/master
->>>>>>> origin/master
   create_table "posts", force: :cascade do |t|
     t.string "content", null: false
     t.integer "user_id"
@@ -265,9 +242,6 @@ ActiveRecord::Schema.define(version: 2020_03_07_092617) do
   add_foreign_key "readings", "subjects"
   add_foreign_key "relationships", "users"
   add_foreign_key "relationships", "users", column: "follow_id"
-  add_foreign_key "posts", "message_boards"
-  add_foreign_key "posts", "users"
-  add_foreign_key "readings", "subjects"
   add_foreign_key "schedules", "day_of_the_weeks"
   add_foreign_key "schedules", "periods"
   add_foreign_key "schedules", "semesters"

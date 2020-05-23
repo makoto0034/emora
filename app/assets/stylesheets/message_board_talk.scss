@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .message_board_talk_index{
-  width:80%;
+  width:90%;
   margin:0 auto;
   display: flex;
 }
@@ -10,10 +10,15 @@
 .other_message_board_list ul{
   margin:0px;
   padding:0px;
+  list-style: none;
+}
+
+.other_message_board_list ul li a{
+  text-decoration: underline;
 }
 
 .other_message_board_list{
-  width:30%;
+  width:50%;
 }
 
 .message_board_container{
@@ -26,10 +31,27 @@
   border-radius: 5px;
 }
 
-.message_board_header h1,.message_board_header h4{
-  text-align: center;
+.message_board_header{
+  padding-bottom: 20px;
+  border-bottom: solid 3px #E6ECF0;
 }
 
+.message_board_detail_container{
+  background:#FFFFFF;
+  border-radius: 5px;
+  padding:10px;
+  margin-bottom: 10px;
+  min-height: 10vh;
+  padding: 20px;
+}
+
+.message_board_detail_content{
+  letter-spacing: 1px;
+}
+
+.post_message{
+  letter-spacing: 1px;
+}
 .message_board_body{
   min-height: 20vh;
   margin:0;
@@ -47,19 +69,11 @@
 
 .message_board_talk_input_inner textarea{
   width:100%;
+  border-radius: 5px;
 }
 
 .message_board_talk_input_inner .message_board_submit{
   text-align: right;
-}
-
-.message_board_talk_input_inner .message_board_submit button{
-  background: #A17FDE;
-  color:#FFFFFF;
-  outline:0;
-  border:0;
-  border-radius: 5px;
-  padding:10px;
 }
 
 .post_container{
@@ -68,7 +82,7 @@
   background:#FFFFFF;
   border-radius: 5px;
   margin-top:20px;
-  padding:10px;
+  padding:20px;
 
 }
 
@@ -113,6 +127,20 @@
 //   padding:0;
 // }
 
+
+@media screen and (max-width:900px){
+  .other_message_board_list{
+    display: none;
+  }
+
+  .message_board_talk_index{
+    width:100%;
+  }
+  .message_board_container{
+    width: 100%;
+  }
+}
+
 @media screen and (max-width:550px){
   .message_board_talk_input textarea{
     border-radius:0;
@@ -124,18 +152,6 @@
 
   .message_board_talk_input button[type="submit"]{
     border-radius:0;
-  }
-
-  .message_board_talk_index .other_message_board_list{
-    display:none;
-  }
-
-  .message_board_talk_index{
-    width:100%;
-  }
-
-  .message_board_container{
-    width:100%;
   }
 
   .post_first_message{

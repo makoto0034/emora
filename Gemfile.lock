@@ -173,7 +173,6 @@ GEM
     nokogiri (1.10.4)
       mini_portile2 (~> 2.4.0)
     orm_adapter (0.5.0)
-    pg (1.1.4)
     popper_js (1.14.5)
     public_suffix (4.0.1)
     puma (3.12.1)
@@ -202,6 +201,9 @@ GEM
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.2.0)
       loofah (~> 2.2, >= 2.2.2)
+    rails-i18n (6.0.0)
+      i18n (>= 0.7, < 2)
+      railties (>= 6.0.0, < 7)
     railties (6.0.0)
       actionpack (= 6.0.0)
       activesupport (= 6.0.0)
@@ -297,9 +299,9 @@ DEPENDENCIES
   jquery-rails
   kaminari
   letter_opener_web
-  pg
   puma (~> 3.11)
   rails (~> 6.0)
+  rails-i18n
   sass-rails (~> 5.0)
   sqlite3
   turbolinks (~> 5)

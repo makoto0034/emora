@@ -1,14 +1,27 @@
 // Place all the styles related to the Timetables controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.timetable_index{
+.timetable-index{
   width:80%;
+  min-height: 100vh;
+  margin:0 auto;
+  margin-top: 50px;
+}
+
+.timetable-index-inner{
   box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2);
-  height: 100vh;
-  padding: 50px;
+  padding: 30px;
   border-radius: 10px;
 }
 
+.timetable-list{
+  height: 30vh;
+  overflow-y: scroll;
+}
+
+.timetable-index-background-container{
+  margin-top: 25px;
+}
 
 @media screen and (max-width:375px){
   .timetable_first_new h2{

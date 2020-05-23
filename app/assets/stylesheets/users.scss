@@ -5,10 +5,30 @@
 .user_show{
   width: 100%;
   margin: 0 auto;
+  margin-top: 25px;
 }
 
 .userControl{
   padding: 0;
+}
+
+#userTab{
+  border-top: solid 1px #E6ECF0;
+  border-bottom: solid 1px #E6ECF0;
+  padding: 10px 0;
+  justify-content: center;
+}
+
+.nav-link{
+  color: #000;
+}
+
+.nav-link:hover{
+  color: #a180dc;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link{
+  background-color: #a180dc;
 }
 
 .user_show .user_post_list{
@@ -16,36 +36,43 @@
 }
 
 .user_profile{
-  width: 50%;
-  margin: 0 auto;
-}
-
-.user_profile .user_avatar, .user_profile h2{
-  text-align: center;
+  width: 100%;
 }
 
 .avatar{
   border-radius: 50%;
 }
 
-.user_introduce{
-  width: 100%;
-  height: 20vh;
-  background: #E6ECF0;
-  border-radius: 5px;
-  padding: 30px;
-}
-
 .userAvatar{
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   margin-right: 50px;
+}
+
+.user_introduce{
+  white-space: pre-wrap;
+  word-wrap:break-word;
 }
 
 .userProfile,.otherUserListContainer{
   padding: 10px;
   border-bottom: solid 1px #E6ECF0;
+}
+
+.user_primary_info ul{
+  list-style-type: none;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
+
+.user_primary_info ul li{
+  margin: 20px 20px 0 0;
+}
+
+.user_primary_info ul li:last-child{
+  margin-right: 0;
 }
 
 .noneFollow,.noneFollower{
@@ -106,8 +133,6 @@
   padding: 40px;
 }
 .modal__content input[type="text"]{
-  width: 100%;
-  padding: 5px;
   border: 1px solid #ccc;
   border-radius: 5px;
   appearance: none;
@@ -121,12 +146,16 @@
 .modal_close_button{
   position: absolute;
   top:0;
-  left:0;
-  margin-left: 5px;
+  right:0;
+  padding: 5px;
 }
 
 .js-modal-close{
   color:#000;
+}
+
+.user_search_input{
+  width: 100%;
 }
 
 .otherUserListContainerInner{
@@ -153,18 +182,21 @@
   vertical-align: bottom;
 }
 
-@media screen and (max-width:767px){
-  .userControl{
-    margin-top: 10px;
-  }
-}
+
 @media screen and (max-width:1049px){
   .modal__content{
     width: 60%;
   }
 }
-@media screen and (max-width:400px){
-  .modal__content{
-    width: 80%;
+
+@media screen and (max-width:767px){
+  .userControl{
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width:391px){
+  .userProfTab .nav-link{
+    padding: 8px 8px ;
   }
 }

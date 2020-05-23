@@ -2,8 +2,9 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .message_board_index{
-  width:100%;
   margin:0 auto;
+  margin-top: 10px;
+  width:100%;
 }
 
 .message_board_index_inner{
@@ -33,36 +34,36 @@
 
 .message_board_index .category_list .category_tab_list .category_tab{
   font-size:20px;
+  color: #000;
+  font-weight: 500;
 }
 
+.message_board_index .category_list .category_tab_list .category_tab:hover,
+.message_board_index .category_list .category_tab_list .category_tab:active{
+  color: #a180dc;
+}
 
 .create_message_board{
   margin-left: 15px;
 
 }
 
-.create_message_board_btn{
-   background: #A180DC;
-   color:#FAFAFA;
+.message_board_content_header .message_board_primary_info {
+  padding: 15px 0;
 }
 
-.create_message_board_btn:hover{
-  color:#FAFAFA;
-}
-
-.message_board_content_header .row{
-  align-items: center;
+.message_board_content_header .message_board_primary_info p{
+  letter-spacing: 1px;
 }
 
 .message_board_creator{
   padding: 0;
+  color: #000;
 }
 
-
-
-// .message_board_index .category_list .category_tab_list {
-//   text-align: center;
-// }
+.message_board_primary_info{
+  text-overflow: ellipsis;
+}
 
 .message_board_index .category_list ul {
   margin:0;
@@ -74,8 +75,6 @@
   content:"・";
   color:#A180DC;
 }
-
-
 
 .message_board_list ul li{
   list-style: none;
@@ -100,20 +99,13 @@
   color:#000;
 }
 
-.messageboard_new{
-  width:80%;
-  margin:0 auto;
-}
-
 .messageboard_container{
   margin-top:40px;
   text-align:center;
 }
 
-
-.messageboard_container textarea{
-  border-radius:5px;
-  width:100%;
+.post_container p{
+  white-space: pre-wrap;
 }
 
 .messageboard_new input[type="submit"]{
@@ -123,7 +115,7 @@
 .messageboard_container textarea{
   border-radius:5px;
   display: block;
-  width:50%;
+  width:100%;
   margin:0 auto;
   margin-bottom: 10px;
 }
@@ -139,7 +131,6 @@
 .messageboard_detail{
   margin-top:20px;
 }
-
 
 @media screen and (max-width:613px){
   .message_board_index .category_list{
@@ -171,12 +162,3 @@
     width:65%;
   }
 }
-
-// @media screen and (max-width:410px){
-//   .messageboard_container textarea{
-//     width:80%;
-//   }
-//   .messageboard_container select{
-//     margin-top:10px;
-//   }
-// }

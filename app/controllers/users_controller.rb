@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
   def show
     per = 10
+
     @posts=Post.where(user_id:params[:id]).page(params[:page]).per(per)
     @user = User.find(params[:id])
     if params[:id] == current_user.id
@@ -25,13 +26,20 @@ class UsersController < ApplicationController
     end
   end
 
+  def edit
+    @user = User.find(params[:id])
+  end
+
+  def image_update
+    current_user.avatar.attach(params[:image])
+    redirect_to(edit_user_path(current_user))
+  end
+
   def update
     @user=User.find(current_user.id)
     @user.profile = params[:profile]
-    if params[:image]
-       current_user.avatar.attach(params[:image])
-    end
     @user.save
     redirect_to(user_path(current_user))
   end
+
 end

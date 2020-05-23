@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get 'subjects/search_result'
   get 'home/index'
   post 'users/update'
+  post 'users/image_update'
   devise_for :users, :controllers => {
    :registrations => 'users/registrations'
  }
@@ -27,7 +28,7 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :message_boards, only: %i(index create new)do
+  resources :message_boards, only: %i(index create)do
     member do
       resources :message_boards_talks, only:%i(index create new )
     end

@@ -1,6 +1,5 @@
 class MessageBoardsController < ApplicationController
   def index
-
     if params[:category_id]
       @message_boards = MessageBoard.where(category_id:params[:category_id]).order(created_at: :"DESC")
       @category = Category.find(params[:category_id])
@@ -9,12 +8,6 @@ class MessageBoardsController < ApplicationController
     end
     @categories = Category.all
   end
-
-
-  def new
-    @categories = Category.all
-  end
-
 
   def create
     @message_board = MessageBoard.new(
@@ -25,9 +18,12 @@ class MessageBoardsController < ApplicationController
     )
     if @message_board.save
       redirect_to(message_boards_talks_path(@message_board.id))
-    else
+    elsif params[:name].empty?
       flash[:alert] = "掲示板の名前は１文字以上入力してください"
-      redirect_to(new_message_board_path)
+      redirect_to(message_boards_path)
+    else
+      flash[:alert] = "掲示板の詳細は１文字以上入力してください"
+      redirect_to(message_boards_path)
     end
   end
 

@@ -1,54 +1,65 @@
 <div class="user_show">
   <div class="container">
-    <div class="row">
-      <div class="col-md-5">
         <div class="user_profile">
-          <div class="user_avatar">
-              <%=image_tag url_for(@user.avatar),:size =>"150x150" ,class: "avatar"%>
-          </div>
-          <h2><%=@user.name%>
-            <%if @user.id ==current_user.id%>
-              <%=link_to(edit_user_path) do%>
-                <i class="fas fa-user-cog"></i>
-              <%end%>
-            <%else%>
-                <%if current_user.following?(@user)%>
-                  <%= form_for(current_user.relationships.find_by(follow_id: @user.id), html: { method: :delete }) do |f| %>
-                    <%= hidden_field_tag :follow_id, @user.id %>
-                    <%= f.submit 'フォローを解除する', class: 'btn btn-danger btn-block' %>
+          <div class="row justify-content-around">
+            <div class="col-md-4">
+              <div class="user_avatar">
+                  <%=image_tag url_for(@user.avatar),:size =>"150x150" ,class: "avatar"%>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="d-flex">
+                <h2 class="mr-3"><%=@user.name%></h2>
+                <%if @user.id ==current_user.id%>
+                  <%=link_to(edit_user_path) do%>
+                    <i class="fas fa-user-cog fa-2x"></i>
                   <%end%>
                 <%else%>
-                  <%= form_for(current_user.relationships.build) do |f| %>
-                    <%= hidden_field_tag :follow_id, @user.id %>
-                    <%= f.submit 'フォローする', class: 'btn btn-primary btn-block' %>
+                    <%if current_user.following?(@user)%>
+                      <%= form_for(current_user.relationships.find_by(follow_id: @user.id), html: { method: :delete }) do |f| %>
+                        <%= hidden_field_tag :follow_id, @user.id %>
+                        <%= f.submit 'フォローを解除する', class: 'btn purple-btn' %>
+                      <%end%>
+                    <%else%>
+                      <%= form_for(current_user.relationships.build) do |f| %>
+                        <%= hidden_field_tag :follow_id, @user.id %>
+                        <%= f.submit 'フォローする', class: 'btn purple-btn' %>
+                      <%end%>
+                    <%end%>
                   <%end%>
+              </div>
+              <div class="user_primary_info">
+                <ul>
+                  <li>投稿<%=@posts.length%>件</li>
+                  <li>フォロー<%=@followings.length%>人</li>
+                  <li>フォロワー<%=@followers.length%>人</li>
+                </ul>
+              </div>
+              <div class="user_introduce">
+                <%if@user.profile%>
+                  <p><%=@user.profile%></p>
+                <%else%>
+                  <p>プロフィールが更新されていません</p>
                 <%end%>
-              <%end%>
-          </h2>
-          <div class="user_introduce">
-            <%if@user.profile%>
-              <%=@user.profile%>
-            <%else%>
-              <p>プロフィールが更新されていません</p>
-            <%end%>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-md-7 userControl">
-        <ul id="userTab" class="nav nav-tabs">
+      <div class="userControl">
+        <ul id="userTab" class="nav nav-pills mb-3">
           <li class="nav-item userProfTab"><a class="nav-link active" href="#userTabComment">投稿</a></li>
           <li class="nav-item userProfTab"><a class="nav-link" href="#userTabFollow">フォロー</a></li>
           <li class="nav-item userProfTab"><a class="nav-link" href="#userTabFollower">フォロワー</a></li>
           <li class="nav-item"><a class="nav-link" href="#userTabFavorite">お気に入り</a></li>
         </ul>
 
-        <div class="tab-content">
+        <div class="tab-content text-center">
           <div class="tab-pane active" id="userTabComment">
             <div class="user_post_list">
               <% if @posts.empty? %>
                 <%if @user.id == current_user.id%>
                   <h5>まだ一度も投稿したことがありません<br>掲示板で投稿してみませんか？</h5>
-                  <%=link_to'掲示板で投稿する',message_boards_path,class:"btn btn-primary"	%>
+                  <%=link_to'掲示板で投稿する',message_boards_path,class:"btn purple-btn"	%>
                   <%=image_tag("message.jpg",width:"100%")%>
                 <%else%>
                 <h5>このユーザーはまだ一度も投稿したことがありません</h5>
@@ -57,8 +68,11 @@
                 <%@posts.each do |post|%>
                   <div class="post_content" id="userTabComment">
                     <div class="post_content_header">
-                      <%=post.created_at.strftime("%m月%d日 %H:%M")%>　
                       掲示板名：<%=link_to post.message_board.name,message_boards_talks_path(post.message_board.id,category_id:post.message_board.category.id)%>
+                      <div class="text-center row mt-2 justify-content-center">
+                        <%=link_to post.message_board.category.name,message_boards_path(category_id: post.message_board.category.id),class:"mr-3 message_board_category_link"%>
+                        <p class="created_at"><%=post.created_at.strftime("%m月%d日 %H:%M")%></p>
+                      </div>
                     </div>
                     <div class="post_content_body">
                       <%=post.content%>
@@ -76,14 +90,14 @@
                   <h5>フォローしている人がいません。<br>誰かをフォローしませんか？</h5>
                   <div class="otherUserSearch">
                     <div class="modalTrigger">
-                      <a href="#" class="js-modal-open btn btn-primary">ユーザを検索する</a>
+                      <a href="#" class="js-modal-open btn purple-btn">ユーザーを検索する</a>
                     </div>
                     <div class="modal js-modal">
                       <div class="modal__bg js-modal-close"></div>
                       <div class="modal__content">
                             <%= form_tag(url_for(:action => 'show'), :remote => true,method: :get,class:"userSearchForm") do %>
                             <div class="text-center">
-                              <input type="text" name="userName" placeholder="ユーザー名">
+                              <input class="user_search_input" type="text" name="userName" placeholder="ユーザー名">
                               <input type="submit" value="検索" class="btn btn-primary">
                             </div>
                             <% end %>
@@ -94,7 +108,7 @@
                             <!-- ユーザリスト追加 -->
                           </div>
                           <div class="modal_close_button">
-                            <a href="#" class="js-modal-close"><i class="fas fa-times-circle"></i></a>
+                            <a href="#" class="js-modal-close"><i class="fas fa-times-circle fa-lg"></i></a>
                           </div>
                       </div>
                     </div>
@@ -109,14 +123,14 @@
             <% else %>
             <div class="otherUserSearch">
               <div class="modalTrigger">
-                <a href="#" class="js-modal-open btn btn-primary">ユーザを検索する</a>
+                <a href="#" class="js-modal-open btn purple-btn">ユーザーを検索する</a>
               </div>
               <div class="modal js-modal">
                 <div class="modal__bg js-modal-close"></div>
                 <div class="modal__content">
                       <%= form_tag(url_for(:action => 'show'), :remote => true,method: :get,class:"userSearchForm") do %>
                       <div class="text-center">
-                        <input type="text" name="userName" placeholder="ユーザー名">
+                        <input type="text" class="user_search_input" name="userName" placeholder="ユーザー名">
                         <input type="submit" value="検索" class="btn btn-primary">
                       </div>
                       <% end %>
@@ -144,14 +158,14 @@
           </div>
           <div class="tab-pane" id="userTabFollower">
             <% if @followers.empty?%>
-            <div class="noneFollower">
-              <%if current_user.id == @user.id%>
-                <h5>フォロワーがいません<br>掲示板でもっと会話を楽しみましょう！！</h5>
-              <%=link_to'掲示板で投稿する',message_boards_path,class:"btn btn-primary"	%>
-              <% else %>
-                <h5>フォロワーがいません。<br>このユーザーをフォローしませんか？</h5>
-              <% end %>
-            </div>
+              <div class="noneFollower">
+                <%if current_user.id == @user.id%>
+                  <h5>フォロワーがいません<br>掲示板でもっと会話を楽しみましょう！！</h5>
+                <%=link_to'掲示板で投稿する',message_boards_path,class:"btn purple-btn"	%>
+                <% else %>
+                  <h5>フォロワーがいません。<br>このユーザーをフォローしませんか？</h5>
+                <% end %>
+              </div>
             <% else %>
               <%@followers.each do |follower|%>
                 <%=link_to(user_path(follower.id)) do%>
@@ -163,7 +177,7 @@
               <%end%>
             <% end %>
           </div>
-          <div class="tab-pane" id="userTabFavorite"">
+          <div class="tab-pane" id="userTabFavorite">
             <div class="postFavoriteContainer">
               <%if @postFavorites.empty?%>
                   <h5>お気に入りがありません。</h5>
@@ -185,6 +199,5 @@
         </div>
         </div>
       </div>
-    </div>
   </div>
 </div>

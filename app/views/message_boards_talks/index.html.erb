@@ -1,9 +1,9 @@
-<div class="message_board_talk_index">
+<div class="message_board_talk_index mt-3">
   <div class="other_message_board_list">
-    <h4>他の掲示板</h4>
+    <h5>同じカテゴリの掲示板</h5>
     <ul>
       <%@message_boards.each do |message_board|%>
-        <li>
+        <li class="mb-2">
           <%=link_to message_board.name,message_boards_talks_path(message_board.id,category_id:message_board.category.id)%>
         </li>
       <%end%>
@@ -11,25 +11,38 @@
   </div>
   <div class="message_board_container">
     <div class="message_board_header">
-      <h1><%=@message_board.name%></h1>
-      <h4><%=@message_board.detail%></h4>
-      <div class="message_board_talk_input">
-        <%=form_tag(posts_path(params[:id],category_id:params[:category_id]),class:"message_board_talk_input_inner")do%>
-          <textarea name="content" rows="3" placeholder="メッセージを入力してください"></textarea>
-          <div class="message_board_submit">
-            <button type="submit">投稿する</button>
+      <div class="message_board_detail_container">
+        <div class="mb-2">
+          <%=link_to user_path(@message_board.user_id) do%>
+            <%=image_tag url_for(@message_board.user.avatar),:size =>"40x40" ,class: "avatar"%>
+            <%=@message_board.user.name%>
+          <%end%>
+        </div>
+          <h5><%=@message_board.name%></h5>
+          <div class="row no-gutters">
+            <%=link_to @message_board.category.name,message_boards_path(category_id: @message_board.category.id),class:"mr-3 message_board_category_link"%>
+            <p class="created_at"><%=@message_board.created_at.strftime("%m月%d日 %H:%M")%></p>
           </div>
-        <%end%>
+        <p class="message_board_detail_content"><%=@message_board.detail%></p>
       </div>
+    <div class="message_board_talk_input">
+      <%=form_tag(posts_path(params[:id],category_id:params[:category_id]),class:"message_board_talk_input_inner")do%>
+        <textarea name="content" rows="3" placeholder="メッセージを入力してください"></textarea>
+        <div class="message_board_submit">
+          <button type="submit" class="btn purple-btn mt-2">投稿する</button>
+        </div>
+      <%end%>
     </div>
+  </div>
       <%if @posts.empty? %>
         <h4 class="post_first_message">まだ一度も投稿がありません<br>最初の投稿をしましょう！</h4>
       <%else%>
         <%@posts.each do |post|%>
           <%if post.user_id == current_user.id %>
             <div class="post_container">
-              <h4 class="post_user_name"><%=post.user.name%>　<span class="post_created"><%=post.created_at.strftime("%Y年%m月%d日 %H時%M分")%></span></h4>
-              <p><%=post.content%></p>
+              <h4 class="post_user_name"><%=post.user.name%></h4>
+              <p class="created_at"><%=post.created_at.strftime("%m月%d日 %H:%M")%></p>
+              <p class="post_message"><%=post.content%></p>
             </div>
           <%else%>
             <div class="post_container">
@@ -44,9 +57,7 @@
                     <%=link_to user_path(post.user_id),class:"other_post_user_name" do%>
                       <%=post.user.name%>
                     <%end%>
-                    <span class="post_created">
-                      <%=post.created_at.strftime("%Y年%m月%d日 %H時%M分")%>
-                    </span>
+                    <p class="created_at"><%=post.created_at.strftime("%m月%d日 %H:%M")%></p>
                     <%if current_user.postFavoriteAttached?(post.id)%>
                       <%=link_to post_favorite_path(post_id:post.id,message_board_id:params[:id]),method: :delete do%>
                         <i class="fas fa-heart"></i>

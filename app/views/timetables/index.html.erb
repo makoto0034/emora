@@ -1,33 +1,36 @@
-<div class="timetable_index">
-    <% if @timetables.empty?%>
+<div class="timetable-index">
+  <div class="timetable-index-inner">
+      <% if @timetables.empty?%>
+      <!-- まだ時間割を１つも作成していないとき -->
       <div class="timetable_first_new">
         <h2 class="text-center">まだ時間割を作成していません。<br>新規の時間割を作成しましょう！</h2>
+          <!-- 時間割新規作成 -->
         <div class="timetables_new">
           <%=form_tag (timetables_path(current_user,class:"form-inline"))do %>
             <div class="input-group mb-3 center-block">
               <input type="text" class="form-control" placeholder="時間割の名前" aria-describedby="basic-addon2" name="name">
               <div class="input-group-append">
-                <button class="btn btn-outline-secondary" type="submit">作成</button>
+                <button class="btn purple-btn" type="submit">作成</button>
               </div>
             </div>
           <%end%>
         </div>
       </div>
-      <div class="container">
-        <%=image_tag "timetable1.jpg",width:"100%"%>
-      </div>
     <%else%>
+
+    <!-- 時間割新規作成 -->
     <div class="timetables_new">
       <%=form_tag (timetables_path(current_user))do %>
         <div class="input-group mb-3">
           <input type="text" class="form-control" placeholder="時間割の名前" aria-describedby="basic-addon2" name="name">
           <div class="input-group-append">
-            <button class="btn btn-outline-secondary" type="submit">作成</button>
+            <button class="btn purple-btn" type="submit">作成</button>
           </div>
         </div>
       <%end%>
     </div>
-    <div class="table_entire table-responsive">
+    <!-- 時間割一覧 -->
+    <div class="timetable-list table-responsive">
       <table class="table table-bordered table-hover">
         <thead>
           <tr>
@@ -48,6 +51,10 @@
           <%end%>
         </tbody>
       </table>
+      </div>
     <%end%>
+  </div>
+  <div class="timetable-index-background-container">
+    <%=image_tag "timetable1.jpg",width:"100%"%>
   </div>
 </div>

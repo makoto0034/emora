@@ -1,9 +1,46 @@
 <div class="message_board_index">
   <div class="message_board_index_inner">
     <div class="category_list">
-      <div class="create_message_board">
-        <%=link_to'掲示板作成',new_message_board_path,class:"create_message_board_btn btn"%>
+
+      <!-- 掲示板新規作成 -->
+      <div class="create_message_board　modalTrigger">
+        <a href="#" class="create_message_board_btn btn purple-btn js-modal-open">掲示板作成</a>
       </div>
+      <!-- モーダルウィンドウ（掲示板新規作成） -->
+      <div class="modal js-modal">
+        <div class="modal__bg js-modal-close"></div>
+        <div class="modal__content">
+          <div class="messageboard_new">
+              <%=form_tag(message_boards_path,:class => 'messageboard_container') do %>
+                  <div class="input-group mb-5">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroup-sizing-default">掲示板名</span>
+                    </div>
+                    <input type="text" name="name" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                  </div>
+                  <div class="input-group mb-5">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroup-sizing-default">カテゴリ</span>
+                    </div>
+                    <select name="category_id" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                      <%@categories.each do |category|%>
+                        <option value=<%=category.id%>><%=category.name%></option>
+                      <%end%>
+                    </select>
+                  </div>
+                <div class="form-group mb-5 message_board_detail_area">
+                  <textarea name="detail" rows="5" class="form-control" placeholder="例）今日あった面白いこと・悩み事・聞きたいことをみんなに共有しよう！" ></textarea>
+                  <input type="submit" value="作成">
+                </div>
+              <%end%>
+          </div>
+            <!-- モーダルウィンドウ閉じるボタン -->
+            <div class="modal_close_button">
+              <a href="#" class="js-modal-close"><i class="fas fa-times-circle"></i></a>
+            </div>
+        </div>
+      </div>
+      <!-- カテゴリ一覧 -->
       <ul>
         <li class="category_tab_list">
           <%=link_to '新着',message_boards_path,class:"category_tab"%>
@@ -15,33 +52,37 @@
         <%end%>
       </ul>
     </div>
+    <!-- 掲示板一覧 -->
     <div class="message_board_list">
       <%if @category.present?%>
-        <h1><%=@category.name%></h1>
+      <!-- カテゴリを選択した時の動作 -->
+        <h4><%=@category.name%></h4>
       <%else%>
-        <h1>新着</h1>
+        <!-- カテゴリを選択しておらず、最初に掲示板を開いた時の動作 -->
+        <h4>新着</h4>
       <%end%>
       <ul>
+        <!-- カテゴリに応じて掲示板を表示する -->
         <%@message_boards.each do |message_board|%>
           <li>
-            <%=link_to message_boards_talks_path(message_board.id,category_id:message_board.category.id) do%>
             <div class="message_board_content">
               <div class="message_board_content_header">
-                <div class="row">
-                  <div class="col-md-2">
-                    <h4><%=message_board.name%></h4>
+                <%=link_to user_path(message_board.user.id) do%>
+                  <div class="message_board_creator">
+                    <%=image_tag url_for(message_board.user.avatar),:size =>"40x40" ,class: "avatar"%>
+                    <%=message_board.user.name%>
                   </div>
-                  <div class="col-auto message_board_creator">
-                    by
-                    <%=image_tag url_for(message_board.user.avatar),:size =>"50x50" ,class: "avatar"%>
-                    <%= message_board.user.name%>
-                  </div>
-                </div>
-                <p><%=message_board.created_at.strftime("%Y年%m月%d日 %H時%M分")%></p>
+                  <%end%>
+                  <%=link_to message_boards_talks_path(message_board.id) do%>
+                    <div class="message_board_primary_info">
+                      <h5><%=message_board.name%></h5>
+                      <p class="created_at"><%=message_board.created_at.strftime("%Y年%m月%d日 %H:%M")%></p>
+                      <p class="over-text"><%=message_board.detail%></p>
+                    </div>
+                  <%end%>
               </div>
-              <p><%=message_board.detail%></p>
             </div>
-            <%end%>
+
           </li>
         <%end%>
       </ul>

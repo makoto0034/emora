@@ -39,14 +39,14 @@ $(document).on('turbolinks:load', function(){
 });
 
 //emoraロゴアニメーション設定
-$(document).on('turbolinks:load', function(){
-	setTimeout(function(){
-		$('.start_container p').fadeIn(1600);
-	},500); 
-	setTimeout(function(){
-		$('.start_container').fadeOut(500);
-	},5000);
-});
+// $(document).on('turbolinks:load', function(){
+// 	setTimeout(function(){
+// 		$('.start_container p').fadeIn(1600);
+// 	},500);
+// 	setTimeout(function(){
+// 		$('.start_container').fadeOut(500);
+// 	},5000);
+// });
 
 //ユーザー詳細画面のタブ設定
 $(document).on('turbolinks:load', function(){
@@ -82,9 +82,7 @@ $(document).on('turbolinks:load', function(){
 //    });
 //
 //   $(window).on('scroll load',function(){
-//     console.log('aaa');
 //     $('.emora-description').each( function(){
-//       console.log('aaa');
 //       var scTop = $(this).scrollTop();
 //       var scBottom = scTop + $(this).height();
 //       var effectPos = scBottom - EffectH;

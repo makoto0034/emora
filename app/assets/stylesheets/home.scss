@@ -13,8 +13,7 @@ body{
   position: relative;
 }
 
-
-.start_container{
+.start-container{
   text-align: center;
   background: #FFF;
 	position: fixed;
@@ -29,7 +28,7 @@ body{
   background-repeat: no-repeat;
 }
 
-.start_container p{
+.start-container p{
   position: fixed;
 	left: 50%;
 	top: 50%;
@@ -39,7 +38,7 @@ body{
 	width: 100%;
 }
 
-.start_container span{
+.start-container span{
   display: block;
 }
 
@@ -79,21 +78,10 @@ body{
 
 }
 
-.emora-description{
-  width:90%;
-  margin:0 auto;
-}
-
-.emora-introduction{
-  width:80%;
-  margin:0 auto;
-  margin-top: 50px;
-  margin-bottom:50px;
-}
-
 .welcome{
   position: relative;
   width:100%;
+  height: 100vh;
 }
 
 .welcome h1{
@@ -125,23 +113,31 @@ body{
 
 .title-img{
   width:100%;
-  height: 65vh;
+  height:100%;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 
 }
 
+.emora-introduction{
+  width:90%;
+  margin:0 auto;
+  padding:100px 0;
+}
+
 .emora-introduction h1{
+  margin-bottom: 50px;
   font-weight: bold;
   text-align: center;
 }
 
 .emora-introduction p{
-  font-family: 'Noto Sans JP', sans-serif;
+  text-align: center;
   font-size:20px;
   font-weight:900;
   line-height: 2;
+  letter-spacing: 1px;
 }
 
 .emora-introduction .only_rikkyo{
@@ -150,56 +146,47 @@ body{
 }
 
 .emora-description h1{
-  font-weight: bold;
+  margin-bottom: 50px;
 }
 
-.emora-description h1{
-  text-align: center;
+.emora-description{
+  margin-bottom: 50px;
 }
-
-.emora-description-inner section{
-  width:33%;
-  padding:10px;
-}
-
-.emora-description-inner{
-  margin-top: 10px;
-  display: flex;
-}
-
 
 .main-content{
-  width:100%;
-  height:350px;
-  margin:0 auto;
-  line-height: 2;
-  position: relative;
+  height: 600px;
+  background: #7f8183;
 }
 
 .main-img{
-  width:100%;
-  height:200px;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.35;
 }
 
-.main-content h2{
-  text-align: center;
+.carousel-caption{
+  width: 90%;
+  bottom: 0;
+  top: 50%;
+  left: 50%;
+  right:0;
+  padding: 0;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
 }
 
-.main-content p{
-  font-size:20px;
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight:900;
+.carousel-caption h2{
+  margin-bottom: 50px;
+  font-weight: bold;
 }
 
-.main-content-description{
-  width:100%;
+.carousel-caption p{
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
-.main-content-header{
-  width:100%;
-}
-
-.only_sub{
+.only-sub{
   font-size:12px;
   color:red;
   position: absolute;
@@ -211,7 +198,7 @@ body{
 }
 
 @media screen and (max-width:1200px){
-  .only_sub{
+  .only-sub{
     top:5%;
     left:75%;
     transform: translate(-5%,-75%);
@@ -221,10 +208,7 @@ body{
 }
 
 @media screen and (max-width:950px){
-  .main-content{
-    height:430px;
-  }
-  .only_sub{
+  .only-sub{
     top:9%;
     left:41%;
     transform: translate(-9%,-41%);
@@ -242,22 +226,11 @@ body{
 
 @media screen and (max-width:727px){
 
-  .emora-description-inner {
-    display: block;
-  }
-  .emora-description-inner section{
-    width:100%;
-  }
-
   .welcome h2{
     font-size:25px;
   }
 
-  .main-img{
-    height:300px;
-  }
-
-  .only_sub{
+  .only-sub{
     font-size:12px;
     color:red;
     position: absolute;
@@ -269,13 +242,17 @@ body{
   }
 }
 
+@media screen and (max-width:560px){
+  .welcome h2{
+    font-size:20px;
+  }
+}
+
 @media screen and (max-width:500px){
   .welcome h1,{
     font-size:70px;
   }
-  .welcome h2{
-    font-size:20px;
-  }
+
   .text1,.text2{
     font-size:25px;
   }
@@ -284,12 +261,17 @@ body{
 @media screen and (max-width:450px){
   .main-content{
     height:450px;
+    margin-top: 30px;
   }
   .text1{
     font-size:15px;
   }
   .text2{
     font-size:30px;
+  }
+
+  .emora-introduction{
+    width: 80%;
   }
 }
 
